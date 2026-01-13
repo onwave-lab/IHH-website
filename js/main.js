@@ -890,18 +890,53 @@ document.addEventListener('DOMContentLoaded', function() {
   // -----------------------------------------
   (function() {
     var mailerliteForms = document.querySelectorAll('[data-mailerlite]');
+    var MIN_SUBMIT_TIME = 3000; // 3 seconds minimum from first interaction
 
     mailerliteForms.forEach(function(form) {
+      // Track first interaction time for bot detection
+      var firstInteractionTime = null;
+
+      // Listen for any input focus to start the timer
+      var inputs = form.querySelectorAll('input, textarea, select');
+      inputs.forEach(function(input) {
+        input.addEventListener('focus', function() {
+          if (!firstInteractionTime) {
+            firstInteractionTime = Date.now();
+          }
+        });
+        // Also track input events for autofill detection
+        input.addEventListener('input', function() {
+          if (!firstInteractionTime) {
+            firstInteractionTime = Date.now();
+          }
+        });
+      });
+
       form.addEventListener('submit', function(e) {
         e.preventDefault();
 
         var emailInput = form.querySelector('input[type="email"]');
         var firstNameInput = form.querySelector('input[name="first-name"]');
         var stateInput = form.querySelector('input[name="state"]');
+        var honeypotInput = form.querySelector('input[name="website"]');
         var submitBtn = form.querySelector('button[type="submit"]');
         var messageEl = form.querySelector('.form-message');
         var formType = form.getAttribute('data-form-type') || 'newsletter';
         var formSource = form.getAttribute('data-form-source') || '';
+
+        // Bot check 1: Honeypot field should be empty
+        if (honeypotInput && honeypotInput.value) {
+          // Silently reject - don't give bots feedback
+          console.log('Bot detected: honeypot filled');
+          return;
+        }
+
+        // Bot check 2: Minimum time since first interaction
+        var timeSinceInteraction = firstInteractionTime ? (Date.now() - firstInteractionTime) : 0;
+        if (timeSinceInteraction < MIN_SUBMIT_TIME) {
+          showFormMessage(messageEl, 'Please wait a moment and try again.', 'error');
+          return;
+        }
 
         // Validate email
         var email = emailInput ? emailInput.value.trim() : '';
@@ -1032,10 +1067,44 @@ document.addEventListener('DOMContentLoaded', function() {
     var contactForm = document.querySelector('form[name="contact"]');
     if (!contactForm) return;
 
+    var MIN_SUBMIT_TIME = 3000; // 3 seconds minimum from first interaction
+    var firstInteractionTime = null;
+
+    // Track first interaction time for bot detection
+    var inputs = contactForm.querySelectorAll('input, textarea, select');
+    inputs.forEach(function(input) {
+      input.addEventListener('focus', function() {
+        if (!firstInteractionTime) {
+          firstInteractionTime = Date.now();
+        }
+      });
+      input.addEventListener('input', function() {
+        if (!firstInteractionTime) {
+          firstInteractionTime = Date.now();
+        }
+      });
+    });
+
     contactForm.addEventListener('submit', function(e) {
       var newsletterCheckbox = contactForm.querySelector('input[name="newsletter_optin"]');
       var stateInput = contactForm.querySelector('input[name="state"]');
       var stateSearchInput = contactForm.querySelector('.state-search-input');
+      var honeypotInput = contactForm.querySelector('input[name="bot-field"]');
+
+      // Bot check 1: Honeypot field should be empty (Netlify handles this too, but double-check)
+      if (honeypotInput && honeypotInput.value) {
+        e.preventDefault();
+        console.log('Bot detected: honeypot filled');
+        return;
+      }
+
+      // Bot check 2: Minimum time since first interaction
+      var timeSinceInteraction = firstInteractionTime ? (Date.now() - firstInteractionTime) : 0;
+      if (timeSinceInteraction < MIN_SUBMIT_TIME) {
+        e.preventDefault();
+        alert('Please wait a moment and try again.');
+        return;
+      }
 
       // Validate state is selected (hidden input has value)
       if (stateInput && stateSearchInput && !stateInput.value.trim()) {

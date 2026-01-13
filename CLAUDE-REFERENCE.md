@@ -104,12 +104,19 @@ notion-cli help
 ### Newsletter Form HTML Template
 
 ```html
-<form data-mailerlite data-form-type="newsletter">
+<form data-mailerlite data-form-type="newsletter" data-form-source="page_location">
+  <!-- REQUIRED: Honeypot field for bot protection -->
+  <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
   <input type="email" name="email" required>
   <button type="submit">Subscribe</button>
   <p class="form-message" style="display:none;"></p>
 </form>
 ```
+
+**Notes:**
+- `data-form-source` should identify where the form is (e.g., "homepage_newsletter", "blog_sidebar")
+- Honeypot field is required - bots fill it, humans can't see it
+- Time-based check (3 seconds) is handled automatically by main.js
 
 ### Sitemap Entry Template
 
@@ -149,6 +156,24 @@ curl https://drafts-website-edits--intentionholistichealth.netlify.app/.netlify/
 ```
 
 Report types: `overview`, `pages`, `sources`, `events`, `daily`
+
+---
+
+## Netlify Credits Tracking
+
+**Billing Cycle:** Resets January 26, 2025
+**Plan:** Personal (1,000 credits) - operating as Free tier (300 credit target)
+
+| Date | Action | Credits Used | Running Total |
+|------|--------|--------------|---------------|
+| Pre-Jan 13 | Previous usage | 207.5 | 207.5 |
+| Jan 13 | Merge: MailerLite enhancements | 15 | 222.5 |
+
+**Credit Costs Reference:**
+- Production deploy: 15 credits
+- Branch deploy: FREE
+- Bandwidth: 10 credits/GB
+- Web requests: 3 credits/10,000
 
 ---
 

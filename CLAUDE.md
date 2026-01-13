@@ -847,9 +847,28 @@ Explicitly allowed (for JS-rendered content):
 **How It Works:**
 1. Form has `data-mailerlite` attribute and `data-form-type` (newsletter or lead-magnet)
 2. JavaScript in `main.js` intercepts form submission
-3. Sends to `/.netlify/functions/subscribe`
-4. Function adds subscriber to appropriate MailerLite group(s)
-5. MailerLite automation delivers lead magnet email (configured in MailerLite dashboard)
+3. Bot protection checks (honeypot + time-based) run first
+4. Sends to `/.netlify/functions/subscribe`
+5. Function adds subscriber to appropriate MailerLite group(s)
+6. MailerLite automation delivers lead magnet email (configured in MailerLite dashboard)
+
+**Bot Protection (REQUIRED for all forms):**
+
+All forms must include bot protection to prevent spam subscriptions:
+
+1. **Honeypot field** - Hidden field that bots fill out:
+   ```html
+   <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+   ```
+
+2. **Time-based check** - JavaScript tracks first interaction and rejects submissions under 3 seconds
+
+3. **CSS for honeypot** (already in main.css):
+   ```css
+   .hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+   ```
+
+The JavaScript in `main.js` automatically handles the time-based check for any form with `data-mailerlite` attribute. Just add the honeypot input to the HTML.
 
 **Adding New Newsletter Forms:** See `CLAUDE-REFERENCE.md` for the HTML template.
 

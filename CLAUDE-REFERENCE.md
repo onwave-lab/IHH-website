@@ -168,6 +168,7 @@ Report types: `overview`, `pages`, `sources`, `events`, `daily`
 |------|--------|--------------|---------------|
 | Pre-Jan 13 | Previous usage | 207.5 | 207.5 |
 | Jan 13 | Merge: MailerLite enhancements | 15 | 222.5 |
+| Jan 13 | Merge: Bot protection | 15 | 237.5 |
 
 **Credit Costs Reference:**
 - Production deploy: 15 credits

@@ -206,6 +206,16 @@
               </div>
 
               <div class="form-group">
+                <label for="contact-state" class="form-label">State *</label>
+                <div class="state-dropdown-wrapper">
+                  <input type="text" id="contact-state" name="state-search" class="form-input state-search-input" placeholder="Select your state" autocomplete="off" aria-label="State" aria-haspopup="listbox" aria-expanded="false" required>
+                  <input type="hidden" name="state" value="" required>
+                  <svg class="state-dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  <ul class="state-dropdown-list" role="listbox" aria-label="Select state"></ul>
+                </div>
+              </div>
+
+              <div class="form-group">
                 <label for="subject" class="form-label">Subject</label>
                 <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" autocomplete="off">
               </div>

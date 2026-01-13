@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const POPUP_STORAGE_KEY = 'intentionPopupShown';
   const POPUP_EXPIRY_DAYS = 7;
   const IDLE_TIMEOUT = 45000; // 45 seconds of inactivity
-  const PAGE_TIME_TRIGGER = 60000; // 60 seconds on page
+  const PAGE_TIME_TRIGGER = 15000; // 15 seconds on page
 
   var popupShown = false;
   var idleTimer = null;
@@ -707,6 +707,185 @@ document.addEventListener('DOMContentLoaded', function() {
   })();
 
   // -----------------------------------------
+  // SEARCHABLE STATE DROPDOWN
+  // -----------------------------------------
+  (function() {
+    var US_STATES = [
+      { name: 'Alabama', abbr: 'AL' },
+      { name: 'Alaska', abbr: 'AK' },
+      { name: 'Arizona', abbr: 'AZ' },
+      { name: 'Arkansas', abbr: 'AR' },
+      { name: 'California', abbr: 'CA' },
+      { name: 'Colorado', abbr: 'CO' },
+      { name: 'Connecticut', abbr: 'CT' },
+      { name: 'Delaware', abbr: 'DE' },
+      { name: 'Florida', abbr: 'FL' },
+      { name: 'Georgia', abbr: 'GA' },
+      { name: 'Hawaii', abbr: 'HI' },
+      { name: 'Idaho', abbr: 'ID' },
+      { name: 'Illinois', abbr: 'IL' },
+      { name: 'Indiana', abbr: 'IN' },
+      { name: 'Iowa', abbr: 'IA' },
+      { name: 'Kansas', abbr: 'KS' },
+      { name: 'Kentucky', abbr: 'KY' },
+      { name: 'Louisiana', abbr: 'LA' },
+      { name: 'Maine', abbr: 'ME' },
+      { name: 'Maryland', abbr: 'MD' },
+      { name: 'Massachusetts', abbr: 'MA' },
+      { name: 'Michigan', abbr: 'MI' },
+      { name: 'Minnesota', abbr: 'MN' },
+      { name: 'Mississippi', abbr: 'MS' },
+      { name: 'Missouri', abbr: 'MO' },
+      { name: 'Montana', abbr: 'MT' },
+      { name: 'Nebraska', abbr: 'NE' },
+      { name: 'Nevada', abbr: 'NV' },
+      { name: 'New Hampshire', abbr: 'NH' },
+      { name: 'New Jersey', abbr: 'NJ' },
+      { name: 'New Mexico', abbr: 'NM' },
+      { name: 'New York', abbr: 'NY' },
+      { name: 'North Carolina', abbr: 'NC' },
+      { name: 'North Dakota', abbr: 'ND' },
+      { name: 'Ohio', abbr: 'OH' },
+      { name: 'Oklahoma', abbr: 'OK' },
+      { name: 'Oregon', abbr: 'OR' },
+      { name: 'Pennsylvania', abbr: 'PA' },
+      { name: 'Rhode Island', abbr: 'RI' },
+      { name: 'South Carolina', abbr: 'SC' },
+      { name: 'South Dakota', abbr: 'SD' },
+      { name: 'Tennessee', abbr: 'TN' },
+      { name: 'Texas', abbr: 'TX' },
+      { name: 'Utah', abbr: 'UT' },
+      { name: 'Vermont', abbr: 'VT' },
+      { name: 'Virginia', abbr: 'VA' },
+      { name: 'Washington', abbr: 'WA' },
+      { name: 'West Virginia', abbr: 'WV' },
+      { name: 'Wisconsin', abbr: 'WI' },
+      { name: 'Wyoming', abbr: 'WY' }
+    ];
+
+    var dropdowns = document.querySelectorAll('.state-dropdown-wrapper');
+
+    dropdowns.forEach(function(wrapper) {
+      var searchInput = wrapper.querySelector('.state-search-input');
+      var hiddenInput = wrapper.querySelector('input[name="state"]');
+      var list = wrapper.querySelector('.state-dropdown-list');
+      var highlightedIndex = -1;
+
+      // Populate the dropdown list
+      function populateList(filter) {
+        list.innerHTML = '';
+        var searchTerm = (filter || '').toLowerCase();
+        var filtered = US_STATES.filter(function(state) {
+          return state.name.toLowerCase().indexOf(searchTerm) !== -1 ||
+                 state.abbr.toLowerCase().indexOf(searchTerm) !== -1;
+        });
+
+        filtered.forEach(function(state, index) {
+          var li = document.createElement('li');
+          li.setAttribute('role', 'option');
+          li.setAttribute('data-value', state.name);
+          li.innerHTML = state.name + '<span class="state-abbr">(' + state.abbr + ')</span>';
+
+          if (hiddenInput.value === state.name) {
+            li.classList.add('selected');
+          }
+
+          li.addEventListener('click', function() {
+            selectState(state.name);
+          });
+
+          li.addEventListener('mouseenter', function() {
+            highlightedIndex = index;
+            updateHighlight(filtered);
+          });
+
+          list.appendChild(li);
+        });
+
+        highlightedIndex = -1;
+      }
+
+      function selectState(stateName) {
+        searchInput.value = stateName;
+        hiddenInput.value = stateName;
+        closeDropdown();
+      }
+
+      function openDropdown() {
+        wrapper.classList.add('open');
+        searchInput.setAttribute('aria-expanded', 'true');
+        populateList(searchInput.value);
+      }
+
+      function closeDropdown() {
+        wrapper.classList.remove('open');
+        searchInput.setAttribute('aria-expanded', 'false');
+        highlightedIndex = -1;
+      }
+
+      function updateHighlight(filtered) {
+        var items = list.querySelectorAll('li');
+        items.forEach(function(item, i) {
+          item.classList.remove('highlighted');
+          if (i === highlightedIndex) {
+            item.classList.add('highlighted');
+            item.scrollIntoView({ block: 'nearest' });
+          }
+        });
+      }
+
+      // Event listeners
+      searchInput.addEventListener('focus', function() {
+        openDropdown();
+      });
+
+      searchInput.addEventListener('input', function() {
+        populateList(searchInput.value);
+        hiddenInput.value = ''; // Clear selection when typing
+      });
+
+      searchInput.addEventListener('keydown', function(e) {
+        var items = list.querySelectorAll('li');
+        var filtered = Array.from(items);
+
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          if (!wrapper.classList.contains('open')) {
+            openDropdown();
+          }
+          highlightedIndex = Math.min(highlightedIndex + 1, filtered.length - 1);
+          updateHighlight(filtered);
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          highlightedIndex = Math.max(highlightedIndex - 1, 0);
+          updateHighlight(filtered);
+        } else if (e.key === 'Enter') {
+          e.preventDefault();
+          if (highlightedIndex >= 0 && filtered[highlightedIndex]) {
+            var value = filtered[highlightedIndex].getAttribute('data-value');
+            selectState(value);
+          }
+        } else if (e.key === 'Escape') {
+          closeDropdown();
+          searchInput.blur();
+        } else if (e.key === 'Tab') {
+          closeDropdown();
+        }
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!wrapper.contains(e.target)) {
+          closeDropdown();
+        }
+      });
+
+      // Initialize
+      populateList('');
+    });
+  })();
+
+  // -----------------------------------------
   // MAILERLITE NEWSLETTER FORMS
   // -----------------------------------------
   (function() {
@@ -718,9 +897,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var emailInput = form.querySelector('input[type="email"]');
         var firstNameInput = form.querySelector('input[name="first-name"]');
+        var stateInput = form.querySelector('input[name="state"]');
         var submitBtn = form.querySelector('button[type="submit"]');
         var messageEl = form.querySelector('.form-message');
         var formType = form.getAttribute('data-form-type') || 'newsletter';
+        var formSource = form.getAttribute('data-form-source') || '';
 
         // Validate email
         var email = emailInput ? emailInput.value.trim() : '';
@@ -744,6 +925,14 @@ document.addEventListener('DOMContentLoaded', function() {
           data.firstName = firstNameInput.value.trim();
         }
 
+        if (formSource) {
+          data.source = formSource;
+        }
+
+        if (stateInput && stateInput.value.trim()) {
+          data.state = stateInput.value.trim();
+        }
+
         // Send to Netlify function
         fetch('/.netlify/functions/subscribe', {
           method: 'POST',
@@ -765,6 +954,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (typeof trackEvent === 'function') {
               trackEvent('newsletter_subscribe', {
                 form_type: formType,
+                form_source: formSource,
                 page_path: window.location.pathname
               });
             }
@@ -831,6 +1021,96 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 300);
       }, 5000);
     }
+  })();
+
+  // -----------------------------------------
+  // CONTACT FORM WITH OPTIONAL MAILERLITE
+  // -----------------------------------------
+  // When newsletter checkbox is checked, also sends to MailerLite
+  // The form always submits to Netlify Forms for the contact message
+  (function() {
+    var contactForm = document.querySelector('form[name="contact"]');
+    if (!contactForm) return;
+
+    contactForm.addEventListener('submit', function(e) {
+      var newsletterCheckbox = contactForm.querySelector('input[name="newsletter_optin"]');
+      var stateInput = contactForm.querySelector('input[name="state"]');
+      var stateSearchInput = contactForm.querySelector('.state-search-input');
+
+      // Validate state is selected (hidden input has value)
+      if (stateInput && stateSearchInput && !stateInput.value.trim()) {
+        e.preventDefault();
+        stateSearchInput.setCustomValidity('Please select a state from the dropdown');
+        stateSearchInput.reportValidity();
+        return;
+      } else if (stateSearchInput) {
+        stateSearchInput.setCustomValidity('');
+      }
+
+      // If checkbox is not checked, let Netlify handle it normally
+      if (!newsletterCheckbox || !newsletterCheckbox.checked) {
+        return; // Form submits normally to Netlify
+      }
+
+      // Checkbox is checked - also send to MailerLite
+      e.preventDefault();
+
+      var emailInput = contactForm.querySelector('input[name="email"]');
+      var nameInput = contactForm.querySelector('input[name="name"]');
+      var submitBtn = contactForm.querySelector('button[type="submit"]');
+
+      var email = emailInput ? emailInput.value.trim() : '';
+      if (!email || !email.includes('@')) {
+        // Let normal form validation handle this
+        contactForm.submit();
+        return;
+      }
+
+      // Show loading state
+      var originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      // Build MailerLite data
+      var data = {
+        email: email,
+        formType: 'newsletter', // Newsletter signup goes to Welcome Sequence
+        source: 'contact_form'
+      };
+
+      if (nameInput && nameInput.value.trim()) {
+        data.firstName = nameInput.value.trim();
+      }
+
+      if (stateInput && stateInput.value.trim()) {
+        data.state = stateInput.value.trim();
+      }
+
+      // Send to MailerLite, then submit the Netlify form
+      fetch('/.netlify/functions/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(function(response) {
+        // Log success/failure for debugging but continue either way
+        if (!response.ok) {
+          console.warn('MailerLite subscription had an issue, but contact form will still submit');
+        }
+      })
+      .catch(function(error) {
+        console.warn('MailerLite subscription failed:', error);
+      })
+      .finally(function() {
+        // Always submit the contact form to Netlify
+        // Re-enable button first (in case submission fails)
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+
+        // Submit the form to Netlify
+        contactForm.submit();
+      });
+    });
   })();
 
 });

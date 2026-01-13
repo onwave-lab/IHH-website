@@ -6,7 +6,8 @@ const MAILERLITE_API_URL = 'https://connect.mailerlite.com/api/subscribers';
 // Group IDs from MailerLite
 const GROUPS = {
   newsletter: '175195722960864384',      // Newsletter Subscribers
-  leadMagnet: '175195632248554684'       // Holistic Habits Checklist
+  leadMagnet: '175195632248554684',      // Holistic Habits Checklist
+  welcomeSequence: '176503189578712288'  // Welcome Sequence
 };
 
 exports.handler = async (event, context) => {
@@ -33,7 +34,7 @@ exports.handler = async (event, context) => {
 
   try {
     const data = JSON.parse(event.body);
-    const { email, firstName, formType } = data;
+    const { email, firstName, formType, source, state } = data;
 
     // Validate email
     if (!email || !email.includes('@')) {
@@ -48,11 +49,14 @@ exports.handler = async (event, context) => {
     let groupIds = [];
 
     if (formType === 'lead-magnet' || formType === 'popup') {
-      // Lead magnet signups go to both groups (they get the checklist AND newsletter)
-      groupIds = [GROUPS.leadMagnet, GROUPS.newsletter];
+      // Lead magnet signups go to checklist group
+      // Checklist automation delivers PDF, then copies to Welcome Sequence
+      groupIds = [GROUPS.leadMagnet];
     } else {
-      // Regular newsletter signups
-      groupIds = [GROUPS.newsletter];
+      // Newsletter signups go to Welcome Sequence
+      // Automation runs welcome emails, then moves to Newsletter Subscribers
+      // If already in Newsletter Subscribers, automation is excluded (won't re-run)
+      groupIds = [GROUPS.welcomeSequence];
     }
 
     // Get API key from environment variable
@@ -71,14 +75,23 @@ exports.handler = async (event, context) => {
     const subscriberData = {
       email: email.toLowerCase().trim(),
       groups: groupIds,
-      status: 'active'
+      status: 'active',
+      fields: {}
     };
 
     // Add first name if provided
     if (firstName && firstName.trim()) {
-      subscriberData.fields = {
-        name: firstName.trim()
-      };
+      subscriberData.fields.name = firstName.trim();
+    }
+
+    // Add signup source for tracking
+    if (source) {
+      subscriberData.fields.signup_source = source;
+    }
+
+    // Add state if provided
+    if (state) {
+      subscriberData.fields.state = state;
     }
 
     // Send to MailerLite

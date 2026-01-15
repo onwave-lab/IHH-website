@@ -6,6 +6,11 @@ const SITE_URL = 'https://www.intentionholistichealth.com';
 // Blog post metadata - keep in sync with js/blog.js
 // Only includes fields needed for OG tags
 const BLOG_POSTS = {
+  '2025-01-15-minerals-from-food': {
+    title: '"Can\'t I Get Enough Minerals From Food?"',
+    excerpt: 'Food should always be the foundation. But for many women today, food alone is not reliably sufficient to meet mineral needs—especially during seasons of stress, pregnancy, postpartum, or long-term depletion.',
+    image: '/images/blog/minerals-from-food.webp'
+  },
   '2025-01-09-labs-normal-feel-off': {
     title: 'Why Your Labs Came Back "Normal" (But You Still Feel Off)',
     excerpt: 'You got your blood work done, waited for results, and everything looks "normal." But you don\'t feel normal. Your symptoms are real—here\'s why standard labs might not tell the whole story.',

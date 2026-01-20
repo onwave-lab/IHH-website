@@ -74,6 +74,26 @@ notion-cli search "query"
 notion-cli help
 ```
 
+**Known Issue (2026-01-19):** The `notion-cli` tool sometimes returns 404 errors for databases that exist and are shared. If `notion-cli create-page` fails with "Could not find database", use direct curl instead:
+
+```bash
+# Direct API - Create page (use this if notion-cli fails)
+curl -s -X POST "https://api.notion.com/v1/pages" \
+  -H "Authorization: Bearer ${NOTION_TOKEN}" \
+  -H "Content-Type: application/json" \
+  -H "Notion-Version: 2022-06-28" \
+  -d '{
+    "parent": {"database_id": "DATABASE-ID-HERE"},
+    "properties": {
+      "Task": {"title": [{"text": {"content": "Task name"}}]},
+      "Status": {"status": {"name": "Backlog"}},
+      "Priority": {"select": {"name": "Medium"}},
+      "Category": {"multi_select": [{"name": "Technical"}]},
+      "Description": {"rich_text": [{"text": {"content": "Description here"}}]}
+    }
+  }'
+```
+
 ### GA4 Tracking Code
 
 ```html

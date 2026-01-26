@@ -16,7 +16,7 @@ const BLOG_POSTS = [
     cardAspectRatio: '83.78%',
     imageAspectRatio: '83.78%',
     categories: ['wellness', 'foundations'],
-    content: \`
+    content: `
 # Is It Safe to Use ChatGPT Health? A Patient-Centered Look at Using AI for Your Health
 
 With the launch of ChatGPT Health in early January 2026, millions of people now have access to a dedicated AI experience for health and wellness questions. Unlike the general ChatGPT many people were already familiar with, this version allows users to connect personal health data—including medical records and wellness app information—so that responses can be generated in the context of an individual's health information rather than generalized internet data ([OpenAI, 2026](https://help.openai.com/en/articles/20001036-what-is-chatgpt-health)).
@@ -196,12 +196,12 @@ Futurism. (2026). OpenAI's ChatGPT Health raises concerns about medical use. [ht
 OpenAI. (2026). What is ChatGPT Health? [https://help.openai.com/en/articles/20001036-what-is-chatgpt-health](https://help.openai.com/en/articles/20001036-what-is-chatgpt-health)
 
 Time. (2026). ChatGPT Health and medical record privacy concerns. [https://time.com/7344997/chatgpt-health-medical-records-privacy-open-ai/](https://time.com/7344997/chatgpt-health-medical-records-privacy-open-ai/)
-    \`,
-    disclaimer: \`This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
+    `,
+    disclaimer: `This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
 
 Any individuals depicted in images on this website or associated content are models or stock photography subjects and are not patients, clients, or recipients of services from Intention Holistic Health. Images are used for illustrative purposes only and do not represent clinical relationships, medical outcomes, or specific health conditions.
 
-Intention Holistic Health provides educational wellness guidance and, where applicable, Kentucky-based nurse practitioner services within scope and licensure.\`,
+Intention Holistic Health provides educational wellness guidance and, where applicable, Kentucky-based nurse practitioner services within scope and licensure.`,
     faqs: [
       {
         question: "Is ChatGPT Health safe to use?",

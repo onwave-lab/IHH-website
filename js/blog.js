@@ -7,6 +7,220 @@
 // For simplicity, we define posts here that can be easily updated
 const BLOG_POSTS = [
   {
+    slug: '2026-01-21-chatgpt-health-safety',
+    title: 'Is It Safe to Use ChatGPT Health? A Patient-Centered Look at Using AI for Your Health',
+    date: '2026-01-21',
+    author: 'Alicia Harrison, MSN, APRN, FNP-C',
+    excerpt: 'ChatGPT Health allows users to connect personal health data for personalized responses. From a healthcare provider standpoint, the question of safety is not a simple yes-or-no answer.',
+    image: '/images/blog/chatgpt-health-safety.webp',
+    cardAspectRatio: '83.78%',
+    imageAspectRatio: '83.78%',
+    categories: ['wellness', 'foundations'],
+    content: \`
+# Is It Safe to Use ChatGPT Health? A Patient-Centered Look at Using AI for Your Health
+
+With the launch of ChatGPT Health in early January 2026, millions of people now have access to a dedicated AI experience for health and wellness questions. Unlike the general ChatGPT many people were already familiar with, this version allows users to connect personal health data—including medical records and wellness app information—so that responses can be generated in the context of an individual's health information rather than generalized internet data ([OpenAI, 2026](https://help.openai.com/en/articles/20001036-what-is-chatgpt-health)).
+
+That capability is both promising and concerning. From a healthcare provider standpoint, the question of safety is not a simple yes-or-no answer. In medicine, safety always depends on context, boundaries, oversight, and appropriate use.
+
+A more useful question than "Is it safe?" is:
+
+**How do we use ChatGPT Health well—without replacing clinical care, judgment, or responsibility?**
+
+## What Is ChatGPT Health?
+
+ChatGPT Health is a health-focused feature within ChatGPT that allows you to ask health questions using your own information as context. Depending on what you choose to connect or upload, this may include:
+
+- Medical records such as lab reports or visit summaries
+- Wellness and wearable data (sleep, activity, nutrition, glucose tracking, etc.)
+- Medication lists or health timelines you create
+
+OpenAI states that health information used in ChatGPT Health is stored separately from standard chat data and is not used to train the general AI model ([OpenAI, 2026](https://help.openai.com/en/articles/20001036-what-is-chatgpt-health)). The goal is to help users better understand health information—not to replace medical care.
+
+## Why So Many Patients Are Turning to AI for Health Questions
+
+Healthcare can feel overwhelming, even when you're doing everything "right."
+
+- Appointments are often short.
+- Lab results arrive without much explanation.
+- Medical language can feel confusing or intimidating.
+
+Many patients leave visits thinking:
+
+- "I didn't get to ask everything."
+- "I don't really understand what these results mean."
+- "I googled this and now I'm more anxious."
+
+AI tools like ChatGPT Health are appealing because they are:
+
+- Available anytime
+- Written in plain language
+- Able to organize information
+- Non-judgmental
+
+Wanting clarity does not mean you're trying to replace your provider. Most often, it means you want to be more informed and engaged in your care.
+
+That intention matters—but how the tool is used matters just as much.
+
+## Is ChatGPT Health Actually "Safe"?
+
+There isn't a single answer that applies to everyone or every situation.
+
+ChatGPT Health is not a licensed medical provider, and it is not approved to diagnose or treat medical conditions. OpenAI explicitly states that the tool should not be used for diagnosis or treatment decisions ([OpenAI, 2026](https://help.openai.com/en/articles/20001036-what-is-chatgpt-health)). Independent reporting has echoed concerns about people relying too heavily on AI without professional oversight ([Futurism, 2026](https://futurism.com/artificial-intelligence/chatgpt-health-medical-records-diagnosis)).
+
+From a patient perspective, the most accurate way to think about safety is this:
+
+**ChatGPT Health is safest when it is used as an educational and organizational tool—not as a decision-maker.**
+
+## What ChatGPT Health Can Be Helpful For
+
+### 1. Understanding Medical Information
+
+Medical reports are often written for clinicians, not patients. ChatGPT Health can help explain:
+
+- What certain lab markers generally reflect
+- Why a provider might monitor a specific value
+- Common medical terms found in records
+- General mechanisms of medications
+
+This can reduce confusion and help you feel more prepared for conversations with your provider.
+
+### 2. Preparing for Appointments
+
+One of the most responsible ways to use ChatGPT Health is before a medical visit.
+
+Examples include:
+
+- Summarizing symptoms into a clear timeline
+- Listing medications and supplements in one place
+- Generating questions you want to ask
+- Clarifying what you don't understand so you can ask directly
+
+I don't know about you, but I tend to forget just about everything I wanted to say/ask when I walk into a clinic as a patient. This helps you use your appointment time more effectively so you don't walk out thinking, "I wish I had talked to them about…"
+
+### 3. Noticing Patterns in Your Own Data
+
+If you choose to upload wellness data, ChatGPT Health can help you notice trends, such as:
+
+- Changes in sleep over time
+- Activity levels and fatigue patterns
+- Nutrition or glucose trends
+
+These observations are starting points, not conclusions. They are most useful when reviewed with a healthcare professional.
+
+## Where ChatGPT Health Becomes Risky
+
+### 1. Self-Diagnosis
+
+AI cannot:
+
+- Perform a physical exam
+- Assess urgency
+- Rule out serious conditions
+- Account for nuance the way a clinician can
+
+Using AI to decide what you have can delay appropriate care or create false reassurance.
+
+### 2. Acting on Treatment Suggestions
+
+Even if advice sounds reasonable, treatment decisions depend on:
+
+- Full medical history
+- Medication interactions
+- Pregnancy or breastfeeding status
+- Chronic conditions and risk factors
+
+AI systems are not equipped to manage this complexity safely.
+
+### 3. Over-Trusting Confident Answers
+
+AI responses are written confidently. Confidence, however, does not equal accuracy or appropriateness for you. If something sounds definitive, that's a signal to pause and discuss it with your provider instead of acting on it.
+
+## Privacy: What Patients Should Know
+
+ChatGPT Health is not covered by HIPAA. That means the information you upload is protected by OpenAI's privacy policies, not by healthcare law. Privacy experts have raised concerns about how medical records shared with AI platforms are legally protected compared to traditional healthcare systems ([Time, 2026](https://time.com/7344997/chatgpt-health-medical-records-privacy-open-ai/)).
+
+This doesn't mean you should never use the tool—but it does mean you should be intentional about what you share.
+
+A helpful rule of thumb:
+
+- Use ChatGPT Health to understand information
+- Avoid using it as a long-term storage place for sensitive records
+
+## How to Use ChatGPT Health Well: A Patient Checklist
+
+If you choose to use ChatGPT Health, these guidelines can help keep it supportive rather than harmful:
+
+- Use it to learn, not decide
+- Bring summaries and questions to your provider
+- Be selective with the data you upload
+- Treat AI as a tool, not an authority
+- Never rely on it for emergencies or urgent symptoms
+
+When used this way, AI can support your care rather than compete with it.
+
+## Real-World Examples of Responsible Use
+
+**Helpful:**
+
+- "Can you explain what this lab marker generally reflects so I can discuss it at my appointment?"
+- "Can you help me summarize my symptoms over the last few months?"
+- "What questions should I ask my provider about this result?"
+
+**Not helpful:**
+
+- "Do I have this condition?"
+- "Should I start or stop this medication?"
+- "Is this safe for me instead of seeing a doctor?"
+
+## The Better Question
+
+So, is ChatGPT Health safe?
+
+It can be—when used as a supplemental educational tool rather than a substitute for care.
+
+The more important question remains:
+
+**How do we use ChatGPT Health well, in a way that supports informed patients while keeping clinical judgment and accountability where they belong?**
+
+AI may change how information is accessed, but it does not replace the foundations of good medicine: individualized care, professional judgment, and ethical responsibility.
+
+---
+
+If you're looking for personalized support in understanding your health data, a [Functional Lab Review](/services/lab-review.html) can provide context and clarity that AI alone cannot offer—with the benefit of professional interpretation tailored to your unique situation.
+
+## References
+
+Futurism. (2026). OpenAI's ChatGPT Health raises concerns about medical use. [https://futurism.com/artificial-intelligence/chatgpt-health-medical-records-diagnosis](https://futurism.com/artificial-intelligence/chatgpt-health-medical-records-diagnosis)
+
+OpenAI. (2026). What is ChatGPT Health? [https://help.openai.com/en/articles/20001036-what-is-chatgpt-health](https://help.openai.com/en/articles/20001036-what-is-chatgpt-health)
+
+Time. (2026). ChatGPT Health and medical record privacy concerns. [https://time.com/7344997/chatgpt-health-medical-records-privacy-open-ai/](https://time.com/7344997/chatgpt-health-medical-records-privacy-open-ai/)
+    \`,
+    disclaimer: \`This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
+
+Any individuals depicted in images on this website or associated content are models or stock photography subjects and are not patients, clients, or recipients of services from Intention Holistic Health. Images are used for illustrative purposes only and do not represent clinical relationships, medical outcomes, or specific health conditions.
+
+Intention Holistic Health provides educational wellness guidance and, where applicable, Kentucky-based nurse practitioner services within scope and licensure.\`,
+    faqs: [
+      {
+        question: "Is ChatGPT Health safe to use?",
+        answer: "ChatGPT Health is safest when used as an educational and organizational tool—not as a decision-maker. It is not a licensed medical provider and should not be used for diagnosis or treatment decisions. Use it to understand medical terminology, prepare questions for appointments, and notice patterns in your data, but always discuss findings with your healthcare provider."
+      },
+      {
+        question: "Is my health data private on ChatGPT Health?",
+        answer: "ChatGPT Health is not covered by HIPAA, meaning your uploaded health information is protected by OpenAI's privacy policies rather than healthcare law. Be intentional about what you share—use it to understand information rather than as long-term storage for sensitive medical records."
+      },
+      {
+        question: "What should I NOT use ChatGPT Health for?",
+        answer: "Avoid using ChatGPT Health for self-diagnosis, making treatment decisions, or replacing emergency care. AI cannot perform physical exams, assess urgency, rule out serious conditions, or account for your full medical history, medication interactions, or individual risk factors."
+      }
+    ],
+    schema: {
+      description: "Learn how to use ChatGPT Health safely and responsibly. Understand what AI health tools can and cannot do, privacy considerations, and how to use them to support—not replace—clinical care."
+    }
+  },
+  {
     slug: '2025-01-15-minerals-from-food',
     title: '"Can\'t I Get Enough Minerals From Food?"',
     date: '2025-01-15',

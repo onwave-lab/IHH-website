@@ -6,6 +6,11 @@ const SITE_URL = 'https://www.intentionholistichealth.com';
 // Blog post metadata - keep in sync with js/blog.js
 // Only includes fields needed for OG tags
 const BLOG_POSTS = {
+  '2026-01-21-chatgpt-health-safety': {
+    title: 'Is It Safe to Use ChatGPT Health? A Patient-Centered Look at Using AI for Your Health',
+    excerpt: 'ChatGPT Health allows users to connect personal health data for personalized responses. From a healthcare provider standpoint, the question of safety is not a simple yes-or-no answer.',
+    image: '/images/blog/chatgpt-health-safety.webp'
+  },
   '2025-01-15-minerals-from-food': {
     title: '"Can\'t I Get Enough Minerals From Food?"',
     excerpt: 'Food should always be the foundation. But for many women today, food alone is not reliably sufficient to meet mineral needs—especially during seasons of stress, pregnancy, postpartum, or long-term depletion.',

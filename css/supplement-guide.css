@@ -13,6 +13,17 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 
+/* Reversed Hero Layout - Image on Left */
+.sg-hero-reversed {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 1024px) {
+  .sg-hero-reversed {
+    flex-direction: column;
+  }
+}
+
 /* Opt-in Form in Hero */
 .sg-optin-form {
   background: white;
@@ -382,25 +393,32 @@
 
 .sg-optin-form-footer {
   background: white;
-  padding: 0.5rem;
+  padding: 0.75rem;
   border-radius: 8px;
   box-shadow: none;
   margin: 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sg-form-inline {
   display: flex;
   gap: 0.5rem;
+  align-items: stretch;
 }
 
 .sg-form-inline .sg-input {
   flex: 1;
   border-radius: 6px;
+  min-width: 0;
 }
 
 .sg-form-inline .v3-btn {
   flex-shrink: 0;
   white-space: nowrap;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 /* Modal Styles */

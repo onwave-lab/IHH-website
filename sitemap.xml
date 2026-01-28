@@ -59,6 +59,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Landing Pages -->
+  <url>
+    <loc>https://www.intentionholistichealth.com/supplement-guide.html</loc>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog -->
   <url>
     <loc>https://www.intentionholistichealth.com/blog/</loc>

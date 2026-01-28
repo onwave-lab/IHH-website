@@ -5,9 +5,11 @@ const MAILERLITE_API_URL = 'https://connect.mailerlite.com/api/subscribers';
 
 // Group IDs from MailerLite
 const GROUPS = {
-  newsletter: '175195722960864384',      // Newsletter Subscribers
-  leadMagnet: '175195632248554684',      // Holistic Habits Checklist
-  welcomeSequence: '176503189578712288'  // Welcome Sequence
+  newsletter: '175195722960864384',           // Newsletter Subscribers
+  leadMagnet: '175195632248554684',           // Holistic Habits Checklist
+  welcomeSequence: '176503189578712288',      // Welcome Sequence
+  supplementGuide: '177801439665456539',      // Supplement Guide Downloads
+  supplementReviewWaitlist: '177801256141587628'  // Supplement Review Waitlist
 };
 
 exports.handler = async (event, context) => {
@@ -52,6 +54,12 @@ exports.handler = async (event, context) => {
       // Lead magnet signups go to checklist group
       // Checklist automation delivers PDF, then copies to Welcome Sequence
       groupIds = [GROUPS.leadMagnet];
+    } else if (formType === 'supplement-guide') {
+      // Supplement guide downloads - automation delivers PDF
+      groupIds = [GROUPS.supplementGuide];
+    } else if (formType === 'supplement-review-waitlist') {
+      // Supplement review service waitlist
+      groupIds = [GROUPS.supplementReviewWaitlist];
     } else {
       // Newsletter signups go to Welcome Sequence
       // Automation runs welcome emails, then moves to Newsletter Subscribers
@@ -134,14 +142,23 @@ exports.handler = async (event, context) => {
     }
 
     // Success!
+    let successMessage = 'Successfully subscribed!';
+    if (formType === 'lead-magnet' || formType === 'popup') {
+      successMessage = 'Check your email for the Holistic Habits Checklist!';
+    } else if (formType === 'supplement-guide') {
+      successMessage = 'Check your email for your free Supplement Guide!';
+    } else if (formType === 'supplement-review-waitlist') {
+      successMessage = 'You\'re on the waitlist! We\'ll notify you when spots open.';
+    } else {
+      successMessage = 'Successfully subscribed to the newsletter!';
+    }
+
     return {
       statusCode: 200,
       headers,
       body: JSON.stringify({
         success: true,
-        message: formType === 'lead-magnet' || formType === 'popup'
-          ? 'Check your email for the Holistic Habits Checklist!'
-          : 'Successfully subscribed to the newsletter!'
+        message: successMessage
       })
     };
 

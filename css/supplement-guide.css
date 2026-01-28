@@ -168,37 +168,43 @@
   gap: 1.5rem;
   background: linear-gradient(135deg, var(--color-sage-green, #8D9488) 0%, var(--color-sage-dark, #6B7265) 100%);
   color: white;
-  padding: 1.5rem 2rem;
+  padding: 1.75rem 2.5rem;
   border-radius: 12px;
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
+  box-shadow: 0 8px 30px rgba(107, 114, 101, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 .sg-bonus-icon {
   flex-shrink: 0;
-  width: 56px;
-  height: 56px;
-  background: rgba(255, 255, 255, 0.2);
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.25);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .sg-bonus-icon svg {
   stroke: white;
+  width: 28px;
+  height: 28px;
 }
 
 .sg-bonus-content h4 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  margin-bottom: 0.25rem;
-  opacity: 0.95;
+  font-size: 1.25rem;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 .sg-bonus-content p {
-  font-size: 0.95rem;
-  opacity: 0.8;
+  font-size: 1rem;
+  opacity: 0.9;
   margin: 0;
 }
 

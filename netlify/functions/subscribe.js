@@ -10,7 +10,8 @@ const GROUPS = {
   welcomeSequence: '176503189578712288',      // Welcome Sequence
   supplementGuide: '177801439665456539',      // Supplement Guide Downloads
   supplementReviewWaitlist: '177801256141587628',  // Supplement Review Waitlist
-  courseInterest: '177807031141401967'        // Confident Supplement Choices Interest
+  courseInterest: '177807031141401967',       // Confident Supplement Choices Interest
+  kitchenStaples: 'PLACEHOLDER_ID'            // Kitchen Staples Checklist - UPDATE THIS ID
 };
 
 exports.handler = async (event, context) => {
@@ -64,6 +65,9 @@ exports.handler = async (event, context) => {
     } else if (formType === 'course-interest') {
       // Confident Supplement Choices course interest
       groupIds = [GROUPS.courseInterest];
+    } else if (formType === 'kitchen-staples') {
+      // Kitchen Staples Checklist downloads
+      groupIds = [GROUPS.kitchenStaples];
     } else {
       // Newsletter signups go to Welcome Sequence
       // Automation runs welcome emails, then moves to Newsletter Subscribers
@@ -155,6 +159,8 @@ exports.handler = async (event, context) => {
       successMessage = 'You\'re on the waitlist! We\'ll notify you when spots open.';
     } else if (formType === 'course-interest') {
       successMessage = 'Thanks! We\'ll notify you when the course launches.';
+    } else if (formType === 'kitchen-staples') {
+      successMessage = 'Check your email for your free Kitchen Staples Checklist!';
     } else {
       successMessage = 'Successfully subscribed to the newsletter!';
     }

@@ -7,6 +7,181 @@
 // For simplicity, we define posts here that can be easily updated
 const BLOG_POSTS = [
   {
+    slug: '2026-01-28-sustainable-home-cooking',
+    title: 'Things I Do to Make Home Cooking More Sustainable',
+    subtitle: 'Physically, Mentally, & Financially—Without Spending a Whole Day Meal Prepping',
+    date: '2026-01-28',
+    author: 'Alicia Harrison, MSN, APRN, FNP-C',
+    excerpt: 'Sustainable home cooking isn\'t about elaborate recipes or perfectly stocked fridges. It\'s about creating rhythms that support your body, protect your mental energy, and make financial sense in real life.',
+    image: '/images/blog/sustainable-home-cooking.webp',
+    cardAspectRatio: '83.83%',
+    imageAspectRatio: '83.83%',
+    categories: ['wellness', 'nutrition'],
+    template: 'superior',
+    content: `
+# Things I Do to Make Home Cooking More Sustainable
+## Physically, Mentally, & Financially—Without Spending a Whole Day Meal Prepping
+
+I've always enjoyed being in the kitchen. Cooking has never really felt like one more thing I had to do "right."
+
+That said, there are absolutely nights when I want dinner on the table in under 30 minutes. And if I'm being honest, there are times I want takeout too. The difference now is that it's much easier to say no to eating out when cooking at home feels simpler and easier than it once did.
+
+What changed wasn't my love of food.
+
+It was my systems.
+
+Sustainable home cooking isn't about elaborate recipes, perfectly stocked fridges, or making everything from scratch. It's about creating rhythms that support your body, protect your mental energy, and make financial sense in real life.
+
+## Why Home Cooking?
+
+Before getting into the systems themselves, it's worth naming why cooking at home matters for health in the first place.
+
+Preparing meals at home gives you direct control over ingredients in a way restaurants simply don't. Restaurant and packaged foods commonly rely on refined vegetable and seed oils, added sugars, flavor enhancers like monosodium glutamate (MSG), and artificial flavors or preservatives to improve taste, texture, and shelf stability (Hall et al., 2019; Monteiro et al., 2019).
+
+Frequent restaurant meals have been associated with higher sodium, refined fat, and added sugar intake, alongside lower fiber and micronutrient intake (Saksena et al., 2018).
+
+Cooking at home doesn't require perfection, but it does offer consistency—fewer unknown additives, steadier nourishment, and meals that better support metabolic and hormonal health over time.
+
+These are the practices I use in my own home. They're practical, flexible, and designed to support busy seasons without sacrificing nourishment.
+
+## 1. I Keep Meals Simple (and Rotate Go-To Meal Types)
+
+Instead of rotating dozens of recipes, I have a handful of go-tos and I rotate meal formats.
+
+This one shift made planning easier and removed the pressure to constantly come up with something new. I'm not starting from scratch every week—I'm choosing variations of meals I already know work.
+
+My core meal types include:
+
+- Sheet pan protein + vegetable
+- Protein pasta with a protein and pre-chopped veggies
+- Bowls (whole grain + protein + veggies + sauce + something fresh)
+- "Dump" soups (everything in one pot, minimal effort, high return)
+
+Once you know the format, the ingredients become interchangeable. Chicken becomes sausage. Black beans become chickpeas or white beans. Broccoli becomes peppers or asparagus. Alfredo becomes pesto. Marinara becomes a creamy tomato sauce.
+
+Meals stay nourishing, flexible, and efficient without relying on constant creativity.
+
+## 2. I Keep Flexible Staples on Hand for Fast Assembly Meals
+
+This builds directly on rotating meal formats.
+
+Rather than planning every meal in advance, I keep a small set of staples that work across multiple meals and cook quickly.
+
+Some of my go-to staples:
+
+- Organic chicken sausage
+- Shredded chicken
+- Frozen chopped peppers or onions
+- Chickpea or lentil pasta
+- A few vegetables—fresh or frozen (broccoli, cauliflower, spinach, mixed veggies)
+- One or two simple sauces (alfredo, pesto, marinara)
+
+With these on hand, dinner is rarely more than 30 minutes away. When dinner feels achievable, consistency becomes much easier.
+
+[CTA:Free Checklist: Healthy Kitchen Staples|Want a complete list of what I keep in my kitchen? I put together a printable checklist of nourishing, low-tox staples for whole foods living.|/kitchen-staples.html|Get the Free Checklist]
+
+## 3. I Learned to Freeze Just About Everything
+
+The freezer is one of the most underused tools for sustainable cooking.
+
+I freeze:
+
+- Cooked proteins
+- Chopped vegetables
+- Soups
+- Sauces
+- Rice and quinoa
+- Bone broth
+- Muffins
+- Egg bites
+- Pre-cooked breakfast chicken sausage
+- Sourdough bread
+- Extra portions of meals
+- Smoothies
+
+Meal prep doesn't always mean full meals in containers. Often, it looks like frozen components that can be mixed and matched later. Stay tuned for future blogs with recipes for my favorite freezer meals.
+
+**A note on freezer space:** We purchased a small used chest freezer from Facebook Marketplace, and it's been a game changer. To maximize space, I freeze most foods in silicone cubes, pop them out once frozen, and store them vertically in freezer bags so everything stays visible and organized.
+
+## 4. I Buy the Whole Chicken (Every Time)
+
+Buying whole chickens has been one of our biggest wins—financially and practically.
+
+At the time of writing this, organic whole chickens are around $3 per pound, significantly less than pre-cut pieces, and they stretch much further than most people expect.
+
+**How I use one whole chicken:**
+
+The day I get home from the grocery store, I slice the chicken breasts off the carcass (YouTube it if you don't know how). I place about one cup of water in the bottom of the Instant Pot, add the remaining carcass breast-side down with a little oil, salt, and pepper, and pressure cook for about eight minutes per pound. Once cooked, I pull the remaining meat off the bones for shredded chicken.
+
+Then I make bone broth. The bones go back into the Instant Pot with vegetable scraps, filtered water to just cover, and a splash of apple cider vinegar. I slow cook for about 16 hours.
+
+From one chicken, I get chicken breasts for one meal, shredded chicken for several meals, and at least eight cups of bone broth.
+
+## 5. I Wash and Batch-Prep Produce Right Away
+
+When I get home from the grocery store, I wash most fruits and vegetables immediately using filtered water and baking soda. Research suggests this method can remove a significant portion of certain pesticide residues from produce.
+
+Once washed, everything is dried and stored ready-to-use.
+
+I then try to pre-chop the majority of my vegetables. When I open a bag of onions, I chop the entire bag, use what I need, and freeze the rest in silicone cubes. I do the same for peppers, celery, potatoes, and carrots. The fewer ingredients I have to chop later, the better. This gives me the convenience of being able to grab and throw onto a pan, but prevents me from buying the more expensive pre-chopped vegetables.
+
+I also keep a freezer bag for vegetable scraps—onion ends, carrot peels, celery tops, and herb stems—which later go straight into broth.
+
+## 6. I Always Double (or Triple) Recipes
+
+If I'm cooking anyway, I cook extra.
+
+Doubling recipes takes minimal additional time, reduces future cooking needs, and creates freezer meals for busy days. Half goes to the table, and the rest goes into the fridge or freezer. This single habit has kept my family from eating out hundreds of times over—or in some moms' cases, not eating at all when it's not quick.
+
+## 7. I Keep Easy Snacks on Hand to Eat Before I'm Ravenous
+
+This is one of the most overlooked pieces of sustainable home cooking.
+
+When hunger gets intense, decision-making drops and eating out becomes much more appealing. I keep simple snacks available so I eat earlier in hunger, not when I'm already depleted.
+
+Some examples:
+
+- Greek yogurt with berries
+- Protein oat balls
+- Hard-boiled eggs
+- Cottage cheese with vegetables
+- Organic beef or turkey sticks
+- Protein smoothies
+
+Eating at the right time often leads to calmer, more intentional dinner choices and easier cooking.
+
+## 8. I Stay Mindful of My Energy Levels
+
+To maintain consistency in my kitchen, I started paying attention to when my energy is higher—and using that time intentionally. On days when I have more capacity, I'll prep a snack, make breakfast ahead, or assemble a few quick grab meals. It takes a small amount of planning in the moment, but it consistently pays off later.
+
+This approach has nothing to do with productivity for productivity's sake. It's about recognizing that energy naturally fluctuates. When longer, busier days show up—or when energy is simply lower—having food already prepared removes friction. I don't have to think, decide, or start from scratch.
+
+Over time, this has become one of the quiet ways I support myself. My past self sets my future self up well, and that makes nourishing myself feel more steady, even during off days.
+
+## The Time to Prep is Worth It
+
+Sustainable home cooking works because it supports the body, mind, and budget at the same time. When meals are simple and ingredients are familiar, protein intake becomes more consistent, mineral-rich foods like bone broth show up more regularly, and blood sugar stays steadier across the day. Fewer daily decisions free up mental energy, turning cooking into a supportive rhythm rather than a source of stress. Over time, these systems also reduce food waste, stretch grocery dollars further, and naturally decrease reliance on takeout.
+
+You don't need to adopt every habit at once. Choosing one system—batch-chopping vegetables, freezing leftovers, keeping snacks on hand, or trying a whole chicken—creates ease. And ease is what makes cooking at home sustainable long-term.
+
+## References
+
+Hall, K. D., Ayuketah, A., Brychta, R., Cai, H., Cassimatis, T., Chen, K. Y., … Zhou, M. (2019). Ultra-processed diets cause excess calorie intake and weight gain: An inpatient randomized controlled trial of ad libitum food intake. *Cell Metabolism, 30*(1), 67–77.e3. https://doi.org/10.1016/j.cmet.2019.05.008
+
+Monteiro, C. A., Cannon, G., Lawrence, M., Costa Louzada, M. L., & Pereira Machado, P. (2019). Ultra-processed foods, diet quality, and health using the NOVA classification system. *Public Health Nutrition, 22*(5), 936–941. https://doi.org/10.1017/S1368980018003762
+
+Saksena, M. J., Okrent, A. M., Anekwe, T. D., Cho, C., Dicken, C., Effland, A., … Todd, J. E. (2018). *America's eating habits: Food away from home.* U.S. Department of Agriculture, Economic Research Service.
+    `,
+    disclaimer: `This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
+
+Any individuals depicted in images on this website or associated content are models or stock photography subjects and are not patients, clients, or recipients of services from Intention Holistic Health. Images are used for illustrative purposes only and do not represent clinical relationships, medical outcomes, or specific health conditions.
+
+Intention Holistic Health provides educational wellness guidance and, where applicable, Kentucky-based nurse practitioner services within scope and licensure.`,
+    schema: {
+      description: 'Practical systems for sustainable home cooking that support your body, protect your mental energy, and make financial sense. Learn meal rotation, batch prep, freezer strategies, and more.'
+    }
+  },
+  {
     slug: '2026-01-21-chatgpt-health-safety',
     title: 'Is It Safe to Use ChatGPT Health? A Patient-Centered Look at Using AI for Your Health',
     date: '2026-01-21',
@@ -1302,6 +1477,17 @@ function parseMarkdown(markdown) {
 
   // Strip leading H1 (title is already displayed by the template)
   html = html.replace(/^\s*#\s+[^\n]+\n*/m, '');
+
+  // CTA boxes [CTA:title|description|link|buttonText]
+  html = html.replace(/\[CTA:([^|]+)\|([^|]+)\|([^|]+)\|([^\]]+)\]/gim, function(match, title, description, link, buttonText) {
+    return `<div class="blog-cta-box">
+      <div class="blog-cta-content">
+        <h4 class="blog-cta-title">${title.trim()}</h4>
+        <p class="blog-cta-description">${description.trim()}</p>
+      </div>
+      <a href="${link.trim()}" class="blog-cta-button" data-track-cta="blog-inline-cta">${buttonText.trim()}</a>
+    </div>`;
+  });
 
   // Headers
   html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');

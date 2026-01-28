@@ -29,13 +29,17 @@
   }
 }
 
+.sg-v3-hero .v3-hero-image {
+  background: var(--color-cream, #F9F5F0) !important;
+}
+
 .sg-v3-hero .v3-hero-image img {
   border-radius: 0;
   max-width: 500px;
   width: 100%;
   height: auto;
-  box-shadow: none;
-  background: transparent;
+  box-shadow: none !important;
+  background: var(--color-cream, #F9F5F0) !important;
 }
 
 /* Center text on all CTA buttons */

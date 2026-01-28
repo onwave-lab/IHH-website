@@ -8,28 +8,32 @@
   background: var(--color-cream, #F9F5F0);
 }
 
-.sg-v3-hero .v3-hero-image {
-  position: relative;
+.sg-v3-hero .container {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
-.sg-v3-hero .v3-hero-image::before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  left: -20px;
-  right: 20px;
-  bottom: -20px;
-  background: var(--color-sage-green, #8D9488);
-  border-radius: 12px;
-  opacity: 0.15;
-  z-index: 0;
+.sg-v3-hero .v3-hero-content {
+  gap: 3rem;
+  align-items: center;
+}
+
+.sg-v3-hero .v3-hero-text {
+  max-width: 520px;
+}
+
+@media (max-width: 768px) {
+  .sg-v3-hero .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .sg-v3-hero .v3-hero-image img {
-  position: relative;
-  z-index: 1;
   border-radius: 8px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 100%;
+  height: auto;
 }
 
 /* Center text on all CTA buttons */

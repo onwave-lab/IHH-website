@@ -30,10 +30,12 @@
 }
 
 .sg-v3-hero .v3-hero-image img {
-  border-radius: 8px;
+  border-radius: 0;
   max-width: 500px;
   width: 100%;
   height: auto;
+  box-shadow: none;
+  background: transparent;
 }
 
 /* Center text on all CTA buttons */
@@ -63,6 +65,8 @@
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   margin: 1.5rem 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .sg-form-row {
@@ -73,11 +77,13 @@
 
 .sg-input {
   flex: 1;
+  min-width: 0;
   padding: 0.875rem 1rem;
   border: 1px solid #E0DDD8;
   border-radius: 8px;
   font-size: 1rem;
   font-family: inherit;
+  box-sizing: border-box;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 

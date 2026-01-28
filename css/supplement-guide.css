@@ -27,6 +27,37 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  /* Mobile hero image - larger, no shadow */
+  .sg-v3-hero .v3-hero-image-mobile {
+    width: 340px !important;
+    max-width: 90%;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: var(--color-cream, #F9F5F0) !important;
+  }
+
+  /* Mobile form styling */
+  .sg-v3-hero .sg-optin-form {
+    padding: 1.25rem;
+  }
+
+  .sg-v3-hero .sg-form-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .sg-v3-hero .sg-form-row .sg-input {
+    width: 100%;
+    flex: none;
+    padding: 1rem;
+    font-size: 16px; /* Prevents iOS zoom */
+  }
+
+  .sg-v3-hero .sg-submit-btn {
+    padding: 1rem;
+    font-size: 1rem;
+  }
 }
 
 .sg-v3-hero .v3-hero-image {

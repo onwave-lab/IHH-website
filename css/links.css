@@ -1,0 +1,234 @@
+/* ============================================
+   LINK TREE PAGE STYLES
+   Mobile-first design for social media bios
+   ============================================ */
+
+/* Page Layout */
+.links-page {
+  min-height: 100vh;
+  background-color: var(--color-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 60px;
+}
+
+.links-container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo */
+.links-logo {
+  margin-bottom: 24px;
+}
+
+.links-logo img {
+  height: 60px;
+  width: auto;
+}
+
+/* Profile Section */
+.links-profile {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.links-profile-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-sage-green);
+  margin-bottom: 16px;
+}
+
+.links-profile-name {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-charcoal);
+  margin: 0 0 4px 0;
+  font-weight: 400;
+}
+
+.links-profile-credentials {
+  font-family: var(--font-primary);
+  font-size: 0.875rem;
+  color: var(--color-sage-dark);
+  margin: 0 0 8px 0;
+  letter-spacing: 0.02em;
+}
+
+.links-profile-tagline {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  color: var(--color-medium-gray);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Link Sections */
+.links-section {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.links-section-title {
+  font-family: var(--font-heading);
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+  color: var(--color-sage-dark);
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+/* Link Buttons */
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px 24px;
+  background-color: var(--color-sage-green);
+  color: var(--color-cream);
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all 0.25s ease;
+  text-align: center;
+  position: relative;
+}
+
+.link-button:hover,
+.link-button:focus {
+  background-color: var(--color-sage-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(141, 148, 136, 0.3);
+}
+
+.link-button:active {
+  transform: translateY(0);
+}
+
+/* Featured button variant - same as default */
+.link-button--featured {
+  background-color: var(--color-sage-green);
+}
+
+.link-button--featured:hover,
+.link-button--featured:focus {
+  background-color: var(--color-sage-dark);
+}
+
+/* Secondary/outline button variant - same as default */
+.link-button--outline {
+  background-color: var(--color-sage-green);
+  color: var(--color-cream);
+  border: none;
+}
+
+.link-button--outline:hover,
+.link-button--outline:focus {
+  background-color: var(--color-sage-dark);
+  color: var(--color-cream);
+}
+
+/* Social Icons Section */
+.links-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-sage-light);
+  width: 100%;
+}
+
+.links-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-sage-light);
+  color: var(--color-sage-dark);
+  transition: all 0.25s ease;
+}
+
+.links-social a:hover,
+.links-social a:focus {
+  background-color: var(--color-sage-green);
+  color: var(--color-cream);
+  transform: translateY(-2px);
+}
+
+.links-social svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Minimal Footer */
+.links-footer {
+  margin-top: auto;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.links-footer p {
+  font-family: var(--font-primary);
+  font-size: 0.75rem;
+  color: var(--color-medium-gray);
+  margin: 0;
+}
+
+.links-footer a {
+  color: var(--color-sage-dark);
+  text-decoration: none;
+}
+
+.links-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (min-width: 480px) {
+  .links-page {
+    padding: 60px 20px 80px;
+  }
+
+  .links-logo img {
+    height: 70px;
+  }
+
+  .links-profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .links-profile-name {
+    font-size: 1.75rem;
+  }
+
+  .link-button {
+    font-size: 1rem;
+    padding: 18px 28px;
+  }
+}

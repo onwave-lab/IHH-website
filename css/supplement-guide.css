@@ -8,9 +8,37 @@
   background: var(--color-cream, #F9F5F0);
 }
 
+.sg-v3-hero .v3-hero-image {
+  position: relative;
+}
+
+.sg-v3-hero .v3-hero-image::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  right: 20px;
+  bottom: -20px;
+  background: var(--color-sage-green, #8D9488);
+  border-radius: 12px;
+  opacity: 0.15;
+  z-index: 0;
+}
+
 .sg-v3-hero .v3-hero-image img {
+  position: relative;
+  z-index: 1;
   border-radius: 8px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Center text on all CTA buttons */
+.sg-v3-hero .v3-btn,
+.sg-offering-btn,
+.sg-final-cta .v3-btn,
+.sg-modal .v3-btn {
+  justify-content: center;
+  text-align: center;
 }
 
 /* Reversed Hero Layout - Image on Left */
@@ -61,6 +89,7 @@
 
 .sg-submit-btn {
   width: 100%;
+  justify-content: center;
 }
 
 .sg-form-privacy {
@@ -164,11 +193,12 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
+  opacity: 0.95;
 }
 
 .sg-bonus-content p {
   font-size: 0.95rem;
-  opacity: 0.9;
+  opacity: 0.8;
   margin: 0;
 }
 

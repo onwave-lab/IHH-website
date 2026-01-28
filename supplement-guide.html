@@ -128,14 +128,19 @@
 
   <main id="main">
 
-    <!-- Hero Section -->
-    <section class="sg-hero" data-track-section="hero">
+    <!-- Hero Section - Matching Services Page Style -->
+    <section class="v3-hero sg-v3-hero" data-track-section="hero">
       <div class="container">
-        <div class="sg-hero-content">
-          <div class="sg-hero-text">
-            <span class="sg-hero-badge">Free Guide</span>
-            <h1 class="sg-hero-title">How to Know If a Supplement Is Right for You</h1>
-            <p class="sg-hero-subtitle">A simple, evidence-informed guide for women who want to feel their best—without wasting time, money, or energy.</p>
+        <div class="v3-hero-content">
+          <div class="v3-hero-text">
+            <span class="v3-hero-badge">Free Guide</span>
+            <h1 class="v3-hero-title">How to Know If a Supplement Is <span>Right for You</span></h1>
+            <img src="/images/supplement-guide/cover-mobile.webp"
+                 alt="How to Know If a Supplement Is Right for You - Free Guide"
+                 class="v3-hero-image-mobile"
+                 width="233" height="330"
+                 fetchpriority="high">
+            <p class="v3-hero-subtitle">A simple, evidence-informed guide for women who want to feel their best—without wasting time, money, or energy on supplements that may not serve them.</p>
 
             <!-- Email Opt-in Form -->
             <form class="sg-optin-form" data-mailerlite data-form-type="supplement-guide" id="hero-form">
@@ -144,37 +149,28 @@
                 <input type="text" name="firstName" placeholder="First Name" class="sg-input" autocomplete="given-name">
                 <input type="email" name="email" placeholder="Email Address" class="sg-input" required autocomplete="email">
               </div>
-              <button type="submit" class="sg-btn sg-btn-primary" data-track-cta="hero-download">
+              <button type="submit" class="v3-btn v3-btn-primary sg-submit-btn" data-track-cta="hero-download">
                 Send Me the Free Guide
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </button>
               <p class="sg-form-privacy">Your email is safe with us. Unsubscribe anytime.</p>
             </form>
 
-            <div class="sg-hero-trust">
-              <div class="sg-trust-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
-                <span>Evidence-Informed</span>
-              </div>
-              <div class="sg-trust-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
-                <span>Created by an NP</span>
-              </div>
-              <div class="sg-trust-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
-                <span>Instant Access</span>
-              </div>
+            <div class="v3-hero-trust">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Evidence-Informed | Created by an NP</span>
             </div>
           </div>
 
-          <div class="sg-hero-image">
+          <div class="v3-hero-image">
             <img src="/images/supplement-guide/cover.webp"
                  srcset="/images/supplement-guide/cover-mobile.webp 300w,
                          /images/supplement-guide/cover.webp 400w"
                  sizes="(max-width: 768px) 300px, 400px"
                  alt="How to Know If a Supplement Is Right for You - Free Guide"
                  width="400" height="566"
-                 class="sg-guide-preview">
+                 class="sg-guide-preview"
+                 fetchpriority="high">
           </div>
         </div>
       </div>
@@ -185,39 +181,33 @@
       <div class="container">
         <div class="sg-section-header">
           <h2 class="ir-styled-title">What You'll Learn</h2>
-          <p>The exact 6-step framework I use with clients to evaluate any supplement</p>
+          <p>A 6-step framework to help you make more informed supplement decisions</p>
         </div>
 
-        <div class="sg-steps-grid">
-          <div class="sg-step-card">
-            <div class="sg-step-number">1</div>
-            <h3>Check Your Foundations</h3>
-            <p>Why supplements can't override poor sleep, chronic stress, or blood sugar swings—and what to address first.</p>
+        <div class="sg-steps-simple">
+          <div class="sg-step-item">
+            <span class="sg-step-num">1</span>
+            <span class="sg-step-title">Check Your Foundations First</span>
           </div>
-          <div class="sg-step-card">
-            <div class="sg-step-number">2</div>
-            <h3>Read Your Body's Signals</h3>
-            <p>How to interpret symptoms, patterns, and labs to identify where nutrients may actually be needed.</p>
+          <div class="sg-step-item">
+            <span class="sg-step-num">2</span>
+            <span class="sg-step-title">Read Your Body's Signals</span>
           </div>
-          <div class="sg-step-card">
-            <div class="sg-step-number">3</div>
-            <h3>Try Food First</h3>
-            <p>When you can realistically get nutrients from food—and when supplementation makes more sense.</p>
+          <div class="sg-step-item">
+            <span class="sg-step-num">3</span>
+            <span class="sg-step-title">Consider Food Sources</span>
           </div>
-          <div class="sg-step-card">
-            <div class="sg-step-number">4</div>
-            <h3>Choose the Right Form</h3>
-            <p>Why magnesium glycinate isn't the same as citrate, and how co-factors affect absorption.</p>
+          <div class="sg-step-item">
+            <span class="sg-step-num">4</span>
+            <span class="sg-step-title">Choose the Right Form</span>
           </div>
-          <div class="sg-step-card">
-            <div class="sg-step-number">5</div>
-            <h3>Prioritize Your Budget</h3>
-            <p>How to focus on what actually moves the needle instead of buying everything.</p>
+          <div class="sg-step-item">
+            <span class="sg-step-num">5</span>
+            <span class="sg-step-title">Prioritize Your Budget</span>
           </div>
-          <div class="sg-step-card">
-            <div class="sg-step-number">6</div>
-            <h3>Evaluate Quality</h3>
-            <p>What to look for in third-party testing and why "natural" doesn't always mean effective.</p>
+          <div class="sg-step-item">
+            <span class="sg-step-num">6</span>
+            <span class="sg-step-title">Evaluate Quality &amp; Research</span>
           </div>
         </div>
 
@@ -227,82 +217,59 @@
           </div>
           <div class="sg-bonus-content">
             <h4>Plus: Printable Supplement Checklist</h4>
-            <p>Use this checklist before buying or adding any supplement to your routine.</p>
+            <p>A simple tool to use before adding any supplement to your routine.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Coming Soon: Course Interest Section -->
-    <section class="sg-interest sg-interest-course" data-track-section="course-interest">
+    <!-- Coming Soon Offerings -->
+    <section class="sg-offerings" data-track-section="offerings">
       <div class="container">
-        <div class="sg-interest-content">
-          <span class="sg-coming-soon-badge">Coming Soon</span>
-          <h2 class="ir-styled-title">Supplement Literacy for Women</h2>
-          <p class="sg-interest-subtitle">A self-paced course to help you make confident supplement decisions</p>
+        <div class="sg-section-header">
+          <h2 class="ir-styled-title">Want to Go Deeper?</h2>
+          <p>Educational resources and personalized support coming soon</p>
+        </div>
 
-          <div class="sg-interest-details">
-            <p>Imagine being able to walk into any store or scroll any website and know exactly how to evaluate a supplement—without second-guessing yourself or relying on influencer recommendations.</p>
-            <p>This course would teach you how to:</p>
-            <ul class="sg-interest-list">
-              <li>Understand what your body actually needs based on symptoms and labs</li>
-              <li>Read supplement labels like a practitioner</li>
-              <li>Identify red flags in marketing claims</li>
-              <li>Build a personalized, minimal supplement routine</li>
-              <li>Know when to seek professional guidance</li>
+        <div class="sg-offerings-grid">
+          <!-- Course Card -->
+          <div class="sg-offering-card">
+            <span class="sg-offering-badge">Coming Soon</span>
+            <h3>Confident Supplement Choices</h3>
+            <p class="sg-offering-subtitle">Self-Paced Educational Course</p>
+            <p class="sg-offering-description">Learn how to navigate the supplement aisle with confidence. This course covers how to read labels, recognize quality indicators, and ask the right questions before adding something new to your routine.</p>
+            <ul class="sg-offering-list">
+              <li>How to read and interpret supplement labels</li>
+              <li>Recognizing quality and red flags</li>
+              <li>Questions to ask before purchasing</li>
+              <li>Building a simplified, intentional routine</li>
             </ul>
-            <p class="sg-interest-price">Estimated Price: <strong>$39–$79</strong></p>
+            <p class="sg-offering-price">Investment: <strong>$79</strong></p>
+            <button type="button" class="v3-btn v3-btn-secondary sg-offering-btn" data-modal="course-modal" data-track-cta="course-interest">
+              Notify Me When Available
+            </button>
           </div>
 
-          <button type="button" class="sg-btn sg-btn-outline sg-interest-btn" data-track-cta="course-interest" id="course-interest-btn">
-            I'm Interested — Keep Me Posted
-          </button>
-          <p class="sg-interest-note">Click to let us know you'd be interested. No commitment.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Service: Personalized Supplement Review -->
-    <section class="sg-interest sg-interest-service" data-track-section="service-interest">
-      <div class="container">
-        <div class="sg-interest-split">
-          <div class="sg-interest-text">
-            <span class="sg-coming-soon-badge">Limited Availability</span>
-            <h2 class="ir-styled-title">Personalized Supplement Review</h2>
-            <p class="sg-interest-subtitle">Get expert eyes on your current supplement routine</p>
-
-            <div class="sg-interest-details">
-              <p>Not sure if your supplements are actually helping? Taking too many? Missing something important?</p>
-              <p>In this one-time review, I'll evaluate your current supplements in the context of:</p>
-              <ul class="sg-interest-list">
-                <li>Your health goals and concerns</li>
-                <li>Your season of life (preconception, pregnancy, postpartum, perimenopause)</li>
-                <li>Your symptoms and any recent labs</li>
-                <li>Potential interactions or redundancies</li>
-                <li>Quality and form recommendations</li>
-              </ul>
-              <p>You'll receive a written summary with clear recommendations on what to keep, what to stop, and what might be worth adding.</p>
-              <p class="sg-interest-price">Investment: <strong>$249–$299</strong></p>
-            </div>
-          </div>
-
-          <div class="sg-interest-form-container">
-            <div class="sg-waitlist-box">
-              <h3>Join the Waitlist</h3>
-              <p>Be the first to know when spots open up.</p>
-
-              <form class="sg-waitlist-form" data-mailerlite data-form-type="supplement-review-waitlist" id="waitlist-form">
-                <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
-                <input type="text" name="firstName" placeholder="First Name" class="sg-input" autocomplete="given-name">
-                <input type="email" name="email" placeholder="Email Address" class="sg-input" required autocomplete="email">
-                <button type="submit" class="sg-btn sg-btn-primary" data-track-cta="waitlist-signup">
-                  Join the Waitlist
-                </button>
-              </form>
-              <p class="sg-form-privacy">No spam. Just updates when this service launches.</p>
-            </div>
+          <!-- Service Card -->
+          <div class="sg-offering-card">
+            <span class="sg-offering-badge">Coming Soon</span>
+            <h3>Personalized Supplement Review</h3>
+            <p class="sg-offering-subtitle">One-Time Review Session</p>
+            <p class="sg-offering-description">Get a professional perspective on your current supplement routine. I'll review what you're taking in the context of your wellness goals, season of life, and any considerations you share.</p>
+            <ul class="sg-offering-list">
+              <li>Review of your current supplements</li>
+              <li>Consideration of your wellness goals</li>
+              <li>Written summary with observations</li>
+              <li>General educational guidance</li>
+            </ul>
+            <p class="sg-offering-price">Investment: <strong>$198</strong></p>
+            <button type="button" class="v3-btn v3-btn-secondary sg-offering-btn" data-modal="review-modal" data-track-cta="review-interest">
+              Join the Waitlist
+            </button>
           </div>
         </div>
+
+        <p class="sg-offerings-note">These offerings provide general wellness education and are not intended to diagnose, treat, or prescribe. For clinical services, please see my <a href="/services/">packages and programs</a>.</p>
       </div>
     </section>
 
@@ -321,9 +288,8 @@
             <h2>Alicia Harrison, MSN, APRN, FNP-C</h2>
             <p class="sg-provider-tagline">Board-Certified Family Nurse Practitioner</p>
 
-            <p>I created this guide because I see it all the time: women spending hundreds of dollars on supplements they saw on social media, with no idea if they actually need them or if they're even the right form.</p>
-            <p>As a nurse practitioner specializing in women's wellness, I help my clients cut through the noise and build intentional, personalized supplement routines that actually support their bodies.</p>
-            <p>This free guide gives you the same framework I use in clinical practice—so you can start making more confident decisions today.</p>
+            <p>I created this guide because I see so many women feeling overwhelmed by supplement choices—spending money on products they saw online without knowing if they're a good fit.</p>
+            <p>As a nurse practitioner focused on women's wellness, I believe in empowering women with the knowledge to make informed decisions. This guide shares the same framework I use to help women think through supplement choices more intentionally.</p>
 
             <div class="sg-provider-credentials">
               <div class="sg-credential">
@@ -362,7 +328,7 @@
               <span class="v3-faq-icon">+</span>
             </button>
             <div class="v3-faq-answer">
-              <p>Yes! The guide is completely free. Just enter your email and it will be sent directly to your inbox. I created it because I believe every woman deserves access to this foundational information.</p>
+              <p>Yes! The guide is completely free. Just enter your email and it will be sent directly to your inbox.</p>
             </div>
           </div>
           <div class="v3-faq-item">
@@ -371,7 +337,7 @@
               <span class="v3-faq-icon">+</span>
             </button>
             <div class="v3-faq-answer">
-              <p>This guide teaches you <em>how</em> to evaluate any supplement—not which specific ones to take. Supplement needs are highly individual based on your symptoms, labs, season of life, and goals. The guide gives you a framework to make those decisions more confidently, or to have better conversations with your healthcare provider.</p>
+              <p>This guide teaches you <em>how</em> to evaluate supplements—not which specific ones to take. Supplement needs are highly individual. The guide gives you a framework to make more informed decisions and have better conversations with your healthcare provider.</p>
             </div>
           </div>
           <div class="v3-faq-item">
@@ -380,7 +346,7 @@
               <span class="v3-faq-icon">+</span>
             </button>
             <div class="v3-faq-answer">
-              <p>Absolutely. The checklist at the end is perfect for evaluating supplements you're already taking. You might discover you're taking duplicates, the wrong forms, or things you don't actually need.</p>
+              <p>Yes. The checklist at the end is helpful for reflecting on supplements you're already taking. You may discover questions worth discussing with your healthcare provider.</p>
             </div>
           </div>
           <div class="v3-faq-item">
@@ -389,16 +355,16 @@
               <span class="v3-faq-icon">+</span>
             </button>
             <div class="v3-faq-answer">
-              <p>No. This guide is for educational purposes only and does not replace individualized medical advice. Always discuss supplement decisions with your healthcare provider, especially if you're pregnant, nursing, or managing health conditions.</p>
+              <p>No. This guide is for educational purposes only and does not replace individualized medical advice. Always discuss supplement decisions with your healthcare provider.</p>
             </div>
           </div>
           <div class="v3-faq-item">
             <button class="v3-faq-question" onclick="toggleFaq(this)">
-              <h3>What if I want more personalized guidance?</h3>
+              <h3>What if I want more personalized support?</h3>
               <span class="v3-faq-icon">+</span>
             </button>
             <div class="v3-faq-answer">
-              <p>If you want 1:1 support, I offer a Personalized Supplement Review service (waitlist above) as well as comprehensive wellness packages that include HTMA testing and protocol development. <a href="/services/">View my services</a> to learn more.</p>
+              <p>If you're looking for individualized clinical support, I offer wellness packages that include HTMA testing and protocol development for Kentucky residents. <a href="/services/">View my services</a> to learn more.</p>
             </div>
           </div>
         </div>
@@ -409,14 +375,14 @@
     <section class="sg-final-cta" data-track-section="final-cta">
       <div class="container">
         <div class="sg-final-cta-content">
-          <h2 class="ir-styled-title">Ready to Stop Guessing?</h2>
-          <p>Get the free guide and start making more confident supplement decisions today.</p>
+          <h2 class="ir-styled-title">Ready to Make More Informed Choices?</h2>
+          <p>Get the free guide and start building a more intentional approach to supplements.</p>
 
           <form class="sg-optin-form sg-optin-form-footer" data-mailerlite data-form-type="supplement-guide" id="footer-form">
             <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
-            <div class="sg-form-row">
+            <div class="sg-form-inline">
               <input type="email" name="email" placeholder="Enter your email" class="sg-input" required autocomplete="email">
-              <button type="submit" class="sg-btn sg-btn-primary" data-track-cta="footer-download">
+              <button type="submit" class="v3-btn v3-btn-primary" data-track-cta="footer-download">
                 Get the Free Guide
               </button>
             </div>
@@ -425,16 +391,50 @@
       </div>
     </section>
 
-    <!-- Educational & Imagery Disclaimer -->
+    <!-- Educational Disclaimer -->
     <section class="v2-disclaimer v2-disclaimer-compliant">
       <div class="container">
         <h4 class="v2-disclaimer-title">Educational Disclaimer</h4>
-        <p>This guide is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Supplement decisions should always be made with a qualified healthcare professional who understands your personal history.</p>
-        <p>Do not disregard or delay professional medical care based on information found in this guide. Individual results may vary. Clinical recommendations are available only to Kentucky residents receiving nurse practitioner services within my licensed scope.</p>
+        <p>This guide and all content on this page are for educational and informational purposes only. They are not intended to diagnose, treat, cure, or prevent any disease, nor do they constitute medical advice. This information does not replace the advice of your physician or other qualified healthcare provider. Always consult with a qualified healthcare professional before starting any supplement regimen.</p>
+        <p>Individual results may vary. Intention Holistic Health provides educational wellness guidance and, where applicable, Kentucky-based nurse practitioner services within scope and licensure.</p>
       </div>
     </section>
 
   </main>
+
+  <!-- Course Interest Modal -->
+  <div class="sg-modal" id="course-modal" role="dialog" aria-modal="true" aria-labelledby="course-modal-title">
+    <div class="sg-modal-overlay"></div>
+    <div class="sg-modal-content">
+      <button class="sg-modal-close" aria-label="Close modal">&times;</button>
+      <h3 id="course-modal-title">Get Notified About the Course</h3>
+      <p>Enter your email and we'll let you know when "Confident Supplement Choices" is available.</p>
+      <form class="sg-modal-form" data-mailerlite data-form-type="supplement-guide" id="course-modal-form">
+        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="text" name="firstName" placeholder="First Name" class="sg-input" autocomplete="given-name">
+        <input type="email" name="email" placeholder="Email Address" class="sg-input" required autocomplete="email">
+        <button type="submit" class="v3-btn v3-btn-primary">Notify Me</button>
+      </form>
+      <p class="sg-modal-privacy">No spam. Just a heads up when it launches.</p>
+    </div>
+  </div>
+
+  <!-- Review Interest Modal -->
+  <div class="sg-modal" id="review-modal" role="dialog" aria-modal="true" aria-labelledby="review-modal-title">
+    <div class="sg-modal-overlay"></div>
+    <div class="sg-modal-content">
+      <button class="sg-modal-close" aria-label="Close modal">&times;</button>
+      <h3 id="review-modal-title">Join the Supplement Review Waitlist</h3>
+      <p>Enter your email and we'll notify you when the Personalized Supplement Review service is available.</p>
+      <form class="sg-modal-form" data-mailerlite data-form-type="supplement-review-waitlist" id="review-modal-form">
+        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="text" name="firstName" placeholder="First Name" class="sg-input" autocomplete="given-name">
+        <input type="email" name="email" placeholder="Email Address" class="sg-input" required autocomplete="email">
+        <button type="submit" class="v3-btn v3-btn-primary">Join Waitlist</button>
+      </form>
+      <p class="sg-modal-privacy">No spam. Just updates when spots open.</p>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -505,39 +505,47 @@
       item.classList.toggle('open');
     }
 
-    // Course Interest Button - Track click via GA4
-    document.getElementById('course-interest-btn')?.addEventListener('click', function() {
-      // Track the interest click
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'interest_click', {
-          'interest_type': 'course',
-          'product_name': 'Supplement Literacy for Women',
-          'price_range': '$39-$79'
-        });
-      }
+    // Modal functionality
+    document.querySelectorAll('[data-modal]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const modalId = this.dataset.modal;
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.add('open');
+          document.body.style.overflow = 'hidden';
 
-      // Show confirmation
-      this.textContent = 'Thanks! We\'ll keep you posted.';
-      this.disabled = true;
-      this.classList.add('sg-btn-confirmed');
-
-      // Store in localStorage so we remember they clicked
-      localStorage.setItem('course_interest_clicked', 'true');
+          // Track modal open
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'modal_open', {
+              'modal_type': modalId,
+              'page': 'supplement-guide'
+            });
+          }
+        }
+      });
     });
 
-    // Check if already clicked course interest
-    if (localStorage.getItem('course_interest_clicked') === 'true') {
-      const btn = document.getElementById('course-interest-btn');
-      if (btn) {
-        btn.textContent = 'Thanks! We\'ll keep you posted.';
-        btn.disabled = true;
-        btn.classList.add('sg-btn-confirmed');
+    // Close modal
+    document.querySelectorAll('.sg-modal-close, .sg-modal-overlay').forEach(el => {
+      el.addEventListener('click', function() {
+        const modal = this.closest('.sg-modal');
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.sg-modal.open').forEach(modal => {
+          modal.classList.remove('open');
+          document.body.style.overflow = '';
+        });
       }
-    }
+    });
 
     // Form handling with MailerLite
     document.querySelectorAll('[data-mailerlite]').forEach(form => {
-      // Track first interaction for bot protection
       let firstInteraction = null;
       form.addEventListener('focusin', function() {
         if (!firstInteraction) firstInteraction = Date.now();
@@ -552,17 +560,8 @@
         const formType = this.dataset.formType;
         const honeypot = formData.get('website');
 
-        // Bot protection
-        if (honeypot) {
-          console.log('Bot detected');
-          return;
-        }
-
-        // Time-based check (must interact for at least 3 seconds)
-        if (firstInteraction && (Date.now() - firstInteraction) < 3000) {
-          console.log('Too fast - likely bot');
-          return;
-        }
+        if (honeypot) return;
+        if (firstInteraction && (Date.now() - firstInteraction) < 3000) return;
 
         const submitBtn = this.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
@@ -584,7 +583,6 @@
           const result = await response.json();
 
           if (result.success) {
-            // Track successful signup
             if (typeof gtag !== 'undefined') {
               gtag('event', 'form_submit', {
                 'form_type': formType,
@@ -592,17 +590,18 @@
               });
             }
 
-            // Show success message
-            if (formType === 'supplement-guide') {
-              submitBtn.innerHTML = 'Check Your Email!';
-              submitBtn.classList.add('sg-btn-success');
-            } else if (formType === 'supplement-review-waitlist') {
-              submitBtn.innerHTML = 'You\'re on the List!';
-              submitBtn.classList.add('sg-btn-success');
-            }
-
-            // Clear form
+            submitBtn.innerHTML = formType.includes('waitlist') ? "You're on the list!" : 'Check Your Email!';
+            submitBtn.classList.add('sg-btn-success');
             this.reset();
+
+            // Close modal after success if in modal
+            const modal = this.closest('.sg-modal');
+            if (modal) {
+              setTimeout(() => {
+                modal.classList.remove('open');
+                document.body.style.overflow = '';
+              }, 2000);
+            }
           } else {
             throw new Error(result.error || 'Something went wrong');
           }
@@ -610,11 +609,7 @@
           console.error('Form error:', error);
           submitBtn.innerHTML = 'Try Again';
           submitBtn.disabled = false;
-
-          // Reset after 3 seconds
-          setTimeout(() => {
-            submitBtn.innerHTML = originalText;
-          }, 3000);
+          setTimeout(() => { submitBtn.innerHTML = originalText; }, 3000);
         }
       });
     });
@@ -628,11 +623,9 @@
         entries.forEach(entry => {
           if (entry.isIntersecting && !observed.has(entry.target)) {
             observed.add(entry.target);
-            const sectionName = entry.target.dataset.trackSection;
-
             if (typeof gtag !== 'undefined') {
               gtag('event', 'section_view', {
-                'section': sectionName,
+                'section': entry.target.dataset.trackSection,
                 'page': 'supplement-guide'
               });
             }

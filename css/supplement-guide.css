@@ -14,13 +14,13 @@
 }
 
 /* Reversed Hero Layout - Image on Left */
-.sg-hero-reversed {
-  flex-direction: row-reverse;
-}
+@media (min-width: 1025px) {
+  .sg-hero-reversed .v3-hero-text {
+    order: 2;
+  }
 
-@media (max-width: 1024px) {
-  .sg-hero-reversed {
-    flex-direction: column;
+  .sg-hero-reversed .v3-hero-image {
+    order: 1;
   }
 }
 

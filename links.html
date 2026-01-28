@@ -92,12 +92,12 @@
         </div>
       </div>
 
-      <!-- Latest from the Blog -->
+      <!-- Latest from the Blog (auto-updates from blog.js) -->
       <div class="links-section">
         <h2 class="links-section-title">Latest from the Blog</h2>
         <div class="links-list">
-          <a href="/blog/post.html?post=2026-01-21-chatgpt-health-safety" class="link-button link-button--outline" data-track-cta="links-blog">
-            Is It Safe to Use ChatGPT Health?
+          <a id="latest-blog-link" href="/blog/" class="link-button link-button--outline" data-track-cta="links-blog">
+            Read the Blog
           </a>
         </div>
       </div>
@@ -125,6 +125,23 @@
 
     </div>
   </div>
+
+  <!-- Load blog.js to get latest post -->
+  <script src="/js/blog.js"></script>
+
+  <!-- Update latest blog link dynamically -->
+  <script>
+    (function() {
+      if (typeof BLOG_POSTS !== 'undefined' && BLOG_POSTS.length > 0) {
+        var latestPost = BLOG_POSTS[0];
+        var blogLink = document.getElementById('latest-blog-link');
+        if (blogLink && latestPost) {
+          blogLink.href = '/blog/post.html?post=' + latestPost.slug;
+          blogLink.textContent = latestPost.title;
+        }
+      }
+    })();
+  </script>
 
   <!-- GA4 Event Tracking for Link Clicks -->
   <script>

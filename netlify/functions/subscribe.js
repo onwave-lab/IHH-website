@@ -11,7 +11,7 @@ const GROUPS = {
   supplementGuide: '177801439665456539',      // Supplement Guide Downloads
   supplementReviewWaitlist: '177801256141587628',  // Supplement Review Waitlist
   courseInterest: '177807031141401967',       // Confident Supplement Choices Interest
-  kitchenStaples: 'PLACEHOLDER_ID'            // Kitchen Staples Checklist - UPDATE THIS ID
+  kitchenStaples: '177893653596866162'         // Kitchen Staples Checklist
 };
 
 exports.handler = async (event, context) => {

@@ -272,9 +272,14 @@
 /* Post Title Section (below featured image) */
 .post-title-section {
   background-color: var(--color-white);
-  padding: var(--spacing-lg) 0 var(--spacing-xs);
+  padding: var(--spacing-lg) 0 0;
   max-width: 900px;
   margin: 0 auto;
+}
+
+/* Reduce gap between title and content when subtitle follows */
+.post-title-section + .section {
+  padding-top: var(--spacing-sm);
 }
 
 .post-meta {

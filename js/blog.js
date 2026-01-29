@@ -78,7 +78,7 @@ Some of my go-to staples:
 
 With these on hand, dinner is rarely more than 30 minutes away. When dinner feels achievable, consistency becomes much easier.
 
-[CTA:Free Checklist: Healthy Kitchen Staples|Want a complete list of what I keep in my kitchen? I put together a printable checklist of nourishing, low-tox staples for whole foods living.|/kitchen-staples.html|Get the Free Checklist]
+[CTA:Free Checklist: Healthy Kitchen Staples|Want a complete list of what I keep in my kitchen? I put together a printable checklist of nourishing, low-tox staples for whole foods living.|kitchen-staples|Get the Free Checklist]
 
 ## 3. I Learned to Freeze Just About Everything
 
@@ -1478,14 +1478,17 @@ function parseMarkdown(markdown) {
   // Strip leading H1 (title is already displayed by the template)
   html = html.replace(/^\s*#\s+[^\n]+\n*/m, '');
 
-  // CTA boxes [CTA:title|description|link|buttonText]
-  html = html.replace(/\[CTA:([^|]+)\|([^|]+)\|([^|]+)\|([^\]]+)\]/gim, function(match, title, description, link, buttonText) {
+  // CTA boxes [CTA:title|description|formType|buttonText]
+  // formType is used to identify which lead magnet (e.g., "kitchen-staples")
+  html = html.replace(/\[CTA:([^|]+)\|([^|]+)\|([^|]+)\|([^\]]+)\]/gim, function(match, title, description, formType, buttonText) {
+    var escapedTitle = title.trim().replace(/'/g, "\\'");
+    var escapedFormType = formType.trim().replace(/'/g, "\\'");
     return `<div class="blog-cta-box">
       <div class="blog-cta-content">
         <h4 class="blog-cta-title">${title.trim()}</h4>
         <p class="blog-cta-description">${description.trim()}</p>
       </div>
-      <a href="${link.trim()}" class="blog-cta-button" data-track-cta="blog-inline-cta">${buttonText.trim()}</a>
+      <button type="button" class="blog-cta-button" onclick="openLeadModal('${escapedTitle}', '${escapedFormType}')" data-track-cta="blog-inline-cta">${buttonText.trim()}</button>
     </div>`;
   });
 

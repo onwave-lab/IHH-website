@@ -266,6 +266,24 @@
   <script src="/js/blog.js"></script>
   <script src="/js/blog-superior.js"></script>
 
+  <!-- Lead Magnet Modal -->
+  <div class="blog-lead-modal" id="blog-lead-modal" role="dialog" aria-modal="true" aria-labelledby="lead-modal-title">
+    <div class="blog-lead-modal-overlay"></div>
+    <div class="blog-lead-modal-content">
+      <button class="blog-lead-modal-close" aria-label="Close modal">&times;</button>
+      <h3 id="lead-modal-title" class="blog-lead-modal-title">Get Your Free Checklist</h3>
+      <p class="blog-lead-modal-description">Enter your info below and we'll send it straight to your inbox.</p>
+      <form class="blog-lead-modal-form" id="blog-lead-form">
+        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="text" name="firstName" placeholder="First Name" class="blog-lead-input" autocomplete="given-name">
+        <input type="email" name="email" placeholder="Email Address" class="blog-lead-input" required autocomplete="email">
+        <input type="hidden" name="formType" id="lead-form-type" value="">
+        <button type="submit" class="blog-lead-submit">Send It To Me</button>
+      </form>
+      <p class="blog-lead-modal-privacy">Your email is safe. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
   <!-- Cookie Consent Banner -->
   <div class="cookie-consent" id="cookie-consent" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-description">
     <div class="cookie-consent-inner">
@@ -296,6 +314,98 @@
       declineBtn.addEventListener('click', function() {
         localStorage.setItem('cookie_consent', 'declined');
         banner.classList.remove('show');
+      });
+    })();
+  </script>
+
+  <!-- Lead Magnet Modal Script -->
+  <script>
+    (function() {
+      var modal = document.getElementById('blog-lead-modal');
+      var form = document.getElementById('blog-lead-form');
+      var formTypeInput = document.getElementById('lead-form-type');
+      var modalTitle = document.getElementById('lead-modal-title');
+      var firstInteraction = null;
+
+      // Open modal function (called from CTA buttons)
+      window.openLeadModal = function(title, formType) {
+        modalTitle.textContent = title || 'Get Your Free Resource';
+        formTypeInput.value = formType || 'kitchen-staples';
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        firstInteraction = null;
+
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'modal_open', { 'modal_type': formType, 'page': 'blog-post' });
+        }
+      };
+
+      // Close modal
+      function closeModal() {
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      modal.querySelector('.blog-lead-modal-close').addEventListener('click', closeModal);
+      modal.querySelector('.blog-lead-modal-overlay').addEventListener('click', closeModal);
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+      });
+
+      // Track first interaction for bot protection
+      form.addEventListener('focusin', function() {
+        if (!firstInteraction) firstInteraction = Date.now();
+      });
+
+      // Form submission
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        var formData = new FormData(this);
+        var email = formData.get('email');
+        var firstName = formData.get('firstName') || '';
+        var formType = formData.get('formType');
+        var honeypot = formData.get('website');
+
+        if (honeypot) return;
+        if (firstInteraction && (Date.now() - firstInteraction) < 3000) return;
+
+        var submitBtn = this.querySelector('button[type="submit"]');
+        var originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+
+        try {
+          var response = await fetch('/.netlify/functions/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              email: email,
+              firstName: firstName,
+              formType: formType,
+              source: 'blog-inline-cta'
+            })
+          });
+
+          var result = await response.json();
+
+          if (result.success) {
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'form_submit', { 'form_type': formType, 'page': 'blog-post' });
+            }
+            submitBtn.textContent = 'Check Your Email!';
+            submitBtn.classList.add('success');
+            form.reset();
+            setTimeout(closeModal, 2500);
+          } else {
+            throw new Error(result.error || 'Something went wrong');
+          }
+        } catch (error) {
+          console.error('Form error:', error);
+          submitBtn.textContent = 'Try Again';
+          submitBtn.disabled = false;
+          setTimeout(function() { submitBtn.textContent = originalText; submitBtn.disabled = false; }, 3000);
+        }
       });
     })();
   </script>

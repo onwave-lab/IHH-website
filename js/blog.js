@@ -1845,6 +1845,12 @@ function renderSinglePost() {
     return;
   }
 
+  // Redirect to superior template if this post uses it
+  if (post.template === 'superior' && !window.location.pathname.includes('post-superior')) {
+    window.location.replace('/blog/post-superior.html?post=' + postSlug);
+    return;
+  }
+
   // Update page title
   document.title = post.title + ' | Intention Holistic Health';
 

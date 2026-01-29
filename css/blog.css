@@ -358,10 +358,23 @@
   margin-top: 0;
 }
 
+.post-content h1 {
+  text-align: left;
+}
+
 .post-content h2 {
   font-size: var(--font-size-2xl);
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-md);
+}
+
+/* Subheading directly after main title - reduce gap and align left */
+.post-content h1 + h2 {
+  margin-top: var(--spacing-xs);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  font-weight: 400;
 }
 
 .post-content h3 {

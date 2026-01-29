@@ -9,7 +9,6 @@ const BLOG_POSTS = [
   {
     slug: '2026-01-28-sustainable-home-cooking',
     title: 'Things I Do to Make Home Cooking More Sustainable',
-    subtitle: 'Physically, Mentally, & Financially—Without Spending a Whole Day Meal Prepping',
     date: '2026-01-28',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Sustainable home cooking isn\'t about elaborate recipes or perfectly stocked fridges. It\'s about creating rhythms that support your body, protect your mental energy, and make financial sense in real life.',
@@ -17,7 +16,6 @@ const BLOG_POSTS = [
     cardAspectRatio: '83.83%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'nutrition'],
-    template: 'superior',
     content: `
 # Things I Do to Make Home Cooking More Sustainable
 ## Physically, Mentally, & Financially—Without Spending a Whole Day Meal Prepping
@@ -164,6 +162,8 @@ Sustainable home cooking works because it supports the body, mind, and budget at
 
 You don't need to adopt every habit at once. Choosing one system—batch-chopping vegetables, freezing leftovers, keeping snacks on hand, or trying a whole chicken—creates ease. And ease is what makes cooking at home sustainable long-term.
 
+[CTA:Get the Full Kitchen Staples Checklist|Ready to stock your kitchen with nourishing, low-tox staples? Download my free printable checklist with everything I keep on hand for whole foods living.|kitchen-staples|Download the Free Checklist]
+
 ## References
 
 Hall, K. D., Ayuketah, A., Brychta, R., Cai, H., Cassimatis, T., Chen, K. Y., … Zhou, M. (2019). Ultra-processed diets cause excess calorie intake and weight gain: An inpatient randomized controlled trial of ad libitum food intake. *Cell Metabolism, 30*(1), 67–77.e3. https://doi.org/10.1016/j.cmet.2019.05.008
@@ -171,15 +171,7 @@ Hall, K. D., Ayuketah, A., Brychta, R., Cai, H., Cassimatis, T., Chen, K. Y., �
 Monteiro, C. A., Cannon, G., Lawrence, M., Costa Louzada, M. L., & Pereira Machado, P. (2019). Ultra-processed foods, diet quality, and health using the NOVA classification system. *Public Health Nutrition, 22*(5), 936–941. https://doi.org/10.1017/S1368980018003762
 
 Saksena, M. J., Okrent, A. M., Anekwe, T. D., Cho, C., Dicken, C., Effland, A., … Todd, J. E. (2018). *America's eating habits: Food away from home.* U.S. Department of Agriculture, Economic Research Service.
-    `,
-    disclaimer: `This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
-
-Any individuals depicted in images on this website or associated content are models or stock photography subjects and are not patients, clients, or recipients of services from Intention Holistic Health. Images are used for illustrative purposes only and do not represent clinical relationships, medical outcomes, or specific health conditions.
-
-Intention Holistic Health provides educational wellness guidance and, where applicable, Kentucky-based nurse practitioner services within scope and licensure.`,
-    schema: {
-      description: 'Practical systems for sustainable home cooking that support your body, protect your mental energy, and make financial sense. Learn meal rotation, batch prep, freezer strategies, and more.'
-    }
+    `
   },
   {
     slug: '2026-01-21-chatgpt-health-safety',

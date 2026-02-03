@@ -1271,7 +1271,7 @@ p {
 /* Top headline - "PREPARE + RESTORE" - inside text column, left-aligned */
 .hero-banner-headline-top {
   font-family: 'Playfair Display SC', 'Playfair Display', var(--font-heading);
-  font-size: min(4.5vw, 58.5px); /* Cap at 58.5px on wide screens */
+  font-size: min(3.6vw, 46.8px); /* Reduced by 20% from 4.5vw/58.5px */
   font-weight: 400;
   font-style: italic;
   text-transform: uppercase;
@@ -1314,10 +1314,10 @@ p {
   min-width: 0; /* Allows flex item to shrink below content size */
 }
 
-/* Bottom headline - "WELLNESS" - aligned with text column */
+/* Bottom headline - "YOUR BODY FOR MOTHERHOOD" - aligned with text column */
 .hero-banner-headline-bottom {
   font-family: 'Playfair Display SC', 'Playfair Display', var(--font-heading);
-  font-size: min(4.5vw, 58.5px); /* Cap at same size as "Holistic Motherhood" */
+  font-size: min(3.6vw, 46.8px); /* Reduced by 20% from 4.5vw/58.5px */
   font-weight: 400;
   font-style: italic;
   text-transform: uppercase;
@@ -1359,7 +1359,7 @@ p {
   }
 
   .hero-banner-headline-top {
-    font-size: 7vw;
+    font-size: 5.6vw; /* Reduced by 20% from 7vw */
     white-space: normal;
     margin-bottom: 0.2em;
     text-align: center;
@@ -1381,10 +1381,10 @@ p {
     display: contents;
   }
 
-  /* Reorder: Wellness first, then image, then body, then script */
+  /* Reorder: Headline bottom first, then image, then body, then script */
   .hero-banner-headline-bottom {
     order: -2;
-    font-size: 7vw;
+    font-size: 5.6vw; /* Reduced by 20% from 7vw */
     margin-bottom: 0.2em;
     text-align: center;
     width: 100%;
@@ -1490,9 +1490,9 @@ p {
   }
 }
 
-/* Smaller variant for Intention Process (original size before 50% increase) */
+/* Smaller variant for Intention Foundations Model (reduced by 20%) */
 .section-header-lifestyle--smaller .script-title {
-  font-size: 11.2rem;
+  font-size: 8.96rem; /* Reduced by 20% from 11.2rem */
 }
 
 .section-header-lifestyle--smaller .subtitle {
@@ -1501,7 +1501,7 @@ p {
 
 @media (max-width: 991px) {
   .section-header-lifestyle--smaller .script-title {
-    font-size: 8.16rem;
+    font-size: 6.53rem; /* Reduced by 20% from 8.16rem */
   }
   .section-header-lifestyle--smaller .subtitle {
     margin-top: -0.8rem;
@@ -1510,7 +1510,7 @@ p {
 
 @media (max-width: 767px) {
   .section-header-lifestyle--smaller .script-title {
-    font-size: 5.7rem;
+    font-size: 4.56rem; /* Reduced by 20% from 5.7rem */
   }
   .section-header-lifestyle--smaller .subtitle {
     margin-top: -0.5rem;
@@ -1699,6 +1699,7 @@ p {
 /* Who I Help Section */
 .who-i-help {
   background-color: var(--color-white);
+  margin-top: var(--spacing-xl);
 }
 
 .who-i-help-content {
@@ -1858,6 +1859,7 @@ p {
   font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 600;
+  font-style: italic;
   color: var(--color-sage-green);
   margin-top: var(--spacing-md);
   margin-bottom: var(--spacing-xs);

@@ -87,7 +87,7 @@
 
 @font-face {
   font-family: 'Beautifully Delicious Script';
-  /* Subset: The Intention Foundations Model Services intentional. nourished. restored. */
+  /* Subset: The Intention Foundations Model Services intentional. simple. sustainable. */
   src: url('../fonts/BDScript-subset.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -1282,8 +1282,8 @@ p {
   line-height: 1.3;
 }
 
-.headline-line {
-  white-space: nowrap; /* Keep each phrase on one line */
+.headline-line-nowrap {
+  white-space: nowrap; /* Keep "Prepare + Restore" on one line */
   display: inline;
 }
 

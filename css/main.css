@@ -1271,7 +1271,7 @@ p {
 /* Top headline - "PREPARE + RESTORE" - inside text column, left-aligned */
 .hero-banner-headline-top {
   font-family: 'Playfair Display SC', 'Playfair Display', var(--font-heading);
-  font-size: min(3.6vw, 46.8px); /* Reduced by 20% from 4.5vw/58.5px */
+  font-size: min(3.24vw, 42.12px); /* Reduced by 10% from 3.6vw/46.8px */
   font-weight: 400;
   font-style: italic;
   text-transform: uppercase;
@@ -1317,19 +1317,19 @@ p {
 /* Bottom headline - "YOUR BODY FOR MOTHERHOOD" - aligned with text column */
 .hero-banner-headline-bottom {
   font-family: 'Playfair Display SC', 'Playfair Display', var(--font-heading);
-  font-size: min(3.6vw, 46.8px); /* Reduced by 20% from 4.5vw/58.5px */
+  font-size: min(3.24vw, 42.12px); /* Reduced by 10% from 3.6vw/46.8px */
   font-weight: 400;
   font-style: italic;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--color-charcoal);
-  margin-bottom: 0.3em;
+  margin-bottom: 0.6em; /* Increased space between title and body */
   line-height: 1.1;
 }
 
 .hero-banner-body {
   font-family: 'Glacial Indifference', 'Poppins', var(--font-body);
-  font-size: min(1.4vw, 18px); /* Cap at 18px (1.4% of 1260px) */
+  font-size: min(1.26vw, 16.2px); /* Reduced by 10% from 1.4vw/18px */
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -1359,7 +1359,7 @@ p {
   }
 
   .hero-banner-headline-top {
-    font-size: 5.6vw; /* Reduced by 20% from 7vw */
+    font-size: 5.04vw; /* Reduced by 10% from 5.6vw */
     white-space: normal;
     margin-bottom: 0.2em;
     text-align: center;
@@ -1384,8 +1384,8 @@ p {
   /* Reorder: Headline bottom first, then image, then body, then script */
   .hero-banner-headline-bottom {
     order: -2;
-    font-size: 5.6vw; /* Reduced by 20% from 7vw */
-    margin-bottom: 0.2em;
+    font-size: 5.04vw; /* Reduced by 10% from 5.6vw */
+    margin-bottom: 0.5em; /* Space between title and body */
     text-align: center;
     width: 100%;
   }
@@ -1398,7 +1398,7 @@ p {
 
   .hero-banner-body {
     order: 0;
-    font-size: 3.2vw;
+    font-size: 2.88vw; /* Reduced by 10% from 3.2vw */
     white-space: normal;
     text-align: center;
     width: 100%;
@@ -1412,7 +1412,7 @@ p {
 
   .hero-banner-v2 .hero-banner-script {
     order: 1;
-    font-size: 12vw;
+    font-size: 10.8vw; /* Reduced by 10% from 12vw */
     text-align: center;
     width: 100%;
   }
@@ -1420,7 +1420,7 @@ p {
 
 .hero-banner-script {
   font-family: 'Beautifully Delicious Script', cursive;
-  font-size: min(4.41vw, 68.4px); /* Reduced by 10% from 4.9vw/76px */
+  font-size: min(3.97vw, 61.56px); /* Reduced by 10% from 4.41vw/68.4px */
   font-weight: 400;
   color: var(--color-charcoal);
   font-style: normal;

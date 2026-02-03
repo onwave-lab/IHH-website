@@ -1268,19 +1268,22 @@ p {
   width: 100%;
 }
 
-/* Top headline - "PREPARE + RESTORE" - inside text column, left-aligned */
-.hero-banner-headline-top {
+/* Combined headline - "PREPARE + RESTORE YOUR BODY FOR MOTHERHOOD" */
+.hero-banner-headline-combined {
   font-family: 'Playfair Display SC', 'Playfair Display', var(--font-heading);
-  font-size: min(3.24vw, 42.12px); /* Reduced by 10% from 3.6vw/46.8px */
+  font-size: min(3.24vw, 42.12px);
   font-weight: 400;
   font-style: italic;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--color-charcoal);
   text-align: left;
-  margin-bottom: -0.1em; /* Reduced spacing between headline lines */
-  line-height: 1.1;
-  white-space: nowrap;
+  margin-bottom: 0.6em;
+  line-height: 1.2;
+}
+
+.headline-break {
+  display: block; /* Line break on desktop */
 }
 
 /* Two-column layout: image left, text right - centered in section */
@@ -1314,18 +1317,7 @@ p {
   min-width: 0; /* Allows flex item to shrink below content size */
 }
 
-/* Bottom headline - "YOUR BODY FOR MOTHERHOOD" - aligned with text column */
-.hero-banner-headline-bottom {
-  font-family: 'Playfair Display SC', 'Playfair Display', var(--font-heading);
-  font-size: min(3.24vw, 42.12px); /* Reduced by 10% from 3.6vw/46.8px */
-  font-weight: 400;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--color-charcoal);
-  margin-bottom: 0.6em; /* Increased space between title and body */
-  line-height: 1.1;
-}
+/* hero-banner-headline-bottom removed - now using combined headline */
 
 .hero-banner-body {
   font-family: 'Glacial Indifference', 'Poppins', var(--font-body);
@@ -1358,13 +1350,20 @@ p {
     align-items: center;
   }
 
-  .hero-banner-headline-top {
-    font-size: 5.04vw; /* Reduced by 10% from 5.6vw */
-    white-space: normal;
-    margin-bottom: 0.2em;
+  .hero-banner-headline-combined {
+    font-size: 5.04vw;
     text-align: center;
     width: 100%;
     order: -3;
+    margin-bottom: 0.3em;
+  }
+
+  .headline-break {
+    display: inline; /* Remove line break on mobile - flows as one line */
+  }
+
+  .headline-break::before {
+    content: ' '; /* Add space instead of line break */
   }
 
   .hero-banner-content {
@@ -1381,14 +1380,7 @@ p {
     display: contents;
   }
 
-  /* Reorder: Headline bottom first, then image, then body, then script */
-  .hero-banner-headline-bottom {
-    order: -2;
-    font-size: 5.04vw; /* Reduced by 10% from 5.6vw */
-    margin-bottom: 0.5em; /* Space between title and body */
-    text-align: center;
-    width: 100%;
-  }
+  /* hero-banner-headline-bottom removed - now using combined headline */
 
   .hero-banner-image-wrapper {
     order: -1;

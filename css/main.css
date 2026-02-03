@@ -1278,19 +1278,19 @@ p {
   letter-spacing: 0.15em;
   color: var(--color-charcoal);
   text-align: left;
-  margin-bottom: 0.1em;
-  line-height: 1.2;
+  margin-bottom: -0.1em; /* Reduced spacing between headline lines */
+  line-height: 1.1;
   white-space: nowrap;
 }
 
 /* Two-column layout: image left, text right - centered in section */
 .hero-banner-content {
   display: grid;
-  grid-template-columns: 280px auto; /* Fixed 280px image column, auto text column */
+  grid-template-columns: 322px auto; /* Increased by 15% from 280px */
   gap: 48px; /* Fixed gap */
-  align-items: start; /* Both columns anchor to top */
+  align-items: center; /* Vertically center both columns */
   justify-content: center; /* Center the grid in the container */
-  max-width: 800px; /* Constrain width for better centering */
+  max-width: 850px; /* Adjusted for larger image */
   margin: 0 auto;
 }
 
@@ -1323,8 +1323,8 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--color-charcoal);
-  margin-bottom: 0.4em;
-  line-height: 1.2;
+  margin-bottom: 0.3em;
+  line-height: 1.1;
 }
 
 .hero-banner-body {
@@ -1420,7 +1420,7 @@ p {
 
 .hero-banner-script {
   font-family: 'Beautifully Delicious Script', cursive;
-  font-size: min(4.9vw, 76px); /* Cap font size on wide screens */
+  font-size: min(4.41vw, 68.4px); /* Reduced by 10% from 4.9vw/76px */
   font-weight: 400;
   color: var(--color-charcoal);
   font-style: normal;
@@ -1858,7 +1858,7 @@ p {
 .who-i-help-subhead {
   font-family: var(--font-heading);
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 400;
   font-style: italic;
   color: var(--color-sage-green);
   margin-top: var(--spacing-md);

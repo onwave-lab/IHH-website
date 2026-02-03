@@ -3353,3 +3353,129 @@
     padding-top: calc(80px + var(--spacing-md));
   }
 }
+
+/* ============================================
+   StoryBrand Two-Column Problem Section
+   ============================================ */
+
+.v3-problem-two-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  max-width: 900px;
+  margin: 0 auto var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .v3-problem-two-column {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+  }
+}
+
+.v3-problem-column {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(141, 148, 136, 0.15);
+}
+
+.v3-problem-column-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-sage-green);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-sage-green);
+}
+
+.v3-problem-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.v3-problem-checklist li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-base);
+  color: var(--color-medium-gray);
+  line-height: 1.6;
+}
+
+.v3-problem-checklist li::before {
+  content: "□";
+  position: absolute;
+  left: 0;
+  color: var(--color-sage-green);
+  font-size: 1.1em;
+}
+
+.v3-problem-closing {
+  text-align: center;
+  font-style: italic;
+  color: var(--color-charcoal);
+  font-size: var(--font-size-lg);
+  max-width: 700px;
+  margin: var(--spacing-lg) auto 0;
+  line-height: 1.7;
+}
+
+/* ============================================
+   Package Descriptions
+   ============================================ */
+
+.v3-package-description {
+  font-size: var(--font-size-sm);
+  color: var(--color-medium-gray);
+  line-height: 1.6;
+  padding: 0 var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+/* ============================================
+   Three-Column Process Grid
+   ============================================ */
+
+.v3-process-grid-three {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .v3-process-grid-three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.v3-process-grid-three .v3-process-box {
+  text-align: center;
+}
+
+.v3-process-grid-three .v3-process-box-icon {
+  margin: 0 auto var(--spacing-md);
+}
+
+.v3-process-grid-three .v3-process-box-icon svg {
+  color: var(--color-sage-green);
+  stroke: var(--color-sage-green);
+}
+
+.v3-process-grid-three .v3-process-box h4 {
+  font-family: var(--font-heading);
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.v3-process-grid-three .v3-process-box p {
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+}

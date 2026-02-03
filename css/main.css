@@ -87,7 +87,7 @@
 
 @font-face {
   font-family: 'Beautifully Delicious Script';
-  /* Subset: S T I P C A e r v i c s h n t o a l m p . (space) - all script text on site */
+  /* Subset: The Intention Foundations Model Services intentional. nourished. restored. */
   src: url('../fonts/BDScript-subset.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -1268,7 +1268,7 @@ p {
   width: 100%;
 }
 
-/* Top headline - "HOLISTIC MOTHERHOOD" - spans full width */
+/* Top headline - "PREPARE + RESTORE" - inside text column, left-aligned */
 .hero-banner-headline-top {
   font-family: 'Playfair Display SC', 'Playfair Display', var(--font-heading);
   font-size: min(4.5vw, 58.5px); /* Cap at 58.5px on wide screens */
@@ -1277,23 +1277,21 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--color-charcoal);
-  text-align: center;
+  text-align: left;
   margin-bottom: 0.1em;
   line-height: 1.2;
-  width: 100%;
-  max-width: 1260px; /* Hardcoded same as .container */
-  padding: 0 40px;
-  box-sizing: border-box;
   white-space: nowrap;
 }
 
-/* Two-column layout: image left, text right */
+/* Two-column layout: image left, text right - centered in section */
 .hero-banner-content {
   display: grid;
-  grid-template-columns: 280px 1fr; /* Fixed 280px image column, flexible text column */
+  grid-template-columns: 280px auto; /* Fixed 280px image column, auto text column */
   gap: 48px; /* Fixed gap */
   align-items: start; /* Both columns anchor to top */
-  /* Container wrapper handles max-width, centering, and padding */
+  justify-content: center; /* Center the grid in the container */
+  max-width: 800px; /* Constrain width for better centering */
+  margin: 0 auto;
 }
 
 .hero-banner-image-wrapper {
@@ -1362,11 +1360,11 @@ p {
 
   .hero-banner-headline-top {
     font-size: 7vw;
-    padding: 0 15px;
     white-space: normal;
-    margin-bottom: 0;
+    margin-bottom: 0.2em;
     text-align: center;
     width: 100%;
+    order: -3;
   }
 
   .hero-banner-content {
@@ -1855,6 +1853,24 @@ p {
   }
 }
 
+/* Who I Help - Sub-avatar headings */
+.who-i-help-subhead {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-sage-green);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  .who-i-help-subhead {
+    font-size: 1.2rem;
+  }
+}
+
 /* Is This You Section */
 .is-this-you {
   background-color: var(--color-light-cream);
@@ -1925,6 +1941,89 @@ p {
 
 .process-text {
   color: var(--color-medium-gray);
+}
+
+/* Interactive Process Steps - The Intention Foundations Model */
+.process-steps-interactive {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 900px;
+  margin: var(--spacing-lg) auto;
+}
+
+@media (min-width: 768px) {
+  .process-steps-interactive {
+    flex-direction: row;
+    align-items: stretch;
+    gap: var(--spacing-sm);
+  }
+}
+
+.process-step-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  position: relative;
+}
+
+.process-step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.process-step-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-sage-green), var(--color-sage-dark));
+  color: var(--color-white);
+  border-radius: 50%;
+  margin: 0 auto var(--spacing-sm);
+}
+
+.process-step-number {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-sage-green);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--spacing-xs);
+}
+
+.process-step-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  margin-bottom: var(--spacing-sm);
+}
+
+.process-step-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-medium-gray);
+  line-height: 1.6;
+}
+
+.process-step-connector {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .process-step-connector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-sage-green);
+    opacity: 0.5;
+    flex-shrink: 0;
+  }
 }
 
 /* About Preview Section */

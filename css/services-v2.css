@@ -3528,7 +3528,7 @@
 /* Script font title for Intention Foundations Model */
 .v3-section-title.v3-script-title {
   font-family: 'Beautifully Delicious Script', cursive !important;
-  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-size: clamp(2.8rem, 7vw, 3.85rem);
   text-transform: none !important;
   letter-spacing: 0 !important;
   font-weight: 400;

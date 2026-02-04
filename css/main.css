@@ -3724,3 +3724,9 @@ p {
   font-style: italic;
   color: var(--color-sage-dark);
 }
+
+/* Foundations Model title - larger script font */
+.foundations-model-title {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  text-transform: none;
+}

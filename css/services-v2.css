@@ -3524,3 +3524,13 @@
   color: var(--color-sage-dark);
   margin-top: var(--spacing-lg);
 }
+
+/* Script font title for Intention Foundations Model */
+.v3-script-title {
+  font-family: 'Beautifully Delicious Script', cursive;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-style: normal;
+}

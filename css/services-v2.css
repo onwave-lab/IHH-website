@@ -3491,3 +3491,36 @@
   font-size: var(--font-size-sm);
   line-height: 1.7;
 }
+
+/* -----------------------------------------
+   STAKES SECTION (Services V3)
+   ----------------------------------------- */
+.v3-stakes {
+  background: var(--color-cream);
+  padding: var(--spacing-2xl) 0;
+  text-align: center;
+}
+
+.v3-stakes-content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.v3-stakes .v3-section-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: var(--spacing-lg);
+}
+
+.v3-stakes p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-charcoal);
+  margin-bottom: var(--spacing-md);
+}
+
+.v3-stakes-philosophical {
+  font-family: var(--font-secondary);
+  font-size: 1.25rem;
+  color: var(--color-sage-dark);
+  margin-top: var(--spacing-lg);
+}

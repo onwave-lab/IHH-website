@@ -3680,3 +3680,47 @@ p {
     font-size: 0.9rem;
   }
 }
+
+/* -----------------------------------------
+   STAKES SECTION (Homepage)
+   ----------------------------------------- */
+.stakes-section {
+  background: var(--color-cream);
+  padding: var(--spacing-2xl) 0;
+}
+
+.stakes-section h2 {
+  font-family: var(--font-secondary);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: var(--color-charcoal);
+  margin-bottom: var(--spacing-lg);
+}
+
+.stakes-body {
+  max-width: 700px;
+  margin: 0 auto var(--spacing-md);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-charcoal);
+}
+
+.stakes-philosophical {
+  font-family: var(--font-secondary);
+  font-size: 1.25rem;
+  color: var(--color-sage-dark);
+  margin-top: var(--spacing-lg);
+}
+
+/* Process section closing text */
+.process-closing {
+  max-width: 650px;
+  margin: 0 auto var(--spacing-md);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-charcoal);
+}
+
+.process-closing.process-success {
+  font-style: italic;
+  color: var(--color-sage-dark);
+}

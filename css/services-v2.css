@@ -3437,8 +3437,20 @@
   color: var(--color-medium-gray);
   line-height: 1.6;
   padding: 0 var(--spacing-sm);
+  margin-top: var(--spacing-md);
   margin-bottom: var(--spacing-md);
   text-align: center;
+}
+
+.v3-package-link {
+  color: var(--color-sage-green);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--transition-base);
+}
+
+.v3-package-link:hover {
+  color: var(--color-sage-dark);
 }
 
 /* ============================================

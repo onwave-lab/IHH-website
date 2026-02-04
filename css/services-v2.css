@@ -3534,3 +3534,10 @@
   font-weight: 400;
   font-style: normal !important;
 }
+
+/* Keep title on one line for desktop */
+@media (min-width: 768px) {
+  .v3-section-title.v3-script-title {
+    white-space: nowrap;
+  }
+}

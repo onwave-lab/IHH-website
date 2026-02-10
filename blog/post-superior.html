@@ -17,10 +17,15 @@
       gtag('consent', 'update', { 'analytics_storage': 'granted' });
     }
   </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GFCR5ZRMZ"></script>
   <script>
-    gtag('js', new Date());
-    gtag('config', 'G-3GFCR5ZRMZ');
+    if (location.hostname === 'intentionholistichealth.com') {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3GFCR5ZRMZ';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-3GFCR5ZRMZ');
+    }
   </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

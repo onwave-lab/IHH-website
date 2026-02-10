@@ -87,7 +87,7 @@
 
 @font-face {
   font-family: 'Beautifully Delicious Script';
-  /* Subset: The Intention Foundations Model Services intentional. simple. sustainable. */
+  /* Subset characters: ACFIMST abcdehilmnoprstuv. (space) - covers: The Intention Foundations Model, Services, intentional. simple. sustainable., Contact Alicia */
   src: url('../fonts/BDScript-subset.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;

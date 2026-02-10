@@ -6,7 +6,8 @@ const MAILERLITE_API_URL = 'https://connect.mailerlite.com/api/subscribers';
 // Group IDs from MailerLite
 const GROUPS = {
   newsletter: '175195722960864384',           // Newsletter Subscribers
-  leadMagnet: '175195632248554684',           // Holistic Habits Checklist
+  leadMagnet: '178510205243360596',           // Running on Empty Guide (Depletion Signals Guide)
+  holisticHabits: '175195632248554684',       // Holistic Habits Checklist (legacy)
   welcomeSequence: '176503189578712288',      // Welcome Sequence
   supplementGuide: '177801439665456539',      // Supplement Guide Downloads
   supplementReviewWaitlist: '177801256141587628',  // Supplement Review Waitlist
@@ -152,7 +153,7 @@ exports.handler = async (event, context) => {
     // Success!
     let successMessage = 'Successfully subscribed!';
     if (formType === 'lead-magnet' || formType === 'popup') {
-      successMessage = 'Check your email for the Holistic Habits Checklist!';
+      successMessage = 'Check your email for your Depletion Signals Guide!';
     } else if (formType === 'supplement-guide') {
       successMessage = 'Check your email for your free Supplement Guide!';
     } else if (formType === 'supplement-review-waitlist') {

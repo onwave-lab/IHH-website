@@ -34,8 +34,8 @@ const BLOG_POSTS = [
 - [HTMA and Early Motherhood](#htma-and-early-motherhood-understanding-depletion-after-birth)
 - [The Intention Foundations Model](#the-intention-foundations-model)
 - [How to Get Started with HTMA Testing](#how-to-get-started-with-htma-testing)
-- [Frequently Asked Questions](#frequently-asked-questions-about-htma)
 - [References](#references)
+- [Frequently Asked Questions](#faqs)
 
 If you\u2019re planning for pregnancy or in early motherhood and wondering why you still don\u2019t feel like yourself despite \u201cnormal\u201d labs, this guide is for you.
 
@@ -159,6 +159,8 @@ These patterns don\u2019t indicate disease. They suggest areas where the body ma
 
 Ideally, 6 to 12 months before you plan to conceive. This allows time to identify patterns, make changes, and retest to see progress. Even 3 months of intentional preparation may make a meaningful difference.
 
+[CTA:Thinking About Getting Tested?|If you\u2019re planning pregnancy and want to understand your mineral status before conception, a discovery call is a good place to start.|apply|Book a Free Call]
+
 ## HTMA and Early Motherhood: Understanding Depletion After Birth
 
 Functional mineral assessment may be most valuable \u2014 and most overlooked \u2014 in early motherhood.
@@ -247,49 +249,6 @@ When working with women, I incorporate HTMA as part of my holistic approach \u20
 
 *Clinical services are currently available to Kentucky residents.*
 
-## Frequently Asked Questions About HTMA
-
-**Is HTMA a diagnostic test?**
-No. HTMA is a screening and assessment tool. It provides data about mineral patterns that, when interpreted by a qualified practitioner in the context of your symptoms and health history, may help inform wellness decisions. It does not diagnose medical conditions and should not be used for self-diagnosis.
-
-**How is HTMA different from blood work?**
-Standard blood work measures what\u2019s circulating in your bloodstream at a single moment and is primarily designed to screen for disease. HTMA measures minerals deposited in tissue over a 3 to 4 month period and is used in functional assessment to identify patterns. Research has shown that blood levels of certain minerals, like magnesium, may not reliably reflect what\u2019s actually stored in your tissues (Elin, 1987).
-
-**Do you also offer blood work?**
-Yes. I offer blood work based on your symptoms, health history, and individual needs as part of my packages and programs. I typically order a broader panel than what you\u2019d see in a standard primary care visit, and I interpret those results using functional ranges.
-
-**Can HTMA tell me exactly what supplements to take?**
-HTMA results help inform a personalized approach, but they don\u2019t generate a prescription. A qualified practitioner considers your HTMA data with your full health picture to make recommendations. Individual results vary.
-
-**Is HTMA safe during pregnancy?**
-Yes \u2014 it\u2019s just a hair sample. Mineral patterns do shift naturally during pregnancy, so interpretation needs extra context. Most women find preconception and postpartum testing more actionable.
-
-**How long does it take to see changes on HTMA?**
-Because HTMA reflects a 3 to 4 month window, retesting is typically recommended at 3 to 4 month intervals. Changes in mineral patterns take time. This is a process of rebuilding, not a quick fix.
-
-**What if my doctor hasn\u2019t heard of HTMA?**
-HTMA is well-established in functional and integrative wellness communities but is not commonly used in conventional primary care. It\u2019s a complementary tool, not a replacement for your doctor\u2019s care.
-
-**Does hair color or texture affect results?**
-Natural hair color and texture don\u2019t significantly affect results. Chemical treatments can, though \u2014 just let your practitioner know so they can account for it.
-
-**How much does HTMA testing cost?**
-Testing costs vary by lab and practitioner. At Intention Holistic Health, HTMA testing is included as part of both the Mineral Insight Package and the Signature Program.
-
-## Your Next Step
-
-If you\u2019re preparing for pregnancy and want to understand whether your body has the reserves to sustain it \u2014 or you\u2019re months into motherhood and still don\u2019t feel like yourself \u2014 functional mineral assessment may give you the answers you\u2019ve been looking for.
-
-You don\u2019t have to keep guessing or pushing through. And you definitely don\u2019t have to accept \u201cthis is just how it is.\u201d
-
-Your body is telling you something. The right testing helps you hear it.
-
-[CTA:Book a Discovery Call|Let\u2019s talk about whether functional mineral assessment is right for where you are right now.|apply|Book Your Free Call]
-
-[CTA:Download the Depletion Signals Checklist|Not ready to book? Start by learning more about what your body may be communicating.|depletion-signals-guide|Download the Free Checklist]
-
-*Alicia Harrison is a board-certified Family Nurse Practitioner (MSN, APRN, FNP-C) and the founder of Intention Holistic Health. She takes a holistic, foundations-first approach to wellness, incorporating functional testing including HTMA and blood work to support women from preconception through early motherhood. Her practice is based in Kentucky and serves women throughout the state via telehealth.*
-
 ## References
 
 1. Elin, R.J. (1987). Assessment of magnesium status. *Clinical Chemistry*, 33(11), 1965-1970. DOI: 10.1093/clinchem/33.11.1965
@@ -302,7 +261,17 @@ Your body is telling you something. The right testing helps you hear it.
 
 5. Workinger, J.L., Doyle, R.P., & Bortz, J. (2018). Challenges in the Diagnosis of Magnesium Status. *Nutrients*, 10(9), 1202. DOI: 10.3390/nu10091202
 
-*Individual results vary. Information in this guide is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. The content is not intended for self-diagnosis. Always consult with your healthcare provider regarding your specific health needs.*
+## Your Next Step
+
+If you\u2019re preparing for pregnancy and want to know whether your body has the reserves to sustain it, or you\u2019re months into motherhood and still don\u2019t feel like yourself, functional mineral assessment may give you the answers you\u2019ve been looking for.
+
+You don\u2019t have to keep guessing. And you don\u2019t have to accept \u201cthis is just how it is.\u201d
+
+[CTA:Book a Free Discovery Call|I\u2019d love to hear where you are and talk through whether HTMA testing makes sense for you.|apply|Book Your Free Call]
+
+[CTA:Download the Depletion Signals Checklist|Not sure where to start? This free checklist can help you recognize what your body may already be telling you.|depletion-signals-guide|Get the Free Checklist]
+
+*Individual results vary. This guide is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
     `,
     disclaimer: `This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
 

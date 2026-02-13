@@ -18,12 +18,11 @@ const BLOG_POSTS = [
     categories: ['wellness', 'foundations', 'htma'],
     content: `
 # HTMA Testing for Maternal Health: What Your Blood Work May Be Missing
+## What Functional Mineral Testing Reveals for Preconception and Postpartum
 
 *This guide is for educational purposes only and is not medical advice. Always consult your healthcare provider.*
 
----
-
-## In This Guide
+**In This Guide**
 
 - [What Is HTMA?](#what-is-htma-hair-tissue-mineral-analysis)
 - [Why "Normal" Labs Don't Always Tell the Full Story](#why-normal-labs-dont-always-tell-the-full-story)
@@ -36,13 +35,9 @@ const BLOG_POSTS = [
 - [Frequently Asked Questions](#frequently-asked-questions-about-htma)
 - [References](#references)
 
----
+If you\u2019re planning for pregnancy or in early motherhood and wondering why you still don\u2019t feel like yourself despite \u201cnormal\u201d labs, this guide is for you.
 
-*If you\u2019re planning for pregnancy or in early motherhood and wondering why you still don\u2019t feel like yourself despite \u201cnormal\u201d labs, this guide is for you.*
-
-*As a Family Nurse Practitioner who takes a holistic, foundations-first approach to wellness, I incorporate functional testing, including HTMA (Hair Tissue Mineral Analysis), to help women understand what their body may be communicating. This guide explains what HTMA is, how it differs from the labs you\u2019d typically get at your doctor\u2019s office, and why mineral status matters, especially for women planning pregnancy or rebuilding after birth.*
-
----
+As a Family Nurse Practitioner who takes a holistic, foundations-first approach to wellness, I incorporate functional testing, including HTMA (Hair Tissue Mineral Analysis), to help women understand what their body may be communicating. This guide explains what HTMA is, how it differs from the labs you\u2019d typically get at your doctor\u2019s office, and why mineral status matters, especially for women planning pregnancy or rebuilding after birth.
 
 ## What Is HTMA (Hair Tissue Mineral Analysis)?
 
@@ -73,8 +68,6 @@ HTMA typically reports on:
 - **Mineral ratios:** Calcium-to-magnesium, sodium-to-potassium, zinc-to-copper, calcium-to-potassium, and others
 - **Toxic metals:** Lead, mercury, cadmium, arsenic, aluminum
 
----
-
 ## Why \u201cNormal\u201d Labs Don\u2019t Always Tell the Full Story
 
 One of the most common things I hear from women is: *\u201cMy blood work is normal, but I still don\u2019t feel right.\u201d*
@@ -92,8 +85,6 @@ When working with women, I look at things differently. I may order a much broade
 Research supports this approach. A study published in *Clinical Chemistry* found that less than 1% of total body magnesium is in the blood, meaning serum magnesium levels don\u2019t reliably reflect what\u2019s actually stored in your tissues (Elin, 1987). A follow-up review in *Nutrients* confirmed this remains a significant limitation of standard blood testing (Workinger et al., 2018). Your blood work can look fine while your body\u2019s reserves are quietly running low.
 
 Neither approach replaces the other. They serve different purposes. I offer blood work in addition to HTMA based on your symptoms, history, and individual needs as part of my packages and programs. The goal is always to use the right combination of tools to build a complete picture.
-
----
 
 ## Key Minerals and Why They Matter
 
@@ -123,8 +114,6 @@ These two get overlooked, but on HTMA, they\u2019re some of the most telling mar
 
 Iron deficiency is the most common nutritional deficiency worldwide, and women of reproductive age are hit hardest. Iron isn\u2019t tested directly on most HTMA panels, but HTMA can reveal patterns in copper and zinc that may influence how your body absorbs and uses iron. Iron status is best assessed through blood work (ferritin, serum iron, TIBC), and I include these tests when appropriate as part of my programs.
 
----
-
 ## Why Mineral Ratios Matter More Than Individual Levels
 
 One of the most valuable things about HTMA is that it shows mineral ratios, the relationships between minerals, not just their individual levels.
@@ -139,8 +128,6 @@ Key ratios evaluated on HTMA include:
 - **Calcium-to-Potassium:** May relate to thyroid function and energy metabolism
 
 A qualified practitioner looks at these ratios with your symptoms to identify patterns, not to diagnose conditions, but to understand where your body may be compensating.
-
----
 
 ## HTMA for Preconception: Building Reserves Before Pregnancy
 
@@ -169,8 +156,6 @@ These patterns don\u2019t indicate disease. They suggest areas where the body ma
 ### When to Test
 
 Ideally, 6 to 12 months before you plan to conceive. This allows time to identify patterns, make changes, and retest to see progress. Even 3 months of intentional preparation may make a meaningful difference.
-
----
 
 ## HTMA and Early Motherhood: Understanding Depletion After Birth
 
@@ -213,8 +198,6 @@ Most women benefit from functional mineral assessment starting around 3 to 6 mon
 
 Retesting every 3 to 4 months can help track progress and adjust your plan.
 
----
-
 ## The Intention Foundations Model
 
 I take a holistic, foundations-first approach. Whether a woman is preparing for pregnancy or rebuilding after birth, the process follows three steps:
@@ -227,8 +210,6 @@ Follow a personalized plan that addresses nourishment, mineral reserves, and ner
 
 **Step 3: SUSTAIN**
 Build habits and rhythms that protect your reserves long-term. Sustainable wellness isn\u2019t about perfection. It\u2019s about building a foundation that holds.
-
----
 
 ## How to Get Started with HTMA Testing
 
@@ -264,8 +245,6 @@ When working with women, I incorporate HTMA as part of my holistic approach \u20
 
 *Clinical services are currently available to Kentucky residents.*
 
----
-
 ## Frequently Asked Questions About HTMA
 
 **Is HTMA a diagnostic test?**
@@ -295,8 +274,6 @@ Natural hair color and texture don\u2019t significantly affect results. Chemical
 **How much does HTMA testing cost?**
 Testing costs vary by lab and practitioner. At Intention Holistic Health, HTMA testing is included as part of both the Mineral Insight Package and the Signature Program.
 
----
-
 ## Your Next Step
 
 If you\u2019re preparing for pregnancy and want to understand whether your body has the reserves to sustain it \u2014 or you\u2019re months into motherhood and still don\u2019t feel like yourself \u2014 functional mineral assessment may give you the answers you\u2019ve been looking for.
@@ -309,11 +286,7 @@ Your body is telling you something. The right testing helps you hear it.
 
 [CTA:Download the Depletion Signals Checklist|Not ready to book? Start by learning more about what your body may be communicating.|depletion-signals-guide|Download the Free Checklist]
 
----
-
 *Alicia Harrison is a board-certified Family Nurse Practitioner (MSN, APRN, FNP-C) and the founder of Intention Holistic Health. She takes a holistic, foundations-first approach to wellness, incorporating functional testing including HTMA and blood work to support women from preconception through early motherhood. Her practice is based in Kentucky and serves women throughout the state via telehealth.*
-
----
 
 ## References
 
@@ -326,8 +299,6 @@ Your body is telling you something. The right testing helps you hear it.
 4. Kristufkova, A., et al. (2025). Micronutrient dynamics and deficiency risk across pregnancy and postpartum in a Slovak cohort. *PLOS One*, 20(9), e0331125. DOI: 10.1371/journal.pone.0331125
 
 5. Workinger, J.L., Doyle, R.P., & Bortz, J. (2018). Challenges in the Diagnosis of Magnesium Status. *Nutrients*, 10(9), 1202. DOI: 10.3390/nu10091202
-
----
 
 *Individual results vary. Information in this guide is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. The content is not intended for self-diagnosis. Always consult with your healthcare provider regarding your specific health needs.*
     `,

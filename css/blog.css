@@ -355,6 +355,7 @@
 .post-content {
   max-width: 700px;
   margin: 0 auto;
+  font-size: 15px;
   /* Reserve minimum space to reduce CLS when JS loads content */
   min-height: 50vh;
 }
@@ -364,7 +365,7 @@
 }
 
 .post-content h2 {
-  font-size: var(--font-size-2xl);
+  font-size: 26px;
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-md);
 }
@@ -379,7 +380,7 @@
 }
 
 .post-content h3 {
-  font-size: var(--font-size-xl);
+  font-size: 20px;
   margin-top: var(--spacing-lg);
   margin-bottom: var(--spacing-sm);
 }

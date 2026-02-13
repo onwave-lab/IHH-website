@@ -6,6 +6,11 @@ const SITE_URL = 'https://www.intentionholistichealth.com';
 // Blog post metadata - keep in sync with js/blog.js
 // Only includes fields needed for OG tags
 const BLOG_POSTS = {
+  '2026-02-13-htma-complete-guide-maternal-health': {
+    title: 'The Complete Guide to HTMA for Maternal Health: What Functional Mineral Testing Reveals',
+    excerpt: 'What is HTMA testing and why does it matter for preconception and postpartum? This guide covers what it measures, how it differs from standard blood work, and why mineral status matters for maternal health.',
+    image: '/images/blog/htma-complete-guide-maternal-health.webp'
+  },
   '2026-01-28-sustainable-home-cooking': {
     title: 'Things I Do to Make Home Cooking More Sustainable',
     excerpt: 'Sustainable home cooking isn\'t about elaborate recipes or perfectly stocked fridges. It\'s about creating rhythms that support your body, protect your mental energy, and make financial sense in real life.',

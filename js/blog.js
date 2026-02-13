@@ -8,25 +8,39 @@
 const BLOG_POSTS = [
   {
     slug: '2026-02-13-htma-complete-guide-maternal-health',
-    title: 'The Complete Guide to HTMA for Maternal Health: What Functional Mineral Testing Reveals',
-    template: 'superior',
+    title: 'HTMA Testing for Maternal Health: What Your Blood Work May Be Missing',
     date: '2026-02-13',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'What is HTMA testing and why does it matter for preconception and postpartum? This guide covers what it measures, how it differs from standard blood work, and why mineral status matters for maternal health.',
     image: '/images/blog/htma-complete-guide-maternal-health.webp',
-    cardAspectRatio: '83.83%',
-    imageAspectRatio: '83.83%',
+    cardAspectRatio: '83.65%',
+    imageAspectRatio: '83.65%',
     categories: ['wellness', 'foundations', 'htma'],
     content: `
-# The Complete Guide to HTMA for Maternal Health: What Functional Mineral Testing Reveals
+# HTMA Testing for Maternal Health: What Your Blood Work May Be Missing
+
+*This guide is for educational purposes only and is not medical advice. Always consult your healthcare provider.*
+
+---
+
+## In This Guide
+
+- [What Is HTMA?](#what-is-htma-hair-tissue-mineral-analysis)
+- [Why "Normal" Labs Don't Always Tell the Full Story](#why-normal-labs-dont-always-tell-the-full-story)
+- [Key Minerals and Why They Matter](#key-minerals-and-why-they-matter)
+- [Why Mineral Ratios Matter More Than Individual Levels](#why-mineral-ratios-matter-more-than-individual-levels)
+- [HTMA for Preconception](#htma-for-preconception-building-reserves-before-pregnancy)
+- [HTMA and Early Motherhood](#htma-and-early-motherhood-understanding-depletion-after-birth)
+- [The Intention Foundations Model](#the-intention-foundations-model)
+- [How to Get Started with HTMA Testing](#how-to-get-started-with-htma-testing)
+- [Frequently Asked Questions](#frequently-asked-questions-about-htma)
+- [References](#references)
 
 ---
 
 *If you\u2019re planning for pregnancy or in early motherhood and wondering why you still don\u2019t feel like yourself despite \u201cnormal\u201d labs, this guide is for you.*
 
 *As a Family Nurse Practitioner who takes a holistic, foundations-first approach to wellness, I incorporate functional testing, including HTMA (Hair Tissue Mineral Analysis), to help women understand what their body may be communicating. This guide explains what HTMA is, how it differs from the labs you\u2019d typically get at your doctor\u2019s office, and why mineral status matters, especially for women planning pregnancy or rebuilding after birth.*
-
-*This guide is for educational purposes only and is not intended to diagnose, treat, or replace medical advice. Always consult with your healthcare provider regarding your specific health needs.*
 
 ---
 
@@ -76,16 +90,6 @@ Functional testing, including HTMA, offers a different perspective.
 When working with women, I look at things differently. I may order a much broader panel of blood work based on your symptoms and history, and I evaluate those results using narrower, optimal ranges \u2014 not just checking whether you fall within \u201cnormal limits.\u201d I\u2019m looking at how your markers relate to each other, not just whether each one clears the bar individually. I also add tools like HTMA that provide information blood work simply doesn\u2019t capture.
 
 Research supports this approach. A study published in *Clinical Chemistry* found that less than 1% of total body magnesium is in the blood, meaning serum magnesium levels don\u2019t reliably reflect what\u2019s actually stored in your tissues (Elin, 1987). A follow-up review in *Nutrients* confirmed this remains a significant limitation of standard blood testing (Workinger et al., 2018). Your blood work can look fine while your body\u2019s reserves are quietly running low.
-
-Here\u2019s a simple comparison:
-
-| | Standard Blood Work | HTMA |
-|--|---------------------|------|
-| **Purpose** | Screen for disease and deficiency | Assess mineral patterns and tissue reserves |
-| **What it measures** | What\u2019s circulating in blood right now | What\u2019s been deposited in tissue over 3-4 months |
-| **Timeframe** | A single-moment snapshot | A 3-4 month average |
-| **Reference ranges** | Broad (designed to catch pathology) | Narrower (looking for optimal function) |
-| **Best for** | Identifying clinical conditions | Identifying trends, imbalances, and compensatory patterns |
 
 Neither approach replaces the other. They serve different purposes. I offer blood work in addition to HTMA based on your symptoms, history, and individual needs as part of my packages and programs. The goal is always to use the right combination of tools to build a complete picture.
 
@@ -309,8 +313,6 @@ Your body is telling you something. The right testing helps you hear it.
 
 *Alicia Harrison is a board-certified Family Nurse Practitioner (MSN, APRN, FNP-C) and the founder of Intention Holistic Health. She takes a holistic, foundations-first approach to wellness, incorporating functional testing including HTMA and blood work to support women from preconception through early motherhood. Her practice is based in Kentucky and serves women throughout the state via telehealth.*
 
-*Individual results vary. Information in this guide is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. The content is not intended for self-diagnosis. Always consult with your healthcare provider regarding your specific health needs.*
-
 ---
 
 ## References
@@ -324,6 +326,10 @@ Your body is telling you something. The right testing helps you hear it.
 4. Kristufkova, A., et al. (2025). Micronutrient dynamics and deficiency risk across pregnancy and postpartum in a Slovak cohort. *PLOS One*, 20(9), e0331125. DOI: 10.1371/journal.pone.0331125
 
 5. Workinger, J.L., Doyle, R.P., & Bortz, J. (2018). Challenges in the Diagnosis of Magnesium Status. *Nutrients*, 10(9), 1202. DOI: 10.3390/nu10091202
+
+---
+
+*Individual results vary. Information in this guide is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. The content is not intended for self-diagnosis. Always consult with your healthcare provider regarding your specific health needs.*
     `,
     disclaimer: `This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
 
@@ -369,7 +375,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
       }
     ],
     schema: {
-      description: 'Complete guide to HTMA (Hair Tissue Mineral Analysis) for maternal health. Learn what functional mineral testing reveals for preconception and postpartum women.'
+      description: 'What is HTMA testing and why does it matter for preconception and postpartum health? Learn what functional mineral testing reveals that standard blood work may miss.'
     }
   },
   {

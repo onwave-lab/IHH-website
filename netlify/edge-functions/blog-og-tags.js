@@ -7,7 +7,7 @@ const SITE_URL = 'https://www.intentionholistichealth.com';
 // Only includes fields needed for OG tags
 const BLOG_POSTS = {
   '2026-02-13-htma-complete-guide-maternal-health': {
-    title: 'The Complete Guide to HTMA for Maternal Health: What Functional Mineral Testing Reveals',
+    title: 'HTMA Testing for Maternal Health: What Your Blood Work May Be Missing',
     excerpt: 'What is HTMA testing and why does it matter for preconception and postpartum? This guide covers what it measures, how it differs from standard blood work, and why mineral status matters for maternal health.',
     image: '/images/blog/htma-complete-guide-maternal-health.webp'
   },

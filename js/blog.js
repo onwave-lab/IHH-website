@@ -22,6 +22,8 @@ const BLOG_POSTS = [
 
 *This guide is for educational purposes only and is not medical advice. Always consult your healthcare provider.*
 
+&nbsp;
+
 **In This Guide**
 
 - [What Is HTMA?](#what-is-htma-hair-tissue-mineral-analysis)

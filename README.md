@@ -69,10 +69,9 @@ A custom-built website for Intention Holistic Health PLLC — a holistic wellnes
 ├── netlify.toml                # Netlify config (redirects, headers, caching)
 ├── robots.txt                  # Search engine crawl rules
 ├── sitemap.xml                 # XML sitemap for search engines
+├── archive/                    # Archived docs (WORKFLOW, SETUP-GUIDE, etc.)
 ├── CLAUDE.md                   # Project instructions for AI assistant
 ├── CLAUDE-REFERENCE.md         # IDs, code snippets, hex values
-├── QUICKSTART_GUIDE.md         # Owner's guide for managing the site
-├── WORKFLOW.md                 # Branching and deployment workflow
 └── README.md                   # This file
 ```
 
@@ -104,7 +103,7 @@ A custom-built website for Intention Holistic Health PLLC — a holistic wellnes
 
 https://drafts-website-edits--intentionholistichealth.netlify.app
 
-See `WORKFLOW.md` for the full branching and deployment process.
+See `CLAUDE.md` for the full branching and deployment process.
 
 ## Adding Blog Posts
 
@@ -139,7 +138,7 @@ Colors and spacing are defined as CSS variables in `/css/main.css`:
 
 ## Support
 
-For questions about managing this website, refer to `QUICKSTART_GUIDE.md`.
+For questions about managing this website, refer to `CLAUDE.md`.
 
 ---
 

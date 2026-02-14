@@ -3,6 +3,21 @@
    Handles markdown parsing and blog functionality
    ============================================ */
 
+// Default promo config — used when a post doesn't specify its own
+const DEFAULT_PROMO = {
+  title: 'Depletion Signals Checklist',
+  modalTitle: 'Get Your Free Guide',
+  description: 'Not sure where to start? This free checklist can help you recognize what your body may already be telling you.',
+  descriptionShort: 'Not sure where to start? Recognize what your body may be telling you.',
+  badge: 'Free Download',
+  ctaText: 'Get the Free Guide',
+  formType: 'lead-magnet',
+  modalFormType: 'lead-magnet',
+  image: '/images/depletion-signals-guide-preview-inline.webp',
+  imageSidebar: '/images/depletion-signals-guide-preview-sidebar.webp',
+  imageThumb: '/images/depletion-signals-guide-preview-thumb.webp'
+};
+
 // Blog post data - this would typically come from a build process
 // For simplicity, we define posts here that can be easily updated
 const BLOG_POSTS = [
@@ -11,11 +26,30 @@ const BLOG_POSTS = [
     title: 'HTMA Testing for Maternal Health: What Your Blood Work May Be Missing',
     date: '2026-02-13',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
-    excerpt: 'What is HTMA testing and why does it matter for preconception and postpartum? This guide covers what it measures, how it differs from standard blood work, and why mineral status matters for maternal health.',
+    excerpt: 'What is HTMA testing and why does it matter for maternal health? Learn what functional mineral testing reveals for preconception and postpartum that standard blood work may miss.',
     image: '/images/blog/htma-complete-guide-maternal-health.webp',
-    cardAspectRatio: '83.65%',
-    imageAspectRatio: '83.65%',
-    categories: ['wellness', 'foundations', 'htma'],
+    cardAspectRatio: '66.67%',
+    imageAspectRatio: '66.67%',
+    categories: ['wellness', 'foundations', 'htma', 'preconception'],
+    personaToggle: {
+      label: "Want to Skip Ahead? I'm...",
+      options: [
+        {
+          id: 'preparing',
+          label: 'Preparing',
+          description: 'Planning for pregnancy',
+          sections: ['htma-for-preconception-building-reserves-before-pregnancy'],
+          skipLabel: 'HTMA for Preconception'
+        },
+        {
+          id: 'rebuilding',
+          label: 'Rebuilding',
+          description: 'In early motherhood',
+          sections: ['htma-and-early-motherhood-understanding-depletion-after-birth'],
+          skipLabel: 'HTMA and Early Motherhood'
+        }
+      ]
+    },
     content: `
 # HTMA Testing for Maternal Health: What Your Blood Work May Be Missing
 ## What Functional Mineral Testing Reveals for Preconception and Postpartum
@@ -37,17 +71,19 @@ const BLOG_POSTS = [
 - [References](#references)
 - [Frequently Asked Questions](#faqs)
 
+<div class="blog-summary-note">HTMA (Hair Tissue Mineral Analysis) is a functional screening tool that measures mineral levels stored in your tissues over a 3\u20134 month window\u2014something standard blood work doesn\u2019t capture. For women planning pregnancy or recovering postpartum, HTMA can reveal mineral depletion patterns that routine labs may miss. This guide covers what HTMA measures, how it compares to blood work, key minerals for maternal health, and how to get started with testing.</div>
+
 If you\u2019re planning for pregnancy or in early motherhood and wondering why you still don\u2019t feel like yourself despite \u201cnormal\u201d labs, this guide is for you.
 
 As a Family Nurse Practitioner who takes a holistic, foundations-first approach to wellness, I incorporate functional testing, including HTMA (Hair Tissue Mineral Analysis), to help women understand what their body may be communicating. This guide explains what HTMA is, how it differs from the labs you\u2019d typically get at your doctor\u2019s office, and why mineral status matters, especially for women planning pregnancy or rebuilding after birth.
 
 ## What Is HTMA (Hair Tissue Mineral Analysis)?
 
-Hair Tissue Mineral Analysis, commonly called HTMA, is a screening tool that measures the mineral content of your hair. A small sample of hair is cut close to the scalp and sent to a certified laboratory, where it\u2019s analyzed for mineral levels and toxic metal exposure.
+[Hair Tissue Mineral Analysis](/htma.html), commonly called HTMA, is a screening tool that measures the mineral content of your hair. A small sample of hair is cut close to the scalp and sent to a certified laboratory, where it\u2019s analyzed for mineral levels and toxic metal exposure.
 
 Unlike standard blood work, which shows what\u2019s circulating in your bloodstream at a single point in time, HTMA reflects mineral levels deposited in your tissues over the previous three to four months.
 
-Blood work shows your checking account balance. HTMA shows your savings account. Both matter, but if you only look at your checking account, you may miss that your savings are running low.
+> Blood work shows your checking account balance. HTMA shows your savings account. Both matter, but if you only look at your checking account, you may miss that your savings are running low.
 
 HTMA is a screening and assessment tool, not a diagnostic test. It provides data points that, when a qualified practitioner interprets them with your symptoms and health history, may help identify patterns worth exploring further.
 
@@ -72,7 +108,7 @@ HTMA typically reports on:
 
 ## Why \u201cNormal\u201d Labs Don\u2019t Always Tell the Full Story
 
-One of the most common things I hear from women is: *\u201cMy blood work is normal, but I still don\u2019t feel right.\u201d*
+One of the most common things I hear from women is: *\u201cMy blood work is normal, but I still don\u2019t feel right.\u201d* If that sounds familiar, you\u2019re not alone \u2014 I wrote about [why \u201cnormal\u201d labs don\u2019t always mean optimal](/blog/post.html?post=2025-01-09-labs-normal-feel-off) in a separate post.
 
 When you go to your primary care provider, the labs they order are typically limited. They\u2019re screening for disease or clear deficiency: things like anemia, thyroid dysfunction, or blood sugar problems. If nothing flags, you\u2019re told everything looks fine.
 
@@ -86,7 +122,7 @@ When working with women, I look at things differently. I may order a much broade
 
 Research supports this approach. A study published in *Clinical Chemistry* found that less than 1% of total body magnesium is in the blood, meaning serum magnesium levels don\u2019t reliably reflect what\u2019s actually stored in your tissues (Elin, 1987). A follow-up review in *Nutrients* confirmed this remains a significant limitation of standard blood testing (Workinger et al., 2018). Your blood work can look fine while your body\u2019s reserves are quietly running low.
 
-Neither approach replaces the other. They serve different purposes. I offer blood work in addition to HTMA based on your symptoms, history, and individual needs as part of my packages and programs. The goal is always to use the right combination of tools to build a complete picture.
+Neither approach replaces the other. They serve different purposes. I offer [blood work review](/services/lab-review.html) in addition to HTMA based on your symptoms, history, and individual needs as part of my [packages and programs](/services/). The goal is always to use the right combination of tools to build a complete picture.
 
 ## Key Minerals and Why They Matter
 
@@ -116,6 +152,8 @@ These two get overlooked, but on HTMA, they\u2019re some of the most telling mar
 
 Iron deficiency is the most common nutritional deficiency worldwide, and women of reproductive age are hit hardest. Iron isn\u2019t tested directly on most HTMA panels, but HTMA can reveal patterns in copper and zinc that may influence how your body absorbs and uses iron. Iron status is best assessed through blood work (ferritin, serum iron, TIBC), and I include these tests when appropriate as part of my programs.
 
+[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Depletion Signals Checklist|Not sure where to start? This free checklist can help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
+
 ## Why Mineral Ratios Matter More Than Individual Levels
 
 One of the most valuable things about HTMA is that it shows mineral ratios, the relationships between minerals, not just their individual levels.
@@ -133,7 +171,7 @@ A qualified practitioner looks at these ratios with your symptoms to identify pa
 
 ## HTMA for Preconception: Building Reserves Before Pregnancy
 
-If you\u2019re planning pregnancy in the next 6 to 18 months, functional mineral assessment may be one of the most valuable steps you can take.
+If you\u2019re planning pregnancy in the next 6 to 18 months, functional mineral assessment may be one of the most valuable steps you can take. For a broader look at how to prepare your body before conception, see [Your Body Is the First Home](/blog/post.html?post=2024-11-15-body-first-home).
 
 Pregnancy places significant demands on your body\u2019s mineral reserves. The question isn\u2019t just \u201cAm I healthy enough to get pregnant?\u201d It\u2019s \u201cDoes my body have the reserves to sustain what pregnancy requires?\u201d
 
@@ -159,7 +197,7 @@ These patterns don\u2019t indicate disease. They suggest areas where the body ma
 
 Ideally, 6 to 12 months before you plan to conceive. This allows time to identify patterns, make changes, and retest to see progress. Even 3 months of intentional preparation may make a meaningful difference.
 
-[CTA:Thinking About Getting Tested?|If you\u2019re planning pregnancy and want to understand your mineral status before conception, a discovery call is a good place to start.|apply|Book a Free Call]
+[CTA:Thinking About HTMA?|If you\u2019re planning pregnancy and want to understand your mineral status before conception, a clarity call is a great place to start\u2014zero pressure, just honest conversation about your goals.|apply|Book a Clarity Call]
 
 ## HTMA and Early Motherhood: Understanding Depletion After Birth
 
@@ -192,7 +230,7 @@ Pregnancy and birth draw heavily from your mineral reserves. Some of what resear
 
 ### Why Generic Advice Often Isn\u2019t Enough
 
-\u201cJust eat well and rest\u201d is good advice on paper. But without knowing where you\u2019re specifically depleted, you\u2019re rebuilding without a roadmap.
+\u201cJust eat well and rest\u201d is good advice on paper \u2014 and [food should always be the foundation](/blog/post.html?post=2025-01-15-minerals-from-food) \u2014 but without knowing where you\u2019re specifically depleted, you\u2019re rebuilding without a roadmap.
 
 Functional mineral assessment provides actual data. Instead of guessing which supplements to take or following generic nutrition advice, you can see which minerals your body may need most and in what balance. That\u2019s what makes it personal instead of generic.
 
@@ -204,7 +242,7 @@ Retesting every 3 to 4 months can help track progress and adjust your plan.
 
 ## The Intention Foundations Model
 
-I take a holistic, foundations-first approach. Whether a woman is preparing for pregnancy or rebuilding after birth, the process follows three steps:
+I take a holistic, foundations-first approach. Whether a woman is preparing for pregnancy or rebuilding after birth, the process follows three steps.
 
 **Step 1: UNCOVER**
 Share your story and complete functional assessments, which may include HTMA, blood work, or both depending on your needs. The goal is to understand where your body may be compensating. This isn\u2019t about finding problems. It\u2019s about understanding your starting point.
@@ -214,6 +252,8 @@ Follow a personalized plan that addresses nourishment, mineral reserves, and ner
 
 **Step 3: SUSTAIN**
 Build habits and rhythms that protect your reserves long-term. Sustainable wellness isn\u2019t about perfection. It\u2019s about building a foundation that holds.
+
+[See the full process details](/services/)
 
 ## How to Get Started with HTMA Testing
 
@@ -269,7 +309,7 @@ You don\u2019t have to keep guessing. And you don\u2019t have to accept \u201cth
 
 [CTA:Book a Free Discovery Call|I\u2019d love to hear where you are and talk through whether HTMA testing makes sense for you.|apply|Book Your Free Call]
 
-[CTA:Download the Depletion Signals Checklist|Not sure where to start? This free checklist can help you recognize what your body may already be telling you.|depletion-signals-guide|Get the Free Checklist]
+[CTA:Download the Depletion Signals Checklist|Not sure where to start? This free checklist can help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
 
 *Individual results vary. This guide is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
     `,
@@ -1784,6 +1824,21 @@ function parseMarkdown(markdown) {
   // Strip leading H1 (title is already displayed by the template)
   html = html.replace(/^\s*#\s+[^\n]+\n*/m, '');
 
+  // Download CTA boxes with image [DOWNLOAD-CTA:image|title|description|formType|buttonText]
+  html = html.replace(/\[DOWNLOAD-CTA:([^|]+)\|([^|]+)\|([^|]+)\|([^|]+)\|([^\]]+)\]/gim, function(match, image, title, description, formType, buttonText) {
+    var escapedTitle = title.trim().replace(/'/g, "\\'");
+    var escapedFormType = formType.trim().replace(/'/g, "\\'");
+    return `<div class="blog-download-cta">
+      <img src="${image.trim()}" alt="${title.trim()}" class="blog-download-cta-image" loading="lazy">
+      <div class="blog-download-cta-body">
+        <p class="blog-download-cta-badge">Free Download</p>
+        <h4 class="blog-download-cta-title">${title.trim()}</h4>
+        <p class="blog-download-cta-description">${description.trim()}</p>
+        <button type="button" class="blog-cta-button" onclick="openLeadModal('${escapedTitle}', '${escapedFormType}')" data-track-cta="blog-download-cta">${buttonText.trim()}</button>
+      </div>
+    </div>`;
+  });
+
   // CTA boxes [CTA:title|description|formType|buttonText]
   // formType is used to identify which lead magnet (e.g., "kitchen-staples")
   html = html.replace(/\[CTA:([^|]+)\|([^|]+)\|([^|]+)\|([^\]]+)\]/gim, function(match, title, description, formType, buttonText) {
@@ -1798,9 +1853,20 @@ function parseMarkdown(markdown) {
     </div>`;
   });
 
-  // Headers
-  html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
-  html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+  // Blockquotes (> lines)
+  html = html.replace(/^> (.*$)/gim, '<blockquote><p>$1</p></blockquote>');
+  // Merge consecutive blockquote tags
+  html = html.replace(/<\/blockquote>\n?<blockquote>/gim, '\n');
+
+  // Headers (with slugified IDs for anchor linking)
+  html = html.replace(/^### (.*$)/gim, function(match, heading) {
+    var id = heading.replace(/<[^>]*>/g, '').toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').trim();
+    return '<h3 id="' + id + '">' + heading + '</h3>';
+  });
+  html = html.replace(/^## (.*$)/gim, function(match, heading) {
+    var id = heading.replace(/<[^>]*>/g, '').toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').trim();
+    return '<h2 id="' + id + '">' + heading + '</h2>';
+  });
   html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
 
   // Links [text](url) - external links open in new tab
@@ -1890,6 +1956,33 @@ function injectArticleSchema(post) {
   scriptElement.id = 'article-schema';
   scriptElement.textContent = JSON.stringify(schema);
   document.head.appendChild(scriptElement);
+
+  // Inject FAQPage schema if post has FAQs
+  if (post.faqs && post.faqs.length > 0) {
+    const existingFaqSchema = document.getElementById('faq-schema');
+    if (existingFaqSchema) existingFaqSchema.remove();
+
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      'mainEntity': post.faqs.map(function(faq) {
+        return {
+          '@type': 'Question',
+          'name': faq.question,
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': faq.answer
+          }
+        };
+      })
+    };
+
+    const faqScriptElement = document.createElement('script');
+    faqScriptElement.type = 'application/ld+json';
+    faqScriptElement.id = 'faq-schema';
+    faqScriptElement.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(faqScriptElement);
+  }
 }
 
 // -----------------------------------------
@@ -2239,6 +2332,12 @@ function renderSinglePost() {
 
   // Render related posts
   renderRelatedPosts(post);
+
+  // Populate promo elements (floating ad, bottom bar, modal) from post config
+  initPromo(post);
+
+  // Initialize persona toggle if configured for this post
+  initPersonaToggle(post);
 }
 
 function renderRelatedPosts(currentPost) {
@@ -2483,6 +2582,68 @@ function setupShareButtons(post) {
   }
 
   // -----------------------------------------
+  // AUTHOR CONTACT BUTTON
+  // -----------------------------------------
+  const authorBtn = document.getElementById('floating-author-btn');
+  const authorOverlay = document.getElementById('author-contact-overlay');
+  const authorYes = document.getElementById('author-contact-yes');
+  const authorNo = document.getElementById('author-contact-no');
+
+  if (authorBtn && authorOverlay) {
+    authorBtn.addEventListener('click', function() {
+      authorOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'author_contact_open', {
+          'event_category': 'engagement',
+          'event_label': post.author,
+          'page_title': post.title
+        });
+      }
+    });
+
+    function closeAuthorPopup() {
+      authorOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    if (authorNo) {
+      authorNo.addEventListener('click', function() {
+        closeAuthorPopup();
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'author_contact_declined', {
+            'event_category': 'engagement',
+            'event_label': post.author
+          });
+        }
+      });
+    }
+
+    if (authorYes) {
+      authorYes.addEventListener('click', function() {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'author_contact_confirmed', {
+            'event_category': 'engagement',
+            'event_label': post.author,
+            'contact_method': 'sms'
+          });
+        }
+        setTimeout(closeAuthorPopup, 300);
+      });
+    }
+
+    // Close on overlay click
+    authorOverlay.addEventListener('click', function(e) {
+      if (e.target === authorOverlay) closeAuthorPopup();
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && authorOverlay.classList.contains('open')) closeAuthorPopup();
+    });
+  }
+
+  // -----------------------------------------
   // FLOATING SHARE VISIBILITY ON SCROLL
   // -----------------------------------------
   const postContent = document.getElementById('post-content');
@@ -2662,6 +2823,267 @@ function setupBlogSearch() {
       }
     }, 300);
   });
+}
+
+// -----------------------------------------
+// PROMO POPULATION (dynamic per post)
+// -----------------------------------------
+
+function initPromo(post) {
+  var promo = post.promo || DEFAULT_PROMO;
+
+  // Populate floating desktop ad
+  var ad = document.getElementById('floating-download-ad');
+  if (ad) {
+    var adImg = ad.querySelector('.floating-download-ad-image');
+    var adBadge = ad.querySelector('.floating-download-ad-badge');
+    var adTitle = ad.querySelector('.floating-download-ad-title');
+    var adDesc = ad.querySelector('.floating-download-ad-desc');
+    var adCta = ad.querySelector('.floating-download-ad-cta');
+    if (adImg) { adImg.src = promo.imageSidebar; adImg.alt = promo.title + ' preview'; }
+    if (adBadge) adBadge.textContent = promo.badge;
+    if (adTitle) adTitle.textContent = promo.title;
+    if (adDesc) adDesc.textContent = promo.descriptionShort;
+    if (adCta) adCta.textContent = promo.ctaText;
+  }
+
+  // Populate bottom bar
+  var bar = document.getElementById('blog-checklist-bar');
+  if (bar) {
+    var barThumb = bar.querySelector('.blog-checklist-bar-thumb');
+    var barTitle = bar.querySelector('.blog-checklist-bar-text strong');
+    var barDesc = bar.querySelector('.blog-checklist-bar-text span');
+    var barCta = bar.querySelector('.blog-checklist-bar-cta');
+    if (barThumb) { barThumb.src = promo.imageThumb; }
+    if (barTitle) barTitle.textContent = 'Download the ' + promo.title;
+    if (barDesc) barDesc.textContent = promo.description;
+    if (barCta) barCta.textContent = promo.ctaText;
+  }
+
+  // Populate modal image and default title
+  var modalImg = document.querySelector('.blog-lead-modal-image');
+  if (modalImg) { modalImg.src = promo.image; modalImg.alt = promo.title + ' preview'; }
+  var modalTitle = document.getElementById('lead-modal-title');
+  if (modalTitle) modalTitle.textContent = promo.modalTitle;
+
+  // Store promo on window so openLeadModal and CTA clicks can use it
+  window._blogPromo = promo;
+}
+
+// -----------------------------------------
+// PERSONA SELECTOR TOGGLE
+// -----------------------------------------
+
+function initPersonaToggle(post) {
+  if (!post.personaToggle) return;
+
+  var config = post.personaToggle;
+  var postContent = document.getElementById('post-content');
+  if (!postContent) return;
+
+  // Find the TOC - look for <strong>In This Guide</strong> then the next <ul>
+  var tocAnchor = null;
+  var tocList = null;
+  var allStrongs = postContent.querySelectorAll('strong');
+
+  for (var i = 0; i < allStrongs.length; i++) {
+    if (allStrongs[i].textContent.trim() === 'In This Guide') {
+      // The strong might be inside a <p> or a direct child of post-content
+      tocAnchor = allStrongs[i].closest('p') || allStrongs[i];
+      // Walk forward from the anchor to find the next <ul>
+      var next = tocAnchor.nextElementSibling;
+      while (next && next.tagName !== 'UL') {
+        next = next.nextElementSibling;
+      }
+      if (next && next.tagName === 'UL') {
+        tocList = next;
+      }
+      break;
+    }
+  }
+
+  if (!tocAnchor) return;
+
+  // Build the toggle HTML
+  var toggleHTML = '<div class="persona-toggle-wrapper">';
+  toggleHTML += '<div class="persona-toggle" role="group" aria-label="' + config.label + '">';
+  toggleHTML += '<span class="persona-toggle-label">' + config.label + '</span>';
+  toggleHTML += '<div class="persona-toggle-pills">';
+
+  config.options.forEach(function(option) {
+    toggleHTML += '<button class="persona-pill" data-persona="' + option.id + '" ';
+    toggleHTML += 'aria-pressed="false" title="' + option.description + '">';
+    toggleHTML += option.label;
+    toggleHTML += '</button>';
+  });
+
+  toggleHTML += '</div>';
+  toggleHTML += '<button class="persona-reset" aria-label="Clear selection" style="display:none;">Clear</button>';
+  toggleHTML += '</div>';
+  toggleHTML += '<a href="#" class="persona-skip-link" id="persona-skip-link">Skip ahead</a>';
+  toggleHTML += '</div>';
+
+  // Insert toggle ABOVE the TOC anchor
+  tocAnchor.insertAdjacentHTML('beforebegin', toggleHTML);
+
+  // Set up click handlers
+  var toggleWrap = postContent.querySelector('.persona-toggle-wrapper');
+  var toggleContainer = toggleWrap.querySelector('.persona-toggle');
+  var pills = toggleContainer.querySelectorAll('.persona-pill');
+  var resetBtn = toggleContainer.querySelector('.persona-reset');
+  var skipLink = toggleWrap.querySelector('.persona-skip-link');
+
+  pills.forEach(function(pill) {
+    pill.addEventListener('click', function() {
+      var persona = this.getAttribute('data-persona');
+      var isAlreadyActive = this.classList.contains('active');
+
+      if (isAlreadyActive) {
+        clearPersonaSelection(config, pills, resetBtn, skipLink, tocList);
+        removePersonaStorage(post.slug);
+      } else {
+        applyPersonaSelection(persona, config, pills, resetBtn, skipLink, tocList);
+        setPersonaStorage(post.slug, persona);
+      }
+    });
+  });
+
+  resetBtn.addEventListener('click', function() {
+    clearPersonaSelection(config, pills, resetBtn, skipLink, tocList);
+    removePersonaStorage(post.slug);
+  });
+
+  // Restore selection from localStorage (with 3-month expiry)
+  var stored = getPersonaStorage(post.slug);
+  if (stored) {
+    applyPersonaSelection(stored, config, pills, resetBtn, skipLink, tocList);
+  }
+
+  // GA4 tracking
+  toggleContainer.addEventListener('click', function(e) {
+    var pill = e.target.closest('.persona-pill');
+    if (pill && typeof gtag === 'function') {
+      gtag('event', 'persona_toggle', {
+        'persona': pill.getAttribute('data-persona'),
+        'action': pill.classList.contains('active') ? 'select' : 'deselect',
+        'post_slug': post.slug
+      });
+    }
+  });
+}
+
+function applyPersonaSelection(personaId, config, pills, resetBtn, skipLink, tocList) {
+  var selectedOption = config.options.find(function(o) { return o.id === personaId; });
+  if (!selectedOption) return;
+
+  // Update pill states
+  pills.forEach(function(pill) {
+    var isSelected = pill.getAttribute('data-persona') === personaId;
+    pill.classList.toggle('active', isSelected);
+    pill.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+  });
+
+  resetBtn.style.display = '';
+
+  // Show skip link
+  var targetSectionId = selectedOption.sections[0];
+  skipLink.href = '#' + targetSectionId;
+  skipLink.textContent = 'Skip to ' + selectedOption.skipLabel + ' \u2192';
+  skipLink.style.visibility = 'visible';
+
+  // Collect all persona section IDs
+  var allPersonaSectionIds = [];
+  config.options.forEach(function(opt) {
+    allPersonaSectionIds = allPersonaSectionIds.concat(opt.sections);
+  });
+
+  var selectedSectionIds = selectedOption.sections;
+  var postContent = document.getElementById('post-content');
+  var allH2s = postContent.querySelectorAll('h2[id]');
+
+  allH2s.forEach(function(h2) {
+    var sectionId = h2.id;
+    var isSelectedPersona = selectedSectionIds.indexOf(sectionId) !== -1;
+    var isOtherPersona = !isSelectedPersona && allPersonaSectionIds.indexOf(sectionId) !== -1;
+
+    // Only highlight the H2 heading itself, not every sibling
+    h2.classList.remove('persona-heading-highlight', 'persona-dimmed');
+    if (isSelectedPersona) {
+      h2.classList.add('persona-heading-highlight');
+    }
+
+    // Dim the other persona's entire section (skip CTA boxes so they stay visible)
+    var next = h2.nextElementSibling;
+    while (next && next.tagName !== 'H2') {
+      next.classList.remove('persona-dimmed');
+      if (isOtherPersona && !next.classList.contains('blog-cta-box') && !next.classList.contains('blog-download-cta')) {
+        next.classList.add('persona-dimmed');
+      }
+      next = next.nextElementSibling;
+    }
+    // Dim/undim the H2 itself for the other persona
+    if (isOtherPersona) {
+      h2.classList.add('persona-dimmed');
+    }
+  });
+
+  // Apply TOC indicators — arrow for selected, dim for other
+  if (tocList) {
+    var tocLinks = tocList.querySelectorAll('a[href^="#"]');
+    tocLinks.forEach(function(link) {
+      var targetId = link.getAttribute('href').substring(1);
+      var li = link.closest('li');
+      if (!li) return;
+
+      li.classList.remove('persona-toc-highlight', 'persona-toc-dimmed');
+
+      if (selectedSectionIds.indexOf(targetId) !== -1) {
+        li.classList.add('persona-toc-highlight');
+      } else if (allPersonaSectionIds.indexOf(targetId) !== -1) {
+        li.classList.add('persona-toc-dimmed');
+      }
+    });
+  }
+}
+
+function clearPersonaSelection(config, pills, resetBtn, skipLink, tocList) {
+  pills.forEach(function(pill) {
+    pill.classList.remove('active');
+    pill.setAttribute('aria-pressed', 'false');
+  });
+
+  resetBtn.style.display = 'none';
+  skipLink.style.visibility = 'hidden';
+
+  var postContent = document.getElementById('post-content');
+  postContent.querySelectorAll('.persona-heading-highlight, .persona-dimmed').forEach(function(el) {
+    el.classList.remove('persona-heading-highlight', 'persona-dimmed');
+  });
+
+  if (tocList) {
+    tocList.querySelectorAll('.persona-toc-highlight, .persona-toc-dimmed').forEach(function(el) {
+      el.classList.remove('persona-toc-highlight', 'persona-toc-dimmed');
+    });
+  }
+}
+
+// Persona storage with 3-month expiry
+function setPersonaStorage(slug, persona) {
+  var expiry = Date.now() + (90 * 24 * 60 * 60 * 1000); // 90 days
+  localStorage.setItem('persona_' + slug, JSON.stringify({ persona: persona, expiry: expiry }));
+}
+
+function getPersonaStorage(slug) {
+  try {
+    var data = JSON.parse(localStorage.getItem('persona_' + slug));
+    if (data && data.expiry > Date.now()) return data.persona;
+    localStorage.removeItem('persona_' + slug);
+  } catch (e) {}
+  return null;
+}
+
+function removePersonaStorage(slug) {
+  localStorage.removeItem('persona_' + slug);
 }
 
 // -----------------------------------------

@@ -792,10 +792,16 @@ When adding new pages, include appropriate JSON-LD schemas:
 
 ### Sitemap Maintenance
 
+**IMPORTANT:** When modifying ANY public-facing HTML page, update its `lastmod` date in `/sitemap.xml` to today's date. This includes content changes, CTA updates, styling changes that affect the page's rendered output, and structural changes. Do NOT skip this step — stale `lastmod` dates reduce crawl efficiency.
+
 When adding new public pages:
 1. Add entry to `/sitemap.xml`
 2. Set appropriate `priority` (1.0 homepage, 0.9 services, 0.8 main pages, 0.7 blog, 0.3 legal)
-3. Update `lastmod` date
+3. Set `lastmod` to today's date
+
+When modifying existing pages:
+1. Update the `lastmod` date for every modified page in `/sitemap.xml`
+2. If changes affect blog.js (which renders all blog posts), update `lastmod` for `/blog/` and any blog posts whose rendered content changed
 
 ### robots.txt Rules
 

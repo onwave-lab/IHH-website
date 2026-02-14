@@ -968,6 +968,20 @@ document.addEventListener('DOMContentLoaded', function() {
           data.state = stateInput.value.trim();
         }
 
+        // Include persona from blog if available
+        try {
+          var keys = Object.keys(localStorage);
+          for (var k = 0; k < keys.length; k++) {
+            if (keys[k].indexOf('persona_') === 0) {
+              var pd = JSON.parse(localStorage.getItem(keys[k]));
+              if (pd && pd.expiry > Date.now() && pd.persona) {
+                data.persona = pd.persona;
+                break;
+              }
+            }
+          }
+        } catch(e) {}
+
         // Send to Netlify function
         fetch('/.netlify/functions/subscribe', {
           method: 'POST',
@@ -1154,6 +1168,20 @@ document.addEventListener('DOMContentLoaded', function() {
       if (stateInput && stateInput.value.trim()) {
         data.state = stateInput.value.trim();
       }
+
+      // Include persona from blog if available
+      try {
+        var keys = Object.keys(localStorage);
+        for (var k = 0; k < keys.length; k++) {
+          if (keys[k].indexOf('persona_') === 0) {
+            var pd = JSON.parse(localStorage.getItem(keys[k]));
+            if (pd && pd.expiry > Date.now() && pd.persona) {
+              data.persona = pd.persona;
+              break;
+            }
+          }
+        }
+      } catch(e) {}
 
       // Send to MailerLite, then submit the Netlify form
       fetch('/.netlify/functions/subscribe', {

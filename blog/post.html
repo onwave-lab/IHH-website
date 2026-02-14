@@ -129,9 +129,39 @@
         </a>
       </div>
 
+      <!-- Author contact button (separate from share options) -->
+      <button class="floating-author-btn" id="floating-author-btn" aria-label="Text the author" title="Text Alicia">
+        <img src="/images/about/alicia-portrait-mug-cropped-small.webp" alt="" width="44" height="44">
+        <span class="floating-author-label">Text Alicia</span>
+      </button>
+
       <!-- Copy confirmation -->
       <span class="floating-copy-confirm" id="floating-copy-confirm">Copied!</span>
     </aside>
+
+    <!-- Floating Download Ad (desktop only) — populated dynamically by initPromo() -->
+    <aside class="floating-download-ad" id="floating-download-ad">
+      <img src="" alt="" class="floating-download-ad-image" width="200" height="283" loading="lazy">
+      <div class="floating-download-ad-content">
+        <p class="floating-download-ad-badge"></p>
+        <h4 class="floating-download-ad-title"></h4>
+        <p class="floating-download-ad-desc"></p>
+        <button class="floating-download-ad-cta" id="floating-download-ad-cta" data-track-cta="floating-sidebar-checklist"></button>
+      </div>
+    </aside>
+
+    <!-- Author Contact Confirmation -->
+    <div class="author-contact-overlay" id="author-contact-overlay" role="dialog" aria-modal="true" aria-labelledby="author-contact-title">
+      <div class="author-contact-popup">
+        <img src="/images/about/alicia-portrait-mug-cropped-small.webp" alt="Alicia Harrison" class="author-contact-avatar" width="64" height="64">
+        <h4 id="author-contact-title">Reach out to Alicia?</h4>
+        <p class="author-contact-desc">Send a text message to start the conversation.</p>
+        <div class="author-contact-actions">
+          <a href="sms:+13259991606" class="author-contact-yes" id="author-contact-yes" data-track-cta="author-text">Yes, text her</a>
+          <button class="author-contact-no" id="author-contact-no">Not right now</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Post Header -->
     <section class="post-header" data-track-section="post-header">
@@ -289,16 +319,19 @@
     <div class="blog-lead-modal-overlay"></div>
     <div class="blog-lead-modal-content">
       <button class="blog-lead-modal-close" aria-label="Close modal">&times;</button>
-      <h3 id="lead-modal-title" class="blog-lead-modal-title">Get Your Free Checklist</h3>
-      <p class="blog-lead-modal-description">Enter your info below and we'll send it straight to your inbox.</p>
-      <form class="blog-lead-modal-form" id="blog-lead-form">
-        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input type="text" name="firstName" placeholder="First Name" class="blog-lead-input" autocomplete="given-name">
-        <input type="email" name="email" placeholder="Email Address" class="blog-lead-input" required autocomplete="email">
-        <input type="hidden" name="formType" id="lead-form-type" value="">
-        <button type="submit" class="blog-lead-submit">Send It To Me</button>
-      </form>
-      <p class="blog-lead-modal-privacy">Your email is safe. Unsubscribe anytime.</p>
+      <img src="" alt="" class="blog-lead-modal-image" width="150" height="212" loading="lazy">
+      <div class="blog-lead-modal-body">
+        <h3 id="lead-modal-title" class="blog-lead-modal-title"></h3>
+        <p class="blog-lead-modal-description">Enter your info below and we'll send it straight to your inbox.</p>
+        <form class="blog-lead-modal-form" id="blog-lead-form">
+          <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="text" name="firstName" placeholder="First Name" class="blog-lead-input" autocomplete="given-name">
+          <input type="email" name="email" placeholder="Email Address" class="blog-lead-input" required autocomplete="email">
+          <input type="hidden" name="formType" id="lead-form-type" value="">
+          <button type="submit" class="blog-lead-submit">Send It To Me</button>
+        </form>
+        <p class="blog-lead-modal-privacy">Your email is safe. Unsubscribe anytime.</p>
+      </div>
     </div>
   </div>
 
@@ -309,12 +342,15 @@
       var form = document.getElementById('blog-lead-form');
       var formTypeInput = document.getElementById('lead-form-type');
       var modalTitle = document.getElementById('lead-modal-title');
+      var modalImage = document.querySelector('.blog-lead-modal-image');
       var firstInteraction = null;
 
       // Open modal function (called from CTA buttons)
       window.openLeadModal = function(title, formType) {
-        modalTitle.textContent = title || 'Get Your Free Resource';
-        formTypeInput.value = formType || 'kitchen-staples';
+        var p = window._blogPromo || {};
+        modalTitle.textContent = title || p.modalTitle || 'Get Your Free Resource';
+        formTypeInput.value = formType || p.modalFormType || 'lead-magnet';
+        if (modalImage && p.image) { modalImage.src = p.image; modalImage.alt = (p.title || '') + ' preview'; }
         modal.classList.add('open');
         document.body.style.overflow = 'hidden';
         firstInteraction = null;
@@ -360,15 +396,31 @@
         submitBtn.disabled = true;
 
         try {
+          var submitData = {
+            email: email,
+            firstName: firstName,
+            formType: formType,
+            source: 'blog-inline-cta'
+          };
+
+          // Include persona from blog if available
+          try {
+            var keys = Object.keys(localStorage);
+            for (var k = 0; k < keys.length; k++) {
+              if (keys[k].indexOf('persona_') === 0) {
+                var pd = JSON.parse(localStorage.getItem(keys[k]));
+                if (pd && pd.expiry > Date.now() && pd.persona) {
+                  submitData.persona = pd.persona;
+                  break;
+                }
+              }
+            }
+          } catch(e) {}
+
           var response = await fetch('/.netlify/functions/subscribe', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              email: email,
-              firstName: firstName,
-              formType: formType,
-              source: 'blog-inline-cta'
-            })
+            body: JSON.stringify(submitData)
           });
 
           var result = await response.json();
@@ -389,6 +441,91 @@
           submitBtn.textContent = 'Try Again';
           submitBtn.disabled = false;
           setTimeout(function() { submitBtn.textContent = originalText; submitBtn.disabled = false; }, 3000);
+        }
+      });
+    })();
+  </script>
+
+  <!-- Depletion Checklist Bottom Bar (mobile/tablet only) -->
+  <div class="blog-checklist-bar" id="blog-checklist-bar" data-track-section="checklist-bar">
+    <div class="blog-checklist-bar-content">
+      <img src="" alt="" class="blog-checklist-bar-thumb" width="40" height="57" loading="lazy">
+      <div class="blog-checklist-bar-text">
+        <strong></strong>
+        <span></span>
+      </div>
+      <button class="blog-checklist-bar-cta" id="blog-checklist-bar-cta" data-track-cta="checklist-bar-cta"></button>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var bar = document.getElementById('blog-checklist-bar');
+      var cta = document.getElementById('blog-checklist-bar-cta');
+      if (!bar) return;
+
+      // Don't show if already subscribed
+      if (localStorage.getItem('newsletter_subscribed')) {
+        bar.style.display = 'none';
+        return;
+      }
+
+      // Show after scrolling past 20% of the page
+      var shown = false;
+      window.addEventListener('scroll', function() {
+        if (shown) return;
+        var scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+        if (scrollPercent > 0.2) {
+          bar.classList.add('show');
+          shown = true;
+        }
+      });
+
+      // CTA opens the lead magnet modal (reads from dynamic promo config)
+      function openBarModal() {
+        if (typeof openLeadModal === 'function') {
+          var p = window._blogPromo || {};
+          openLeadModal(p.modalTitle || 'Get Your Free Guide', p.modalFormType || 'lead-magnet');
+        }
+      }
+      cta.addEventListener('click', openBarModal);
+      bar.querySelector('.blog-checklist-bar-text').addEventListener('click', openBarModal);
+    })();
+  </script>
+
+  <!-- Floating Download Ad JS (desktop) -->
+  <script>
+    (function() {
+      var ad = document.getElementById('floating-download-ad');
+      var cta = document.getElementById('floating-download-ad-cta');
+      var postContent = document.getElementById('post-content');
+      if (!ad || !postContent) return;
+
+      // Don't show if already subscribed
+      if (localStorage.getItem('newsletter_subscribed')) {
+        ad.style.display = 'none';
+        return;
+      }
+
+      // Scroll visibility — mirrors left share sidebar behavior
+      function updateAdVisibility() {
+        var contentRect = postContent.getBoundingClientRect();
+        var viewportHeight = window.innerHeight;
+        var contentTopVisible = contentRect.top < viewportHeight * 0.3;
+        var contentBottomVisible = contentRect.bottom > 100;
+        if (contentTopVisible && contentBottomVisible) {
+          ad.classList.add('visible');
+        } else {
+          ad.classList.remove('visible');
+        }
+      }
+      updateAdVisibility();
+      window.addEventListener('scroll', updateAdVisibility, { passive: true });
+
+      // CTA click (reads from dynamic promo config)
+      cta.addEventListener('click', function() {
+        if (typeof openLeadModal === 'function') {
+          var p = window._blogPromo || {};
+          openLeadModal(p.modalTitle || 'Get Your Free Guide', p.modalFormType || 'lead-magnet');
         }
       });
     })();

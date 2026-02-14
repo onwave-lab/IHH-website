@@ -202,10 +202,20 @@ Report types: `overview`, `pages`, `sources`, `events`, `daily`
 
 ### MailerLite Group IDs
 
-| Group | ID |
-|-------|-----|
-| Newsletter Subscribers | `175195722960864384` |
-| Holistic Habits Checklist | `175195632248554684` |
+| Group | ID | Form Type |
+|-------|-----|-----------|
+| Newsletter Subscribers | `175195722960864384` | `newsletter` |
+| Holistic Habits Checklist (legacy) | `175195632248554684` | — |
+| Running on Empty Guide (Depletion Signals) | `178510205243360596` | `lead-magnet` |
+| Welcome Sequence | `176503189578712288` | default fallback |
+| Supplement Guide Downloads | `177801439665456539` | `supplement-guide` |
+| Supplement Review Waitlist | `177801256141587628` | `supplement-review-waitlist` |
+| Confident Supplement Choices Interest | `177807031141401967` | `course-interest` |
+| Kitchen Staples Checklist | `177893653596866162` | `kitchen-staples` |
+| Current Clients | `175196347878606776` | — |
+| Preconception | `175196323812738757` | — |
+| Pregnancy | `175196330073785625` | — |
+| Postpartum | `175196336313861959` | — |
 
 ### MailerLite Authentication
 
@@ -255,6 +265,10 @@ If MailerLite API returns "Unauthenticated":
 ### Contact Email
 
 `info@intentionholistichealth.com`
+
+### Business Phone (SMS/Text)
+
+`(325) 999-1606` | SMS link: `sms:+13259991606`
 
 ### Credentials (Alicia Harrison)
 

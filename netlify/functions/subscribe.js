@@ -39,7 +39,7 @@ exports.handler = async (event, context) => {
 
   try {
     const data = JSON.parse(event.body);
-    const { email, firstName, formType, source, state } = data;
+    const { email, firstName, formType, source, state, persona } = data;
 
     // Validate email
     if (!email || !email.includes('@')) {
@@ -109,6 +109,11 @@ exports.handler = async (event, context) => {
     // Add state if provided
     if (state) {
       subscriberData.fields.state = state;
+    }
+
+    // Add persona if provided (from blog persona toggle)
+    if (persona) {
+      subscriberData.fields.persona = persona;
     }
 
     // Send to MailerLite

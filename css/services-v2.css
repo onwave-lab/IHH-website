@@ -1125,7 +1125,27 @@
 @media (min-width: 1024px) {
   .v3-packages-grid {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto 1fr auto auto;
   }
+
+  /* Subgrid: align Mineral Insight & Signature card sections (skip Foundations) */
+  .v3-packages-grid > .v3-package-card-redesign:not(#pkg-foundations) {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+  }
+
+  /* Foundations card: natural flow, spans all 5 rows but no subgrid */
+  #pkg-foundations {
+    grid-row: span 5;
+  }
+
+  /* Place card children into the correct shared rows */
+  .v3-package-card-redesign:not(#pkg-foundations) .v3-package-header { grid-row: 1; }
+  .v3-package-card-redesign:not(#pkg-foundations) .v3-package-description { grid-row: 2; }
+  .v3-package-card-redesign:not(#pkg-foundations) .v3-package-features { grid-row: 3; }
+  .v3-package-card-redesign:not(#pkg-foundations) .v3-package-price { grid-row: 4; }
+  .v3-package-card-redesign:not(#pkg-foundations) .v3-package-cta { grid-row: 5; }
 }
 
 .v3-package-card {
@@ -3183,6 +3203,10 @@
 /* Process Section - Box Format */
 .v3-process-boxes {
   background: var(--color-warm-cream);
+}
+
+.v3-process-boxes .v3-process-header {
+  max-width: none;
 }
 
 .v3-process-boxes .v3-process-header h2 {

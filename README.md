@@ -99,7 +99,6 @@ A custom-built website for Intention Holistic Health PLLC — a holistic wellnes
 
 - **`drafts-website-edits`**: Main working branch. Netlify auto-deploys branch previews (free).
 - **`main`**: Production branch. Merges trigger production deploys (15 credits each).
-- **`browser-coded-branch`**: For browser-based coding sessions.
 
 ### Preview URL
 

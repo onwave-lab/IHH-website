@@ -369,12 +369,9 @@ When making changes to URLs, links, or JS behaviors that users might have cached
 
 - **2026-01-10:** Changed JS/CSS/HTML from `immutable` (1 year) to `must-revalidate` after booking URL update wasn't propagating to users. Images and fonts changed from 1 year to 3 months with must-revalidate.
 
-## Branching Policy (Browser vs Local)
+## Branching Policy
 
-If not 100% certain which instance we're in, ask the user.
-
-- Browser work: first push to `browser-coded-branch` only, then optionally to `drafts-website-edits` on request.
-- Local VS Code work: push to both `browser-coded-branch` and `drafts-website-edits` so browser stays current.
+All work is done on `drafts-website-edits`. Push to this branch only. User merges to `main` for production deploys.
 
 ## Model Selection
 

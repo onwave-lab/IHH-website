@@ -15,7 +15,7 @@ An AI content system using the official Notion MCP server (replacing Notion AI) 
 
 | Setting | Value |
 |---------|-------|
-| **Platforms** | Full Suite: IG (post + stories + reel), Pinterest, Facebook, LinkedIn, Email |
+| **Platforms** | Full Suite: IG (post + stories + reel), Pinterest, Facebook, LinkedIn, Email, Google Business Post |
 | **Roadmap Location** | Notion (source of truth) + synced to `Marketing/Notion-Sync/roadmap.md` |
 | **Frequency** | Weekly (Thursdays before lunch CST) + on-demand |
 | **Research Scope** | Full: Website, socials, MailerLite, existing Notion databases |
@@ -30,7 +30,7 @@ An AI content system using the official Notion MCP server (replacing Notion AI) 
 
 ## What the System Does
 
-1. **Generates full content clusters** (blog + IG + Pinterest + FB + LinkedIn + Email)
+1. **Generates full content clusters** (blog + IG + Pinterest + FB + LinkedIn + Email + Google Post)
 2. **Uses existing templates** from SEO/AIO guide and email templates
 3. **Researches all platforms** before generating to avoid duplicates
 4. **Creates parent-child pages** in Notion for intuitive organization
@@ -52,6 +52,7 @@ Each content cluster = 1 parent page in Notion containing child pages for each p
 | Facebook | Community post |
 | LinkedIn | Professional post |
 | Email | Newsletter content |
+| Google Business Post | 150-300 word update with CTA + link |
 
 ---
 
@@ -67,6 +68,7 @@ Marketing/Notion-Sync/
 │   ├── facebook.md
 │   ├── linkedin.md
 │   ├── email.md
+│   ├── google-post.md
 │   └── metadata.json
 └── 002_2026-01-16_topic-slug/
 ```

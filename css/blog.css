@@ -1457,6 +1457,14 @@
   line-height: 1.5;
 }
 
+.author-contact-notice {
+  font-size: 0.75rem;
+  color: var(--color-medium-gray);
+  margin: -0.75rem 0 1.25rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
 .author-contact-actions {
   display: flex;
   flex-direction: column;

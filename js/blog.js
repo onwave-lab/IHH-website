@@ -984,7 +984,7 @@ Food remains the foundation.
 
 Targeted, personalized supplementation, when appropriate, is a tool to help restore + replenish.
 
-If you're curious about your own mineral status, a [Functional Lab Review](/services/lab-review.html) or [HTMA testing](/htma.html) can provide personalized insight into what your body actually needs.
+If you're curious about your own mineral status, a [Functional Lab Review](/services/lab-review.html) or [HTMA testing](/htma.html) can provide personalized insight into what your body actually needs. For a deeper look at how HTMA compares to standard blood work and why mineral ratios matter, read the [complete HTMA guide for maternal health](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
 
 ## References
 
@@ -1099,7 +1099,7 @@ But for chronic wellness—for supporting fertility, postpartum recovery, and da
 
 If you have been told your labs are "normal" but you continue to experience symptoms, it is okay to ask more questions.
 
-If you are looking for a different perspective on your health data, I offer [Functional Lab Reviews](/services/lab-review.html). This service allows us to review your existing labs through a functional lens to identify areas where your body may need more support.
+If you are looking for a different perspective on your health data, I offer [Functional Lab Reviews](/services/lab-review.html). This service allows us to review your existing labs through a functional lens to identify areas where your body may need more support. Want to understand what standard blood work may be missing entirely? Learn how [HTMA testing reveals mineral patterns that blood tests can\u2019t capture](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
 
 With love + intention,
 
@@ -1462,7 +1462,7 @@ Women who learn these foundations before pregnancy often feel more grounded, mor
 
 Preconception care does not need to be overwhelming. It's about reconnecting with the rhythms your physiology is already built upon and nourishing your body with intention.
 
-If you want personalized support during preconception, pregnancy, or postpartum, the [Intentional Mama Programs](/services/) and [Lab Review Services](/services/lab-review.html) at Intention Holistic Health provide individualized guidance to honor your body's physiology and your season of life.
+If you want personalized support during preconception, pregnancy, or postpartum, the [Intentional Mama Programs](/services/) and [Lab Review Services](/services/lab-review.html) at Intention Holistic Health provide individualized guidance to honor your body's physiology and your season of life. To learn specifically how mineral testing supports preconception and postpartum, see the [HTMA guide for maternal health](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
 
 Your body is the first home your baby will ever know. Caring for it with intention is an act of love that extends far beyond pregnancy — shaping the health of generations to come.
 
@@ -2382,26 +2382,29 @@ function renderRelatedPosts(currentPost) {
   const relatedPostsGrid = document.querySelector('.related-posts-grid');
   if (!relatedPostsGrid) return;
 
-  // Find posts with matching categories, excluding current post
-  let relatedPosts = BLOG_POSTS.filter(function(post) {
-    if (post.slug === currentPost.slug) return false;
-
-    // Check if any categories match
-    return post.categories.some(function(category) {
-      return currentPost.categories.includes(category);
-    });
-  });
+  // Score posts by number of matching categories (more matches = more relevant)
+  var scoredPosts = BLOG_POSTS
+    .filter(function(post) { return post.slug !== currentPost.slug; })
+    .map(function(post) {
+      var matchCount = post.categories.filter(function(cat) {
+        return currentPost.categories.includes(cat);
+      }).length;
+      return { post: post, score: matchCount };
+    })
+    .filter(function(item) { return item.score > 0; })
+    .sort(function(a, b) { return b.score - a.score; });
 
   // If not enough related posts, add other posts
-  if (relatedPosts.length < 3) {
-    const otherPosts = BLOG_POSTS.filter(function(post) {
-      return post.slug !== currentPost.slug && !relatedPosts.includes(post);
+  if (scoredPosts.length < 3) {
+    var otherPosts = BLOG_POSTS.filter(function(post) {
+      return post.slug !== currentPost.slug &&
+        !scoredPosts.some(function(item) { return item.post.slug === post.slug; });
     });
-    relatedPosts = relatedPosts.concat(otherPosts);
+    scoredPosts = scoredPosts.concat(otherPosts.map(function(p) { return { post: p, score: 0 }; }));
   }
 
   // Limit to 3 posts
-  relatedPosts = relatedPosts.slice(0, 3);
+  var relatedPosts = scoredPosts.slice(0, 3).map(function(item) { return item.post; });
 
   // Render the related posts with explicit dimensions to prevent CLS
   let html = '';

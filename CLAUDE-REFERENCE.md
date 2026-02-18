@@ -268,7 +268,7 @@ If MailerLite API returns "Unauthenticated":
 
 ### Business Phone (SMS/Text)
 
-`(325) 999-1606` | SMS link: `sms:+13259991606`
+`(270) 238-0813` (Google Voice) | SMS link: `sms:+12702380813`
 
 ### Credentials (Alicia Harrison)
 

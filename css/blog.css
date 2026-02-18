@@ -703,6 +703,13 @@
   color: var(--color-sage-dark);
 }
 
+/* Arrow icons on internal links (not TOC, CTAs, or external links) */
+#post-content a:not([target="_blank"]):not([href^="#"]):not(.blog-cta-button)::after {
+  content: ' \2192';
+  font-size: 0.85em;
+  opacity: 0.6;
+}
+
 /* Highlight box for key points */
 .highlight-box {
   background-color: var(--color-warm-cream);
@@ -1720,6 +1727,46 @@
     width: 100%;
     text-align: center;
   }
+}
+
+/* -----------------------------------------
+   CTA ROW (side-by-side compact CTA cards)
+   ----------------------------------------- */
+.blog-cta-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+@media (min-width: 768px) {
+  .blog-cta-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.blog-cta-row .blog-cta-box {
+  flex-direction: column;
+  margin: 0;
+  padding: var(--spacing-md);
+  gap: var(--spacing-sm);
+  background: var(--color-warm-cream);
+  border: 1px solid rgba(141, 148, 136, 0.15);
+  text-align: center;
+}
+
+.blog-cta-row .blog-cta-title {
+  font-size: 1.1rem;
+}
+
+.blog-cta-row .blog-cta-description {
+  font-size: 0.88rem;
+}
+
+.blog-cta-row .blog-cta-button {
+  padding: 10px 22px;
+  font-size: 0.88rem;
+  width: 100%;
 }
 
 /* -----------------------------------------

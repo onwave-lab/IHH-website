@@ -22,9 +22,9 @@ const DEFAULT_PROMO = {
 // For simplicity, we define posts here that can be easily updated
 const BLOG_POSTS = [
   {
-    slug: '2026-02-13-htma-complete-guide-maternal-health',
+    slug: '2026-02-17-htma-complete-guide-maternal-health',
     title: 'HTMA Testing for Maternal Health: What Your Blood Work May Be Missing',
-    date: '2026-02-13',
+    date: '2026-02-17',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'What is HTMA testing and why does it matter for maternal health? Learn what functional mineral testing reveals for preconception and postpartum that standard blood work may miss.',
     image: '/images/blog/htma-complete-guide-maternal-health.webp',
@@ -114,13 +114,13 @@ When you go to your primary care provider, the labs they order are typically lim
 
 And for what those labs are designed to do, that\u2019s accurate. But \u201cnothing is wrong\u201d and \u201cmy body is functioning at its best\u201d are two very different things.
 
-In a typical family practice visit, your provider may order a CBC, a metabolic panel, maybe thyroid markers. It\u2019s a relatively short list, and the reference ranges are broad. They\u2019re built to catch disease, not to evaluate how well your body is actually running.
+In a typical family practice visit, your provider may order a **CBC**, a **metabolic panel**, maybe **thyroid markers**. It\u2019s a relatively short list, and the reference ranges are broad. They\u2019re built to catch disease, not to evaluate how well your body is actually running.
 
 Functional testing, including HTMA, offers a different perspective.
 
 When working with women, I look at things differently. I may order a much broader panel of blood work based on your symptoms and history, and I evaluate those results using narrower, optimal ranges \u2014 not just checking whether you fall within \u201cnormal limits.\u201d I\u2019m looking at how your markers relate to each other, not just whether each one clears the bar individually. I also add tools like HTMA that provide information blood work simply doesn\u2019t capture.
 
-Research supports this approach. A study published in *Clinical Chemistry* found that less than 1% of total body magnesium is in the blood, meaning serum magnesium levels don\u2019t reliably reflect what\u2019s actually stored in your tissues (Elin, 1987). A follow-up review in *Nutrients* confirmed this remains a significant limitation of standard blood testing (Workinger et al., 2018). Your blood work can look fine while your body\u2019s reserves are quietly running low.
+Research supports this approach. A study published in *Clinical Chemistry* found that less than 1% of total body magnesium is in the blood, meaning serum magnesium levels don\u2019t reliably reflect what\u2019s actually stored in your tissues.<sup>[1](#references)</sup> A follow-up review in *Nutrients* confirmed this remains a significant limitation of standard blood testing.<sup>[5](#references)</sup> Your blood work can look fine while your body\u2019s reserves are quietly running low.
 
 Neither approach replaces the other. They serve different purposes. I offer [blood work review](/services/lab-review.html) in addition to HTMA based on your symptoms, history, and individual needs as part of my [packages and programs](/services/). The goal is always to use the right combination of tools to build a complete picture.
 
@@ -128,13 +128,15 @@ Neither approach replaces the other. They serve different purposes. I offer [blo
 
 Understanding the roles of key minerals can help you see why mineral status matters so much, particularly during pregnancy preparation and early motherhood. The information below is for educational purposes, not self-diagnosis.
 
+[INSIGHT:If you\u2019re dealing with fatigue, sleep disruption, muscle cramps, or anxiety \u2014 these are often connected to the minerals below. Understanding which ones may be low gives you a starting point that\u2019s personal, not generic.]
+
 ### Magnesium
 
 Magnesium is involved in over 300 processes in your body. It supports energy production, muscle function, blood sugar balance, sleep quality, and nervous system regulation. Many women are already running low before pregnancy, and pregnancy increases the demand significantly.
 
 ### Zinc
 
-Zinc is essential for hormone production, immune function, wound healing, and cellular repair. Research published in *Biology of Reproduction* identifies zinc as a critical component in processes that regulate female reproductive health and fertility (Garner et al., 2021). Zinc also needs to be balanced with copper, and that balance is one of the most common patterns I evaluate on HTMA.
+Zinc is essential for hormone production, immune function, wound healing, and cellular repair. Research published in *Biology of Reproduction* identifies zinc as a critical component in processes that regulate female reproductive health and fertility.<sup>[2](#references)</sup> Zinc also needs to be balanced with copper, and that balance is one of the most common patterns I evaluate on HTMA.
 
 ### Copper
 
@@ -142,7 +144,7 @@ Copper supports iron metabolism, connective tissue, and nervous system function.
 
 ### Calcium
 
-Calcium is foundational for bone health, muscle contraction, nerve function, and fetal skeletal development. During pregnancy, your body prioritizes getting calcium to your baby. Research published in *Physiological Reviews* found that the average fetus accumulates approximately 30 grams of calcium by birth, with more than 80% of that in the third trimester alone (Kovacs, 2016). Your body adapts by absorbing more calcium from food and, when needed, drawing from your own skeletal reserves.
+Calcium is foundational for bone health, muscle contraction, nerve function, and fetal skeletal development. During pregnancy, your body prioritizes getting calcium to your baby. Research published in *Physiological Reviews* found that the average fetus accumulates approximately 30 grams of calcium by birth, with more than 80% of that in the third trimester alone.<sup>[3](#references)</sup> Your body adapts by absorbing more calcium from food and, when needed, drawing from your own skeletal reserves.
 
 ### Sodium and Potassium
 
@@ -150,7 +152,7 @@ These two get overlooked, but on HTMA, they\u2019re some of the most telling mar
 
 ### Iron
 
-Iron deficiency is the most common nutritional deficiency worldwide, and women of reproductive age are hit hardest. Iron isn\u2019t tested directly on most HTMA panels, but HTMA can reveal patterns in copper and zinc that may influence how your body absorbs and uses iron. Iron status is best assessed through blood work (ferritin, serum iron, TIBC), and I include these tests when appropriate as part of my programs.
+Iron deficiency is the most common nutritional deficiency worldwide, and women of reproductive age are hit hardest. Iron isn\u2019t tested directly on most HTMA panels, but HTMA can reveal patterns in copper and zinc that may influence how your body absorbs and uses iron. Iron status is best assessed through blood work (**ferritin**, **serum iron**, **TIBC**), and I include these tests when appropriate as part of my programs.
 
 [DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Depletion Signals Checklist|Not sure where to start? This free checklist can help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
 
@@ -162,12 +164,14 @@ Minerals don\u2019t work in isolation. They push and pull against each other. Wh
 
 Key ratios evaluated on HTMA include:
 
-- **Calcium-to-Magnesium:** May reflect patterns related to metabolic function and nervous system balance
-- **Sodium-to-Potassium:** Often evaluated in relation to adrenal function and the body\u2019s stress response
-- **Zinc-to-Copper:** Relevant to hormone balance and immune function
-- **Calcium-to-Potassium:** May relate to thyroid function and energy metabolism
+- **Calcium-to-Magnesium:** May reflect patterns related to metabolic function and nervous system balance. *Think: muscle cramps, tension headaches, or difficulty falling asleep*
+- **Sodium-to-Potassium:** Often evaluated in relation to adrenal function and the body\u2019s stress response. *Think: exhausted but wired at night, afternoon crashes, feeling overwhelmed by small stressors*
+- **Zinc-to-Copper:** Relevant to hormone balance and immune function. *Think: irregular cycles, skin changes, mood swings, or feeling \u2018not yourself\u2019*
+- **Calcium-to-Potassium:** May relate to thyroid function and energy metabolism. *Think: persistent fatigue, sluggish mornings, feeling cold, brain fog*
 
 A qualified practitioner looks at these ratios with your symptoms to identify patterns, not to diagnose conditions, but to understand where your body may be compensating.
+
+[INSIGHT:If you\u2019re waking at 3 a.m. or can\u2019t fall asleep despite being exhausted, it may not be \u201cjust stress.\u201d These ratio patterns can point to specific areas your body may be compensating.]
 
 ## HTMA for Preconception: Building Reserves Before Pregnancy
 
@@ -207,7 +211,7 @@ Functional mineral assessment may be most valuable \u2014 and most overlooked \u
 
 Maternal nutrient depletion describes the cumulative physical and nutritional toll of pregnancy, birth, and early motherhood. It\u2019s a concept that\u2019s gained more attention in recent years, and the research backs it up.
 
-A study published in *PLOS One* found that 90% of postpartum women in the study were zinc deficient, calling it \u201cthe first comprehensive study indicating that zinc deficiency is highly prevalent among postpartum women\u201d (Kristufkova et al., 2025). And zinc is just one mineral.
+A study published in *PLOS One* found that 90% of postpartum women in the study were zinc deficient, calling it \u201cthe first comprehensive study indicating that zinc deficiency is highly prevalent among postpartum women.\u201d<sup>[4](#references)</sup> And zinc is just one mineral.
 
 Maternal depletion is distinct from postpartum depression, though depletion can coexist with or contribute to mood changes.
 
@@ -225,7 +229,7 @@ Pregnancy and birth draw heavily from your mineral reserves. Some of what resear
 
 - **Magnesium demand increases significantly** during pregnancy
 - **Copper and zinc dynamics shift** as estrogen fluctuates during and after pregnancy
-- **Calcium is actively transferred to your baby**, with roughly 30 grams accumulated by birth, most of it in the third trimester (Kovacs, 2016)
+- **Calcium is actively transferred to your baby**, with roughly 30 grams accumulated by birth, most of it in the third trimester<sup>[3](#references)</sup>
 - **Iron stores are commonly depleted** in women of reproductive age
 
 ### Why Generic Advice Often Isn\u2019t Enough
@@ -233,6 +237,8 @@ Pregnancy and birth draw heavily from your mineral reserves. Some of what resear
 \u201cJust eat well and rest\u201d is good advice on paper \u2014 and [food should always be the foundation](/blog/post.html?post=2025-01-15-minerals-from-food) \u2014 but without knowing where you\u2019re specifically depleted, you\u2019re rebuilding without a roadmap.
 
 Functional mineral assessment provides actual data. Instead of guessing which supplements to take or following generic nutrition advice, you can see which minerals your body may need most and in what balance. That\u2019s what makes it personal instead of generic.
+
+[INSIGHT:Instead of guessing at supplements or following a one-size-fits-all postnatal protocol, functional testing gives you a starting point based on your body\u2019s actual data.]
 
 ### When to Test in Early Motherhood
 
@@ -291,15 +297,15 @@ When working with women, I incorporate HTMA as part of my holistic approach \u20
 
 ## References
 
-1. Elin, R.J. (1987). Assessment of magnesium status. *Clinical Chemistry*, 33(11), 1965-1970. DOI: 10.1093/clinchem/33.11.1965
+1. Elin, R.J. (1987). Assessment of magnesium status. *Clinical Chemistry*, 33(11), 1965-1970. [DOI: 10.1093/clinchem/33.11.1965](https://doi.org/10.1093/clinchem/33.11.1965)
 
-2. Garner, T.B., Hester, J.M., Carothers, A., & Diaz, F.J. (2021). Role of zinc in female reproduction. *Biology of Reproduction*, 104(5), 976-994. DOI: 10.1093/biolre/ioab023
+2. Garner, T.B., Hester, J.M., Carothers, A., & Diaz, F.J. (2021). Role of zinc in female reproduction. *Biology of Reproduction*, 104(5), 976-994. [DOI: 10.1093/biolre/ioab023](https://doi.org/10.1093/biolre/ioab023)
 
-3. Kovacs, C.S. (2016). Maternal Mineral and Bone Metabolism During Pregnancy, Lactation, and Post-Weaning Recovery. *Physiological Reviews*, 96(2), 449-547. DOI: 10.1152/physrev.00027.2015
+3. Kovacs, C.S. (2016). Maternal Mineral and Bone Metabolism During Pregnancy, Lactation, and Post-Weaning Recovery. *Physiological Reviews*, 96(2), 449-547. [DOI: 10.1152/physrev.00027.2015](https://doi.org/10.1152/physrev.00027.2015)
 
-4. Kristufkova, A., et al. (2025). Micronutrient dynamics and deficiency risk across pregnancy and postpartum in a Slovak cohort. *PLOS One*, 20(9), e0331125. DOI: 10.1371/journal.pone.0331125
+4. Kristufkova, A., et al. (2025). Micronutrient dynamics and deficiency risk across pregnancy and postpartum in a Slovak cohort. *PLOS One*, 20(9), e0331125. [DOI: 10.1371/journal.pone.0331125](https://doi.org/10.1371/journal.pone.0331125)
 
-5. Workinger, J.L., Doyle, R.P., & Bortz, J. (2018). Challenges in the Diagnosis of Magnesium Status. *Nutrients*, 10(9), 1202. DOI: 10.3390/nu10091202
+5. Workinger, J.L., Doyle, R.P., & Bortz, J. (2018). Challenges in the Diagnosis of Magnesium Status. *Nutrients*, 10(9), 1202. [DOI: 10.3390/nu10091202](https://doi.org/10.3390/nu10091202)
 
 ## Your Next Step
 
@@ -307,9 +313,10 @@ If you\u2019re preparing for pregnancy and want to know whether your body has th
 
 You don\u2019t have to keep guessing. And you don\u2019t have to accept \u201cthis is just how it is.\u201d
 
+[CTA-ROW-START]
 [CTA:Book a Free Discovery Call|I\u2019d love to hear where you are and talk through whether HTMA testing makes sense for you.|apply|Book Your Free Call]
-
 [CTA:Download the Depletion Signals Checklist|Not sure where to start? This free checklist can help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
+[CTA-ROW-END]
 
 *Individual results vary. This guide is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
     `,
@@ -370,6 +377,19 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     cardAspectRatio: '83.83%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'nutrition'],
+    promo: {
+      title: 'Healthy Kitchen Staples Checklist',
+      modalTitle: 'Get Your Free Kitchen Staples Checklist',
+      description: 'A printable list of nourishing, low-tox staples I keep on hand for whole foods living.',
+      descriptionShort: 'Nourishing, low-tox staples for whole foods living.',
+      badge: 'Free Download',
+      ctaText: 'Get the Free Checklist',
+      formType: 'kitchen-staples',
+      modalFormType: 'kitchen-staples',
+      image: '/images/kitchen-staples-preview-inline.webp',
+      imageSidebar: '/images/kitchen-staples-preview-sidebar.webp',
+      imageThumb: '/images/kitchen-staples-preview-thumb.webp'
+    },
     content: `
 # Things I Do to Make Home Cooking More Sustainable
 ## Physically, Mentally, & Financially—Without Spending a Whole Day Meal Prepping
@@ -1839,11 +1859,24 @@ function parseMarkdown(markdown) {
     </div>`;
   });
 
+  // CTA row wrappers [CTA-ROW-START] / [CTA-ROW-END]
+  html = html.replace(/\[CTA-ROW-START\]/gim, '<div class="blog-cta-row">');
+  html = html.replace(/\[CTA-ROW-END\]/gim, '</div>');
+
   // CTA boxes [CTA:title|description|formType|buttonText]
-  // formType is used to identify which lead magnet (e.g., "kitchen-staples")
+  // formType "apply" links to Practice Better; others open lead magnet modal
   html = html.replace(/\[CTA:([^|]+)\|([^|]+)\|([^|]+)\|([^\]]+)\]/gim, function(match, title, description, formType, buttonText) {
     var escapedTitle = title.trim().replace(/'/g, "\\'");
     var escapedFormType = formType.trim().replace(/'/g, "\\'");
+    if (formType.trim() === 'apply') {
+      return `<div class="blog-cta-box">
+      <div class="blog-cta-content">
+        <h4 class="blog-cta-title">${title.trim()}</h4>
+        <p class="blog-cta-description">${description.trim()}</p>
+      </div>
+      <a href="https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/forms?f=69627b92b758cb04b246009e" target="_blank" rel="noopener noreferrer" class="blog-cta-button" data-track-cta="blog-inline-cta">${buttonText.trim()}</a>
+    </div>`;
+    }
     return `<div class="blog-cta-box">
       <div class="blog-cta-content">
         <h4 class="blog-cta-title">${title.trim()}</h4>
@@ -1851,6 +1884,11 @@ function parseMarkdown(markdown) {
       </div>
       <button type="button" class="blog-cta-button" onclick="openLeadModal('${escapedTitle}', '${escapedFormType}')" data-track-cta="blog-inline-cta">${buttonText.trim()}</button>
     </div>`;
+  });
+
+  // Insight callout boxes [INSIGHT:content]
+  html = html.replace(/\[INSIGHT:([^\]]+)\]/gim, function(match, content) {
+    return '<div class="content-callout"><p class="content-callout-title">Why this matters for you</p><p>' + content.trim() + '</p></div>';
   });
 
   // Blockquotes (> lines)

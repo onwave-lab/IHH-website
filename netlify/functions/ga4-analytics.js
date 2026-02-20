@@ -123,6 +123,26 @@ async function fetchGA4Data(accessToken, reportType = 'overview', dateRange = '3
       orderBys: [{ metric: { metricName: 'eventCount' }, desc: true }],
       limit: 20
     },
+    blog: {
+      dateRanges: [{ startDate, endDate }],
+      dimensions: [{ name: 'pageTitle' }],
+      metrics: [
+        { name: 'screenPageViews' },
+        { name: 'activeUsers' },
+        { name: 'averageSessionDuration' }
+      ],
+      dimensionFilter: {
+        filter: {
+          fieldName: 'pagePath',
+          stringFilter: {
+            matchType: 'BEGINS_WITH',
+            value: '/blog/post'
+          }
+        }
+      },
+      orderBys: [{ metric: { metricName: 'screenPageViews' }, desc: true }],
+      limit: 20
+    },
     daily: {
       dateRanges: [{ startDate, endDate }],
       dimensions: [{ name: 'date' }],

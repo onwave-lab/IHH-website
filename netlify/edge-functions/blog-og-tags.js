@@ -6,6 +6,11 @@ const SITE_URL = 'https://www.intentionholistichealth.com';
 // Blog post metadata - keep in sync with js/blog.js
 // Only includes fields needed for OG tags
 const BLOG_POSTS = {
+  '2026-02-24-depleted-signs-before-pregnancy': {
+    title: 'Are You Depleted? Signs to Address Before Pregnancy',
+    excerpt: 'Many women enter pregnancy already running low on essential minerals. Learn the common signs of depletion that are easy to dismiss, why they matter for preconception health, and what steps you can take before conception.',
+    image: '/images/blog/depleted-signs-before-pregnancy.webp'
+  },
   '2026-02-17-htma-complete-guide-maternal-health': {
     title: 'HTMA Testing for Maternal Health: What Your Blood Work May Be Missing',
     excerpt: 'What is HTMA testing and why does it matter for maternal health? Learn what functional mineral testing reveals for preconception and postpartum that standard blood work may miss.',

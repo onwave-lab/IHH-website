@@ -22,6 +22,212 @@ const DEFAULT_PROMO = {
 // For simplicity, we define posts here that can be easily updated
 const BLOG_POSTS = [
   {
+    slug: '2026-02-24-depleted-signs-before-pregnancy',
+    title: 'Are You Depleted? Signs to Address Before Pregnancy',
+    date: '2026-02-24',
+    author: 'Alicia Harrison, MSN, APRN, FNP-C',
+    template: 'superior',
+    excerpt: 'Many women enter pregnancy already running low on essential minerals. Learn the common signs of depletion that are easy to dismiss, why they matter for preconception health, and what steps you can take before conception.',
+    image: '/images/blog/depleted-signs-before-pregnancy.webp',
+    cardAspectRatio: '83.83%',
+    imageAspectRatio: '83.83%',
+    categories: ['wellness', 'foundations', 'preconception'],
+    content: `
+# Are You Depleted? Signs to Address Before Pregnancy
+
+*This content is for educational and informational purposes only. It is not medical advice. Always consult your healthcare provider.*
+
+&nbsp;
+
+**In This Article**
+
+- [What Does Depletion Actually Look Like?](#what-does-depletion-actually-look-like)
+- [The Signs Your Body May Be Sending](#the-signs-your-body-may-be-sending)
+- [Why These Signs Matter Before Pregnancy](#why-these-signs-matter-before-pregnancy)
+- [What Testing Can Reveal That Symptoms Alone Cannot](#what-testing-can-reveal-that-symptoms-alone-cannot)
+- [From Awareness to Action](#from-awareness-to-action)
+- [References](#references)
+- [Frequently Asked Questions](#faqs)
+
+<div class="blog-summary-note">Many women enter pregnancy already running low on essential minerals and nutrients\u2014without knowing it. This article explores common signs of depletion that are easy to dismiss, why they matter for preconception health, and what steps you can take to understand your body\u2019s reserves before conception.</div>
+
+You\u2019re doing everything you can to prepare. You\u2019re eating well, staying active, taking a prenatal. But something still feels off.
+
+Maybe it\u2019s the fatigue that doesn\u2019t lift no matter how much sleep you get. Maybe it\u2019s the hair falling out, the cravings that won\u2019t stop, or the anxiety that showed up out of nowhere. You\u2019ve probably been told it\u2019s just stress. Or maybe your labs came back \u201cnormal\u201d and you were sent on your way.
+
+Here\u2019s what often gets missed: a lot of women are already depleted *before* pregnancy begins.
+
+We hear a lot about postpartum depletion\u2014and rightfully so. But the conversation rarely goes back far enough. If your mineral and nutrient reserves are already running low before conception, pregnancy doesn\u2019t create depletion from scratch. It deepens what was already there.
+
+As a Family Nurse Practitioner who takes a holistic, foundations-first approach, this is one of the most important patterns I see in the women I work with. And the encouraging part is that once you know what to look for, you can start addressing it\u2014often well before you\u2019re ready to conceive.
+
+If your blood work has come back \u201cnormal\u201d but you still don\u2019t feel right, [that disconnect is worth exploring further](/blog/post.html?post=2025-01-09-labs-normal-feel-off).
+
+## What Does Depletion Actually Look Like?
+
+Depletion isn\u2019t a clinical diagnosis you\u2019ll find in a textbook. It\u2019s a pattern\u2014a gradual loss of reserves that builds over months or years. It can stem from chronic stress, nutrient-poor diets, hormonal contraceptive use, digestive issues, or simply the cumulative demands of modern life.
+
+In the research, this concept is sometimes framed as *maternal nutritional depletion*\u2014the idea that a woman\u2019s body can become progressively depleted across reproductive cycles, especially when there isn\u2019t adequate time or nourishment between pregnancies to rebuild.<sup>[1](#references)</sup>
+
+But depletion doesn\u2019t only happen after birth. Many women arrive at their first pregnancy already operating on lowered reserves. Research suggests that a significant percentage of women in the United States may not be meeting recommended intakes for key nutrients even before pregnancy begins.<sup>[8](#references)</sup> The signs tend to be subtle\u2014easy to attribute to stress, poor sleep, or \u201cjust getting older.\u201d
+
+They\u2019re not dramatic enough to flag a diagnosis, but they\u2019re persistent enough to affect how you feel every day.
+
+## The Signs Your Body May Be Sending
+
+These are five common patterns that may point to underlying depletion. None of them, on their own, are diagnostic\u2014but when they cluster together, they can suggest that your body\u2019s reserves may need attention before conception.
+
+### 1. Fatigue That Doesn\u2019t Improve With Rest
+
+This is often the first sign women notice, and the first one they dismiss. You\u2019re sleeping seven or eight hours and still waking up exhausted. Coffee gets you through the morning, but by afternoon you\u2019re running on fumes.
+
+This kind of persistent fatigue may point to low magnesium, iron, or both. Magnesium is involved in over 300 enzymatic reactions and plays a central role in cellular energy production (ATP synthesis). When tissue-level magnesium is low, your cells may simply not be producing energy efficiently\u2014regardless of how many hours you sleep. Iron, meanwhile, is required for oxygen transport to every tissue in your body.<sup>[9](#references)</sup>
+
+Fatigue is also one of the most common symptoms dismissed by standard labs. You can have a \u201cnormal\u201d CBC and still be functionally low in the nutrients your body needs to produce energy.
+
+### 2. Hair Changes, Brittle Nails, or Skin Issues
+
+Thinning hair, excessive shedding, nails that break easily, or skin that feels dry and dull are often written off as cosmetic concerns. But these are some of the body\u2019s earliest external signals that something deeper may be going on.
+
+A review published in *Dermatology and Therapy* found associations between hair loss and deficiencies in iron, zinc, biotin, and other micronutrients.<sup>[5](#references)</sup> Zinc in particular is essential for tissue repair, protein synthesis, and cell division\u2014all of which affect how your hair, skin, and nails look and feel. When zinc stores are low, the body prioritizes more critical functions, and tissue renewal slows down.
+
+These changes may appear months before more obvious symptoms emerge, making them easy to overlook.
+
+### 3. Mood Shifts, Increased Anxiety, or Feeling \u201cNot Yourself\u201d
+
+Anxiety that seems out of proportion to your circumstances, irritability, or a general sense of feeling \u201coff\u201d emotionally\u2014these may not be purely psychological.
+
+Magnesium functions as a natural modulator of the NMDA receptor in the brain, and research has demonstrated a bidirectional relationship between magnesium status and the body\u2019s stress response. Low magnesium may increase vulnerability to stress, and stress may increase magnesium loss\u2014creating a cycle that can be difficult to break without addressing the underlying mineral status.<sup>[3](#references)</sup>
+
+Zinc and copper dynamics also play a role. These two minerals need to stay in balance, and when copper is relatively elevated (which can happen with estrogen-dominant states or high stress), it may contribute to mood and cognitive symptoms.<sup>[7](#references)</sup> This is one of the patterns commonly evaluated through functional mineral assessment.
+
+### 4. Relentless Cravings or Blood Sugar Swings
+
+If you\u2019re constantly craving sugar, salt, or carbohydrates\u2014or if you experience energy crashes, shakiness between meals, or brain fog when you go too long without eating\u2014mineral status may be part of the picture.
+
+Chromium and magnesium both play roles in insulin signaling and blood sugar regulation. Research has also connected zinc status to glucose metabolism and appetite regulation.<sup>[2](#references)</sup> When these minerals are insufficient, your body may signal the need for quick energy in the form of sugar or refined carbohydrates, even when you\u2019ve eaten recently.
+
+Cravings aren\u2019t a matter of willpower. They can be your body\u2019s way of communicating a specific need\u2014one that generic dietary advice doesn\u2019t always address.
+
+### 5. Sleep That Never Feels Restorative
+
+You fall asleep fine\u2014or maybe you don\u2019t\u2014but either way, you wake up feeling like you never rested. You might wake at 2 or 3 a.m. and struggle to fall back asleep, or you may sleep through the night and still feel unrested.
+
+Sleep quality is influenced by cortisol rhythms, and mineral status may affect how well those rhythms function. The calcium-to-magnesium ratio, commonly evaluated on HTMA, is one of the patterns practitioners look at when assessing sleep and nervous system regulation. When calcium is relatively elevated compared to magnesium, the nervous system may remain in a more activated state, making it harder for your body to enter and sustain deep, restorative sleep.
+
+Poor sleep also compounds depletion: your body does the majority of its cellular repair during sleep, and when that process is disrupted, mineral utilization may be less efficient.
+
+[INSIGHT:If several of these sound familiar, that\u2019s not a coincidence. Depletion patterns tend to overlap because the same minerals\u2014magnesium, zinc, iron\u2014are involved in energy, mood, sleep, and tissue health simultaneously.]
+
+## Why These Signs Matter Before Pregnancy
+
+Pregnancy is one of the most nutrient-demanding events the human body undergoes. Blood volume expands by roughly 50%. The developing baby requires its own supply of zinc, iron, calcium, magnesium, and other essential minerals\u2014and it draws them directly from the mother\u2019s reserves.
+
+A landmark review published in *The Lancet* emphasized that a woman\u2019s nutritional status before conception is one of the strongest predictors of pregnancy outcomes\u2014not just for her, but for the long-term health of her child.<sup>[6](#references)</sup> This includes risks associated with preterm birth, low birth weight, and developmental complications.
+
+Research has also shown that inadequate zinc status may be associated with adverse pregnancy outcomes, including low birth weight and preterm delivery.<sup>[4](#references)</sup> Emerging evidence further suggests that the balance between copper and zinc may play a role in preterm labor risk.<sup>[10](#references)</sup>
+
+The point isn\u2019t to create fear. It\u2019s to highlight an opportunity: the months before conception are a window where addressing depletion may make a meaningful difference. If your body is already struggling to meet its own needs, adding the demands of pregnancy on top of that can widen the gap.
+
+This is why preconception care deserves more than a prenatal vitamin and a pat on the back. For a deeper look at how to prepare your body before conception, see [Your Body Is the First Home: Returning to the Foundations That Support Fertility and Pregnancy Health](/blog/post.html?post=2024-11-15-body-first-home).
+
+[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Running on Empty? Get the Free Guide|Not sure where to start? This free checklist can help you recognize what your body may already be telling you\u2014and what to do next.|lead-magnet|Get the Free Guide]
+
+## What Testing Can Reveal That Symptoms Alone Cannot
+
+Symptoms are signals, but they don\u2019t tell you the full story. Two women can both experience fatigue and anxiety\u2014but for completely different underlying reasons. Without data, you\u2019re left guessing.
+
+Standard blood work has real value, but most routine panels weren\u2019t designed to assess mineral reserves or evaluate how nutrients interact at the tissue level. A \u201cnormal\u201d result on a standard metabolic panel doesn\u2019t mean your body has adequate stores of the minerals it needs for pregnancy.
+
+[Hair Tissue Mineral Analysis (HTMA)](/htma.html) offers a different lens. It measures minerals deposited in tissue over a 3\u20134 month window, including ratios between minerals that can reveal patterns blood work misses entirely. For a comprehensive look at what HTMA measures and how it differs from conventional labs, see the [HTMA Complete Guide](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
+
+Functional blood work\u2014when interpreted through optimal ranges rather than broad reference ranges\u2014adds another layer. Together, these tools create a more complete picture of what\u2019s happening inside your body. If you\u2019ve been told your labs are normal but you still don\u2019t feel right, [there may be a reason for that](/blog/post.html?post=2025-01-09-labs-normal-feel-off).
+
+Both HTMA and comprehensive blood work review are available as part of my [packages and programs](/services/). For women who want to start with their existing lab results, I also offer a standalone [Lab Review](/services/lab-review.html).
+
+## From Awareness to Action
+
+Recognizing the signs of depletion is the first step. Here\u2019s how to move forward with intention:
+
+**Nourish consistently.** Focus on nutrient-dense, whole foods that support mineral intake\u2014quality proteins, healthy fats, and a variety of colorful vegetables. Food should always be the foundation, though [food alone may not be enough](/blog/post.html?post=2025-01-15-minerals-from-food) to correct established depletion patterns.
+
+**Track your patterns.** Pay attention to which symptoms are most persistent. Fatigue, mood changes, hair and skin issues, cravings, and sleep disruption are all data points. Write them down.
+
+**Evaluate your prenatal.** Not all prenatals are created equal, and a prenatal alone is unlikely to correct existing deficiencies\u2014particularly if absorption or mineral balance is a factor. A personalized approach based on testing may be more effective than a one-size-fits-all supplement.
+
+**Consider functional assessment.** If you\u2019re planning pregnancy in the next 6\u201318 months, functional mineral assessment can give you a clearer starting point than guesswork. Understanding where your body is now helps you make more informed decisions about what it needs next.
+
+The goal isn\u2019t perfection. It\u2019s preparation\u2014building the reserves your body may need before it\u2019s asked to sustain two lives. For a broader framework on how to approach this, see [Your Body Is the First Home](/blog/post.html?post=2024-11-15-body-first-home).
+
+## References
+
+1. King, J.C. (2003). The risk of maternal nutritional depletion and poor outcomes increases in early or closely spaced pregnancies. *The Journal of Nutrition*, 133(5), 1732S-1736S. [DOI: 10.1093/jn/133.5.1732S](https://doi.org/10.1093/jn/133.5.1732S)
+
+2. Garner, T.B., Hester, J.M., Carothers, A., & Diaz, F.J. (2021). Role of zinc in female reproduction. *Biology of Reproduction*, 104(5), 976-994. [DOI: 10.1093/biolre/ioab023](https://doi.org/10.1093/biolre/ioab023)
+
+3. Pickering, G., Mazur, A., Trousselard, M., et al. (2020). Magnesium status and stress: The vicious circle concept revisited. *Nutrients*, 12(12), 3672. [DOI: 10.3390/nu12123672](https://doi.org/10.3390/nu12123672)
+
+4. Chaffee, B.W. & King, J.C. (2012). Effect of zinc supplementation on pregnancy and infant outcomes: A systematic review. *Paediatric and Perinatal Epidemiology*, 26(s1), 118-137. [DOI: 10.1111/j.1365-3016.2012.01289.x](https://doi.org/10.1111/j.1365-3016.2012.01289.x)
+
+5. Almohanna, H.M., Ahmed, A.A., Tsatalis, J.P., & Tosti, A. (2019). The role of vitamins and minerals in hair loss: A review. *Dermatology and Therapy*, 9(1), 51-70. [DOI: 10.1007/s13555-018-0278-6](https://doi.org/10.1007/s13555-018-0278-6)
+
+6. Stephenson, J., Heslehurst, N., Hall, J., et al. (2018). Before the beginning: Nutrition and lifestyle in the preconception period and its importance for future health. *The Lancet*, 391(10132), 1830-1841. [DOI: 10.1016/S0140-6736(18)30311-8](https://doi.org/10.1016/S0140-6736(18)30311-8)
+
+7. Grieger, J.A., Grzeskowiak, L.E., Wilson, R.L., et al. (2019). Maternal selenium, copper, and zinc concentrations in early pregnancy, and the association with fertility. *Nutrients*, 11(7), 1609. [DOI: 10.3390/nu11071609](https://doi.org/10.3390/nu11071609)
+
+8. Bailey, R.L., Pac, S.G., Fulgoni, V.L., et al. (2019). Estimation of total usual dietary intakes of pregnant women in the United States. *JAMA Network Open*, 2(6), e195967. [DOI: 10.1001/jamanetworkopen.2019.5967](https://doi.org/10.1001/jamanetworkopen.2019.5967)
+
+9. Gernand, A.D., Schulze, K.J., Stewart, C.P., West, K.P., & Christian, P. (2016). Micronutrient deficiencies in pregnancy worldwide: Health effects and prevention. *Nature Reviews Endocrinology*, 12(5), 274-289. [DOI: 10.1038/nrendo.2016.37](https://doi.org/10.1038/nrendo.2016.37)
+
+10. Roumeliotaki, T., Koutra, K., Gianicolo, E.A.L., et al. (2023). Maternal copper and zinc status and risk of preterm birth: A systematic review and meta-analysis. *BMC Pregnancy and Childbirth*, 23, 811. [DOI: 10.1186/s12884-023-06092-7](https://doi.org/10.1186/s12884-023-06092-7)
+
+## Your Next Step
+
+You don\u2019t have to have it all figured out before starting a family. But if your body has been sending signals\u2014persistent fatigue, hair changes, mood shifts, cravings, or sleep that never restores you\u2014those signals deserve attention.
+
+Preconception is one of the most powerful windows for change. What you address now may shape not just your pregnancy experience, but your long-term health and your child\u2019s.
+
+*Clinical services are currently available to Kentucky residents.*
+
+[CTA-ROW-START]
+[CTA:Book a Free Discovery Call|Let\u2019s talk about where you are and whether functional assessment makes sense for your goals\u2014no pressure, just honest conversation.|apply|Book Your Free Call]
+[CTA:Download the Free Guide|Not sure where to start? Get a free checklist of depletion signals to watch for before pregnancy.|lead-magnet|Get the Free Guide]
+[CTA-ROW-END]
+
+*Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
+    `,
+    disclaimer: `This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
+
+Any individuals depicted in images on this website or associated content are models or stock photography subjects and are not patients, clients, or recipients of services from Intention Holistic Health. Images are used for illustrative purposes only and do not represent clinical relationships, medical outcomes, or specific health conditions.
+
+Intention Holistic Health provides educational wellness guidance and, where applicable, Kentucky-based nurse practitioner services within scope and licensure.`,
+    faqs: [
+      {
+        question: 'How do I know if I\u2019m depleted?',
+        answer: 'Depletion isn\u2019t a single diagnosis\u2014it\u2019s a pattern. Persistent fatigue, hair and skin changes, mood shifts, cravings, and poor sleep quality are common signals. When several of these occur together and don\u2019t resolve with rest or general lifestyle changes, it may be worth investigating your mineral and nutrient status through functional testing.'
+      },
+      {
+        question: 'Can my prenatal vitamin cover any deficiencies?',
+        answer: 'A quality prenatal is an important part of preconception preparation, but it\u2019s not designed to correct existing deficiencies. Most prenatals provide maintenance-level amounts of key nutrients. If your reserves are already low, a prenatal alone may not be enough to rebuild them\u2014especially when mineral balance and absorption are factors. A personalized approach based on testing may be more effective.'
+      },
+      {
+        question: 'How far in advance should I address depletion before trying to conceive?',
+        answer: 'Ideally, 6 to 12 months before conception. This provides time to assess your starting point, make targeted changes, and retest to track progress. Even 3 months of focused preparation may make a meaningful difference. The earlier you start, the more time your body has to rebuild reserves.'
+      },
+      {
+        question: 'My doctor says my labs are fine\u2014should I still be concerned?',
+        answer: 'Standard blood work is designed to screen for disease and clear deficiency. If nothing flags, it means you don\u2019t have an acute medical issue\u2014but it doesn\u2019t necessarily mean your body is functioning optimally. Functional testing, including HTMA and broader blood panels interpreted through optimal ranges, can reveal patterns that routine labs aren\u2019t designed to catch.'
+      },
+      {
+        question: 'Is this the same as postpartum depletion?',
+        answer: 'They share the same underlying concept\u2014insufficient nutrient and mineral reserves\u2014but they occur at different stages. Postpartum depletion develops after the demands of pregnancy and birth. What this article describes is pre-existing depletion: reserves that are already low before pregnancy begins. Addressing depletion before conception may help reduce the severity of postpartum depletion later.'
+      }
+    ],
+    schema: {
+      description: 'Common signs of mineral depletion to recognize before pregnancy and why addressing them early may support better outcomes for you and your baby.'
+    }
+  },
+  {
     slug: '2026-02-17-htma-complete-guide-maternal-health',
     title: 'HTMA Testing for Maternal Health: What Your Blood Work May Be Missing',
     date: '2026-02-17',

@@ -74,7 +74,7 @@ They\u2019re not dramatic enough to trigger a workup, but they\u2019re persisten
 
 ## The Signs Your Body May Be Sending
 
-Below are five patterns that show up often. None of them are diagnostic on their own, but when several show up together, they can point to reserves that need attention before conception.
+Below are six patterns that show up often. None of them are diagnostic on their own, but when several show up together, they can point to reserves that need attention before conception.
 
 ### 1. Fatigue That Doesn\u2019t Improve With Rest
 
@@ -116,7 +116,15 @@ Sleep quality is influenced by cortisol rhythms, and mineral status may affect h
 
 Poor sleep also compounds depletion: your body does the majority of its cellular repair during sleep, and when that process is disrupted, mineral utilization may be less efficient.
 
-[INSIGHT:If several of these sound familiar, that\u2019s not a coincidence. Depletion patterns tend to overlap because the same minerals\u2014magnesium, zinc, iron\u2014are involved in energy, mood, sleep, and tissue health simultaneously.]
+### 6. Cycle Irregularities, Worsening PMS, or Period-Related Fatigue
+
+If your cycles have become irregular, your PMS has gotten noticeably worse, or you feel completely wiped out during and right after your period, iron status is worth a closer look.
+
+Menstrual blood loss is one of the most common drivers of iron depletion in women of reproductive age.<sup>[9](#references)</sup> Heavy or prolonged periods accelerate the loss, and if intake or absorption isn\u2019t keeping up, reserves drop cycle after cycle. The fatigue that hits hardest around your period can be a sign that your iron stores are running lower than labs may reflect.
+
+Cycle changes can also tie back to zinc-copper balance and overall mineral status. When these are off, it can show up as shifts in cycle length, heavier flow, or PMS symptoms that feel like they\u2019re escalating over time.
+
+[INSIGHT:If several of these sound familiar, that\u2019s not a coincidence. Depletion patterns tend to overlap because the same minerals, magnesium, zinc, iron, are involved in energy, mood, sleep, hormones, and tissue health simultaneously.]
 
 ## Why These Signs Matter Before Pregnancy
 
@@ -148,13 +156,21 @@ Both HTMA and comprehensive blood work review are available as part of my [packa
 
 Recognizing the signs is the starting point. Here are a few places to go from here:
 
-**Start with food.** Prioritize nutrient-dense meals: quality proteins, healthy fats, colorful vegetables. Food is always the foundation, though [food alone may not be enough](/blog/post.html?post=2025-01-15-minerals-from-food) to correct deeper depletion patterns.
+**Start with food.**
 
-**Track your patterns.** Pay attention to which symptoms are most persistent. Fatigue, mood changes, hair and skin issues, cravings, and sleep disruption are all data points worth writing down.
+Prioritize nutrient-dense meals: quality proteins, healthy fats, colorful vegetables. Food is always the foundation, though [food alone may not be enough](/blog/post.html?post=2025-01-15-minerals-from-food) to correct deeper depletion patterns.
 
-**Look at your prenatal with fresh eyes.** A prenatal alone is unlikely to correct existing deficiencies, especially if absorption or mineral balance is part of the equation. Testing can help determine whether your current supplement is actually meeting your needs.
+**Track your patterns.**
 
-**Consider testing.** If you\u2019re planning pregnancy in the next 6 to 18 months, functional mineral assessment gives you a real starting point instead of guesswork. Knowing where your body is now helps you make more grounded decisions about what comes next.
+Pay attention to which symptoms are most persistent. Fatigue, mood changes, hair and skin issues, cravings, cycle changes, and sleep disruption are all data points worth writing down.
+
+**Look at your prenatal with fresh eyes.**
+
+A prenatal alone is unlikely to correct existing deficiencies, especially if absorption or mineral balance is part of the equation. Testing can help determine whether your current supplement is actually meeting your needs.
+
+**Consider testing.**
+
+If you\u2019re planning pregnancy in the next 6 to 18 months, functional mineral assessment gives you a real starting point instead of guesswork. Knowing where your body is now helps you make more grounded decisions about what comes next.
 
 The goal isn\u2019t perfection. It\u2019s building reserves before your body is asked to sustain two lives. For a broader framework on preconception preparation, see [Your Body Is the First Home](/blog/post.html?post=2024-11-15-body-first-home).
 

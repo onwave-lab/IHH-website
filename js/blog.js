@@ -34,20 +34,6 @@ const BLOG_POSTS = [
     content: `
 # Are You Depleted? Signs to Address Before Pregnancy
 
-*This content is for educational and informational purposes only. It is not medical advice. Always consult your healthcare provider.*
-
-&nbsp;
-
-**In This Article**
-
-- [What Does Depletion Actually Look Like?](#what-does-depletion-actually-look-like)
-- [The Signs Your Body May Be Sending](#the-signs-your-body-may-be-sending)
-- [Why These Signs Matter Before Pregnancy](#why-these-signs-matter-before-pregnancy)
-- [What Testing Can Reveal That Symptoms Alone Cannot](#what-testing-can-reveal-that-symptoms-alone-cannot)
-- [From Awareness to Action](#from-awareness-to-action)
-- [References](#references)
-- [Frequently Asked Questions](#faqs)
-
 <div class="blog-summary-note">Many women enter pregnancy already running low on essential minerals and nutrients\u2014without knowing it. This article explores common signs of depletion that are easy to dismiss, why they matter for preconception health, and what steps you can take to understand your body\u2019s reserves before conception.</div>
 
 You\u2019re doing everything you can to prepare. You\u2019re eating well, staying active, taking a prenatal. But something still feels off.
@@ -174,6 +160,23 @@ If you\u2019re planning pregnancy in the next 6 to 18 months, functional mineral
 
 The goal isn\u2019t perfection. It\u2019s building reserves before your body is asked to sustain two lives. For a broader framework on preconception preparation, see [Your Body Is the First Home](/blog/post.html?post=2024-11-15-body-first-home).
 
+## Your Next Step
+
+You don\u2019t have to have it all figured out before starting a family. But if your body has been sending you signals, those signals deserve attention, not dismissal.
+
+The months before conception are a real window for change. What you address now may shape not just your pregnancy experience, but your health and your child\u2019s for years to come.
+
+With love + intention,
+
+Alicia
+
+[CTA-ROW-START]
+[CTA:Book a Free Discovery Call|Let\u2019s talk about where you are and whether functional assessment makes sense for your goals\u2014no pressure, just honest conversation.|apply|Book Your Free Call]
+[CTA:Download the Free Guide|Not sure where to start? Get a free checklist of depletion signals to watch for before pregnancy.|lead-magnet|Get the Free Guide]
+[CTA-ROW-END]
+
+*Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
+
 ## References
 
 1. King, J.C. (2003). The risk of maternal nutritional depletion and poor outcomes increases in early or closely spaced pregnancies. *The Journal of Nutrition*, 133(5), 1732S-1736S. [DOI: 10.1093/jn/133.5.1732S](https://doi.org/10.1093/jn/133.5.1732S)
@@ -195,25 +198,6 @@ The goal isn\u2019t perfection. It\u2019s building reserves before your body is 
 9. Gernand, A.D., Schulze, K.J., Stewart, C.P., West, K.P., & Christian, P. (2016). Micronutrient deficiencies in pregnancy worldwide: Health effects and prevention. *Nature Reviews Endocrinology*, 12(5), 274-289. [DOI: 10.1038/nrendo.2016.37](https://doi.org/10.1038/nrendo.2016.37)
 
 10. Roumeliotaki, T., Koutra, K., Gianicolo, E.A.L., et al. (2023). Maternal copper and zinc status and risk of preterm birth: A systematic review and meta-analysis. *BMC Pregnancy and Childbirth*, 23, 811. [DOI: 10.1186/s12884-023-06092-7](https://doi.org/10.1186/s12884-023-06092-7)
-
-## Your Next Step
-
-You don\u2019t have to have it all figured out before starting a family. But if your body has been sending you signals, those signals deserve attention, not dismissal.
-
-The months before conception are a real window for change. What you address now may shape not just your pregnancy experience, but your health and your child\u2019s for years to come.
-
-With love + intention,
-
-Alicia
-
-*Clinical services are currently available to Kentucky residents.*
-
-[CTA-ROW-START]
-[CTA:Book a Free Discovery Call|Let\u2019s talk about where you are and whether functional assessment makes sense for your goals\u2014no pressure, just honest conversation.|apply|Book Your Free Call]
-[CTA:Download the Free Guide|Not sure where to start? Get a free checklist of depletion signals to watch for before pregnancy.|lead-magnet|Get the Free Guide]
-[CTA-ROW-END]
-
-*Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
     `,
     disclaimer: `This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
 

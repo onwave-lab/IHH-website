@@ -74,6 +74,13 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.intentionholistichealth.com/depletion-signals.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog -->
   <url>
     <loc>https://www.intentionholistichealth.com/blog/</loc>
@@ -85,7 +92,7 @@
   <!-- Blog Posts -->
   <url>
     <loc>https://www.intentionholistichealth.com/blog/post.html?post=2026-02-24-depleted-signs-before-pregnancy</loc>
-    <lastmod>2026-02-24</lastmod>
+    <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -18,6 +18,12 @@ Thumbs.db
 .env
 .env.local
 
+# MCP configuration (references credential env vars)
+.mcp.json
+
+# Dev/test artifacts
+archive/localhost*.json
+
 # Lead magnets / freebies (attached via email, not public)
 archive/downloads/
 

@@ -1,3 +1,9 @@
+# ACTION REQUIRED (2026-03-03)
+
+> `.mcp.json` and `archive/localhost*.json` were removed from git tracking for security. After pulling, if you see these as untracked files, that's expected — they're now gitignored. No action needed from you, just `git pull` as normal.
+
+---
+
 # Claude.md - Project Instructions and Guardrails
 
 **Lookup Data:** See `CLAUDE-REFERENCE.md` for IDs, code snippets, hex values, detailed procedures, checklists, and design specs.

@@ -1,6 +1,7 @@
 [build]
   publish = "."
 
+# Repo: github.com/onwave-lab/IHH-website
 # NOTE: www/non-www redirect is handled in Netlify dashboard Domain Settings
 # Do NOT add redirect rules here for domain canonicalization - causes redirect loops
 

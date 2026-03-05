@@ -6,6 +6,11 @@ const SITE_URL = 'https://www.intentionholistichealth.com';
 // Blog post metadata - keep in sync with js/blog.js
 // Only includes fields needed for OG tags
 const BLOG_POSTS = {
+  '2026-03-04-protein-fiber-women-fertility-postpartum': {
+    title: 'Why Protein and Fiber Matter More Than Most Women Realize',
+    excerpt: 'Protein and fiber are two of the most common nutritional gaps in women\u2019s daily eating, and they directly affect blood sugar stability, hormone balance, gut health, and energy. Here\u2019s what to know and where to start.',
+    image: ''
+  },
   '2026-02-24-depleted-signs-before-pregnancy': {
     title: 'Are You Depleted? Signs to Address Before Pregnancy',
     excerpt: 'Many women enter pregnancy already running low on essential minerals. Learn the common signs of depletion that are easy to dismiss, why they matter for preconception health, and what steps you can take before conception.',

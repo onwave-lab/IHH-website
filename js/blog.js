@@ -243,21 +243,23 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     content: `
 # Why Protein *AND* Fiber Matter More Than Most Women Realize
 
-<div class="blog-summary-note">Two of the most common nutritional gaps in women\u2019s daily eating, protein and fiber, have a direct impact on blood sugar stability, hormone balance, gut health, and energy. This article breaks down why these nutrients matter for fertility and postpartum recovery, how much you actually need, and simple ways to build them into meals without overcomplicating your kitchen.</div>
+<div class="blog-summary-note">Two of the common nutritional gaps in women\u2019s daily eating have a direct impact on blood sugar stability, hormone balance, gut health, and energy. This article breaks down why protein and fiber matter for fertility and postpartum recovery, how much research suggests women may benefit from, and simple ways to build them into meals without overcomplicating your kitchen.</div>
 
 You\u2019re eating better. You\u2019re cooking more at home, reading labels, maybe even taking a handful of supplements you heard about online. You\u2019re doing the things you\u2019ve been told to do.
 
 And yet, you\u2019re still dragging by 3 p.m., your cravings are relentless, and your digestion has a mind of its own.
 
-If that sounds familiar, you\u2019re not alone. And you\u2019re not doing it wrong.
+If that sounds familiar, you\u2019re not alone.
 
 When I start looking at what women are actually eating day to day, whether they\u2019re preparing for pregnancy or trying to recover from one, two gaps come up more than almost anything else: protein and fiber.
 
 Not exotic superfoods. Not expensive supplements. Two basic nutrients that most women aren\u2019t getting nearly enough of. And when they\u2019re missing, a lot of other things start to unravel.
 
+Below, I\u2019ll walk you through why these two nutrients matter so much, and share some of my favorite tips and tricks to increase both through simple, sustainable habits you can start this week.
+
 ## Why These Two Nutrients Keep Coming Up
 
-Protein and fiber don\u2019t just affect hunger and digestion. They influence blood sugar regulation, hormone signaling, gut microbiome balance, inflammation, and how efficiently your body produces energy. These are the same systems that drive ovulation, cycle regularity, egg quality, placental development, and postpartum healing.
+Protein and fiber don\u2019t just affect hunger and digestion. They influence *blood sugar regulation*, *hormone signaling*, *gut microbiome balance*, *inflammation*, and how efficiently your body produces *energy*. These are the same systems that drive ovulation, cycle regularity, egg quality, placental development, and postpartum healing.
 
 Research consistently shows that stable blood sugar and insulin signaling support reproductive hormone balance and ovulatory function.<sup>[1](#references)</sup> Insulin resistance, which is more common than most women realize, has been associated with PCOS, irregular cycles, and difficulty conceiving.<sup>[2](#references)</sup>
 
@@ -265,21 +267,19 @@ After pregnancy, these systems matter just as much. Many women enter the postpar
 
 Protein and fiber won\u2019t fix everything. But getting these two right creates a foundation that makes everything else work better.
 
-## What Protein Actually Does and How Much You Need
+## What Protein Actually Does and How Much Research Suggests
 
-Protein provides the amino acids your body uses to build and repair tissue, produce hormones and enzymes, maintain muscle, and support immune function. Your body also needs amino acids to produce neurotransmitters like serotonin and dopamine, which is why protein intake directly affects mood and focus.
+Protein provides the amino acids your body uses to build and repair tissue, produce hormones and enzymes, maintain muscle, and support immune function. Your body also needs amino acids to produce neurotransmitters like serotonin and dopamine, which is why protein intake directly affects *mood* and *focus*.
 
 Protein also slows gastric emptying and blunts the glucose and insulin spike that follows a meal.<sup>[3](#references)</sup> In practice, that means more stable energy, fewer cravings, and better satiety between meals.
 
-Here\u2019s the pattern I see constantly: a woman\u2019s breakfast is coffee and something carb-heavy: toast, oatmeal, a granola bar. By 10 a.m. she\u2019s starving. By 2 p.m. she\u2019s in a fog. By 4 p.m. she\u2019s reaching for whatever\u2019s fast. The whole day becomes a cycle of spikes and crashes, and she assumes it\u2019s a discipline problem.
-
-It\u2019s usually a protein problem.
+Here\u2019s the pattern I see constantly: a woman\u2019s breakfast is coffee and something carb-heavy: toast, oatmeal, a granola bar. By 10 a.m. she\u2019s starving. By 2 p.m. she\u2019s in a fog. By 4 p.m. she\u2019s reaching for whatever\u2019s fast. The whole day becomes a cycle of spikes and crashes, and it\u2019s easy to blame willpower. But more often than not, the missing piece is protein.
 
 ### How Much and When
 
-Most active women do well with roughly 1.2\u20131.6 grams of protein per kilogram of body weight per day. For a 150-pound woman, that\u2019s about 80\u2013110 grams daily. For a 170-pound woman, roughly 90\u2013120 grams.
+Research suggests most active women may benefit from roughly 1.2\u20131.6 grams of protein per kilogram of body weight per day. For a 150-pound woman, that\u2019s about 80\u2013110 grams daily. For a 170-pound woman, roughly 90\u2013120 grams.
 
-Distribution matters as much as total intake. Front-loading protein, aiming for around 30 grams at your first meal, tends to stabilize the entire day. Spacing the rest across lunch, dinner, and a snack or two prevents the common pattern of eating almost no protein until dinner and then trying to catch up in one sitting.
+Distribution may matter as much as total intake. Some research suggests that front-loading protein, aiming for around 30 grams at your first meal, may help stabilize energy throughout the day. Spacing the rest across lunch, dinner, and a snack or two prevents the common pattern of eating almost no protein until dinner and then trying to catch up in one sitting.
 
 What 30 grams at breakfast actually looks like:
 
@@ -292,13 +292,13 @@ These don\u2019t require complicated cooking. If meal prep feels overwhelming, [
 
 ## Why Fiber Is the Missing Piece for Most Women
 
-Protein gets talked about. Fiber barely comes up in most wellness conversations, and yet the average American woman gets only about 16\u201317 grams per day, well below the recommended 25\u201335 grams.<sup>[5](#references)</sup> Only about 5% of the population meets fiber recommendations at all.
+Protein gets talked about a lot these days on social media, and while fiber is making its way closer to the spotlight, the average American woman still gets only about 16\u201317 grams per day, well below the recommended 25\u201335 grams.<sup>[5](#references)</sup> Only about 5% of the population meets fiber recommendations at all.
 
 That gap shows up in how women feel every day.
 
-Fiber slows carbohydrate absorption during digestion, which means glucose enters the bloodstream more gradually instead of all at once. It feeds beneficial gut bacteria, which produce short-chain fatty acids, compounds that help regulate inflammation, metabolic signaling, and immune function.<sup>[6](#references)</sup> It supports intestinal barrier function and the motility that keeps your digestive system moving.<sup>[7](#references)</sup> And it supports regular elimination, which is how your body clears metabolic waste and excess hormones processed through the liver.<sup>[8](#references)</sup>
+Fiber slows carbohydrate absorption during digestion, which means glucose enters the bloodstream more gradually instead of all at once. It feeds beneficial gut bacteria, which produce short-chain fatty acids, compounds that help regulate *inflammation*, how your body processes and uses energy, and *immune function*.<sup>[6](#references)</sup> It supports intestinal barrier function and the motility that keeps your digestive system moving.<sup>[7](#references)</sup> And it supports *regular elimination*, which is how your body clears metabolic waste and excess hormones processed through the liver.<sup>[8](#references)</sup>
 
-For women in preconception or postpartum, that elimination piece is especially important. During pregnancy and breastfeeding, the body mobilizes stored nutrients and metabolic byproducts. If digestion is sluggish and elimination is irregular, those byproducts don\u2019t clear efficiently.
+For women in preconception or postpartum, that elimination piece is especially important. During pregnancy and breastfeeding, the body mobilizes stored nutrients and the waste left over from normal metabolic processes. If digestion is sluggish and elimination is irregular, that waste doesn\u2019t clear efficiently.
 
 ### Simple Ways to Close the Gap
 
@@ -317,7 +317,7 @@ If you\u2019re taking a food-first approach and want to understand why [food alo
 
 ## Putting It Together: The \u201cDress Your Carbs\u201d Strategy
 
-One of the simplest shifts I recommend is what I call \u201cdressing your carbs.\u201d Instead of eating carbohydrates by themselves (a piece of toast, a bowl of rice, crackers from the pantry), pair them with protein, fiber, or healthy fat every time.
+One of the simplest shifts I share with women is the idea of \u201cdressing your carbs.\u201d Instead of eating carbohydrates by themselves (a piece of toast, a bowl of rice, crackers from the pantry), pair them with protein, fiber, or healthy fat every time.
 
 - Apple slices \u2192 apple slices with almond butter
 - Toast \u2192 toast with avocado and eggs
@@ -325,9 +325,9 @@ One of the simplest shifts I recommend is what I call \u201cdressing your carbs.
 - Rice \u2192 rice with salmon and roasted vegetables
 - Crackers \u2192 crackers with hummus and cucumber
 
-The protein, fat, and fiber slow carbohydrate absorption, flattening the glucose curve. Over time, this reduces the afternoon crashes, the sugar cravings, and the energy rollercoaster.
+The protein, fat, and fiber slow carbohydrate absorption, which can help reduce the blood sugar spikes that lead to the crashes, cravings, and that rollercoaster of symptoms so many women experience.
 
-This isn\u2019t about avoiding carbs. Carbohydrates are your body\u2019s preferred fuel source. It\u2019s about giving your body the context it needs to use them well.
+Carbohydrates are your body\u2019s preferred fuel source, and this isn\u2019t about cutting them out. It\u2019s about pairing them in a way that helps your body use them well.
 
 [INSIGHT:When you eat a carbohydrate by itself, glucose enters the bloodstream relatively quickly and triggers a sharper insulin response. Adding protein, fiber, or fat to the same meal slows gastric emptying and carbohydrate absorption, resulting in a more gradual glucose rise. Over time, consistently pairing macronutrients this way may improve overall insulin sensitivity, especially when combined with regular movement.]
 
@@ -349,7 +349,7 @@ Start with one change. More protein at breakfast. Chia seeds in your yogurt. Veg
 
 And if you\u2019re preparing for pregnancy or rebuilding postpartum and want to understand where your body actually stands, not just your blood work but your mineral reserves, your metabolic patterns, your full functional picture, that\u2019s exactly what [testing like HTMA](/htma.html) and [comprehensive wellness support](/services/) are designed to help with.
 
-You don\u2019t need to be perfect. You need a foundation your body can actually build on. [Your body is the first home](/blog/post.html?post=2024-11-15-body-first-home), and these are the building blocks.
+You don\u2019t need to be perfect. You need a foundation your body can actually thrive on. [Your body is the first home](/blog/post.html?post=2024-11-15-body-first-home), and these are the building blocks.
 
 With love + intention,
 
@@ -357,7 +357,7 @@ Alicia
 
 [CTA-ROW-START]
 [CTA:Book a Free Discovery Call|Let\u2019s talk about where you are and whether functional assessment makes sense for your goals. No pressure, just honest conversation.|apply|Book Your Free Call]
-[CTA:Download the Free Guide|Not sure where to start? Get a free checklist of depletion signals to watch for before pregnancy.|lead-magnet|Get the Free Guide]
+[CTA:Running on Empty? Get the Free Guide|Not sure where to start? Download the free Running on Empty awareness guide to help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
 [CTA-ROW-END]
 
 *Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
@@ -391,8 +391,8 @@ Any individuals depicted in images on this website or associated content are mod
 Intention Holistic Health provides educational wellness guidance and, where applicable, Kentucky-based nurse practitioner services within scope and licensure.`,
     faqs: [
       {
-        question: 'How much protein do I need per day?',
-        answer: 'Most active women benefit from roughly 1.2\u20131.6 grams of protein per kilogram of body weight per day. For a 150-pound woman, that\u2019s about 80\u2013110 grams daily. Spacing protein across meals, especially getting around 30 grams at breakfast, tends to support more stable energy and blood sugar throughout the day.'
+        question: 'How much protein do guidelines suggest per day?',
+        answer: 'Research suggests most active women may benefit from roughly 1.2\u20131.6 grams of protein per kilogram of body weight per day. For a 150-pound woman, that\u2019s about 80\u2013110 grams daily. Spacing protein across meals, especially getting around 30 grams at breakfast, may support more stable energy and blood sugar throughout the day.'
       },
       {
         question: 'What if I don\u2019t like eating breakfast?',

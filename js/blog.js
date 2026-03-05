@@ -232,7 +232,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
   },
   {
     slug: '2026-03-04-protein-fiber-women-fertility-postpartum',
-    title: 'Why Protein AND Fiber Matter More Than Most Women Realize',
+    title: 'Why Protein <em>AND</em> Fiber Matter More Than Most Women Realize',
     date: '2026-03-04',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Protein and fiber are two of the most common nutritional gaps in women\u2019s daily eating, and they directly affect blood sugar stability, hormone balance, gut health, and energy. Here\u2019s what to know and where to start.',
@@ -2711,7 +2711,7 @@ function renderSinglePost() {
   // Render post header
   const postTitle = document.getElementById('post-title');
   if (postTitle) {
-    postTitle.textContent = post.title;
+    postTitle.innerHTML = post.title;
   }
 
   const postMeta = document.getElementById('post-meta');

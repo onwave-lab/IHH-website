@@ -232,20 +232,22 @@ Intention Holistic Health provides educational wellness guidance and, where appl
   },
   {
     slug: '2026-03-04-protein-fiber-women-fertility-postpartum',
-    title: 'Why Protein and Fiber Matter More Than Most Women Realize',
+    title: 'Why Protein AND Fiber Matter More Than Most Women Realize',
     date: '2026-03-04',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Protein and fiber are two of the most common nutritional gaps in women\u2019s daily eating, and they directly affect blood sugar stability, hormone balance, gut health, and energy. Here\u2019s what to know and where to start.',
-    image: '',
+    image: '/images/blog/protein-fiber-women.webp',
+    cardAspectRatio: '83.83%',
+    imageAspectRatio: '83.83%',
     categories: ['wellness', 'nutrition', 'foundations', 'preconception'],
     content: `
-# Why Protein and Fiber Matter More Than Most Women Realize
+# Why Protein *AND* Fiber Matter More Than Most Women Realize
 
-<div class="blog-summary-note">Two of the most common nutritional gaps in women\u2019s daily eating\u2014protein and fiber\u2014have a direct impact on blood sugar stability, hormone balance, gut health, and energy. This article breaks down why these nutrients matter for fertility and postpartum recovery, how much you actually need, and simple ways to build them into meals without overcomplicating your kitchen.</div>
+<div class="blog-summary-note">Two of the most common nutritional gaps in women\u2019s daily eating, protein and fiber, have a direct impact on blood sugar stability, hormone balance, gut health, and energy. This article breaks down why these nutrients matter for fertility and postpartum recovery, how much you actually need, and simple ways to build them into meals without overcomplicating your kitchen.</div>
 
 You\u2019re eating better. You\u2019re cooking more at home, reading labels, maybe even taking a handful of supplements you heard about online. You\u2019re doing the things you\u2019ve been told to do.
 
-And yet\u2014you\u2019re still dragging by 3 p.m., your cravings are relentless, and your digestion has a mind of its own.
+And yet, you\u2019re still dragging by 3 p.m., your cravings are relentless, and your digestion has a mind of its own.
 
 If that sounds familiar, you\u2019re not alone. And you\u2019re not doing it wrong.
 
@@ -257,19 +259,19 @@ Not exotic superfoods. Not expensive supplements. Two basic nutrients that most 
 
 Protein and fiber don\u2019t just affect hunger and digestion. They influence blood sugar regulation, hormone signaling, gut microbiome balance, inflammation, and how efficiently your body produces energy. These are the same systems that drive ovulation, cycle regularity, egg quality, placental development, and postpartum healing.
 
-Research consistently shows that stable blood sugar and insulin signaling support reproductive hormone balance and ovulatory function.<sup>[1](#references)</sup> Insulin resistance\u2014which is more common than most women realize\u2014has been associated with PCOS, irregular cycles, and difficulty conceiving.<sup>[2](#references)</sup>
+Research consistently shows that stable blood sugar and insulin signaling support reproductive hormone balance and ovulatory function.<sup>[1](#references)</sup> Insulin resistance, which is more common than most women realize, has been associated with PCOS, irregular cycles, and difficulty conceiving.<sup>[2](#references)</sup>
 
 After pregnancy, these systems matter just as much. Many women enter the postpartum months already depleted ([I wrote about those warning signs here](/blog/post.html?post=2026-02-24-depleted-signs-before-pregnancy)), and unstable blood sugar only deepens the fatigue, mood swings, and cravings.
 
 Protein and fiber won\u2019t fix everything. But getting these two right creates a foundation that makes everything else work better.
 
-## What Protein Actually Does\u2014and How Much You Need
+## What Protein Actually Does and How Much You Need
 
 Protein provides the amino acids your body uses to build and repair tissue, produce hormones and enzymes, maintain muscle, and support immune function. Your body also needs amino acids to produce neurotransmitters like serotonin and dopamine, which is why protein intake directly affects mood and focus.
 
 Protein also slows gastric emptying and blunts the glucose and insulin spike that follows a meal.<sup>[3](#references)</sup> In practice, that means more stable energy, fewer cravings, and better satiety between meals.
 
-Here\u2019s the pattern I see constantly: a woman\u2019s breakfast is coffee and something carb-heavy\u2014toast, oatmeal, a granola bar. By 10 a.m. she\u2019s starving. By 2 p.m. she\u2019s in a fog. By 4 p.m. she\u2019s reaching for whatever\u2019s fast. The whole day becomes a cycle of spikes and crashes, and she assumes it\u2019s a discipline problem.
+Here\u2019s the pattern I see constantly: a woman\u2019s breakfast is coffee and something carb-heavy: toast, oatmeal, a granola bar. By 10 a.m. she\u2019s starving. By 2 p.m. she\u2019s in a fog. By 4 p.m. she\u2019s reaching for whatever\u2019s fast. The whole day becomes a cycle of spikes and crashes, and she assumes it\u2019s a discipline problem.
 
 It\u2019s usually a protein problem.
 
@@ -311,7 +313,7 @@ If you\u2019re taking a food-first approach and want to understand why [food alo
 
 [INSIGHT:When gut bacteria ferment dietary fiber, they produce short-chain fatty acids (SCFAs) like butyrate, propionate, and acetate. These compounds do more than support gut health; they influence systemic inflammation, insulin sensitivity, and immune cell function. A diverse fiber intake from multiple plant sources promotes a more diverse microbiome, which is associated with better metabolic outcomes.]
 
-[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Running on Empty? Get the Free Guide|Not sure where to start? This free checklist can help you recognize what your body may already be telling you\u2014and what to do next.|lead-magnet|Get the Free Guide]
+[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Running on Empty? Get the Free Guide|Not sure where to start? This free checklist can help you recognize what your body may already be telling you, and what to do next.|lead-magnet|Get the Free Guide]
 
 ## Putting It Together: The \u201cDress Your Carbs\u201d Strategy
 
@@ -354,7 +356,7 @@ With love + intention,
 Alicia
 
 [CTA-ROW-START]
-[CTA:Book a Free Discovery Call|Let\u2019s talk about where you are and whether functional assessment makes sense for your goals\u2014no pressure, just honest conversation.|apply|Book Your Free Call]
+[CTA:Book a Free Discovery Call|Let\u2019s talk about where you are and whether functional assessment makes sense for your goals. No pressure, just honest conversation.|apply|Book Your Free Call]
 [CTA:Download the Free Guide|Not sure where to start? Get a free checklist of depletion signals to watch for before pregnancy.|lead-magnet|Get the Free Guide]
 [CTA-ROW-END]
 
@@ -366,7 +368,7 @@ Alicia
 
 2. Teede, H.J., Misso, M.L., Costello, M.F., et al. (2018). Recommendations from the international evidence-based guideline for the assessment and management of polycystic ovary syndrome. *Human Reproduction*, 33(9), 1602-1618. [DOI: 10.1093/humrep/dey256](https://doi.org/10.1093/humrep/dey256)
 
-3. Westerterp-Plantenga, M.S., Lemmens, S.G., & Westerterp, K.R. (2012). Dietary protein\u2014its role in satiety, energetics, weight loss and health. *British Journal of Nutrition*, 108(S2), S52-S112. [DOI: 10.1017/S0007114512002589](https://doi.org/10.1017/S0007114512002589)
+3. Westerterp-Plantenga, M.S., Lemmens, S.G., & Westerterp, K.R. (2012). Dietary protein: its role in satiety, energetics, weight loss and health. *British Journal of Nutrition*, 108(S2), S52-S112. [DOI: 10.1017/S0007114512002589](https://doi.org/10.1017/S0007114512002589)
 
 4. DeFronzo, R.A. & Tripathy, D. (2009). Skeletal muscle insulin resistance is the primary defect in type 2 diabetes. *Diabetes Care*, 32(Suppl 2), S157-S163. [DOI: 10.2337/dc09-S302](https://doi.org/10.2337/dc09-S302)
 
@@ -390,7 +392,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     faqs: [
       {
         question: 'How much protein do I need per day?',
-        answer: 'Most active women benefit from roughly 1.2\u20131.6 grams of protein per kilogram of body weight per day. For a 150-pound woman, that\u2019s about 80\u2013110 grams daily. Spacing protein across meals\u2014especially getting around 30 grams at breakfast\u2014tends to support more stable energy and blood sugar throughout the day.'
+        answer: 'Most active women benefit from roughly 1.2\u20131.6 grams of protein per kilogram of body weight per day. For a 150-pound woman, that\u2019s about 80\u2013110 grams daily. Spacing protein across meals, especially getting around 30 grams at breakfast, tends to support more stable energy and blood sugar throughout the day.'
       },
       {
         question: 'What if I don\u2019t like eating breakfast?',
@@ -398,11 +400,11 @@ Intention Holistic Health provides educational wellness guidance and, where appl
       },
       {
         question: 'Can I get enough fiber from supplements?',
-        answer: 'Fiber supplements can help, but they don\u2019t replace the benefits of fiber from whole foods. Whole food sources\u2014vegetables, legumes, berries, chia seeds\u2014provide different types of fiber along with vitamins, minerals, and phytochemicals that support gut and metabolic health in ways a supplement alone cannot. Think of supplements as a backup, not a replacement.'
+        answer: 'Fiber supplements can help, but they don\u2019t replace the benefits of fiber from whole foods. Whole food sources like vegetables, legumes, berries, and chia seeds provide different types of fiber along with vitamins, minerals, and phytochemicals that support gut and metabolic health in ways a supplement alone cannot. Think of supplements as a backup, not a replacement.'
       },
       {
         question: 'Do protein and fiber needs change during pregnancy?',
-        answer: 'Yes. Protein needs increase during pregnancy to support the growth and development of the baby, placenta, and maternal tissues. Most guidelines recommend an additional 25 grams per day above baseline. Fiber remains important for managing blood sugar, supporting digestion, and maintaining regular elimination\u2014all of which can become more challenging during pregnancy. Always work with your healthcare provider to adjust intake based on your individual needs.'
+        answer: 'Yes. Protein needs increase during pregnancy to support the growth and development of the baby, placenta, and maternal tissues. Most guidelines recommend an additional 25 grams per day above baseline. Fiber remains important for managing blood sugar, supporting digestion, and maintaining regular elimination, all of which can become more challenging during pregnancy. Always work with your healthcare provider to adjust intake based on your individual needs.'
       },
       {
         question: 'How do I know if my intake is too low?',
@@ -410,7 +412,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
       }
     ],
     schema: {
-      description: 'Learn why protein and fiber are critical for blood sugar stability, hormone balance, and fertility\u2014plus practical strategies to increase both in your daily meals.'
+      description: 'Learn why protein and fiber are critical for blood sugar stability, hormone balance, and fertility, plus practical strategies to increase both in your daily meals.'
     }
   },
   {

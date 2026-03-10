@@ -16,7 +16,7 @@ An AI content system using the official Notion MCP server (replacing Notion AI) 
 | Setting | Value |
 |---------|-------|
 | **Platforms** | Full Suite: IG (post + stories + reel), Pinterest, Facebook, LinkedIn, Email, Google Business Post |
-| **Roadmap Location** | Notion (source of truth) + synced to `Marketing/Notion-Sync/roadmap.md` |
+| **Roadmap Location** | Notion (source of truth) + synced to `marketing/Notion-Sync/roadmap.md` |
 | **Frequency** | Weekly (Thursdays before lunch CST) + on-demand |
 | **Research Scope** | Full: Website, socials, MailerLite, existing Notion databases |
 | **Notion Structure** | Parent-child pages for content clusters |
@@ -24,7 +24,7 @@ An AI content system using the official Notion MCP server (replacing Notion AI) 
 | **Backlog** | Separate "Idea Backlog" database |
 | **Database Name** | "AI Content Planning" |
 | **Images** | 2-3 description suggestions per piece |
-| **Backup Path** | `Marketing/Notion-Sync/` with numbered/dated cluster folders |
+| **Backup Path** | `marketing/Notion-Sync/` with numbered/dated cluster folders |
 
 ---
 
@@ -34,7 +34,7 @@ An AI content system using the official Notion MCP server (replacing Notion AI) 
 2. **Uses existing templates** from SEO/AIO guide and email templates
 3. **Researches all platforms** before generating to avoid duplicates
 4. **Creates parent-child pages** in Notion for intuitive organization
-5. **Saves local backups** to `Marketing/Notion-Sync/` (numbered/dated)
+5. **Saves local backups** to `marketing/Notion-Sync/` (numbered/dated)
 6. **Syncs roadmap** between Notion and local markdown
 7. **Is fully portable** via GitHub (clone to any computer)
 
@@ -59,7 +59,7 @@ Each content cluster = 1 parent page in Notion containing child pages for each p
 ## Local Backup Structure
 
 ```
-Marketing/Notion-Sync/
+marketing/Notion-Sync/
 ├── roadmap.md                  # Synced from Notion
 ├── 001_2026-01-09_topic-slug/  # Cluster backups
 │   ├── blog.md
@@ -149,5 +149,5 @@ Claude will:
 1. Research existing content to avoid duplicates
 2. Generate all platform content
 3. Create parent page with child pages in Notion
-4. Save local backup to `Marketing/Notion-Sync/`
+4. Save local backup to `marketing/Notion-Sync/`
 5. Update the roadmap

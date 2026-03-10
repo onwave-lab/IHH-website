@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Running on Empty Awareness Guide | Intention Holistic Health</title>
+  <style>
+    /* Reset and Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --color-sage: #8D9488;
+      --color-sage-dark: #6B7366;
+      --color-cream: #F9F5F0;
+      --color-text: #3D3D3D;
+      --color-text-light: #666;
+      --font-heading: 'Georgia', 'Times New Roman', serif;
+      --font-body: 'Helvetica Neue', 'Arial', sans-serif;
+    }
+
+    @page {
+      margin: 0.75in;
+      size: letter;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 11pt;
+      line-height: 1.6;
+      color: var(--color-text);
+      background: white;
+    }
+
+    /* Cover Page */
+    .cover {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, var(--color-cream) 0%, white 100%);
+      page-break-after: always;
+      padding: 2in;
+    }
+
+    .cover-badge {
+      background: var(--color-sage);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 2rem;
+    }
+
+    .cover h1 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: normal;
+      color: var(--color-sage-dark);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .cover-subtitle {
+      font-size: 1.1rem;
+      color: var(--color-text-light);
+      font-style: italic;
+      margin-bottom: 3rem;
+    }
+
+    .cover-author {
+      margin-top: auto;
+      padding-top: 3rem;
+    }
+
+    .cover-author p {
+      font-size: 0.9rem;
+      color: var(--color-text-light);
+    }
+
+    .cover-author strong {
+      display: block;
+      font-size: 1rem;
+      color: var(--color-text);
+      margin-bottom: 0.25rem;
+    }
+
+    /* Page Sections */
+    .page {
+      page-break-after: always;
+      padding: 0.5in 0;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* Typography */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: normal;
+      color: var(--color-sage-dark);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--color-sage);
+    }
+
+    h3 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      color: var(--color-sage-dark);
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin: 1rem 0 1rem 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    strong {
+      color: var(--color-sage-dark);
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    /* Introduction */
+    .intro {
+      background: var(--color-cream);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    .intro p:first-child {
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    /* Pattern Cards */
+    .pattern {
+      margin-bottom: 2rem;
+    }
+
+    .pattern-number {
+      display: inline-block;
+      background: var(--color-sage);
+      color: white;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 2rem;
+      font-weight: bold;
+      margin-right: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .pattern h2 {
+      display: flex;
+      align-items: center;
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 1rem;
+    }
+
+    .pattern-section {
+      background: #f8f8f8;
+      padding: 1rem;
+      border-radius: 6px;
+      margin: 1rem 0;
+    }
+
+    .pattern-section h3 {
+      margin-top: 0;
+      font-size: 0.95rem;
+      color: var(--color-sage-dark);
+    }
+
+    .pattern-section ul {
+      margin-bottom: 0;
+    }
+
+    /* Highlight Box */
+    .highlight-box {
+      background: var(--color-cream);
+      border-left: 4px solid var(--color-sage);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      font-style: italic;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: var(--color-sage);
+      color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .cta-section h2 {
+      color: white;
+      border-bottom: none;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      color: rgba(255,255,255,0.9);
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: white;
+      color: var(--color-sage-dark);
+      padding: 0.75rem 2rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    /* Disclaimer */
+    .disclaimer {
+      font-size: 0.8rem;
+      color: var(--color-text-light);
+      border-top: 1px solid #ddd;
+      padding-top: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .disclaimer p {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    .page-footer {
+      text-align: center;
+      padding-top: 2rem;
+      margin-top: 2rem;
+      border-top: 1px solid #eee;
+    }
+
+    .page-footer p {
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+      margin-bottom: 0.25rem;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .cover {
+        height: auto;
+        min-height: 100vh;
+      }
+
+      .cta-section {
+        background: var(--color-sage) !important;
+        -webkit-print-color-adjust: exact !important;
+      }
+
+      .pattern-number {
+        background: var(--color-sage) !important;
+        -webkit-print-color-adjust: exact !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cover Page -->
+  <div class="cover">
+    <span class="cover-badge">Free Guide</span>
+    <h1>The Running on Empty<br>Awareness Guide</h1>
+    <p class="cover-subtitle">8 Patterns That May Signal Your Body Needs Support</p>
+
+    <div class="cover-author">
+      <strong>Alicia Harrison, MSN, APRN, FNP-C</strong>
+      <p>Intention Holistic Health</p>
+      <p>intentionholistichealth.com</p>
+    </div>
+  </div>
+
+  <!-- Introduction -->
+  <div class="page">
+    <h2>Introduction</h2>
+
+    <div class="intro">
+      <p>You're exhausted. Not just tired — <em>depleted</em>. You've been to the doctor, maybe more than once. Your labs came back "normal." But you know something isn't right.</p>
+      <p><strong>You're not imagining it.</strong></p>
+    </div>
+
+    <p>This guide is designed to help you recognize common patterns that many women experience when their bodies are running on empty. It's not a diagnostic tool — it's a starting point for awareness, reflection, and informed conversations with your healthcare provider.</p>
+
+    <div class="highlight-box">
+      <p>This guide is for educational purposes only and is not intended to diagnose, treat, cure, or prevent any condition. Always consult your licensed healthcare provider regarding personal health concerns.</p>
+    </div>
+
+    <h3>How to Use This Guide</h3>
+    <p>As you read through each pattern, notice which ones resonate with you. At the end of each section, you'll find:</p>
+    <ul>
+      <li><strong>Reflection questions</strong> to help you think more deeply about your experience</li>
+      <li><strong>Questions to ask your provider</strong> to bring to your next appointment</li>
+    </ul>
+    <p>Highlight, underline, or take notes. This is your guide — use it in whatever way feels most helpful.</p>
+  </div>
+
+  <!-- Pattern 1 -->
+  <div class="page pattern">
+    <h2><span class="pattern-number">1</span> The Fatigue That Sleep Doesn't Fix</h2>
+
+    <div class="pattern-section">
+      <h3>What it may look like:</h3>
+      <ul>
+        <li>Waking up tired even after 7-8 hours of sleep</li>
+        <li>Needing caffeine just to function</li>
+        <li>Energy crashes in the afternoon</li>
+        <li>Feeling "wired but tired" at night</li>
+      </ul>
+    </div>
+
+    <div class="pattern-section">
+      <h3>What to reflect on:</h3>
+      <ul>
+        <li>How long have you felt this way?</li>
+        <li>Did it start after a major life event (pregnancy, illness, prolonged stress)?</li>
+        <li>Have you discussed this specific pattern with your provider?</li>
+      </ul>
+    </div>
+
+    <div class="pattern-section">
+      <h3>Questions to ask your provider:</h3>
+      <ul>
+        <li>"Could we look at my thyroid panel using functional ranges?"</li>
+        <li>"Are there other markers related to energy we haven't tested?"</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Pattern 2 -->
+  <div class="page pattern">
+    <h2><span class="pattern-number">2</span> Cravings That Won't Quit</h2>
+
+    <div class="pattern-section">
+      <h3>What it may look like:</h3>
+      <ul>
+        <li>Intense salt cravings</li>
+        <li>Needing sugar or chocolate to get through the day</li>
+        <li>Craving carbs, especially in the evening</li>
+        <li>Feeling like you can never satisfy your appetite</li>
+      </ul>
+    </div>
+
+    <div class="pattern-section">
+      <h3>What to reflect on:</h3>
+      <ul>
+        <li>When are cravings strongest — morning, afternoon, evening?</li>
+        <li>Do they worsen during your cycle or high-stress periods?</li>
+        <li>Are you eating enough throughout the day?</li>
+      </ul>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>What to know:</strong> Cravings can sometimes be the body's way of signaling it needs something. Salt cravings, for example, may relate to adrenal patterns. Sugar cravings may reflect blood sugar instability. These aren't character flaws — they may be signals worth exploring.</p>
+    </div>
+  </div>
+
+  <!-- Pattern 3 -->
+  <div class="page pattern">
+    <h2><span class="pattern-number">3</span> Hair, Skin, and Nail Changes</h2>
+
+    <div class="pattern-section">
+      <h3>What it may look like:</h3>
+      <ul>
+        <li>Hair loss or thinning (especially postpartum)</li>
+        <li>Brittle nails that peel or break easily</li>
+        <li>Dry skin that doesn't improve with lotions</li>
+        <li>Slow-healing cuts or wounds</li>
+        <li>Acne or skin issues that appeared "out of nowhere"</li>
+      </ul>
+    </div>
+
+    <div class="pattern-section">
+      <h3>What to reflect on:</h3>
+      <ul>
+        <li>When did these changes start?</li>
+        <li>Have they correlated with stress, diet changes, or life transitions?</li>
+        <li>Have you had your thyroid and nutrient levels evaluated?</li>
+      </ul>
+    </div>
+
+    <div class="pattern-section">
+      <h3>Questions to ask your provider:</h3>
+      <ul>
+        <li>"Could these changes be related to mineral or nutrient status?"</li>
+        <li>"What testing would help us look at this more thoroughly?"</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Pattern 4 -->
+  <div class="page pattern">
+    <h2><span class="pattern-number">4</span> Muscle Cramps, Twitches, or Restless Legs</h2>
+
+    <div class="pattern-section">
+      <h3>What it may look like:</h3>
+      <ul>
+        <li>Leg cramps at night</li>
+        <li>Eye twitches or facial tics</li>
+        <li>Restless legs that make it hard to settle</li>
+        <li>General muscle tension or tightness</li>
+        <li>Feeling like you can't relax even when you try</li>
+      </ul>
+    </div>
+
+    <div class="pattern-section">
+      <h3>What to reflect on:</h3>
+      <ul>
+        <li>How often do these occur?</li>
+        <li>Do they worsen with stress, exercise, or certain times in your cycle?</li>
+        <li>Are you hydrating well throughout the day?</li>
+      </ul>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>What to know:</strong> Muscles rely heavily on minerals like magnesium, potassium, sodium, and calcium to function properly. Persistent cramping or twitching may be worth discussing with your provider.</p>
+    </div>
+  </div>
+
+  <!-- Pattern 5 -->
+  <div class="page pattern">
+    <h2><span class="pattern-number">5</span> Mood Changes You Can't Explain</h2>
+
+    <div class="pattern-section">
+      <h3>What it may look like:</h3>
+      <ul>
+        <li>Irritability that feels out of character</li>
+        <li>Anxiety that showed up "out of nowhere"</li>
+        <li>Feeling emotionally flat or disconnected</li>
+        <li>Low motivation or feeling unlike yourself</li>
+        <li>Crying easily or feeling overwhelmed by small things</li>
+      </ul>
+    </div>
+
+    <div class="pattern-section">
+      <h3>What to reflect on:</h3>
+      <ul>
+        <li>When did these changes start?</li>
+        <li>Do they correlate with your cycle, stress levels, or sleep?</li>
+        <li>Have you ruled out other contributing factors with your provider?</li>
+      </ul>
+    </div>
+
+    <div class="pattern-section">
+      <h3>Questions to ask your provider:</h3>
+      <ul>
+        <li>"Could my mood changes be related to hormones or nutrient status?"</li>
+        <li>"What testing might help us understand this better?"</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Pattern 6 -->
+  <div class="page pattern">
+    <h2><span class="pattern-number">6</span> Blood Sugar Rollercoaster</h2>
+
+    <div class="pattern-section">
+      <h3>What it may look like:</h3>
+      <ul>
+        <li>Feeling shaky, irritable, or "hangry" between meals</li>
+        <li>Energy spikes and crashes throughout the day</li>
+        <li>Needing to eat every 2-3 hours or you feel awful</li>
+        <li>Lightheadedness if you skip or delay meals</li>
+        <li>Waking up in the middle of the night hungry</li>
+      </ul>
+    </div>
+
+    <div class="pattern-section">
+      <h3>What to reflect on:</h3>
+      <ul>
+        <li>What does a typical day of eating look like for you?</li>
+        <li>How do you feel 1-2 hours after meals?</li>
+        <li>Have you ever had your fasting glucose or HbA1c checked?</li>
+      </ul>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>What to know:</strong> Blood sugar regulation is influenced by minerals, stress hormones, and how we nourish ourselves. These patterns may be worth exploring beyond just "eat more protein."</p>
+    </div>
+  </div>
+
+  <!-- Pattern 7 -->
+  <div class="page pattern">
+    <h2><span class="pattern-number">7</span> Brain Fog and Memory Issues</h2>
+
+    <div class="pattern-section">
+      <h3>What it may look like:</h3>
+      <ul>
+        <li>Difficulty concentrating or staying focused</li>
+        <li>Forgetting things you normally wouldn't</li>
+        <li>Feeling mentally "slow" or cloudy</li>
+        <li>Trouble finding words mid-sentence</li>
+        <li>Feeling like your brain just isn't working right</li>
+      </ul>
+    </div>
+
+    <div class="pattern-section">
+      <h3>What to reflect on:</h3>
+      <ul>
+        <li>Is this new, or has it been gradual?</li>
+        <li>Does it improve or worsen at certain times of day?</li>
+        <li>Have you mentioned this specifically to your provider?</li>
+      </ul>
+    </div>
+
+    <div class="pattern-section">
+      <h3>Questions to ask your provider:</h3>
+      <ul>
+        <li>"Are there metabolic or nutritional factors that could affect cognition?"</li>
+        <li>"Should we look at anything beyond standard bloodwork?"</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Pattern 8 -->
+  <div class="page pattern">
+    <h2><span class="pattern-number">8</span> Feeling Dismissed Despite Real Symptoms</h2>
+
+    <div class="pattern-section">
+      <h3>What it may look like:</h3>
+      <ul>
+        <li>Being told "everything looks normal" when you know it's not</li>
+        <li>Feeling like your concerns aren't taken seriously</li>
+        <li>Wondering if it's "all in your head"</li>
+        <li>Leaving appointments without answers or a clear plan</li>
+        <li>Being offered medication without exploring root causes</li>
+      </ul>
+    </div>
+
+    <div class="pattern-section">
+      <h3>What to reflect on:</h3>
+      <ul>
+        <li>Have you felt truly heard by your current provider?</li>
+        <li>Are there questions you've been afraid to ask?</li>
+        <li>Would a second opinion or different approach be helpful?</li>
+      </ul>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>What to know:</strong> Standard lab ranges are based on population averages — not optimal health. "Normal" doesn't always mean you're thriving. Functional wellness approaches look at patterns and optimal ranges that standard care may not prioritize.</p>
+      <p style="margin-top: 1rem; margin-bottom: 0;"><strong>You deserve to be heard.</strong></p>
+    </div>
+  </div>
+
+  <!-- What Comes Next -->
+  <div class="page">
+    <h2>What Comes Next?</h2>
+
+    <p>If several of these patterns resonated with you, you're not alone. Many women feel this way — and there are options beyond being told you're "fine."</p>
+
+    <p><strong>Functional testing like HTMA (Hair Tissue Mineral Analysis)</strong> offers a different lens. It looks at long-term mineral patterns, stress indicators, and metabolic trends that blood tests often miss.</p>
+
+    <p>It's not a replacement for medical care — it's a complement that can provide deeper insight into what your body may need.</p>
+
+    <div class="cta-section">
+      <h2>Ready to Explore Your Options?</h2>
+      <p>If you're curious whether functional wellness support might be right for you, I'd love to connect.</p>
+      <p><strong>Book a free discovery call</strong> — no pressure, no commitment. Just a conversation to see if we're a good fit.</p>
+      <a href="https://www.intentionholistichealth.com/contact.html" class="cta-button">Book Your Free Discovery Call</a>
+    </div>
+
+    <div class="page-footer">
+      <p><strong>Alicia Harrison, MSN, APRN, FNP-C</strong></p>
+      <p>Intention Holistic Health</p>
+      <p>intentionholistichealth.com</p>
+    </div>
+
+    <div class="disclaimer">
+      <p><strong>Disclaimer:</strong> This guide is for educational and informational purposes only. It is not intended to diagnose, treat, cure, or prevent any disease or condition. Individual results may vary. Please consult your licensed healthcare provider before making any changes to your health routine.</p>
+      <p>© 2026 Intention Holistic Health, PLLC. All rights reserved.</p>
+    </div>
+  </div>
+
+</body>
+</html>

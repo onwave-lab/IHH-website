@@ -23,7 +23,7 @@ const DEFAULT_PROMO = {
 const BLOG_POSTS = [
   {
     slug: '2026-03-11-are-you-eating-enough',
-    title: 'Are You Eating Enough?',
+    title: 'Are You Eating Enough? Signs of Under-Eating Women Often Miss',
     date: '2026-03-11',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Many women aren\u2019t intentionally dieting, but the amount of food they eat may not be enough to support everything their body is doing. Here\u2019s what under-eating looks like, why it matters, and where to start.',
@@ -36,9 +36,11 @@ const BLOG_POSTS = [
 
 <div class="blog-summary-note">Many women aren\u2019t intentionally dieting, but their daily food intake may not be enough to support normal hormonal, metabolic, and cellular functions. This article explores how under-eating develops, what it looks like in the body, and what small changes may help.</div>
 
+*"Are you eating enough?"*
+
 It\u2019s a question I wasn\u2019t expecting to ask women as often as I do now as a nurse practitioner.
 
-The women I usually ask aren\u2019t intentionally dieting. Most are not trying to lose weight. If you asked them how they eat, they would often describe their habits as fairly normal.
+The women I usually ask aren\u2019t intentionally dieting. Most are *not* trying to lose weight. If you asked them how they eat, they would often describe their habits as fairly normal.
 
 But the symptoms that bring them into the office often sound familiar.
 
@@ -54,9 +56,9 @@ They notice they feel cold more often than others around them.
 
 Sometimes digestion slows down. Sometimes they feel foggy or have intense afternoon slumps. Sometimes workouts feel harder to recover from. Sometimes the concern is simply that they don\u2019t feel like themselves.
 
-As we walk through a typical day of eating, an important piece of the picture sometimes comes into view. The amount of food being eaten may simply not be enough to support everything the body is being asked to do.
+As we walk through a typical day of eating, an important piece of the picture sometimes comes into view. The amount of food being eaten may simply *not be enough* to support everything the body is being asked to do.
 
-That situation rarely develops on purpose. More often it reflects how full life has become. Work schedules, childcare, pregnancy and postpartum recovery, stress, and years of cultural messaging around eating less can quietly shape eating patterns. Breakfast gets skipped, lunch becomes whatever is available between responsibilities, portions gradually shrink.
+That situation rarely develops on purpose. More often it reflects how full life has become. Work schedules, childcare, pregnancy and postpartum recovery, stress, and years of cultural messaging around *eating less* can quietly shape eating patterns. Breakfast gets skipped, lunch becomes whatever is available between responsibilities, portions gradually shrink.
 
 And while none of that may have happened with the intention of harming the body, the body still depends on energy intake to maintain its normal functions. When that intake stays low for long enough, the body slowly loses its stored potential to compensate.
 
@@ -64,13 +66,13 @@ And while none of that may have happened with the intention of harming the body,
 
 Every system in the body requires energy. Hormones are synthesized continuously. Cells repair themselves. The brain processes information. Muscles recover from movement. Hair and skin regenerate. These processes occur whether or not we are consciously thinking about them. They are ongoing biological work.
 
-When energy intake consistently falls below what the body needs, researchers describe the state as low energy availability. This term refers to a situation where the energy remaining after exercise and daily activity is not sufficient to fully support normal physiological functions (Mountjoy et al., 2018).
+When energy intake consistently falls below what the body needs, researchers describe the state as *low energy availability*. This term refers to a situation where the energy remaining after exercise and daily activity is not sufficient to fully support normal physiological functions (Mountjoy et al., 2018).
 
 In response, the body begins allocating resources carefully. Systems required for immediate survival continue operating. Others may temporarily slow while the body conserves energy.
 
-Reproductive hormone signaling is particularly sensitive to energy availability. Studies examining hypothalamic amenorrhea show that insufficient energy intake can disrupt the signals between the brain and the ovaries that regulate menstrual cycles (Gordon et al., 2017; Loucks & Thuma, 2003). Thyroid activity and metabolic rate may also shift slightly as the body attempts to adapt to a lower energy supply (Rosenbaum & Leibel, 2010).
+*Reproductive hormone signaling* is particularly sensitive to energy availability. Studies examining hypothalamic amenorrhea show that insufficient energy intake can disrupt the signals between the brain and the ovaries that regulate menstrual cycles (Gordon et al., 2017; Loucks & Thuma, 2003). Thyroid activity and metabolic rate may also shift slightly as the body attempts to adapt to a lower energy supply (Rosenbaum & Leibel, 2010).
 
-From a physiological perspective, these changes represent an attempt to maintain stability rather than a failure of the body. As I say often: the body compensates until it can\u2019t.
+From a physiological perspective, these changes represent an attempt to maintain stability rather than a failure of the body. As I say often: *the body compensates until it can\u2019t.*
 
 ## How Much Energy Do Women Typically Need?
 
@@ -92,9 +94,9 @@ Many women have spent years hearing that eating less is the primary path toward 
 
 Human metabolism is more complex than that message suggests. In the short term, reducing calorie intake usually results in weight loss. Over longer periods, the body adapts in ways that can make continued weight loss more difficult.
 
-Research examining metabolic adaptation shows that sustained calorie restriction can lead to reductions in resting energy expenditure as the body adjusts to conserve energy (Rosenbaum & Leibel, 2010). That means that the calories (or energy) it takes to do simple day-to-day tasks goes down, so you burn fewer calories than you did before just living life.
+Research examining *metabolic adaptation* shows that sustained calorie restriction can lead to reductions in *resting energy expenditure* as the body adjusts to conserve energy (Rosenbaum & Leibel, 2010). That means that the calories (or energy) it takes to do simple day-to-day tasks goes down, so you burn fewer calories than you did before just living life.
 
-Hormones involved in appetite regulation also respond. Leptin, which helps signal fullness, tends to decline during weight loss. Hormones that stimulate hunger may increase (Sumithran et al., 2011). So, you may find that you can eat, and eat some more, and rarely feel full. These changes help explain why many people experience cycles of restriction followed by periods of intense hunger. From the body\u2019s perspective, those responses are attempts to restore energy balance.
+Hormones involved in appetite regulation also respond. *Leptin*, which helps signal fullness, tends to decline during weight loss. Hormones that stimulate *hunger* may increase (Sumithran et al., 2011). So, you may find that you can eat, and eat some more, and rarely feel full. These changes help explain why many people experience cycles of restriction followed by periods of intense hunger. From the body\u2019s perspective, those responses are attempts to restore energy balance.
 
 For this reason, clinical conversations about nutrition often focus less on strict restriction and more on sustainable patterns that support stable energy levels and adequate nutrient intake.
 
@@ -104,7 +106,7 @@ Because under-eating often develops gradually, many women are surprised when the
 
 A simple exercise can be helpful: Write down everything consumed during one ordinary weekday. Not a \u201cperfect\u201d day and not a day where habits are intentionally changed. Just a normal day.
 
-Sometimes this exercise confirms that intake is appropriate and balanced. Other times it reveals long stretches between meals or portions that are smaller than expected. The purpose is simply awareness and can be useful when discussing symptoms with a healthcare professional.
+Sometimes this exercise confirms that intake is appropriate and balanced. Other times it reveals long stretches between meals or portions that are smaller than expected. The purpose is simply *awareness* and can be useful when discussing symptoms with a healthcare professional.
 
 ## Nutrient Intake Matters Alongside Calories
 
@@ -114,17 +116,17 @@ Calories represent energy, but the foods that provide those calories also supply
 
 Minerals and vitamins support biochemical reactions that occur thousands of times each minute. Iron contributes to oxygen transport and energy production. Magnesium participates in hundreds of enzymatic reactions related to metabolism and nerve signaling. Zinc supports immune function and reproductive hormone activity.
 
-These are among the minerals evaluated through [Hair Tissue Mineral Analysis (HTMA)](/htma.html), which measures mineral levels deposited in tissue over a 3\u20134 month window. When calorie intake becomes very low, obtaining adequate amounts of these nutrients from food becomes more difficult. For that reason, nutrition discussions often emphasize [nutrient-dense foods rather than calories alone](/blog/post.html?post=2025-01-15-minerals-from-food).
+These are among the minerals evaluated through [Hair Tissue Mineral Analysis (HTMA)](/htma.html), which measures mineral levels deposited in tissue over a 3\u20134 month window. When calorie intake becomes very low, obtaining adequate amounts of these nutrients from food becomes more difficult. For that reason, nutrition discussions often emphasize [*nutrient-dense* foods rather than calories alone](/blog/post.html?post=2025-01-15-minerals-from-food).
 
 ## Small Changes That Can Support Adequate Intake
 
-When someone realizes their daily intake may be lower than expected, large dietary overhauls are rarely necessary. In many cases, small adjustments can make a meaningful difference.
+When someone realizes their daily intake may be lower than expected, large dietary overhauls are *rarely* necessary. In many cases, small adjustments can make a meaningful difference.
 
 Including a source of protein with meals is one starting point. Eggs, fish, poultry, dairy products, legumes, and red meat provide amino acids needed for tissue repair and metabolic processes.
 
 Energy intake often increases naturally when meals contain healthy fats as well. Foods such as avocados, olive oil, nuts, seeds, and full-fat dairy provide concentrated energy along with fatty acids that support hormone signaling (Calder, 2015).
 
-Meal timing can also influence total intake. Long gaps between meals sometimes make it difficult to meet energy needs. Some individuals feel better with three balanced meals, while others benefit from including a snack during the day.
+*Meal timing* can also influence total intake. Long gaps between meals sometimes make it difficult to meet energy needs. Some individuals feel better with three balanced meals, while others benefit from including a snack during the day.
 
 Carbohydrates remain an important fuel source for the brain and muscles. Pairing carbohydrate foods with protein or fats can help maintain steady energy levels throughout the day. Potatoes with olive oil and protein, fruit with yogurt, or rice alongside fish are simple examples.
 
@@ -134,7 +136,7 @@ Fatigue, hormone changes, hair loss, and metabolic symptoms rarely have a single
 
 Sleep quality, stress, thyroid function, medications, and underlying medical conditions can all play a role. When symptoms persist, a [comprehensive evaluation](/services/lab-review.html) may be appropriate.
 
-Still, nutrition remains a foundational variable.
+Still, nutrition remains a *foundational* variable.
 
 The body requires energy and nutrients to perform its daily work. When intake falls short for long enough, the effects often show up gradually.
 

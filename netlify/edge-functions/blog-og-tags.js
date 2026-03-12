@@ -7,7 +7,7 @@ const SITE_URL = 'https://www.intentionholistichealth.com';
 // Only includes fields needed for OG tags
 const BLOG_POSTS = {
   '2026-03-11-are-you-eating-enough': {
-    title: 'Are You Eating Enough?',
+    title: 'Are You Eating Enough? Signs of Under-Eating Women Often Miss',
     excerpt: 'Many women aren\u2019t intentionally dieting, but the amount of food they eat may not be enough to support everything their body is doing. Here\u2019s what under-eating looks like, why it matters, and where to start.',
     image: '/images/blog/are-you-eating-enough.webp'
   },

@@ -74,6 +74,8 @@ In response, the body begins allocating resources carefully. Systems required fo
 
 From a physiological perspective, these changes represent an attempt to maintain stability rather than a failure of the body. As I say often: *the body compensates until it can\u2019t.*
 
+[INSIGHT:The body doesn\u2019t stop working when energy runs low. It reallocates. Hormones, hair, digestion, and mood are often the first systems to feel the shift\u2014not because they\u2019re failing, but because the body is prioritizing survival over everything else.]
+
 ## How Much Energy Do Women Typically Need?
 
 Individual calorie needs vary based on body size, activity level, age, and metabolic health. Still, population data provide useful reference ranges.

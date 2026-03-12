@@ -6,6 +6,11 @@ const SITE_URL = 'https://www.intentionholistichealth.com';
 // Blog post metadata - keep in sync with js/blog.js
 // Only includes fields needed for OG tags
 const BLOG_POSTS = {
+  '2026-03-11-are-you-eating-enough': {
+    title: 'Are You Eating Enough?',
+    excerpt: 'Many women aren\u2019t intentionally dieting, but the amount of food they eat may not be enough to support everything their body is doing. Here\u2019s what under-eating looks like, why it matters, and where to start.',
+    image: '/images/blog/are-you-eating-enough.webp'
+  },
   '2026-03-04-protein-fiber-women-fertility-postpartum': {
     title: 'Why Protein AND Fiber Matter More Than Most Women Realize',
     excerpt: 'Protein and fiber are two of the most common nutritional gaps in women\u2019s daily eating, and they directly affect blood sugar stability, hormone balance, gut health, and energy. Here\u2019s what to know and where to start.',

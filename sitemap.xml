@@ -84,12 +84,19 @@
   <!-- Blog -->
   <url>
     <loc>https://www.intentionholistichealth.com/blog/</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-03-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Blog Posts -->
+  <url>
+    <loc>https://www.intentionholistichealth.com/blog/post.html?post=2026-03-11-are-you-eating-enough</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://www.intentionholistichealth.com/blog/post.html?post=2026-03-04-protein-fiber-women-fertility-postpartum</loc>
     <lastmod>2026-03-05</lastmod>

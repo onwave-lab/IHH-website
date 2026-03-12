@@ -22,6 +22,202 @@ const DEFAULT_PROMO = {
 // For simplicity, we define posts here that can be easily updated
 const BLOG_POSTS = [
   {
+    slug: '2026-03-11-are-you-eating-enough',
+    title: 'Are You Eating Enough?',
+    date: '2026-03-11',
+    author: 'Alicia Harrison, MSN, APRN, FNP-C',
+    excerpt: 'Many women aren\u2019t intentionally dieting, but the amount of food they eat may not be enough to support everything their body is doing. Here\u2019s what under-eating looks like, why it matters, and where to start.',
+    image: '/images/blog/are-you-eating-enough.webp',
+    cardAspectRatio: '83.83%',
+    imageAspectRatio: '83.83%',
+    categories: ['wellness', 'nutrition', 'foundations', 'preconception', 'postpartum'],
+    content: `
+# Are You Eating Enough?
+
+<div class="blog-summary-note">Many women aren\u2019t intentionally dieting, but their daily food intake may not be enough to support normal hormonal, metabolic, and cellular functions. This article explores how under-eating develops, what it looks like in the body, and what small changes may help.</div>
+
+It\u2019s a question I wasn\u2019t expecting to ask women as often as I do now as a nurse practitioner.
+
+The women I usually ask aren\u2019t intentionally dieting. Most are not trying to lose weight. If you asked them how they eat, they would often describe their habits as fairly normal.
+
+But the symptoms that bring them into the office often sound familiar.
+
+Energy has been low for a while.
+
+Menstrual cycles are unpredictable.
+
+Hair feels thinner than it used to.
+
+Skin has changed.
+
+They notice they feel cold more often than others around them.
+
+Sometimes digestion slows down. Sometimes they feel foggy or have intense afternoon slumps. Sometimes workouts feel harder to recover from. Sometimes the concern is simply that they don\u2019t feel like themselves.
+
+As we walk through a typical day of eating, an important piece of the picture sometimes comes into view. The amount of food being eaten may simply not be enough to support everything the body is being asked to do.
+
+That situation rarely develops on purpose. More often it reflects how full life has become. Work schedules, childcare, pregnancy and postpartum recovery, stress, and years of cultural messaging around eating less can quietly shape eating patterns. Breakfast gets skipped, lunch becomes whatever is available between responsibilities, portions gradually shrink.
+
+And while none of that may have happened with the intention of harming the body, the body still depends on energy intake to maintain its normal functions. When that intake stays low for long enough, the body slowly loses its stored potential to compensate.
+
+## Energy Is the Body\u2019s Operating Budget
+
+Every system in the body requires energy. Hormones are synthesized continuously. Cells repair themselves. The brain processes information. Muscles recover from movement. Hair and skin regenerate. These processes occur whether or not we are consciously thinking about them. They are ongoing biological work.
+
+When energy intake consistently falls below what the body needs, researchers describe the state as low energy availability. This term refers to a situation where the energy remaining after exercise and daily activity is not sufficient to fully support normal physiological functions (Mountjoy et al., 2018).
+
+In response, the body begins allocating resources carefully. Systems required for immediate survival continue operating. Others may temporarily slow while the body conserves energy.
+
+Reproductive hormone signaling is particularly sensitive to energy availability. Studies examining hypothalamic amenorrhea show that insufficient energy intake can disrupt the signals between the brain and the ovaries that regulate menstrual cycles (Gordon et al., 2017; Loucks & Thuma, 2003). Thyroid activity and metabolic rate may also shift slightly as the body attempts to adapt to a lower energy supply (Rosenbaum & Leibel, 2010).
+
+From a physiological perspective, these changes represent an attempt to maintain stability rather than a failure of the body. As I say often: the body compensates until it can\u2019t.
+
+## How Much Energy Do Women Typically Need?
+
+Individual calorie needs vary based on body size, activity level, age, and metabolic health. Still, population data provide useful reference ranges.
+
+According to the Dietary Guidelines for Americans, many adult women require approximately 1,800 to 2,400 calories per day to support normal metabolism and daily activity (U.S. Department of Agriculture & U.S. Department of Health and Human Services, 2020).
+
+Some women require more. Athletes, women with physically demanding jobs, and those who exercise frequently often need higher energy intake.
+
+Energy needs also change during pregnancy and breastfeeding. Pregnancy increases energy requirements as maternal tissues expand and the developing fetus grows. Current estimates suggest an average increase of about 340 additional calories per day during the second trimester and 450 additional calories during the third trimester (Institute of Medicine, 2005).
+
+Breastfeeding increases energy demands as well. Producing milk requires metabolic energy, and many women need roughly 330 to 400 additional calories per day while lactating (Institute of Medicine, 2005).
+
+These figures are averages rather than prescriptions. Individual requirements vary, which is why healthcare professionals often evaluate symptoms, medical history, and lifestyle factors when discussing nutrition.
+
+## Why Eating Less Can Sometimes Work Against You
+
+Many women have spent years hearing that eating less is the primary path toward better health or weight management.
+
+Human metabolism is more complex than that message suggests. In the short term, reducing calorie intake usually results in weight loss. Over longer periods, the body adapts in ways that can make continued weight loss more difficult.
+
+Research examining metabolic adaptation shows that sustained calorie restriction can lead to reductions in resting energy expenditure as the body adjusts to conserve energy (Rosenbaum & Leibel, 2010). That means that the calories (or energy) it takes to do simple day-to-day tasks goes down, so you burn fewer calories than you did before just living life.
+
+Hormones involved in appetite regulation also respond. Leptin, which helps signal fullness, tends to decline during weight loss. Hormones that stimulate hunger may increase (Sumithran et al., 2011). So, you may find that you can eat, and eat some more, and rarely feel full. These changes help explain why many people experience cycles of restriction followed by periods of intense hunger. From the body\u2019s perspective, those responses are attempts to restore energy balance.
+
+For this reason, clinical conversations about nutrition often focus less on strict restriction and more on sustainable patterns that support stable energy levels and adequate nutrient intake.
+
+## Looking at a Typical Day of Eating
+
+Because under-eating often develops gradually, many women are surprised when they take a closer look at a typical day of eating.
+
+A simple exercise can be helpful: Write down everything consumed during one ordinary weekday. Not a \u201cperfect\u201d day and not a day where habits are intentionally changed. Just a normal day.
+
+Sometimes this exercise confirms that intake is appropriate and balanced. Other times it reveals long stretches between meals or portions that are smaller than expected. The purpose is simply awareness and can be useful when discussing symptoms with a healthcare professional.
+
+## Nutrient Intake Matters Alongside Calories
+
+Calories represent energy, but the foods that provide those calories also supply essential nutrients.
+
+[Protein provides amino acids](/blog/post.html?post=2026-03-04-protein-fiber-women-fertility-postpartum) that are used to build enzymes, hormones, and structural tissues throughout the body.
+
+Minerals and vitamins support biochemical reactions that occur thousands of times each minute. Iron contributes to oxygen transport and energy production. Magnesium participates in hundreds of enzymatic reactions related to metabolism and nerve signaling. Zinc supports immune function and reproductive hormone activity.
+
+These are among the minerals evaluated through [Hair Tissue Mineral Analysis (HTMA)](/htma.html), which measures mineral levels deposited in tissue over a 3\u20134 month window. When calorie intake becomes very low, obtaining adequate amounts of these nutrients from food becomes more difficult. For that reason, nutrition discussions often emphasize [nutrient-dense foods rather than calories alone](/blog/post.html?post=2025-01-15-minerals-from-food).
+
+## Small Changes That Can Support Adequate Intake
+
+When someone realizes their daily intake may be lower than expected, large dietary overhauls are rarely necessary. In many cases, small adjustments can make a meaningful difference.
+
+Including a source of protein with meals is one starting point. Eggs, fish, poultry, dairy products, legumes, and red meat provide amino acids needed for tissue repair and metabolic processes.
+
+Energy intake often increases naturally when meals contain healthy fats as well. Foods such as avocados, olive oil, nuts, seeds, and full-fat dairy provide concentrated energy along with fatty acids that support hormone signaling (Calder, 2015).
+
+Meal timing can also influence total intake. Long gaps between meals sometimes make it difficult to meet energy needs. Some individuals feel better with three balanced meals, while others benefit from including a snack during the day.
+
+Carbohydrates remain an important fuel source for the brain and muscles. Pairing carbohydrate foods with protein or fats can help maintain steady energy levels throughout the day. Potatoes with olive oil and protein, fruit with yogurt, or rice alongside fish are simple examples.
+
+## Nutrition Is One Piece of the Health Picture
+
+Fatigue, hormone changes, hair loss, and metabolic symptoms rarely have a single explanation.
+
+Sleep quality, stress, thyroid function, medications, and underlying medical conditions can all play a role. When symptoms persist, a [comprehensive evaluation](/services/lab-review.html) may be appropriate.
+
+Still, nutrition remains a foundational variable.
+
+The body requires energy and nutrients to perform its daily work. When intake falls short for long enough, the effects often show up gradually.
+
+For some women, the most helpful starting point is simply stepping back and asking a question that rarely gets asked:
+
+Are you eating enough?
+
+With love + intention,
+
+Alicia
+
+[CTA:Book a Free Discovery Call|If you\u2019ve been experiencing persistent fatigue, hormone changes, or other symptoms and want to explore whether your nutrition may be part of the picture\u2014let\u2019s talk.|apply|Book Your Free Call]
+
+*Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
+
+## References
+
+1. Calder, P. C. (2015). Functional roles of fatty acids and their effects on human health. *Journal of Parenteral and Enteral Nutrition*, 39(1_suppl), 18S\u201332S. [DOI: 10.1177/0148607115595980](https://doi.org/10.1177/0148607115595980)
+
+2. Gordon, C. M., Ackerman, K. E., Berga, S. L., Kaplan, J. R., Mastorakos, G., Misra, M., Murad, M. H., Santoro, N. F., & Warren, M. P. (2017). Functional hypothalamic amenorrhea: An Endocrine Society clinical practice guideline. *The Journal of Clinical Endocrinology & Metabolism*, 102(5), 1413\u20131439. [DOI: 10.1210/jc.2017-00131](https://doi.org/10.1210/jc.2017-00131)
+
+3. Institute of Medicine. (2005). Dietary reference intakes for energy, carbohydrate, fiber, fat, fatty acids, cholesterol, protein, and amino acids. *National Academies Press*. [DOI: 10.17226/10490](https://doi.org/10.17226/10490)
+
+4. Loucks, A. B., & Thuma, J. R. (2003). Luteinizing hormone pulsatility is disrupted at a threshold of energy availability in regularly menstruating women. *The Journal of Clinical Endocrinology & Metabolism*, 88(1), 297\u2013311. [DOI: 10.1210/jc.2002-020369](https://doi.org/10.1210/jc.2002-020369)
+
+5. Mountjoy, M., Sundgot-Borgen, J., Burke, L., Ackerman, K. E., Blauwet, C., Constantini, N., Lebrun, C., Lundy, B., Melin, A., Meyer, N., Sherman, R., Tenforde, A., Klungland Torstveit, M., & Budgett, R. (2018). IOC consensus statement on relative energy deficiency in sport (RED-S): 2018 update. *British Journal of Sports Medicine*, 52(11), 687\u2013697. [DOI: 10.1136/bjsports-2018-099193](https://doi.org/10.1136/bjsports-2018-099193)
+
+6. National Institutes of Health Office of Dietary Supplements. (2023). Iron: Fact sheet for health professionals. [https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/](https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/)
+
+7. Prasad, A. S. (2013). Discovery of human zinc deficiency: Its impact on human health and disease. *Advances in Nutrition*, 4(2), 176\u2013190. [DOI: 10.3945/an.112.003210](https://doi.org/10.3945/an.112.003210)
+
+8. Rosenbaum, M., & Leibel, R. L. (2010). Adaptive thermogenesis in humans. *International Journal of Obesity*, 34(S1), S47\u2013S55. [DOI: 10.1038/ijo.2010.184](https://doi.org/10.1038/ijo.2010.184)
+
+9. Sumithran, P., Prendergast, L. A., Delbridge, E., Purcell, K., Shulkes, A., Kriketos, A., Proietto, J., & Mitchell, P. (2011). Long-term persistence of hormonal adaptations to weight loss. *New England Journal of Medicine*, 365(17), 1597\u20131604. [DOI: 10.1056/NEJMoa1105816](https://doi.org/10.1056/NEJMoa1105816)
+
+10. U.S. Department of Agriculture & U.S. Department of Health and Human Services. (2020). Dietary guidelines for Americans, 2020\u20132025 (9th ed.). [https://www.dietaryguidelines.gov](https://www.dietaryguidelines.gov)
+
+11. Volpe, S. L. (2013). Magnesium in disease prevention and overall health. *Advances in Nutrition*, 4(3), 378S\u2013383S. [DOI: 10.3945/an.112.003483](https://doi.org/10.3945/an.112.003483)
+    `,
+    disclaimer: `This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
+
+Any individuals depicted in images on this website or associated content are models or stock photography subjects and are not patients, clients, or recipients of services from Intention Holistic Health. Images are used for illustrative purposes only and do not represent clinical relationships, medical outcomes, or specific health conditions.
+
+Intention Holistic Health provides educational wellness guidance and, where applicable, Kentucky-based nurse practitioner services within scope and licensure.`,
+    faqs: [
+      {
+        question: 'How do I know if I\u2019m not eating enough?',
+        answer: 'Common signs may include persistent fatigue, hair thinning, irregular menstrual cycles, feeling cold often, brain fog, and difficulty recovering from exercise. A simple exercise is to write down everything you eat on a normal weekday and review the total intake with a healthcare professional.'
+      },
+      {
+        question: 'How many calories do most women need per day?',
+        answer: 'According to the Dietary Guidelines for Americans, many adult women require approximately 1,800 to 2,400 calories per day. Athletes, pregnant women, and breastfeeding mothers often need more. Individual needs vary based on body size, activity level, age, and metabolic health.'
+      },
+      {
+        question: 'Can under-eating affect my hormones?',
+        answer: 'Yes. Research shows that insufficient energy intake can disrupt reproductive hormone signaling, potentially affecting menstrual cycle regularity. Thyroid activity and metabolic rate may also shift as the body attempts to conserve energy in response to low intake.'
+      },
+      {
+        question: 'Why do I gain weight even though I\u2019m eating less?',
+        answer: 'Sustained calorie restriction can lead to metabolic adaptation, where the body reduces its resting energy expenditure to conserve energy. Appetite-regulating hormones also shift, with fullness signals declining and hunger signals increasing. This can create cycles of restriction and overeating.'
+      },
+      {
+        question: 'Do I need more calories during pregnancy or breastfeeding?',
+        answer: 'Yes. Current estimates suggest an increase of about 340 additional calories per day during the second trimester and 450 during the third trimester. Breastfeeding requires roughly 330 to 400 additional calories per day. These are averages and individual needs vary.'
+      },
+      {
+        question: 'Is counting calories the best approach?',
+        answer: 'Not necessarily. Focusing on nutrient-dense foods, including protein and healthy fats with meals, and paying attention to meal timing are often more sustainable approaches. The goal is adequate energy and nutrient intake rather than strict numerical tracking.'
+      },
+      {
+        question: 'What nutrients am I most likely missing if I\u2019m under-eating?',
+        answer: 'When calorie intake is low, it becomes harder to get adequate protein, iron, magnesium, and zinc from food alone. These nutrients support energy production, hormone signaling, immune function, and tissue repair. Functional testing such as HTMA can help identify specific gaps.'
+      },
+      {
+        question: 'What is the easiest change I can make to eat more?',
+        answer: 'Adding healthy fats to meals is one of the simplest ways to increase energy intake. Avocados, olive oil, nuts, seeds, and full-fat dairy provide concentrated calories along with fatty acids that support hormone health. Pairing carbohydrates with protein or fats also helps maintain steady energy.'
+      }
+    ],
+    schema: {
+      description: 'Many women unknowingly under-eat. Learn how low energy intake affects hormones, metabolism, and overall health, and what small changes may help.'
+    }
+  },
+  {
     slug: '2026-02-24-depleted-signs-before-pregnancy',
     title: 'Are You Depleted? Signs to Address Before Pregnancy',
     date: '2026-02-24',

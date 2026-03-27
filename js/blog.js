@@ -166,11 +166,11 @@ Alicia
 
 4. Wise, P. M., Nattress, L., Flammer, L. J., & Beauchamp, G. K. (2016). Reduced dietary intake of simple sugars alters perceived sweet intensity but not preferred sweetness. *The American Journal of Clinical Nutrition*, 103(1), 50\u201360. [DOI: 10.3945/ajcn.115.112300](https://doi.org/10.3945/ajcn.115.112300)
     `,
-    disclaimer: \`This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
+    disclaimer: `This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
 
 Any individuals depicted in images on this website or associated content are models or stock photography subjects and are not patients, clients, or recipients of services from Intention Holistic Health. Images are used for illustrative purposes only and do not represent clinical relationships, medical outcomes, or specific health conditions.
 
-Intention Holistic Health provides educational wellness guidance and, where applicable, Kentucky-based nurse practitioner services within scope and licensure.\`,
+Intention Holistic Health provides educational wellness guidance and, where applicable, Kentucky-based nurse practitioner services within scope and licensure.`,
     faqs: [
       {
         question: 'Why are cravings so intense when I first switch to whole foods?',

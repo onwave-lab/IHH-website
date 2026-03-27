@@ -1,6 +1,6 @@
 # IHH Analytics Report Template
 
-**Last Updated:** January 3, 2026
+**Last Updated:** January 3, 2026.
 
 This template defines the standard analytics report format. When the user requests analytics, Claude should generate a report following this structure.
 

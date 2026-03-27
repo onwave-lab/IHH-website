@@ -12,7 +12,8 @@ Thumbs.db
 .idea/
 
 # Claude Code user settings (permissions, local config)
-.claude/
+.claude/*
+!.claude/skills/
 
 # Environment files
 .env

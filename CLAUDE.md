@@ -238,6 +238,10 @@ All work is done on `drafts-website-edits`. Push to this branch only. User merge
 
 **Default Model:** claude-sonnet-4-5-20250929 (Sonnet 4.5). Use Opus for planning/architecture/complex debugging. Use Haiku for simple edits/lookups. See `CLAUDE-REFERENCE.md` for the full model selection guide.
 
+## Content Cluster Skill (Auto-Invoke)
+
+When the user shares a content topic, idea, piece of content to adapt, or says anything like "write content about X," "turn this into content," "create a content cluster," or "content cluster about X" — invoke the `/content-cluster` skill. Do not wait for the user to type the slash command; recognize the intent and invoke it automatically.
+
 ## Adding New Content (Blog Posts, Copy, etc.)
 
 When adding new content to the site, **always ask about style preferences** before implementing:

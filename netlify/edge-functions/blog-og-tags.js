@@ -6,6 +6,11 @@ const SITE_URL = 'https://www.intentionholistichealth.com';
 // Blog post metadata - keep in sync with js/blog.js
 // Only includes fields needed for OG tags
 const BLOG_POSTS = {
+  '2026-03-27-why-cravings-feel-so-intense': {
+    title: 'Why Cravings Feel So Intense (And What Actually Happens When You Switch to Whole Foods)',
+    excerpt: 'Wondering why cravings are so hard to resist? Learn what actually happens to your taste buds, brain, blood sugar, and gut when you switch to a whole foods diet — and why it gets easier.',
+    image: '/images/blog/placeholder-cravings.webp'
+  },
   '2026-03-11-are-you-eating-enough': {
     title: 'Are You Eating Enough? Signs of Under-Eating Women Often Miss',
     excerpt: 'Many women aren\u2019t intentionally dieting, but the amount of food they eat may not be enough to support everything their body is doing. Here\u2019s what under-eating looks like, why it matters, and where to start.',

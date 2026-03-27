@@ -38,17 +38,17 @@ const BLOG_POSTS = [
 
 You know you should probably eat better. You have heard it, read it, maybe even tried it. But when it is 6:00 PM and you are exhausted, the idea of washing, chopping, and cooking a pile of vegetables feels like a lot. The drive-through is right there. The frozen pizza takes twelve minutes.
 
-Choosing the healthier option can feel like a constant, draining act of willpower. And when the healthier option does not even taste that good to you yet, it is easy to wonder why you are bothering.
+Choosing the healthier option can feel like a constant uphill effort. And when the healthier option does not even taste that good to you yet, it is easy to wonder why you are bothering.
 
-If that is where you are right now, I want you to understand something. That struggle is not a character flaw. It is not a lack of discipline. There is a real, measurable biological reason why the better choice feels so hard at first.
+If that is where you are right now, I want you to understand something. That struggle has a real, measurable biological explanation. There is a reason the better choice feels so hard at first, and it has everything to do with what is happening inside your body.
 
 This is a pattern I see often. The women I work with describe the same thing. In the beginning, it feels like a fight. But a few weeks in, something shifts. The struggle starts to ease. The cravings quiet down. The food starts to actually taste good.
 
-That shift is not a miracle, and it is not because they suddenly became more disciplined.
+That shift is not a miracle. And it is not random.
 
-It is because their biology actually started to change. When you give your body whole foods consistently, it responds with a quiet renovation behind the scenes.
+It is because their biology actually started to change. When you give your body whole foods consistently, it starts to adapt. Your taste buds, your brain chemistry, your blood sugar, your gut. All of it shifts.
 
-Let me walk you through what that renovation actually looks like.
+Let me walk you through what actually happens.
 
 ## How Your Taste Buds Reset on a Whole Foods Diet
 
@@ -92,9 +92,9 @@ When you eat refined carbohydrates, your blood sugar rises quickly. Your pancrea
 
 When that crash happens, your body shifts into urgency mode. It releases ghrelin, the hunger hormone, and it demands the fastest energy source available. Usually, that means sugar or simple carbs.
 
-This is not a lack of willpower. It is a physiological response. Your body genuinely believes it needs fuel *right now*.
+This is a physiological response. Your body genuinely believes it needs fuel *right now*.
 
-[INSIGHT:If your strongest cravings hit mid-afternoon like clockwork, blood sugar instability may be the driver, not discipline. Stabilizing your meals with [protein, fiber](/blog/post.html?post=2026-03-04-protein-fiber-women-fertility-postpartum), and healthy fats can quiet that cycle significantly.]
+[INSIGHT:If your strongest cravings hit mid-afternoon like clockwork, blood sugar instability may be the driver. Stabilizing your meals with [protein, fiber](/blog/post.html?post=2026-03-04-protein-fiber-women-fertility-postpartum), and healthy fats can quiet that cycle significantly.]
 
 Whole foods change the shape of your energy curve entirely. Because they contain fiber, protein, and fat, they slow digestion and absorption. Instead of a sharp spike and crash, you get a steady, gradual rise and fall. When your blood sugar is stable, the urgency disappears. You can make a thoughtful choice about what to eat because your brain is not signaling an emergency.
 
@@ -130,9 +130,9 @@ Your gut microbiome is shifting significantly by now. The loud, specific craving
 
 ### Month 1 and Beyond: Your New Baseline
 
-This is where your body has completed the renovation. Your dopamine sensitivity has returned to a healthier range. Your taste buds are picking up flavors they could not detect before. You might try something you used to crave and find it is overwhelming. Too sweet. Too salty. Too much.
+This is where the changes really settle in. Your dopamine sensitivity has returned to a healthier range. Your taste buds are picking up flavors they could not detect before. You might try something you used to crave and find it is overwhelming. Too sweet. Too salty. Too much.
 
-This is not willpower. This is your biology working *with* you instead of against you.
+This is your biology working *with* you instead of against you.
 
 ## From Awareness to Action
 

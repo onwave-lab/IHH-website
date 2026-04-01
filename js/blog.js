@@ -2658,7 +2658,7 @@ function parseMarkdown(markdown) {
         <h4 class="blog-cta-title">${title.trim()}</h4>
         <p class="blog-cta-description">${description.trim()}</p>
       </div>
-      <a href="https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/forms?f=69627b92b758cb04b246009e" target="_blank" rel="noopener noreferrer" class="blog-cta-button" data-track-cta="blog-inline-cta">${buttonText.trim()}</a>
+      <a href="https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/bookings?s=664b9722ff1f3762a57079f5&step=date" target="_blank" rel="noopener noreferrer" class="blog-cta-button" data-track-cta="blog-inline-cta">${buttonText.trim()}</a>
     </div>`;
     }
     return `<div class="blog-cta-box">

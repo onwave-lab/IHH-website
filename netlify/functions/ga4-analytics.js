@@ -152,6 +152,44 @@ async function fetchGA4Data(accessToken, reportType = 'overview', dateRange = '3
         { name: 'screenPageViews' }
       ],
       orderBys: [{ dimension: { dimensionName: 'date' }, desc: false }]
+    },
+    channels: {
+      dateRanges: [{ startDate, endDate }],
+      dimensions: [
+        { name: 'sessionSource' },
+        { name: 'sessionMedium' },
+        { name: 'sessionDefaultChannelGroup' }
+      ],
+      metrics: [
+        { name: 'sessions' },
+        { name: 'activeUsers' },
+        { name: 'bounceRate' },
+        { name: 'averageSessionDuration' }
+      ],
+      orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
+      limit: 20
+    },
+    paid: {
+      dateRanges: [{ startDate, endDate }],
+      dimensions: [{ name: 'pagePath' }],
+      metrics: [
+        { name: 'sessions' },
+        { name: 'activeUsers' },
+        { name: 'screenPageViews' },
+        { name: 'bounceRate' },
+        { name: 'averageSessionDuration' }
+      ],
+      dimensionFilter: {
+        filter: {
+          fieldName: 'sessionMedium',
+          stringFilter: {
+            matchType: 'EXACT',
+            value: 'cpc'
+          }
+        }
+      },
+      orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
+      limit: 20
     }
   };
 

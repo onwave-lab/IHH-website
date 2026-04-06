@@ -130,7 +130,7 @@ async function fetchAdsData(accessToken, query) {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: 'googleads.googleapis.com',
-      path: `/v17/customers/${GOOGLE_ADS_CUSTOMER_ID}/googleAds:searchStream`,
+      path: `/v18/customers/${GOOGLE_ADS_CUSTOMER_ID}/googleAds:search`,
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${accessToken}`,
@@ -229,12 +229,10 @@ function getAdsQuery(reportType, days) {
 
 // Format Google Ads response
 function formatAdsReport(rawData, reportType) {
-  const results = Array.isArray(rawData) ? rawData : [rawData];
   const allRows = [];
+  const resultsList = rawData.results || [];
 
-  for (const batch of results) {
-    if (!batch.results) continue;
-    for (const result of batch.results) {
+  for (const result of resultsList) {
       const row = {};
       const m = result.metrics || {};
       const c = result.campaign || {};
@@ -258,7 +256,6 @@ function formatAdsReport(rawData, reportType) {
       if (m.costPerConversion) row.costPerConversion = '$' + (parseInt(m.costPerConversion) / 1000000).toFixed(2);
 
       allRows.push(row);
-    }
   }
 
   return {

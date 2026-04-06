@@ -1,11 +1,14 @@
-// Netlify Function: GA4 Analytics Data
-// Fetches analytics data from Google Analytics 4 API
+// Netlify Function: GA4 Analytics & Google Ads Data
+// Fetches analytics data from Google Analytics 4 API and Google Ads API
 
 const crypto = require('crypto');
 const https = require('https');
 
 // GA4 Property ID
 const GA4_PROPERTY_ID = '517511231';
+
+// Google Ads config (credentials from env vars)
+const GOOGLE_ADS_CUSTOMER_ID = (process.env.GOOGLE_ADS_CUSTOMER_ID || '').replace(/-/g, '');
 
 // Create JWT for Google API authentication
 function createJWT(credentials) {
@@ -75,6 +78,194 @@ async function getAccessToken(credentials) {
     req.write(postData);
     req.end();
   });
+}
+
+// Get OAuth access token for Google Ads using refresh token
+async function getAdsAccessToken() {
+  const postData = new URLSearchParams({
+    grant_type: 'refresh_token',
+    refresh_token: process.env.GOOGLE_ADS_REFRESH_TOKEN,
+    client_id: process.env.GOOGLE_ADS_CLIENT_ID,
+    client_secret: process.env.GOOGLE_ADS_CLIENT_SECRET
+  }).toString();
+
+  return new Promise((resolve, reject) => {
+    const options = {
+      hostname: 'oauth2.googleapis.com',
+      path: '/token',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Length': Buffer.byteLength(postData)
+      }
+    };
+
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        try {
+          const parsed = JSON.parse(data);
+          if (parsed.access_token) {
+            resolve(parsed.access_token);
+          } else {
+            reject(new Error(parsed.error_description || 'Failed to get Ads access token'));
+          }
+        } catch (e) {
+          reject(e);
+        }
+      });
+    });
+
+    req.on('error', reject);
+    req.write(postData);
+    req.end();
+  });
+}
+
+// Query Google Ads API using GAQL
+async function fetchAdsData(accessToken, query) {
+  const postData = JSON.stringify({ query });
+
+  return new Promise((resolve, reject) => {
+    const options = {
+      hostname: 'googleads.googleapis.com',
+      path: `/v17/customers/${GOOGLE_ADS_CUSTOMER_ID}/googleAds:searchStream`,
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${accessToken}`,
+        'developer-token': process.env.GOOGLE_ADS_DEVELOPER_TOKEN,
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(postData)
+      }
+    };
+
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        try {
+          const parsed = JSON.parse(data);
+          if (parsed.error || (Array.isArray(parsed) && parsed[0]?.error)) {
+            const err = parsed.error || parsed[0].error;
+            reject(new Error(err.message || JSON.stringify(err)));
+          } else {
+            resolve(parsed);
+          }
+        } catch (e) {
+          reject(e);
+        }
+      });
+    });
+
+    req.on('error', reject);
+    req.write(postData);
+    req.end();
+  });
+}
+
+// Build GAQL date filter
+function getAdsDateFilter(days) {
+  if (days === '7') return 'LAST_7_DAYS';
+  if (days === '14') return 'LAST_14_DAYS';
+  if (days === '30') return 'LAST_30_DAYS';
+  // Custom range
+  const end = new Date();
+  const start = new Date();
+  start.setDate(start.getDate() - parseInt(days));
+  const fmt = d => d.toISOString().split('T')[0].replace(/-/g, '');
+  return `BETWEEN '${start.toISOString().split('T')[0]}' AND '${end.toISOString().split('T')[0]}'`;
+}
+
+// Google Ads report queries
+function getAdsQuery(reportType, days) {
+  const dateFilter = getAdsDateFilter(days);
+  const isRange = dateFilter.startsWith('BETWEEN');
+  const dateClause = isRange
+    ? `segments.date ${dateFilter}`
+    : `segments.date DURING ${dateFilter}`;
+
+  const queries = {
+    'ads-campaigns': `
+      SELECT campaign.name, campaign.status,
+        metrics.impressions, metrics.clicks, metrics.cost_micros,
+        metrics.conversions, metrics.average_cpc, metrics.ctr
+      FROM campaign
+      WHERE ${dateClause}
+        AND campaign.status != 'REMOVED'
+      ORDER BY metrics.cost_micros DESC`,
+
+    'ads-keywords': `
+      SELECT ad_group_criterion.keyword.text,
+        ad_group_criterion.keyword.match_type,
+        campaign.name, ad_group.name,
+        metrics.impressions, metrics.clicks, metrics.cost_micros,
+        metrics.conversions, metrics.average_cpc, metrics.ctr
+      FROM keyword_view
+      WHERE ${dateClause}
+      ORDER BY metrics.impressions DESC
+      LIMIT 25`,
+
+    'ads-search-terms': `
+      SELECT search_term_view.search_term,
+        campaign.name,
+        metrics.impressions, metrics.clicks, metrics.cost_micros,
+        metrics.conversions, metrics.ctr
+      FROM search_term_view
+      WHERE ${dateClause}
+      ORDER BY metrics.impressions DESC
+      LIMIT 25`,
+
+    'ads-overview': `
+      SELECT metrics.impressions, metrics.clicks, metrics.cost_micros,
+        metrics.conversions, metrics.average_cpc, metrics.ctr,
+        metrics.interactions, metrics.cost_per_conversion
+      FROM customer
+      WHERE ${dateClause}`
+  };
+
+  return queries[reportType];
+}
+
+// Format Google Ads response
+function formatAdsReport(rawData, reportType) {
+  const results = Array.isArray(rawData) ? rawData : [rawData];
+  const allRows = [];
+
+  for (const batch of results) {
+    if (!batch.results) continue;
+    for (const result of batch.results) {
+      const row = {};
+      const m = result.metrics || {};
+      const c = result.campaign || {};
+      const ag = result.adGroup || {};
+      const kw = result.adGroupCriterion?.keyword || {};
+      const st = result.searchTermView || {};
+
+      if (c.name) row.campaign = c.name;
+      if (c.status) row.status = c.status;
+      if (ag.name) row.adGroup = ag.name;
+      if (kw.text) row.keyword = kw.text;
+      if (kw.matchType) row.matchType = kw.matchType;
+      if (st.searchTerm) row.searchTerm = st.searchTerm;
+
+      if (m.impressions) row.impressions = parseInt(m.impressions).toLocaleString();
+      if (m.clicks) row.clicks = parseInt(m.clicks).toLocaleString();
+      if (m.costMicros) row.cost = '$' + (parseInt(m.costMicros) / 1000000).toFixed(2);
+      if (m.conversions) row.conversions = parseFloat(m.conversions).toFixed(1);
+      if (m.averageCpc) row.avgCPC = '$' + (parseInt(m.averageCpc) / 1000000).toFixed(2);
+      if (m.ctr) row.ctr = (parseFloat(m.ctr) * 100).toFixed(2) + '%';
+      if (m.costPerConversion) row.costPerConversion = '$' + (parseInt(m.costPerConversion) / 1000000).toFixed(2);
+
+      allRows.push(row);
+    }
+  }
+
+  return {
+    reportType,
+    rowCount: allRows.length,
+    rows: allRows
+  };
 }
 
 // Call GA4 Data API
@@ -310,7 +501,37 @@ exports.handler = async (event, context) => {
     const reportType = params.report || 'overview';
     const dateRange = params.days || '30';
 
-    // Authenticate and fetch data
+    // Route to Google Ads API or GA4 API
+    if (reportType.startsWith('ads-')) {
+      const query = getAdsQuery(reportType, dateRange);
+      if (!query) {
+        return {
+          statusCode: 400,
+          headers,
+          body: JSON.stringify({
+            error: 'Invalid ads report type',
+            validTypes: ['ads-overview', 'ads-campaigns', 'ads-keywords', 'ads-search-terms']
+          })
+        };
+      }
+
+      const adsToken = await getAdsAccessToken();
+      const rawData = await fetchAdsData(adsToken, query);
+      const formattedData = formatAdsReport(rawData, reportType);
+
+      return {
+        statusCode: 200,
+        headers,
+        body: JSON.stringify({
+          success: true,
+          customerId: GOOGLE_ADS_CUSTOMER_ID,
+          dateRange: `Last ${dateRange} days`,
+          ...formattedData
+        }, null, 2)
+      };
+    }
+
+    // GA4 reports
     const accessToken = await getAccessToken(credentials);
     const rawData = await fetchGA4Data(accessToken, reportType, dateRange);
     const formattedData = formatReport(rawData, reportType);

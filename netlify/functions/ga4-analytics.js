@@ -512,8 +512,39 @@ exports.handler = async (event, context) => {
         };
       }
 
-      const adsToken = await getAdsAccessToken();
-      const rawData = await fetchAdsData(adsToken, query);
+      // Check env vars are set
+      const missingVars = ['GOOGLE_ADS_REFRESH_TOKEN', 'GOOGLE_ADS_CLIENT_ID', 'GOOGLE_ADS_CLIENT_SECRET', 'GOOGLE_ADS_DEVELOPER_TOKEN', 'GOOGLE_ADS_CUSTOMER_ID']
+        .filter(v => !process.env[v]);
+      if (missingVars.length > 0) {
+        return {
+          statusCode: 500,
+          headers,
+          body: JSON.stringify({ error: 'Missing env vars', missing: missingVars })
+        };
+      }
+
+      let adsToken;
+      try {
+        adsToken = await getAdsAccessToken();
+      } catch (authErr) {
+        return {
+          statusCode: 500,
+          headers,
+          body: JSON.stringify({ error: 'Ads OAuth failed', message: authErr.message })
+        };
+      }
+
+      let rawData;
+      try {
+        rawData = await fetchAdsData(adsToken, query);
+      } catch (apiErr) {
+        return {
+          statusCode: 500,
+          headers,
+          body: JSON.stringify({ error: 'Ads API call failed', message: apiErr.message })
+        };
+      }
+
       const formattedData = formatAdsReport(rawData, reportType);
 
       return {

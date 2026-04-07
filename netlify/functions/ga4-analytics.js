@@ -130,7 +130,7 @@ async function fetchAdsData(accessToken, query) {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: 'googleads.googleapis.com',
-      path: `/v18/customers/${GOOGLE_ADS_CUSTOMER_ID}/googleAds:search`,
+      path: `/v19/customers/${GOOGLE_ADS_CUSTOMER_ID}/googleAds:search`,
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${accessToken}`,

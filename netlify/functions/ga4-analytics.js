@@ -216,6 +216,16 @@ function getAdsQuery(reportType, days) {
       ORDER BY metrics.impressions DESC
       LIMIT 25`,
 
+    'ads-copy': `
+      SELECT ad_group_ad.ad.responsive_search_ad.headlines,
+        ad_group_ad.ad.responsive_search_ad.descriptions,
+        ad_group_ad.ad.final_urls,
+        ad_group_ad.status,
+        campaign.name, ad_group.name
+      FROM ad_group_ad
+      WHERE campaign.status != 'REMOVED'
+        AND ad_group_ad.status != 'REMOVED'`,
+
     'ads-overview': `
       SELECT metrics.impressions, metrics.clicks, metrics.cost_micros,
         metrics.conversions, metrics.average_cpc, metrics.ctr,
@@ -246,6 +256,14 @@ function formatAdsReport(rawData, reportType) {
       if (kw.text) row.keyword = kw.text;
       if (kw.matchType) row.matchType = kw.matchType;
       if (st.searchTerm) row.searchTerm = st.searchTerm;
+
+      // Ad copy fields
+      const ad = result.adGroupAd?.ad || {};
+      const rsa = ad.responsiveSearchAd || {};
+      if (rsa.headlines) row.headlines = rsa.headlines.map(h => h.text);
+      if (rsa.descriptions) row.descriptions = rsa.descriptions.map(d => d.text);
+      if (ad.finalUrls) row.finalUrls = ad.finalUrls;
+      if (result.adGroupAd?.status) row.adStatus = result.adGroupAd.status;
 
       if (m.impressions) row.impressions = parseInt(m.impressions).toLocaleString();
       if (m.clicks) row.clicks = parseInt(m.clicks).toLocaleString();
@@ -507,7 +525,7 @@ exports.handler = async (event, context) => {
           headers,
           body: JSON.stringify({
             error: 'Invalid ads report type',
-            validTypes: ['ads-overview', 'ads-campaigns', 'ads-keywords', 'ads-search-terms']
+            validTypes: ['ads-overview', 'ads-campaigns', 'ads-keywords', 'ads-search-terms', 'ads-copy']
           })
         };
       }

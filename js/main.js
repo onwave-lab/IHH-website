@@ -58,6 +58,66 @@ document.addEventListener('DOMContentLoaded', function() {
   })();
 
   // -----------------------------------------
+  // BOOKING RETURN DETECTION
+  // -----------------------------------------
+  // Detect when visitor returns from Practice Better after booking
+  (function() {
+    var referrer = document.referrer || '';
+    if (referrer.indexOf('practicebetter.io') !== -1) {
+      // They came back from Practice Better — check for stored paid traffic data
+      try {
+        var utmData = JSON.parse(localStorage.getItem('ihh_utm'));
+        if (utmData && (Date.now() - utmData.timestamp) < 86400000 && typeof gtag === 'function') {
+          gtag('event', 'booking_completed', {
+            utm_source: utmData.source,
+            utm_medium: utmData.medium,
+            utm_campaign: utmData.campaign,
+            utm_term: utmData.term,
+            landing_page: utmData.landingPage
+          });
+          // Clear so we don't double-count
+          localStorage.removeItem('ihh_utm');
+        }
+      } catch (e) {}
+    }
+  })();
+
+  // -----------------------------------------
+  // UTM TRACKING FOR PAID TRAFFIC
+  // -----------------------------------------
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var utmSource = params.get('utm_source');
+    var utmMedium = params.get('utm_medium');
+    var utmCampaign = params.get('utm_campaign');
+    var utmTerm = params.get('utm_term');
+    var gclid = params.get('gclid');
+
+    // Store UTMs if visitor arrived from a campaign
+    if (utmSource || gclid) {
+      var utmData = {
+        source: utmSource || 'google',
+        medium: utmMedium || 'cpc',
+        campaign: utmCampaign || '',
+        term: utmTerm || '',
+        gclid: gclid || '',
+        landingPage: window.location.pathname,
+        timestamp: Date.now()
+      };
+      localStorage.setItem('ihh_utm', JSON.stringify(utmData));
+    }
+  })();
+
+  // Helper: get stored UTM data (valid for 24 hours)
+  function getStoredUtm() {
+    try {
+      var data = JSON.parse(localStorage.getItem('ihh_utm'));
+      if (data && (Date.now() - data.timestamp) < 86400000) return data;
+    } catch (e) {}
+    return null;
+  }
+
+  // -----------------------------------------
   // PORTAL REDIRECT OVERLAY
   // -----------------------------------------
   (function() {
@@ -72,6 +132,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Helper function to show Practice Better overlay and redirect
     function showPortalOverlay(destinationUrl) {
+      // Fire GA4 event for paid traffic booking clicks
+      var utm = getStoredUtm();
+      if (utm && typeof gtag === 'function') {
+        gtag('event', 'paid_booking_click', {
+          utm_source: utm.source,
+          utm_medium: utm.medium,
+          utm_campaign: utm.campaign,
+          utm_term: utm.term,
+          landing_page: utm.landingPage
+        });
+      }
+
       // Create overlay
       var overlay = document.createElement('div');
       overlay.className = 'portal-redirect-overlay';

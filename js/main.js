@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
       message = 'Thank you! Your application has been submitted. We\'ll be in touch soon!';
     } else if (params.get('subscribed') === 'true') {
       message = 'Thank you for subscribing! Check your inbox for updates.';
+    } else if (params.get('booked') === 'true') {
+      message = 'You\'re all set! Your consultation has been booked — we look forward to connecting with you!';
     }
 
     if (message) {
@@ -61,10 +63,16 @@ document.addEventListener('DOMContentLoaded', function() {
   // BOOKING RETURN DETECTION
   // -----------------------------------------
   // Detect when visitor returns from Practice Better after booking
+  // Uses ?booked=true param (set as redirect URL in Practice Better) — more
+  // reliable than referrer which browsers often strip cross-origin.
   (function() {
+    var params = new URLSearchParams(window.location.search);
     var referrer = document.referrer || '';
-    if (referrer.indexOf('practicebetter.io') !== -1) {
-      // They came back from Practice Better — check for stored paid traffic data
+    var bookedParam = params.get('booked') === 'true';
+    var pbReferrer = referrer.indexOf('practicebetter.io') !== -1;
+
+    if (bookedParam || pbReferrer) {
+      // Fire GA4 booking_completed event
       try {
         var utmData = JSON.parse(localStorage.getItem('ihh_utm'));
         if (utmData && (Date.now() - utmData.timestamp) < 86400000 && typeof gtag === 'function') {
@@ -73,12 +81,22 @@ document.addEventListener('DOMContentLoaded', function() {
             utm_medium: utmData.medium,
             utm_campaign: utmData.campaign,
             utm_term: utmData.term,
-            landing_page: utmData.landingPage
+            landing_page: utmData.landingPage,
+            detection_method: bookedParam ? 'redirect_param' : 'referrer'
           });
           // Clear so we don't double-count
           localStorage.removeItem('ihh_utm');
         }
       } catch (e) {}
+
+      // Also fire a general booking event even without UTM data
+      if (typeof gtag === 'function') {
+        gtag('event', 'booking_confirmed', {
+          event_category: 'conversion',
+          event_label: 'free_consultation',
+          detection_method: bookedParam ? 'redirect_param' : 'referrer'
+        });
+      }
     }
   })();
 

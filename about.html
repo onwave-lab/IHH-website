@@ -28,6 +28,13 @@
     }
   </script>
 
+  <!-- Google Ads: Book Appointment conversion (fires only on ?booked=true) -->
+  <script>
+    if (new URLSearchParams(window.location.search).get('booked') === 'true') {
+      gtag('event', 'conversion_event_book_appointment', {});
+    }
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Meet Alicia Harrison, MSN, APRN, FNP-C - Board-certified Family Nurse Practitioner and holistic wellness practitioner helping women optimize their hormone health.">
   <meta name="keywords" content="Alicia Harrison, nurse practitioner, holistic health, wellness practitioner, HTMA, Kentucky">

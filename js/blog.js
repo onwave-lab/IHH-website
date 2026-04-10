@@ -22,14 +22,291 @@ const DEFAULT_PROMO = {
 // For simplicity, we define posts here that can be easily updated
 const BLOG_POSTS = [
   {
+    slug: '2026-04-08-nontoxic-swaps-hormone-health',
+    title: 'The Complete Guide to Nontoxic Swaps for Hormone Health',
+    date: '2026-04-08',
+    author: 'Alicia Harrison, MSN, APRN, FNP-C',
+    excerpt: 'A room-by-room guide to nontoxic swaps that may support hormone health. Practical, budget-friendly, and designed to help you start where it matters most.',
+    image: '',
+    cardAspectRatio: '83.83%',
+    imageAspectRatio: '83.83%',
+    categories: ['wellness', 'foundations'],
+    promo: {
+      title: 'Nontoxic Swap Checklist',
+      modalTitle: 'Get Your Free Checklist',
+      description: 'A room-by-room checklist to help you reduce chemical exposure at your own pace. Print it, stick it on your fridge, and swap one product at a time.',
+      descriptionShort: 'A room-by-room checklist for reducing chemical exposure at your own pace.',
+      badge: 'Free Download',
+      ctaText: 'Get the Free Checklist',
+      formType: 'lead-magnet',
+      modalFormType: 'lead-magnet'
+    },
+    content: `
+# The Complete Guide to Nontoxic Swaps for Hormone Health
+
+<div class="blog-summary-note">A room-by-room guide to nontoxic swaps that may support hormone health. Practical, budget-friendly, and designed to help you start where it matters most.</div>
+
+## Why I Wrote This Guide
+
+You've probably already heard about toxins in your home. You've seen the Instagram posts, the product recalls, the scary headlines about chemicals in baby products. You don't need more fear.
+
+What you actually need is someone to sort through it with you and say: here's what matters, here's where to start, and here's a pace that works for real life.
+
+That's what this guide is for.
+
+I work with women across different life stages, and the questions I get about nontoxic living are almost always the same: "Where do I even start?" and "Do I really have to throw everything out?" The answer to the second one is no. Absolutely not.
+
+Whether you're building up reserves before pregnancy or rebuilding after it, your hormone health is worth protecting. And a huge part of that comes down to what your body is exposed to every day in your own home. The products you put on your skin, the containers you store your food in, the water you drink, the candles you burn. These daily exposures add up over time, and they can interfere with how your hormones do their jobs.
+
+I put everything in one place here. The kitchen, the bathroom, the cleaning cabinet, the stuff your kids use. It's organized so you can tackle it in whatever order makes sense for your life and your budget. No pressure to do it all at once. Go section by section, or skip straight to whichever area feels most relevant right now.
+
+The simpler, the better.
+
+## A Quick Word on Endocrine Disruptors
+
+I won't spend a lot of time here because you've probably already come across this term. But a quick refresher is useful.
+
+Endocrine disruptors are synthetic chemicals that interfere with how your hormones work. Some mimic estrogen. Some block progesterone receptors. Some mess with thyroid signaling. The main ones to know:
+
+- **Phthalates** - in synthetic fragrance, soft plastics, vinyl flooring. On labels you'll see: DEP (diethyl phthalate), DBP (dibutyl phthalate), DEHP, or most commonly just hidden behind the word "fragrance" or "parfum." If a product lists fragrance and doesn't specify what's in it, phthalates are likely part of the blend.
+
+- **Parabens** - preservatives in cosmetics, lotions, shampoos. Look for anything ending in -paraben: methylparaben, propylparaben, butylparaben, ethylparaben, isobutylparaben. These are easy to spot once you know the pattern.
+
+- **BPA/BPS** - in plastic containers, can linings, receipts. BPA (bisphenol A) is the one most people have heard of, but a lot of "BPA-free" products just swapped in BPS (bisphenol S) or BPF (bisphenol F), which may carry similar risks. Look for these on hard plastics and canned food linings.
+
+- **PFAS (forever chemicals)** - in nonstick cookware, water-resistant fabrics, stain-resistant treatments, some water supplies. On product labels, look for: PTFE (polytetrafluoroethylene, ie. Teflon), PFOA, PFOS, or any ingredient with "fluoro" in the name. These don't break down in the environment or in your body.
+
+- **Synthetic fragrance** - a blanket term that can hide dozens of undisclosed chemicals. On labels: "fragrance," "parfum," "aroma," or "natural fragrance" (which isn't regulated either). This is the single biggest red flag to look for because it can contain phthalates, synthetic musks, and other compounds companies aren't required to disclose.
+
+- **Other endocrine disruptors you'll see on labels:**
+  - **Oxybenzone & octinoxate** - chemical sunscreen filters. Look for zinc oxide or titanium dioxide instead (mineral filters).
+  - **BHA (butylated hydroxyanisole) & BHT** - synthetic antioxidant preservatives in cosmetics and processed food.
+  - **Triclosan** - antibacterial agent in some hand soaps, toothpaste, and body washes. Banned in some products but still shows up.
+  - **Formaldehyde releasers** - preservatives that slowly release formaldehyde over time. On labels: DMDM hydantoin, quaternium-15, imidazolidinyl urea, diazolidinyl urea, bronopol, sodium hydroxymethylglycinate.
+  - **SLS/SLES (sodium lauryl sulfate / sodium laureth sulfate)** - foaming agents in shampoo, body wash, toothpaste. Not technically endocrine disruptors on their own, but they can be contaminated with 1,4-dioxane during manufacturing.
+  - **Petroleum-derived ingredients** - mineral oil, petrolatum, paraffinum liquidum. Common in lotions and lip products.
+  - **Resorcinol** - found in hair dyes and some acne treatments. May disrupt thyroid function.
+
+These matter for women because they can disrupt estrogen and progesterone balance, which affects your cycle, fertility, mood, bone density, and cardiovascular health. They also matter for your kids, your partner, and anyone living in your household. Exposure is cumulative, meaning it's not usually one product that causes a problem. It's the combination of dozens of small exposures throughout the day, every day.
+
+The good news is that reducing exposure can make a real difference. Studies have shown measurable drops in phthalate and BPA levels in urine within just a few days of switching to cleaner products. Your body wants to clear this stuff out. You just have to slow down the incoming load.
+
+## Kitchen Swaps
+
+I usually tell patients to start in the kitchen. It's where your food and water are prepared and stored, so it tends to be the highest-impact area.
+
+### Cookware
+
+Traditional nonstick pans (ie. Teflon) contain PTFE and may release PFAS compounds when heated. Safer options: cast iron, stainless steel, ceramic-coated, or enamel-coated cast iron.
+
+You don't need to replace everything at once. Start with whatever pan you reach for most. That one swap alone can make a big difference. And honestly, a well-seasoned cast iron pan is one of those things that just gets better over time. It also adds trace iron to your food, which can be helpful if you tend to run low (a lot of women do).
+
+One more thing on cookware: swap plastic utensils for wood or stainless steel. When you're stirring a hot pan with a plastic spatula, that plastic is softening and can leach chemicals into your food. Wood and metal don't have that problem, and they last longer anyway.
+
+### Food Storage
+
+Plastic containers can leach chemicals into food, especially when heated. I recommend swapping to glass containers with silicone-sealed lids for storing and reheating leftovers. The main rule: keep plastic away from the microwave and dishwasher, where heat speeds up the leaching. If you can't replace all your containers right now, just stop microwaving in plastic. That alone removes one of the biggest exposure routes.
+
+Same goes for plastic water bottles. If you're drinking out of plastic all day, especially one that's been sitting in a hot car, that's a meaningful source of BPA or BPS exposure. A stainless steel or glass water bottle is a cheap, one-time swap.
+
+### Water
+
+Tap water can contain microplastics, PFAS, heavy metals, and disinfection byproducts. A quality countertop carbon filter is honestly one of the single best swaps you can make. If you can swing it, add a shower filter too. Your skin absorbs chemicals during bathing, and that adds up.
+
+## Personal Care Swaps
+
+The average woman uses about 12 personal care products a day. Teens use around 17. Many of those contain parabens, phthalates, and synthetic fragrance that get absorbed through the skin.
+
+### How to Read Your Labels
+
+The word "fragrance" or "parfum" on a label is a red flag. Under current regulations, companies don't have to disclose what's actually in a fragrance blend. That single ingredient can hide dozens of endocrine-disrupting compounds.
+
+When I review products for patients, I'm looking for short ingredient lists with things I can actually pronounce. Full ingredient transparency matters more than any marketing claim.
+
+### Where to Start
+
+Focus on the products that stay on your skin the longest: lotion, deodorant, sunscreen. Then move to body wash, shampoo, and makeup.
+
+For skincare specifically, I recommend Primally Pure, Toups and Co, and Just Ingredients. Homemade options work great too if you're up for it. For everything else (ie. cleaning products, laundry detergent), I'd rather teach you what to look for on the label than hand you a brand list, because formulations change and it's more useful long-term to know how to evaluate for yourself.
+
+## Home Environment Swaps
+
+### Candles & Air Fresheners
+
+Synthetic air fresheners and paraffin-wax candles release phthalates and other volatile organic compounds (VOCs) into your indoor air. This is one of the easiest things to swap, and it can make a noticeable difference in how you feel. A lot of my patients report fewer headaches and less sinus irritation within the first couple weeks.
+
+Go with beeswax or soy candles with cotton wicks. Use essential oil diffusers or herb-based sachets instead of plug-in air fresheners. If you love the idea of a good-smelling house (who doesn't), there are so many cleaner ways to get there. Simmering water with citrus peels and herbs on the stove is one of my favorites. Simple and it smells amazing.
+
+I also recommend a HEPA air purifier, especially if you have little ones or you're postpartum. They filter out particulate matter, dust, and VOCs that accumulate indoors. Even one unit in the room you spend the most time in (ie. the bedroom or living room) can make a noticeable difference in air quality. Open your windows for 10-15 minutes a day when you can, too. Fresh air circulation is free and it helps.
+
+### Cleaning Products
+
+A lot of commercial cleaners leave chemical residues on surfaces and in the air. Think about it: you spray a cleaner on your countertop, wipe it down, and then prepare food on that same surface. Whatever was in that spray is now part of your environment.
+
+Plant-based alternatives with transparent ingredient lists are widely available now and priced competitively. DIY options using vinegar, castile soap, and essential oils handle most household jobs just fine. I keep a spray bottle of diluted castile soap under my sink and it covers about 80% of what needs cleaning.
+
+For the label-reading piece: look for products that list every ingredient, not just the "active" ones. If a product says "plant-based" but the ingredient list is vague or missing, that's a red flag. Same as with personal care products, transparency is what matters.
+
+### Laundry, Dish Soap & Hand Soap
+
+Dryer sheets are one I'd get rid of right away. They coat your clothes (and your skin, and your kids' skin) in synthetic fragrance and chemical softeners that you're then wearing all day and sleeping in all night. Swap for wool dryer balls. They soften clothes, cut drying time, and last for over 1,000 loads.
+
+For laundry detergent, the same label rules apply: no fragrance, full ingredient transparency, the shorter the ingredient list the better. I like Molly's Suds for laundry detergent. For dishwasher tablets, Molly's Suds makes a good option there too. For hand-washing dishes and hand soap, look for something with a short, readable ingredient list and no synthetic fragrance. Castile soap (ie. Dr. Bronner's) diluted in a foaming dispenser works well for hand soap and is an easy, affordable swap.
+
+I do home product reviews as part of my wellness packages, and one of the things I walk through with patients is what's actually in their cleaning cabinet, their laundry room, and even their dish rack. It's usually eye-opening, and the swaps are almost always simple and affordable. If that's something you'd find helpful, [check out my services page](/services) to learn more.
+
+## Kids & Family Considerations
+
+This is the section that tends to get parents' attention, and for good reason.
+
+Children absorb more chemicals relative to their body weight, and their developing endocrine systems are more sensitive to disruption. Research has linked early chemical exposure to earlier puberty onset, attention and behavioral challenges, and increased risk of metabolic concerns later in life.
+
+Nontoxic swaps for hormone health aren't just a personal wellness topic. They're a family health strategy. From baby bottles and sippy cups to teen deodorant and body spray, there are straightforward swaps at every stage.
+
+I usually encourage parents to start with whatever their child uses the most. For little kids, that's often a water bottle or bath products. For teens, it's body spray and skincare. Meet them where they are. With teenagers especially, I find it helps to explain the "why" rather than just taking away their favorite products. Most teens are genuinely interested once they understand how it connects to their skin, their energy, and their mood.
+
+One thing that comes up a lot with parents: don't beat yourself up about what you didn't know before. We're all learning as the research evolves. What matters is that you're making changes now.
+
+## Nutrition That Supports Hormone Balance
+
+Reducing chemical exposure is one half of the picture. The other half is giving your body the raw materials it needs to produce and process hormones well.
+
+I like the "crowd out, don't cut out" approach. Instead of fixating on what to remove from your diet, focus on adding more of what helps:
+
+- **Omega-3 fatty acids** - wild-caught fish, flaxseed, walnuts
+- **Magnesium** - dark leafy greens, pumpkin seeds, dark chocolate
+- **B vitamins** - eggs, legumes, whole grains
+- **Zinc** - oysters, beef, chickpeas
+- **Fiber & cruciferous vegetables** - broccoli, cauliflower, Brussels sprouts. These support healthy estrogen metabolism, which is a big deal for hormone balance.
+
+### A Note on Organic
+
+You don't have to buy everything organic. But for the produce that tends to carry the highest pesticide residue, it's worth it when your budget allows. The EWG Dirty Dozen list is a good reference for which fruits and vegetables to prioritize buying organic (ie. strawberries, spinach, apples). For anything on the Clean Fifteen list (ie. avocados, sweet corn, pineapple), conventional is usually fine. The most important thing is eating the vegetables, period. Don't skip the broccoli just because it's not organic.
+
+Beyond food: sleep quality, regular movement, and stress management all play a role. Cortisol directly competes with progesterone, so chronic stress can throw your whole hormonal balance off. Even small improvements in sleep or movement may help. I'm not talking about training for a marathon. A 20-minute walk, a consistent bedtime, even 5 minutes of deep breathing before bed. These things add up.
+
+If you're curious about your mineral status, an HTMA (hair tissue mineral analysis) can show mineral levels and patterns that give useful context for how well your body is supporting hormone production. It's not a measure of chemical exposure, but it helps me see where your body might need targeted nutritional support. I offer HTMA as part of my wellness packages for Kentucky residents.
+
+## A Note on Fertility & Preconception
+
+If you're planning to conceive, the 3 to 6 months before conception is an especially important window to reduce chemical exposure. Endocrine disruptors can affect egg quality, sperm quality, implantation, and early fetal development.
+
+Priority preconception swaps: water filtration, glass food storage, cleaning up personal care products, and making sure nutrition is solid. Both partners benefit from these changes. Sperm quality is affected by endocrine disruptors too, so this really is a team effort.
+
+If you're in this phase, I'd also recommend looking at your personal care products more critically than usual. Anything you put on your skin daily for the next several months matters. And if you haven't already, this is a great time to invest in a solid water filter.
+
+## How to Spot Greenwashing
+
+One more thing worth mentioning: not everything marketed as "clean" or "natural" actually is. The beauty and cleaning product industries are largely self-regulated, so those terms have no legal definition.
+
+Red-flag ingredients to watch for: fragrance/parfum, parabens (methylparaben, propylparaben), phthalates (DBP, DEHP), BHA, formaldehyde releasers, and petroleum-derived compounds. If you see any of these in the first few ingredients on the list, that product is worth replacing.
+
+Certifications that actually mean something: EWG Verified, USDA Organic, Oeko-Tex, MADE SAFE. These aren't perfect, but they do require third-party verification, which is more than most "clean" labels can say.
+
+I teach my patients a simple rule: if a product doesn't list its full ingredients, skip it. Transparency is the bare minimum. If a company won't tell you what's in the bottle, that tells you something.
+
+## What Else Is Worth Looking At
+
+This guide covers the highest-impact areas, but it's not an exhaustive list. The same label-reading principles apply to basically everything in your home. A few other categories worth evaluating over time:
+
+- **Toothpaste & dental care** - many conventional toothpastes contain ingredients worth looking into, even if they don't fall neatly under the "endocrine disruptor" label
+- **Mattresses & bedding** - look for natural fibers (organic cotton, linen, wool) and mattresses without flame retardant chemicals
+- **Clothing** - especially activewear and kids' pajamas, which are often treated with chemical finishes
+- **Tampons & menstrual products** - conventional products may contain pesticide residues, fragrance, and chlorine bleach
+- **Plastic toys** - particularly for babies and toddlers who mouth everything
+
+You don't need to tackle all of this right now. The skills you're building here (reading labels, knowing what to flag, swapping as things run out) work for every product category. Once you get the hang of it in your kitchen and bathroom, you'll naturally start applying it everywhere else.
+
+## Where to Start (Your 3-Step Starter Plan)
+
+If you're feeling overwhelmed, here's what I'd suggest. Pick 2 or 3 things. That's it.
+
+**This week:**
+1. Check what's in your most-used lotion or deodorant. If "fragrance" is listed, swap it.
+2. Stop using plug-in air fresheners or synthetic candles.
+
+**This month:**
+3. Get a water filter for your drinking water. A countertop carbon filter is a great starting point.
+
+That's your foundation. Once those feel like second nature, you can move through the rest of the guide at whatever pace works for you.
+
+I've also created a phased roadmap if you want more structure:
+
+**Phase 1 - Foundations (Month 1):** Water filter, swap top personal care products, ditch synthetic air fresheners.
+
+**Phase 2 - Kitchen & Cleaning (Months 2-3):** Replace worn-out nonstick cookware, switch to glass food storage, move to plant-based cleaning products.
+
+**Phase 3 - Full Home (Months 4-6):** Audit remaining personal care and makeup, swap candles, address kids' and teens' products, consider a shower filter.
+
+[INSIGHT:Every single swap counts, and your body's detoxification systems work well once the incoming load is reduced. You don't have to be perfect at this. You just have to keep going.]
+
+## Download the Nontoxic Swap Checklist
+
+Ready to start? I made a free Nontoxic Swap Checklist you can download, print, and stick on your fridge. It's a room-by-room guide with checkboxes so you can track your progress as you go.
+
+No overwhelm. Just one swap at a time.
+
+If you want help sorting through your specific products, I do home product reviews as part of my wellness packages at IHH.
+
+[CTA-ROW-START]
+[CTA:Book a Free Discovery Call|Want help figuring out which swaps to prioritize for your health goals? No pressure, just honest conversation about where you are and what makes sense for you.|apply|Book Your Free Call]
+[CTA:Download the Nontoxic Swap Checklist|A room-by-room checklist to help you reduce chemical exposure at your own pace. Print it, stick it on your fridge, and swap one product at a time.|lead-magnet|Get the Free Checklist]
+[CTA-ROW-END]
+
+*This content is for educational purposes and is not intended as medical advice. Individual results vary. Always consult with a qualified healthcare provider about your individual health needs. Clinical wellness services are available to Kentucky residents only.*
+    `,
+    disclaimer: `This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment. Readers should consult their licensed healthcare provider regarding personal health concerns.
+
+Any individuals depicted in images on this website or associated content are models or stock photography subjects and are not patients, clients, or recipients of services from Intention Holistic Health. Images are used for illustrative purposes only and do not represent clinical relationships, medical outcomes, or specific health conditions.
+
+Intention Holistic Health provides educational wellness guidance and, where applicable, Kentucky-based nurse practitioner services within scope and licensure.`,
+    faqs: [
+      {
+        question: 'Where should I start with nontoxic swaps?',
+        answer: 'Start with the products you use every day that have the most direct contact with your body. A good first step is checking your most-used lotion or deodorant for synthetic fragrance, ditching plug-in air fresheners or synthetic candles, and getting a countertop water filter for your drinking water.'
+      },
+      {
+        question: 'Do I have to throw out everything and start over?',
+        answer: 'No. The most sustainable approach is to swap products as they run out. Focus on the highest-impact areas first, like kitchen and personal care, and work through the rest at your own pace. Every individual swap reduces your daily chemical exposure.'
+      },
+      {
+        question: 'What are endocrine disruptors?',
+        answer: 'Endocrine disruptors are synthetic chemicals that interfere with how your hormones work. Some mimic estrogen, some block progesterone receptors, and some affect thyroid signaling. Common ones include phthalates, parabens, BPA/BPS, PFAS, and synthetic fragrance. They are found in everyday products like cookware, cosmetics, cleaning supplies, and plastics.'
+      },
+      {
+        question: 'What does fragrance on a label actually mean?',
+        answer: 'Under current regulations, companies are not required to disclose what is in a fragrance blend. The single word fragrance or parfum on a label can hide dozens of undisclosed chemicals, including phthalates and synthetic musks. If a product lists fragrance without specifying the source, it is worth replacing with a product that has full ingredient transparency.'
+      },
+      {
+        question: 'Is it worth buying organic produce?',
+        answer: 'You do not have to buy everything organic. For the produce that tends to carry the highest pesticide residue, it is worth it when your budget allows. The EWG Dirty Dozen list is a good reference for which fruits and vegetables to prioritize. For items on the Clean Fifteen list, conventional is usually fine. The most important thing is eating the vegetables.'
+      },
+      {
+        question: 'How quickly can reducing chemical exposure make a difference?',
+        answer: 'Studies have shown measurable drops in phthalate and BPA levels in urine within just a few days of switching to cleaner products. Your body has built-in detoxification systems that work well once the incoming load is reduced.'
+      },
+      {
+        question: 'What are some trustworthy certifications to look for?',
+        answer: 'Certifications that require third-party verification include EWG Verified, USDA Organic, Oeko-Tex, and MADE SAFE. Terms like clean, natural, and green have no legal definition in the beauty and cleaning product industries, so they should not be relied upon as indicators of safety.'
+      },
+      {
+        question: 'Should I make nontoxic swaps before trying to conceive?',
+        answer: 'The 3 to 6 months before conception is an especially important window to reduce chemical exposure. Endocrine disruptors can affect egg quality, sperm quality, implantation, and early fetal development. Priority preconception swaps include water filtration, glass food storage, cleaning up personal care products, and supporting nutrition. Both partners benefit from these changes.'
+      }
+    ],
+    schema: {
+      description: 'A room-by-room guide to nontoxic swaps that may support hormone health. Learn which everyday products contain endocrine disruptors and how to replace them with safer alternatives at your own pace.'
+    }
+  },
+  {
     slug: '2026-03-27-why-cravings-feel-so-intense',
     title: 'Why Cravings Feel So Intense (And What Actually Happens When You Switch to Whole Foods)',
     date: '2026-03-27',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Wondering why cravings are so hard to resist? Learn what actually happens to your taste buds, brain, blood sugar, and gut when you switch to a whole foods diet — and why it gets easier.',
-    image: '/images/blog/placeholder-cravings.webp',
-    cardAspectRatio: '83.83%',
-    imageAspectRatio: '83.83%',
+    image: '/images/blog/why-cravings-feel-so-intense.webp',
+    cardAspectRatio: '74.47%',
+    imageAspectRatio: '74.47%',
     categories: ['wellness', 'nutrition', 'foundations'],
     content: `
 # Why Cravings Feel So Intense (And What Actually Happens When You Switch to Whole Foods)

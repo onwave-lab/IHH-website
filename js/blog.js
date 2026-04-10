@@ -27,9 +27,9 @@ const BLOG_POSTS = [
     date: '2026-04-08',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'A room-by-room guide to nontoxic swaps that may support hormone health. Practical, budget-friendly, and designed to help you start where it matters most.',
-    image: '',
-    cardAspectRatio: '83.83%',
-    imageAspectRatio: '83.83%',
+    image: '/images/blog/nontoxic-swaps-hormone-health.webp',
+    cardAspectRatio: '74.47%',
+    imageAspectRatio: '74.47%',
     categories: ['wellness', 'foundations'],
     promo: {
       title: 'Nontoxic Swap Checklist',

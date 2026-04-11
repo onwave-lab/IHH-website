@@ -100,16 +100,16 @@
   <!-- Critical CSS: inlined above-the-fold styles for faster first paint -->
   <style>
     /* @font-face declarations */
-    @font-face{font-family:'Playfair Display';src:url('/fonts/PlayfairDisplay-Regular-subset.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
-    @font-face{font-family:'Playfair Display';src:url('/fonts/PlayfairDisplay-Italic-subset.woff2') format('woff2');font-weight:400;font-style:italic;font-display:swap}
-    @font-face{font-family:'Playfair Display';src:url('/fonts/PlayfairDisplay-Bold-subset.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
-    @font-face{font-family:'Poppins';src:url('/fonts/Poppins-Light-subset.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
-    @font-face{font-family:'Poppins';src:url('/fonts/Poppins-Regular-subset.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
-    @font-face{font-family:'Poppins';src:url('/fonts/Poppins-Medium-subset.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
-    @font-face{font-family:'Poppins';src:url('/fonts/Poppins-SemiBold-subset.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
-    @font-face{font-family:'Poppins';src:url('/fonts/Poppins-Bold-subset.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
-    @font-face{font-family:'Glacial Indifference';src:url('/fonts/GlacialIndifference-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
-    @font-face{font-family:'Beautifully Delicious Script';src:url('/fonts/BDScript-subset.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+    @font-face{font-family:'Playfair Display';src:url('/fonts/PlayfairDisplay-Regular-subset.woff2') format('woff2');font-weight:400;font-style:normal;font-display:optional}
+    @font-face{font-family:'Playfair Display';src:url('/fonts/PlayfairDisplay-Italic-subset.woff2') format('woff2');font-weight:400;font-style:italic;font-display:optional}
+    @font-face{font-family:'Playfair Display';src:url('/fonts/PlayfairDisplay-Bold-subset.woff2') format('woff2');font-weight:700;font-style:normal;font-display:optional}
+    @font-face{font-family:'Poppins';src:url('/fonts/Poppins-Light-subset.woff2') format('woff2');font-weight:300;font-style:normal;font-display:optional}
+    @font-face{font-family:'Poppins';src:url('/fonts/Poppins-Regular-subset.woff2') format('woff2');font-weight:400;font-style:normal;font-display:optional}
+    @font-face{font-family:'Poppins';src:url('/fonts/Poppins-Medium-subset.woff2') format('woff2');font-weight:500;font-style:normal;font-display:optional}
+    @font-face{font-family:'Poppins';src:url('/fonts/Poppins-SemiBold-subset.woff2') format('woff2');font-weight:600;font-style:normal;font-display:optional}
+    @font-face{font-family:'Poppins';src:url('/fonts/Poppins-Bold-subset.woff2') format('woff2');font-weight:700;font-style:normal;font-display:optional}
+    @font-face{font-family:'Glacial Indifference';src:url('/fonts/GlacialIndifference-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:optional}
+    @font-face{font-family:'Beautifully Delicious Script';src:url('/fonts/BDScript-subset.woff2') format('woff2');font-weight:400;font-style:normal;font-display:optional}
 
     /* CSS Variables */
     :root {
@@ -286,6 +286,14 @@
       h2 { font-size: var(--font-size-2xl); }
       h3 { font-size: var(--font-size-xl); }
     }
+
+    /* Promo bar + cookie consent positioning (prevents CLS when main.css loads async) */
+    .promo-bottom-bar{position:fixed;bottom:0;left:0;right:0;height:60px;background:var(--color-sage-green);z-index:1000;display:flex;align-items:center;justify-content:center}
+    .promo-bottom-bar.dismissed{display:none}
+    .cookie-consent.above-promo{bottom:60px}
+    .promo-modal-overlay{position:fixed;top:0;left:0;right:0;bottom:0;z-index:2000;opacity:0;visibility:hidden}
+    @media(max-width:1024px){.promo-bottom-bar{height:55px}.cookie-consent.above-promo{bottom:55px}}
+    @media(max-width:767px){.promo-bottom-bar{height:50px}.cookie-consent.above-promo{bottom:50px}}
   </style>
 
   <!-- Full stylesheet loaded asynchronously -->

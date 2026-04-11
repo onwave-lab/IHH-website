@@ -66,7 +66,7 @@ The simpler, the better.
 
 I won't spend a lot of time here because you've probably already come across this term. But a quick refresher is useful.
 
-Endocrine disruptors are synthetic chemicals that interfere with how your hormones work. Some mimic estrogen. Some block progesterone receptors. Some mess with thyroid signaling. The main ones to know:
+Endocrine disruptors are synthetic chemicals that interfere with how your hormones work. Some mimic estrogen. Some block progesterone receptors. Some mess with thyroid signaling (1). The main ones to know:
 
 - **Phthalates** - in synthetic fragrance, soft plastics, vinyl flooring. On labels you'll see: DEP (diethyl phthalate), DBP (dibutyl phthalate), DEHP, or most commonly just hidden behind the word "fragrance" or "parfum." If a product lists fragrance and doesn't specify what's in it, phthalates are likely part of the blend.
 
@@ -87,9 +87,9 @@ Endocrine disruptors are synthetic chemicals that interfere with how your hormon
   - **Petroleum-derived ingredients** - mineral oil, petrolatum, paraffinum liquidum. Common in lotions and lip products.
   - **Resorcinol** - found in hair dyes and some acne treatments. May disrupt thyroid function.
 
-These matter for women because they can disrupt estrogen and progesterone balance, which affects your cycle, fertility, mood, bone density, and cardiovascular health. They also matter for your kids, your partner, and anyone living in your household. Exposure is cumulative, meaning it's not usually one product that causes a problem. It's the combination of dozens of small exposures throughout the day, every day.
+These matter for women because they can disrupt estrogen and progesterone balance, which affects your cycle, fertility, mood, bone density, and cardiovascular health (2). They also matter for your kids, your partner, and anyone living in your household. Exposure is cumulative (3), meaning it's not usually one product that causes a problem. It's the combination of dozens of small exposures throughout the day, every day.
 
-The good news is that reducing exposure can make a real difference. Studies have shown measurable drops in phthalate and BPA levels in urine within just a few days of switching to cleaner products. Your body wants to clear this stuff out. You just have to slow down the incoming load.
+The good news is that reducing exposure can make a real difference. Studies have shown measurable drops in phthalate and BPA levels in urine within just a few days of switching to cleaner products (4). Your body wants to clear this stuff out. You just have to slow down the incoming load.
 
 ## Kitchen Swaps
 
@@ -97,7 +97,7 @@ I usually tell patients to start in the kitchen. It's where your food and water 
 
 ### Cookware
 
-Traditional nonstick pans (ie. Teflon) contain PTFE and may release PFAS compounds when heated. Safer options: cast iron, stainless steel, ceramic-coated, or enamel-coated cast iron.
+Traditional nonstick pans (ie. Teflon) contain PTFE and may release PFAS compounds when heated (5). Safer options: cast iron, stainless steel, ceramic-coated, or enamel-coated cast iron.
 
 You don't need to replace everything at once. Start with whatever pan you reach for most. That one swap alone can make a big difference. And honestly, a well-seasoned cast iron pan is one of those things that just gets better over time. It also adds trace iron to your food, which can be helpful if you tend to run low (a lot of women do).
 
@@ -105,7 +105,7 @@ One more thing on cookware: swap plastic utensils for wood or stainless steel. W
 
 ### Food Storage
 
-Plastic containers can leach chemicals into food, especially when heated. I recommend swapping to glass containers with silicone-sealed lids for storing and reheating leftovers. The main rule: keep plastic away from the microwave and dishwasher, where heat speeds up the leaching. If you can't replace all your containers right now, just stop microwaving in plastic. That alone removes one of the biggest exposure routes.
+Plastic containers can leach chemicals into food, especially when heated (6). I recommend swapping to glass containers with silicone-sealed lids for storing and reheating leftovers. The main rule: keep plastic away from the microwave and dishwasher, where heat speeds up the leaching. If you can't replace all your containers right now, just stop microwaving in plastic. That alone removes one of the biggest exposure routes.
 
 Same goes for plastic water bottles. If you're drinking out of plastic all day, especially one that's been sitting in a hot car, that's a meaningful source of BPA or BPS exposure. A stainless steel or glass water bottle is a cheap, one-time swap.
 
@@ -115,7 +115,7 @@ Tap water can contain microplastics, PFAS, heavy metals, and disinfection byprod
 
 ## Personal Care Swaps
 
-The average woman uses about 12 personal care products a day. Teens use around 17. Many of those contain parabens, phthalates, and synthetic fragrance that get absorbed through the skin.
+The average woman uses about 12 personal care products a day. Teens use around 17 (7). Many of those contain parabens, phthalates, and synthetic fragrance that get absorbed through the skin.
 
 ### How to Read Your Labels
 
@@ -159,7 +159,7 @@ I do home product reviews as part of my wellness packages, and one of the things
 
 This is the section that tends to get parents' attention, and for good reason.
 
-Children absorb more chemicals relative to their body weight, and their developing endocrine systems are more sensitive to disruption. Research has linked early chemical exposure to earlier puberty onset, attention and behavioral challenges, and increased risk of metabolic concerns later in life.
+Children absorb more chemicals relative to their body weight, and their developing endocrine systems are more sensitive to disruption (8). Research has linked early chemical exposure to earlier puberty onset, attention and behavioral challenges, and increased risk of metabolic concerns later in life (9).
 
 Nontoxic swaps for hormone health aren't just a personal wellness topic. They're a family health strategy. From baby bottles and sippy cups to teen deodorant and body spray, there are straightforward swaps at every stage.
 
@@ -183,13 +183,13 @@ I like the "crowd out, don't cut out" approach. Instead of fixating on what to r
 
 You don't have to buy everything organic. But for the produce that tends to carry the highest pesticide residue, it's worth it when your budget allows. The EWG Dirty Dozen list is a good reference for which fruits and vegetables to prioritize buying organic (ie. strawberries, spinach, apples). For anything on the Clean Fifteen list (ie. avocados, sweet corn, pineapple), conventional is usually fine. The most important thing is eating the vegetables, period. Don't skip the broccoli just because it's not organic.
 
-Beyond food: sleep quality, regular movement, and stress management all play a role. Cortisol directly competes with progesterone, so chronic stress can throw your whole hormonal balance off. Even small improvements in sleep or movement may help. I'm not talking about training for a marathon. A 20-minute walk, a consistent bedtime, even 5 minutes of deep breathing before bed. These things add up.
+Beyond food: sleep quality, regular movement, and stress management all play a role. Cortisol directly competes with progesterone (10), so chronic stress can throw your whole hormonal balance off. Even small improvements in sleep or movement may help. I'm not talking about training for a marathon. A 20-minute walk, a consistent bedtime, even 5 minutes of deep breathing before bed. These things add up.
 
 If you're curious about your mineral status, an HTMA (hair tissue mineral analysis) can show mineral levels and patterns that give useful context for how well your body is supporting hormone production. It's not a measure of chemical exposure, but it helps me see where your body might need targeted nutritional support. I offer HTMA as part of my wellness packages for Kentucky residents.
 
 ## A Note on Fertility & Preconception
 
-If you're planning to conceive, the 3 to 6 months before conception is an especially important window to reduce chemical exposure. Endocrine disruptors can affect egg quality, sperm quality, implantation, and early fetal development.
+If you're planning to conceive, the 3 to 6 months before conception is an especially important window to reduce chemical exposure. Endocrine disruptors can affect egg quality, sperm quality, implantation, and early fetal development (11).
 
 Priority preconception swaps: water filtration, glass food storage, cleaning up personal care products, and making sure nutrition is solid. Both partners benefit from these changes. Sperm quality is affected by endocrine disruptors too, so this really is a team effort.
 
@@ -252,6 +252,20 @@ If you want help sorting through your specific products, I do home product revie
 [CTA:Book a Free Discovery Call|Want help figuring out which swaps to prioritize for your health goals? No pressure, just honest conversation about where you are and what makes sense for you.|apply|Book Your Free Call]
 [CTA:Download the Nontoxic Swap Checklist|A room-by-room checklist to help you reduce chemical exposure at your own pace. Print it, stick it on your fridge, and swap one product at a time.|lead-magnet|Get the Free Checklist]
 [CTA-ROW-END]
+
+## References
+
+1. Gore, A.C., et al. (2015). EDC-2: The Endocrine Society's second scientific statement on endocrine-disrupting chemicals. *Endocrine Reviews*, 36(6), E1-E150.
+2. Diamanti-Kandarakis, E., et al. (2009). Endocrine-disrupting chemicals: An Endocrine Society scientific statement. *Endocrine Reviews*, 30(4), 293-342.
+3. Braun, J.M. (2017). Early-life exposure to EDCs: Role in childhood obesity and neurodevelopment. *Nature Reviews Endocrinology*, 13(3), 161-173.
+4. Harley, K.G., et al. (2016). Reducing phthalate, paraben, and phenol exposure from personal care products in adolescent girls: Findings from the HERMOSA intervention study. *Environmental Health Perspectives*, 124(10), 1600-1607.
+5. Sajid, M., & Ilyas, M. (2017). PTFE-coated non-stick cookware and toxicity concerns: A perspective. *Environmental Science and Pollution Research*, 24(30), 23436-23440.
+6. Yang, C.Z., et al. (2011). Most plastic products release estrogenic chemicals: A potential health problem that can be solved. *Environmental Health Perspectives*, 119(7), 989-996.
+7. Environmental Working Group. (2004). Skin Deep: Exposures add up. *EWG Research Report*.
+8. Landrigan, P.J., & Goldman, L.R. (2011). Children's vulnerability to toxic chemicals: A challenge and opportunity to strengthen health and environmental policy. *Health Affairs*, 30(5), 842-850.
+9. Greenspan, L.C., & Lee, M.M. (2018). Endocrine disrupters and pubertal timing. *Current Opinion in Endocrinology, Diabetes and Obesity*, 25(1), 49-54.
+10. Ranabir, S., & Reetu, K. (2011). Stress and hormones. *Indian Journal of Endocrinology and Metabolism*, 15(1), 18-22.
+11. Rattan, S., et al. (2017). Exposure to endocrine disruptors during adulthood: Consequences for female fertility. *Journal of Endocrinology*, 233(3), R109-R129.
 
 *This content is for educational purposes and is not intended as medical advice. Individual results vary. Always consult with a qualified healthcare provider about your individual health needs. Clinical wellness services are available to Kentucky residents only.*
     `,

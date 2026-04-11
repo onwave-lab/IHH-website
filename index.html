@@ -950,7 +950,7 @@
   </div>
 
   <!-- Promo Popup Modal -->
-  <div class="promo-modal-overlay" id="promo-modal">
+  <div class="promo-modal-overlay" id="promo-modal" hidden>
     <div class="promo-modal">
       <button class="promo-modal-close" aria-label="Close">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -991,6 +991,7 @@
       // Open modal when clicking the bar (but not dismiss button)
       promoBar.addEventListener('click', function(e) {
         if (e.target.closest('.promo-bar-dismiss')) return;
+        promoModal.removeAttribute('hidden');
         promoModal.classList.add('active');
         document.body.style.overflow = 'hidden';
       });
@@ -999,6 +1000,7 @@
       function closeModal() {
         promoModal.classList.remove('active');
         document.body.style.overflow = '';
+        setTimeout(function() { promoModal.setAttribute('hidden', ''); }, 300);
       }
 
       if (modalClose) {

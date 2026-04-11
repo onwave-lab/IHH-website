@@ -27,9 +27,9 @@ const BLOG_POSTS = [
     date: '2026-03-27',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Wondering why cravings are so hard to resist? Learn what actually happens to your taste buds, brain, blood sugar, and gut when you switch to a whole foods diet — and why it gets easier.',
-    image: '/images/blog/placeholder-cravings.webp',
-    cardAspectRatio: '83.83%',
-    imageAspectRatio: '83.83%',
+    image: '/images/blog/why-cravings-feel-so-intense.webp',
+    cardAspectRatio: '74.47%',
+    imageAspectRatio: '74.47%',
     categories: ['wellness', 'nutrition', 'foundations'],
     content: `
 # Why Cravings Feel So Intense (And What Actually Happens When You Switch to Whole Foods)

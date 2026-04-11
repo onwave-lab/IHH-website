@@ -8,7 +8,7 @@
 @font-face {
   font-family: 'Playfair Display';
   /* Subset: Latin characters only */
-  src: url('../fonts/PlayfairDisplay-Regular-subset.ttf') format('truetype');
+  src: url('../fonts/PlayfairDisplay-Regular-subset.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'Playfair Display';
   /* Subset: Latin characters only */
-  src: url('../fonts/PlayfairDisplay-Italic-subset.ttf') format('truetype');
+  src: url('../fonts/PlayfairDisplay-Italic-subset.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -26,7 +26,7 @@
 @font-face {
   font-family: 'Playfair Display';
   /* Subset: Latin characters only */
-  src: url('../fonts/PlayfairDisplay-Bold-subset.ttf') format('truetype');
+  src: url('../fonts/PlayfairDisplay-Bold-subset.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -35,7 +35,7 @@
 @font-face {
   font-family: 'Poppins';
   /* Subset: Latin characters only */
-  src: url('../fonts/Poppins-Light-subset.ttf') format('truetype');
+  src: url('../fonts/Poppins-Light-subset.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -44,7 +44,7 @@
 @font-face {
   font-family: 'Poppins';
   /* Subset: Latin characters only */
-  src: url('../fonts/Poppins-Regular-subset.ttf') format('truetype');
+  src: url('../fonts/Poppins-Regular-subset.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -53,7 +53,7 @@
 @font-face {
   font-family: 'Poppins';
   /* Subset: Latin characters only */
-  src: url('../fonts/Poppins-Medium-subset.ttf') format('truetype');
+  src: url('../fonts/Poppins-Medium-subset.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -62,7 +62,7 @@
 @font-face {
   font-family: 'Poppins';
   /* Subset: Latin characters only */
-  src: url('../fonts/Poppins-SemiBold-subset.ttf') format('truetype');
+  src: url('../fonts/Poppins-SemiBold-subset.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -71,7 +71,7 @@
 @font-face {
   font-family: 'Poppins';
   /* Subset: Latin characters only */
-  src: url('../fonts/Poppins-Bold-subset.ttf') format('truetype');
+  src: url('../fonts/Poppins-Bold-subset.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -79,7 +79,7 @@
 
 @font-face {
   font-family: 'Glacial Indifference';
-  src: url('../fonts/GlacialIndifference-Regular.ttf') format('truetype');
+  src: url('../fonts/GlacialIndifference-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -88,7 +88,7 @@
 @font-face {
   font-family: 'Beautifully Delicious Script';
   /* Subset characters: ACFIMST abcdehilmnoprstuv. (space) - covers: The Intention Foundations Model, Services, intentional. simple. sustainable., Contact Alicia */
-  src: url('../fonts/BDScript-subset.ttf') format('truetype');
+  src: url('../fonts/BDScript-subset.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;

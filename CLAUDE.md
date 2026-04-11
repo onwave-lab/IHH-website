@@ -21,6 +21,37 @@
 
 Both projects share Notion integration configuration. When updating documentation (especially `docs/notion-system-architecture.md`), sync changes to both folders.
 
+### Source Assets & Non-Served Files
+
+The `/source-assets/` directory contains raw/original image files that are **kept in the git repo** for cross-device sync but **excluded from Netlify deploys** via `.netlifyignore`. These files are never served to visitors.
+
+| Directory | Contents |
+|-----------|----------|
+| `source-assets/photos/` | Raw DSLR photos (moved from images/photos/) |
+| `source-assets/blog-originals/` | Full-size blog source images (*-original.*) |
+| `source-assets/about-originals/` | Full-size about page PNGs |
+| `source-assets/originals/` | Miscellaneous source images |
+
+**Also excluded from deploys** (via `.netlifyignore`, not moved):
+- `images/fallback/` — Legacy fallback images, no longer referenced
+- `fonts/*.ttf` — TTF source fonts; CSS uses WOFF2 versions instead
+
+**When adding new raw/source images:** Place them in the appropriate `source-assets/` subdirectory, not in `images/`. Only optimized, web-ready images should go in `images/`.
+
+### Image Optimization Pipeline
+
+A script at `scripts/optimize-images.js` generates responsive WebP variants from source images:
+
+```bash
+node scripts/optimize-images.js <input-image> [--sizes 900,500,400,300] [--quality 90]
+```
+
+Output follows the naming convention: `filename.webp`, `filename-small.webp`, `filename-small-xs.webp`, `filename-mobile.webp`.
+
+### Font Format
+
+All fonts use **WOFF2** format (converted from TTF on 2026-04-10, ~54% smaller). The `@font-face` declarations in `main.css` and all `<link rel="preload">` tags reference `.woff2` files. TTF source files remain in `/fonts/` but are excluded from deploys via `.netlifyignore`.
+
 ---
 
 ## Workflow
@@ -339,7 +370,7 @@ These are the specific fonts used in the hero banner design and should be used w
 
 **IMPORTANT: BDScript Subset Font**
 
-The Beautifully Delicious Script font uses a **subset** (`/fonts/BDScript-subset.ttf`) to reduce file size. When adding new text that uses this font (`.hero-banner-script`, `.script-title`, `.contact-hero-title`), you **MUST**:
+The Beautifully Delicious Script font uses a **subset** (`/fonts/BDScript-subset.woff2`) to reduce file size. When adding new text that uses this font (`.hero-banner-script`, `.script-title`, `.contact-hero-title`), you **MUST**:
 
 1. Check that all characters in the new text are included in the subset
 2. Current subset characters: `S T I P C A e r v i c s h n t o a l m p . (space)`

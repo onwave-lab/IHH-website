@@ -1,0 +1,13 @@
+# Source assets - raw/original files kept in repo for cross-device sync
+# but excluded from Netlify deploys
+source-assets/
+
+# Legacy fallback images - no longer referenced in codebase
+images/fallback/
+
+# Original source images directory (emptied, contents moved to source-assets)
+images/originals/
+
+# All TTF font files - CSS now uses WOFF2 format instead
+# TTFs kept in repo as source files but not deployed
+fonts/*.ttf

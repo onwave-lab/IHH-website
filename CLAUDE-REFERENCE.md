@@ -166,7 +166,9 @@ identify -format '%wx%h' /path/to/image.webp
 ### BDScript Subset Regeneration
 
 ```bash
-npx --yes glyphhanger --whitelist="STIPCA ervicshntolamp. " --subset=/fonts/BDScript-Regular.ttf --formats=ttf
+npx --yes glyphhanger --whitelist="STIPCA ervicshntolamp. " --subset=/fonts/BDScript-Regular.ttf --formats=woff2
+# Note: After regenerating, the output will be BDScript-subset.woff2 in /fonts/
+# All fonts use WOFF2 format (converted 2026-04-10). TTF source files are in /fonts/ but excluded from deploys via .netlifyignore.
 ```
 
 ### Analytics API Endpoint

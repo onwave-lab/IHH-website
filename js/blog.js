@@ -39,7 +39,10 @@ const BLOG_POSTS = [
       badge: 'Free Download',
       ctaText: 'Get the Free Checklist',
       formType: 'lead-magnet',
-      modalFormType: 'lead-magnet'
+      modalFormType: 'lead-magnet',
+      image: '/images/nontoxic-swap-checklist-preview-inline.webp',
+      imageSidebar: '/images/nontoxic-swap-checklist-preview-sidebar.webp',
+      imageThumb: '/images/nontoxic-swap-checklist-preview-thumb.webp'
     },
     content: `
 # The Complete Guide to Nontoxic Swaps for Hormone Health

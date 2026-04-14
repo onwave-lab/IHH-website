@@ -38,8 +38,8 @@ const BLOG_POSTS = [
       descriptionShort: 'A room-by-room checklist for reducing chemical exposure at your own pace.',
       badge: 'Free Download',
       ctaText: 'Get the Free Checklist',
-      formType: 'lead-magnet',
-      modalFormType: 'lead-magnet',
+      formType: 'nontoxic-swap-checklist',
+      modalFormType: 'nontoxic-swap-checklist',
       image: '/images/nontoxic-swap-checklist-preview-inline.webp',
       imageSidebar: '/images/nontoxic-swap-checklist-preview-sidebar.webp',
       imageThumb: '/images/nontoxic-swap-checklist-preview-thumb.webp'
@@ -123,6 +123,8 @@ The average woman uses about 12 personal care products a day. Teens use around 1
 ### How to Read Your Labels
 
 The word "fragrance" or "parfum" on a label is a red flag. Under current regulations, companies don't have to disclose what's actually in a fragrance blend. That single ingredient can hide dozens of endocrine-disrupting compounds.
+
+One thing to watch for: "unscented" and "fragrance free" are not the same thing. "Unscented" products can still contain fragrance ingredients that are added to mask or neutralize a smell. The chemicals are still there, you just can't smell them. Look for "fragrance free" on the label, and then flip it over and check the ingredient list anyway. That's the only way to know for sure.
 
 When I review products for patients, I'm looking for short ingredient lists with things I can actually pronounce. Full ingredient transparency matters more than any marketing claim.
 
@@ -253,7 +255,7 @@ If you want help sorting through your specific products, I do home product revie
 
 [CTA-ROW-START]
 [CTA:Book a Free Discovery Call|Want help figuring out which swaps to prioritize for your health goals? No pressure, just honest conversation about where you are and what makes sense for you.|apply|Book Your Free Call]
-[CTA:Download the Nontoxic Swap Checklist|A room-by-room checklist to help you reduce chemical exposure at your own pace. Print it, stick it on your fridge, and swap one product at a time.|lead-magnet|Get the Free Checklist]
+[CTA:Download the Nontoxic Swap Checklist|A room-by-room checklist to help you reduce chemical exposure at your own pace. Print it, stick it on your fridge, and swap one product at a time.|nontoxic-swap-checklist|Get the Free Checklist]
 [CTA-ROW-END]
 
 ## References

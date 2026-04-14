@@ -37,3 +37,6 @@ docs/accounts-inventory.md
 
 # Internal Notion architecture documentation
 docs/notion-system-architecture.md
+
+# Local Netlify folder
+.netlify

@@ -12,7 +12,8 @@ const GROUPS = {
   supplementGuide: '177801439665456539',      // Supplement Guide Downloads
   supplementReviewWaitlist: '177801256141587628',  // Supplement Review Waitlist
   courseInterest: '177807031141401967',       // Confident Supplement Choices Interest
-  kitchenStaples: '177893653596866162'         // Kitchen Staples Checklist
+  kitchenStaples: '177893653596866162',        // Kitchen Staples Checklist
+  nontoxicSwapChecklist: '184513381512775176'  // Nontoxic Swap Checklist
 };
 
 exports.handler = async (event, context) => {
@@ -69,6 +70,9 @@ exports.handler = async (event, context) => {
     } else if (formType === 'kitchen-staples') {
       // Kitchen Staples Checklist downloads
       groupIds = [GROUPS.kitchenStaples];
+    } else if (formType === 'nontoxic-swap-checklist') {
+      // Nontoxic Swap Checklist downloads
+      groupIds = [GROUPS.nontoxicSwapChecklist];
     } else {
       // Newsletter signups go to Welcome Sequence
       // Automation runs welcome emails, then moves to Newsletter Subscribers
@@ -167,6 +171,8 @@ exports.handler = async (event, context) => {
       successMessage = 'Thanks! We\'ll notify you when the course launches.';
     } else if (formType === 'kitchen-staples') {
       successMessage = 'Check your email for your free Kitchen Staples Checklist!';
+    } else if (formType === 'nontoxic-swap-checklist') {
+      successMessage = 'Check your email for your free Nontoxic Swap Checklist!';
     } else {
       successMessage = 'Successfully subscribed to the newsletter!';
     }

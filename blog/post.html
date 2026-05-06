@@ -165,30 +165,30 @@
     </div>
 
     <!-- Post Header -->
-    <section class="post-header" data-track-section="post-header">
+    <section class="post-header post-header-minimal" data-track-section="post-header">
       <div class="container">
         <a href="/blog/" class="back-link">&larr; Back to Blog</a>
       </div>
     </section>
 
-    <!-- Post Featured Image -->
-    <div class="post-featured-image" id="post-image">
-      <img src="" alt="" fetchpriority="high">
-    </div>
-
-    <!-- Post Title (below image) -->
-    <section class="post-title-section">
+    <!-- Post Title (centered editorial — eyebrow + title + date) -->
+    <section class="post-title-section post-title-editorial">
       <div class="container">
+        <p class="post-category-eyebrow" id="post-category-eyebrow"></p>
+        <h1 class="post-title" id="post-title">Loading...</h1>
         <div class="post-meta" id="post-meta">
           <span class="post-date"></span>
-          <span class="post-author"></span>
         </div>
-        <h1 class="post-title" id="post-title">Loading...</h1>
       </div>
     </section>
 
+    <!-- Post Featured Image (constrained, 16:9, sits between title and body) -->
+    <div class="post-featured-image post-featured-image-editorial" id="post-image">
+      <img src="" alt="" fetchpriority="high">
+    </div>
+
     <!-- Post Content -->
-    <article class="section" data-track-section="post-content">
+    <article class="section post-article-editorial" data-track-section="post-content">
       <div class="container">
         <div class="post-content" id="post-content">
           <p class="loading-message">Loading post content...</p>
@@ -199,18 +199,19 @@
           <div class="post-tags" id="post-tags"></div>
         </div>
 
-        <!-- Author Bio -->
-        <div class="author-bio">
+        <!-- Author Bio (editorial placement, after content) -->
+        <aside class="author-bio author-bio-editorial" aria-label="About the author">
           <img src="/images/about/alicia-portrait-mug-cropped-small.webp"
                  srcset="/images/about/alicia-portrait-mug-cropped-small.webp 200w,
                          /images/about/alicia-portrait-mug-cropped.webp 376w"
-                 sizes="150px"
-                 alt="Alicia Harrison, NP" class="author-bio-image" width="150" height="150" loading="lazy">
+                 sizes="180px"
+                 alt="Alicia Harrison, NP" class="author-bio-image" width="180" height="180" loading="lazy">
           <div class="author-bio-content">
-            <p class="author-bio-name">Written by Alicia Harrison, MSN, APRN, FNP-C</p>
+            <p class="author-bio-eyebrow">Written by</p>
+            <p class="author-bio-name">Alicia Harrison, MSN, APRN, FNP-C</p>
             <p class="author-bio-text">Board-certified Family Nurse Practitioner and holistic wellness practitioner helping women optimize their health through pregnancy, postpartum, and beyond.</p>
           </div>
-        </div>
+        </aside>
 
         <!-- Share Section -->
         <div class="share-section">
@@ -251,8 +252,8 @@
         </div>
 
         <!-- Related Posts -->
-        <div class="related-posts" id="related-posts">
-          <h3>You Might Also Like</h3>
+        <div class="related-posts related-posts-editorial" id="related-posts">
+          <h3 class="related-posts-heading">More From The Blog</h3>
           <div class="related-posts-grid">
             <!-- Will be populated by JavaScript -->
           </div>

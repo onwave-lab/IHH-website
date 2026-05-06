@@ -3402,10 +3402,13 @@ function renderSinglePost() {
 
   const postMeta = document.getElementById('post-meta');
   if (postMeta) {
-    postMeta.innerHTML = `
-      <span class="post-date">${formatDate(post.date)}</span>
-      <span class="post-author">By ${post.author}</span>
-    `;
+    postMeta.innerHTML = `<span class="post-date">${formatDate(post.date)}</span>`;
+  }
+
+  // Render category eyebrow above title (first category, uppercase)
+  const postCategoryEyebrow = document.getElementById('post-category-eyebrow');
+  if (postCategoryEyebrow && post.categories && post.categories.length > 0) {
+    postCategoryEyebrow.textContent = post.categories[0];
   }
 
   // Render featured image with explicit dimensions to prevent CLS

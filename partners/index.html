@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Google Analytics 4 with Consent Mode v2 -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+    if (localStorage.getItem('cookie_consent') === 'accepted') {
+      gtag('consent', 'update', { 'analytics_storage': 'granted' });
+    }
+  </script>
+  <script>
+    if (location.hostname === 'intentionholistichealth.com') {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3GFCR5ZRMZ';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-3GFCR5ZRMZ');
+    }
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A co-branded HTMA mineral health partnership for Kentucky perinatal and women's wellness practices. Clinically-led by NP Alicia Harrison. Apply to partner.">
+  <meta name="keywords" content="HTMA partnership Kentucky, mineral testing referral partner, perinatal wellness partnership, HTMA referral program, clinic partnership Kentucky, midwifery HTMA, pelvic floor PT partnership">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.intentionholistichealth.com/partners/">
+  <meta property="og:title" content="Partner With IHH — HTMA Partnership Program for KY Practices">
+  <meta property="og:description" content="Add a clinically-led mineral health program to your practice — without adding clinical hours. For Kentucky perinatal and women's wellness practices.">
+  <!-- Placeholder OG image (existing professional photo). Replace with B2B-specific 1200x630 OG asset in Phase 1 via seo-image-gen. -->
+  <meta property="og:image" content="https://www.intentionholistichealth.com/images/services/alicia-portrait-services.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.intentionholistichealth.com/images/services/alicia-portrait-services.png">
+
+  <title>Partner With IHH — HTMA Partnership Program for KY Practices | Intention Holistic Health</title>
+
+  <link rel="canonical" href="https://www.intentionholistichealth.com/partners/">
+  <link rel="preload" href="/fonts/Poppins-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/PlayfairDisplay-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png">
+
+  <!-- JSON-LD: Service + ProfessionalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "The Mineral Method — by IHH",
+        "serviceType": "HTMA Mineral Rebalancing Program",
+        "description": "A clinically-led 60-day mineral rebalancing program delivered by Intention Holistic Health on behalf of select Kentucky perinatal and women's wellness practices.",
+        "areaServed": {
+          "@type": "State",
+          "name": "Kentucky"
+        },
+        "provider": {
+          "@type": "MedicalBusiness",
+          "name": "Intention Holistic Health, PLLC",
+          "url": "https://www.intentionholistichealth.com/"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "695.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "description": "60-day mineral rebalancing program including HTMA test, results review, custom protocol, and follow-up. $50 partner-referral discount available."
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "name": "Intention Holistic Health, PLLC",
+        "url": "https://www.intentionholistichealth.com/",
+        "image": "https://www.intentionholistichealth.com/images/og-image.jpg",
+        "telephone": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "KY",
+          "addressCountry": "US"
+        },
+        "areaServed": "Kentucky"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       PARTNERS PAGE — page-scoped styles
+       Reuses IHH design tokens from /css/main.css (sage palette,
+       Playfair headings, Poppins body). B2B tone: tighter density,
+       more data, less mood photography.
+       ============================================================ */
+
+    /* Hero */
+    .partners-hero {
+      background: linear-gradient(135deg, var(--color-warm-cream) 0%, var(--color-light-cream) 100%);
+      padding: calc(80px + var(--spacing-xl)) 0 var(--spacing-xl);
+      text-align: center;
+    }
+    .partners-hero .eyebrow {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-style: italic;
+      color: var(--color-sage-dark);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: var(--font-size-sm);
+      margin-bottom: var(--spacing-sm);
+    }
+    .partners-hero h1 {
+      font-size: var(--font-size-3xl);
+      max-width: 880px;
+      margin: 0 auto var(--spacing-md);
+      line-height: 1.15;
+    }
+    .partners-hero .lede {
+      font-size: var(--font-size-lg);
+      color: var(--color-medium-gray);
+      max-width: 720px;
+      margin: 0 auto var(--spacing-md);
+    }
+    .partners-hero .cta-row {
+      display: flex;
+      gap: var(--spacing-sm);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: var(--spacing-md);
+    }
+    .partners-trust-strip {
+      display: flex;
+      gap: var(--spacing-md);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: var(--spacing-lg);
+      padding-top: var(--spacing-md);
+      border-top: 1px solid var(--color-light-gray);
+      font-size: var(--font-size-sm);
+      color: var(--color-sage-dark);
+      letter-spacing: 0.04em;
+    }
+    .partners-trust-strip span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .partners-trust-strip span::before {
+      content: "•";
+      color: var(--color-sage-green);
+    }
+    .partners-trust-strip span:first-child::before { content: ""; }
+
+    @media (max-width: 600px) {
+      .partners-hero h1 { font-size: var(--font-size-2xl); }
+    }
+
+    /* Generic section heading rhythm */
+    .partners-section {
+      padding: var(--spacing-xl) 0;
+    }
+    .partners-section h2 {
+      font-size: var(--font-size-2xl);
+      margin-bottom: var(--spacing-md);
+      text-align: center;
+    }
+    .partners-section .section-sub {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto var(--spacing-lg);
+      color: var(--color-medium-gray);
+      font-size: var(--font-size-lg);
+    }
+    .partners-section--alt {
+      background-color: var(--color-warm-cream);
+    }
+    .partners-eyebrow {
+      display: block;
+      font-family: var(--font-heading);
+      font-style: italic;
+      color: var(--color-sage-dark);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: var(--font-size-sm);
+      text-align: center;
+      margin-bottom: var(--spacing-xs);
+    }
+
+    /* Problem cards (3 across) */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+      .problem-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .problem-card {
+      background: var(--color-white);
+      border-left: 3px solid var(--color-sage-green);
+      padding: var(--spacing-md);
+      border-radius: var(--border-radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+    .problem-card h3 {
+      font-size: var(--font-size-lg);
+      margin-bottom: var(--spacing-xs);
+      color: var(--color-charcoal);
+    }
+    .problem-card p {
+      color: var(--color-medium-gray);
+      margin: 0;
+    }
+
+    /* Journey (3-step) */
+    .journey-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+    }
+    @media (min-width: 768px) {
+      .journey-grid { grid-template-columns: repeat(3, 1fr); gap: var(--spacing-lg); }
+    }
+    .journey-step {
+      background: var(--color-white);
+      padding: var(--spacing-md);
+      border-radius: var(--border-radius-md);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+    .journey-step .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--color-sage-green);
+      color: var(--color-white);
+      font-family: var(--font-heading);
+      font-size: 18px;
+      margin-bottom: var(--spacing-sm);
+    }
+    .journey-step .step-week {
+      font-size: var(--font-size-sm);
+      color: var(--color-sage-dark);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: var(--spacing-xs);
+    }
+    .journey-step h3 {
+      font-size: var(--font-size-lg);
+      margin-bottom: var(--spacing-xs);
+    }
+    .journey-step p {
+      color: var(--color-medium-gray);
+      font-size: var(--font-size-base);
+      margin: 0;
+    }
+
+    /* Two-column "What you get / What you do" */
+    .partner-twocol {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+      .partner-twocol { grid-template-columns: 1fr 1fr; }
+    }
+    .partner-card {
+      background: var(--color-white);
+      padding: var(--spacing-lg);
+      border-radius: var(--border-radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+    .partner-card h3 {
+      font-size: var(--font-size-xl);
+      margin-bottom: var(--spacing-sm);
+      color: var(--color-charcoal);
+    }
+    .partner-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .partner-card li {
+      padding: var(--spacing-xs) 0;
+      padding-left: 1.5em;
+      position: relative;
+      color: var(--color-charcoal);
+    }
+    .partner-card li::before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      color: var(--color-sage-green);
+      font-weight: 700;
+    }
+    .partner-card .value-stamp {
+      display: inline-block;
+      margin-top: var(--spacing-sm);
+      padding: 6px 12px;
+      background: var(--color-warm-cream);
+      border-radius: var(--border-radius-sm);
+      font-size: var(--font-size-sm);
+      color: var(--color-sage-dark);
+      font-weight: 600;
+    }
+
+    /* Alicia bio block */
+    .provider-block {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+      max-width: 900px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    @media (min-width: 768px) {
+      .provider-block { grid-template-columns: 280px 1fr; }
+    }
+    .provider-photo {
+      width: 100%;
+      max-width: 280px;
+      aspect-ratio: 1 / 1;
+      border-radius: var(--border-radius-lg);
+      object-fit: cover;
+      background: var(--color-light-cream);
+      margin: 0 auto;
+      display: block;
+    }
+    .provider-bio h3 {
+      font-size: var(--font-size-xl);
+      margin-bottom: var(--spacing-xs);
+    }
+    .provider-bio .creds {
+      font-family: var(--font-heading);
+      font-style: italic;
+      color: var(--color-sage-dark);
+      font-size: var(--font-size-base);
+      margin-bottom: var(--spacing-sm);
+    }
+    .provider-bio p { color: var(--color-charcoal); }
+
+    /* Patient pricing card */
+    .patient-card {
+      max-width: 720px;
+      margin: 0 auto;
+      background: var(--color-white);
+      padding: var(--spacing-lg);
+      border-radius: var(--border-radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+    .patient-price-row {
+      display: flex;
+      gap: var(--spacing-md);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: var(--spacing-md) 0;
+    }
+    .patient-price {
+      flex: 1 1 240px;
+      text-align: center;
+      padding: var(--spacing-md);
+      border-radius: var(--border-radius-md);
+      border: 1px solid var(--color-light-gray);
+    }
+    .patient-price.featured {
+      border-color: var(--color-sage-green);
+      background: var(--color-warm-cream);
+    }
+    .patient-price .label {
+      font-size: var(--font-size-sm);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-sage-dark);
+      margin-bottom: var(--spacing-xs);
+    }
+    .patient-price .amount {
+      font-family: var(--font-heading);
+      font-size: var(--font-size-3xl);
+      color: var(--color-charcoal);
+      line-height: 1;
+    }
+    .patient-price .note {
+      font-size: var(--font-size-sm);
+      color: var(--color-medium-gray);
+      margin-top: var(--spacing-xs);
+    }
+    .patient-includes {
+      list-style: none;
+      padding: 0;
+      margin: var(--spacing-md) 0 0;
+    }
+    .patient-includes li {
+      padding: 6px 0;
+      padding-left: 1.5em;
+      position: relative;
+    }
+    .patient-includes li::before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      color: var(--color-sage-green);
+    }
+
+    /* "Built right" — legal reassurance */
+    .legal-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-sm);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    @media (min-width: 600px) {
+      .legal-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 900px) {
+      .legal-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+    .legal-card {
+      background: var(--color-white);
+      padding: var(--spacing-md);
+      border-radius: var(--border-radius-md);
+      text-align: center;
+      border-top: 3px solid var(--color-sage-green);
+    }
+    .legal-card .icon {
+      font-size: 24px;
+      margin-bottom: var(--spacing-xs);
+    }
+    .legal-card h4 {
+      font-size: var(--font-size-base);
+      margin-bottom: 6px;
+      color: var(--color-charcoal);
+    }
+    .legal-card p {
+      font-size: var(--font-size-sm);
+      color: var(--color-medium-gray);
+      margin: 0;
+    }
+
+    /* FAQ accordion */
+    .faq-list {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--color-light-gray);
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: var(--spacing-md) 0;
+      font-family: inherit;
+      font-size: var(--font-size-lg);
+      font-weight: 500;
+      color: var(--color-charcoal);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--spacing-md);
+    }
+    .faq-question:hover { color: var(--color-sage-green); }
+    .faq-question .chev {
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+      color: var(--color-sage-green);
+    }
+    .faq-item[open] .faq-question .chev,
+    .faq-question[aria-expanded="true"] .chev {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      padding: 0 0 var(--spacing-md);
+      color: var(--color-charcoal);
+      line-height: 1.6;
+      display: none;
+    }
+    .faq-question[aria-expanded="true"] + .faq-answer {
+      display: block;
+    }
+
+    /* Fit filter block */
+    .fit-block {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--color-white);
+      padding: var(--spacing-lg);
+      border-radius: var(--border-radius-md);
+      border: 1px dashed var(--color-sage-green);
+      text-align: center;
+    }
+    .fit-block ul {
+      list-style: none;
+      padding: 0;
+      margin: var(--spacing-md) 0 0;
+      text-align: left;
+      display: inline-block;
+    }
+    .fit-block li {
+      padding: 4px 0 4px 1.5em;
+      position: relative;
+      color: var(--color-charcoal);
+    }
+    .fit-block li::before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      color: var(--color-sage-green);
+    }
+
+    /* Inquiry form */
+    .inquiry-section {
+      background: linear-gradient(135deg, var(--color-warm-cream) 0%, var(--color-light-cream) 100%);
+    }
+    .inquiry-card {
+      max-width: 720px;
+      margin: 0 auto;
+      background: var(--color-white);
+      padding: var(--spacing-lg);
+      border-radius: var(--border-radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+    .inquiry-card h2 {
+      text-align: center;
+      margin-bottom: var(--spacing-xs);
+    }
+    .inquiry-card .sub {
+      text-align: center;
+      color: var(--color-medium-gray);
+      margin-bottom: var(--spacing-md);
+    }
+    .inquiry-form .form-group {
+      margin-bottom: var(--spacing-md);
+    }
+    .inquiry-form .form-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+    }
+    @media (min-width: 600px) {
+      .inquiry-form .form-row { grid-template-columns: 1fr 1fr; }
+    }
+    .inquiry-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: var(--color-charcoal);
+    }
+    .inquiry-form input,
+    .inquiry-form select,
+    .inquiry-form textarea {
+      width: 100%;
+      max-width: 100%;
+      padding: var(--spacing-sm);
+      border: 1px solid var(--color-light-gray);
+      border-radius: var(--border-radius-sm);
+      font-family: inherit;
+      font-size: var(--font-size-base);
+      background: var(--color-white);
+    }
+    .inquiry-form textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    .inquiry-form button {
+      width: 100%;
+    }
+    .inquiry-note {
+      margin-top: var(--spacing-md);
+      padding: var(--spacing-sm);
+      background: var(--color-warm-cream);
+      border-radius: var(--border-radius-sm);
+      font-size: var(--font-size-sm);
+      color: var(--color-charcoal);
+    }
+    .inquiry-secondary {
+      text-align: center;
+      margin-top: var(--spacing-md);
+      color: var(--color-medium-gray);
+      font-size: var(--font-size-sm);
+    }
+    .inquiry-secondary a {
+      color: var(--color-sage-dark);
+      font-weight: 500;
+    }
+
+    /* Success message */
+    .inquiry-success {
+      text-align: center;
+      padding: var(--spacing-lg);
+      background: var(--color-warm-cream);
+      border-radius: var(--border-radius-md);
+      border: 1px solid var(--color-sage-green);
+    }
+    .inquiry-success h3 {
+      color: var(--color-sage-dark);
+      margin-bottom: var(--spacing-sm);
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Skip to main -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header (matches site pattern) -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="/" class="site-logo" aria-label="Intention Holistic Health home">
+        <img src="/images/logo2.webp" alt="Intention Holistic Health" width="192" height="75">
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <div class="nav-dropdown">
+          <a href="/services/" class="nav-link">Services</a>
+          <div class="nav-dropdown-menu">
+            <a href="/services/lab-review.html" class="nav-dropdown-link">Sessions</a>
+            <a href="/services/" class="nav-dropdown-link">Packages and Programs</a>
+            <a href="/htma.html" class="nav-dropdown-link">What is HTMA?</a>
+          </div>
+        </div>
+        <a href="/contact.html" class="nav-link">Contact</a>
+        <a href="https://us.fullscript.com/welcome/intentionholistichealth" class="nav-link external" data-fullscript>Supplements</a>
+        <a href="https://my.practicebetter.io/#/signin" class="nav-link external" data-portal-signin>Patient Portal</a>
+      </nav>
+
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/about.html" class="mobile-nav-link">About</a>
+    <a href="/blog/" class="mobile-nav-link">Blog</a>
+    <a href="/services/lab-review.html" class="mobile-nav-link">Sessions</a>
+    <a href="/services/" class="mobile-nav-link">Packages and Programs</a>
+    <a href="/htma.html" class="mobile-nav-link">What is HTMA?</a>
+    <a href="/contact.html" class="mobile-nav-link">Contact</a>
+    <a href="https://us.fullscript.com/welcome/intentionholistichealth" class="mobile-nav-link external" data-fullscript>Supplements</a>
+    <a href="https://my.practicebetter.io/#/signin" class="mobile-nav-link external" data-portal-signin>Patient Portal</a>
+  </nav>
+
+  <main id="main">
+
+    <!-- 1. HERO -->
+    <section class="partners-hero" data-track-section="partners-hero">
+      <div class="container">
+        <span class="eyebrow">For Kentucky Practices</span>
+        <h1>Add a clinically-led mineral health program to your practice — without adding clinical hours.</h1>
+        <p class="lede">
+          <strong>The Mineral Method™ — by IHH</strong> is a co-branded HTMA partnership for Kentucky perinatal and women's wellness practices. You refer the patient and stay their primary; we deliver the 60-day program.
+        </p>
+        <div class="cta-row">
+          <a href="#apply" class="btn btn-primary btn-lg" data-track-cta="b2b-hero-apply">Apply to Partner</a>
+          <a href="#program" class="btn btn-secondary btn-lg" data-track-cta="b2b-hero-learn">How It Works</a>
+        </div>
+        <div class="partners-trust-strip">
+          <span>MSN, APRN, FNP-C</span>
+          <span>HTMA-Certified</span>
+          <span>Louisville, KY</span>
+          <span>HIPAA-Compliant</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. THE PROBLEM -->
+    <section class="partners-section" data-track-section="partners-problem">
+      <div class="container">
+        <span class="partners-eyebrow">The Gap</span>
+        <h2>Your patients keep asking about minerals.</h2>
+        <p class="section-sub">You'd love to offer it. But you don't have the clinical hours, the certification, or the bandwidth to run a new service line.</p>
+        <div class="problem-grid">
+          <div class="problem-card">
+            <h3>Patients are asking</h3>
+            <p>"What do you think about HTMA?" "Should I test my minerals?" The conversations keep happening — and you don't have a clear answer that fits your practice.</p>
+          </div>
+          <div class="problem-card">
+            <h3>You don't have the hours</h3>
+            <p>Adding a new service means clinical capacity you've already over-allocated. Hiring or training isn't on the table this year.</p>
+          </div>
+          <div class="problem-card">
+            <h3>You don't want to lose them</h3>
+            <p>Sending patients to a generic functional-medicine clinic feels like losing the relationship. You want to offer more — without giving up the anchor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. THE PROGRAM (60-second overview) -->
+    <section class="partners-section partners-section--alt" id="program" data-track-section="partners-program">
+      <div class="container">
+        <span class="partners-eyebrow">The Program</span>
+        <h2>The Mineral Method™ — by IHH</h2>
+        <p class="section-sub">A clinically-led, 60-day mineral rebalancing program. You refer; we deliver. The patient returns to you with a written summary.</p>
+
+        <div class="journey-grid">
+          <div class="journey-step">
+            <div class="step-num">1</div>
+            <div class="step-week">Week 0 — at your practice</div>
+            <h3>Partner Intake</h3>
+            <p>Your staff completes a 30-minute co-branded intake with the patient. Patient signs HIPAA authorization. Pays IHH directly via a secure Practice Better link. <em>Your practice never touches the payment.</em></p>
+          </div>
+          <div class="journey-step">
+            <div class="step-num">2</div>
+            <div class="step-week">Weeks 1–8 — with IHH</div>
+            <h3>Clinical Delivery</h3>
+            <p>HTMA kit ships. Sample returned, processed, interpreted. Alicia builds a custom mineral protocol and delivers a 60-min results review by secure video. Patient leaves with a written plan.</p>
+          </div>
+          <div class="journey-step">
+            <div class="step-num">3</div>
+            <div class="step-week">Weeks 8–10 — back to you</div>
+            <h3>Return + Summary</h3>
+            <p>45-min follow-up with Alicia at 6–8 weeks. Written summary sent to your practice (with patient consent) so you can stay informed and remain their primary care.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WHAT YOU GET / 5. WHAT YOU DO (combined two-column) -->
+    <section class="partners-section" data-track-section="partners-partner-deal">
+      <div class="container">
+        <span class="partners-eyebrow">For Your Practice</span>
+        <h2>A real partnership — not a referral fee.</h2>
+        <p class="section-sub">We compensate your administrative work at fair-market value, monthly. We never tie payment to patient volume or revenue — that keeps everything clean under federal anti-kickback rules.</p>
+
+        <div class="partner-twocol">
+          <div class="partner-card">
+            <h3>What you get</h3>
+            <ul>
+              <li><strong>$75 per completed intake</strong>, paid monthly. Reimburses your staff time. Not tied to enrollment or revenue.</li>
+              <li><strong>Free annual HTMA + Mineral Method program</strong> for you + 1 staff member</li>
+              <li>Co-branded patient education materials (brochure, exam-room poster, social tiles)</li>
+              <li>Listing on our Partner Practices page</li>
+              <li>Quarterly co-branded webinar slot Alicia hosts for your patient list</li>
+              <li>Priority same-week booking for your referred patients</li>
+              <li>Written summary back for every patient who consents</li>
+            </ul>
+            <span class="value-stamp">$1,400+/year value before intake reimbursement</span>
+          </div>
+          <div class="partner-card">
+            <h3>What you do</h3>
+            <ul>
+              <li>Have a 5-min in-office conversation when HTMA comes up (we provide the script)</li>
+              <li>Complete the 30-min co-branded intake form with the patient</li>
+              <li>Display IHH-provided patient education materials</li>
+              <li>Include one program mention in your monthly newsletter</li>
+              <li>Attend a 1-hour onboarding training (one time)</li>
+            </ul>
+            <span class="value-stamp">~30 min staff time per intake · zero added clinical hours</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. WHO DELIVERS IT -->
+    <section class="partners-section partners-section--alt" data-track-section="partners-provider">
+      <div class="container">
+        <span class="partners-eyebrow">Who Delivers It</span>
+        <h2>Meet your patient's NP for the 60-day program.</h2>
+
+        <div class="provider-block">
+          <!-- Provider photo: reuses existing professional headshot. Replace with B2B-specific photo if desired in Phase 1. -->
+          <img
+            src="/images/about/alicia-professional-medium.webp"
+            srcset="/images/about/alicia-professional-small.webp 480w, /images/about/alicia-professional-medium.webp 800w"
+            sizes="(max-width: 600px) 280px, 280px"
+            alt="Alicia Harrison, MSN, APRN, FNP-C"
+            class="provider-photo"
+            width="280"
+            height="280"
+            loading="lazy">
+          <div class="provider-bio">
+            <h3>Alicia Harrison</h3>
+            <p class="creds">MSN, APRN, FNP-C · BHPCC · HTMA-Certified</p>
+            <p>
+              Alicia is a board-certified family nurse practitioner specializing in women's holistic wellness, with a focus on perinatal mineral health, postpartum recovery, and fertility preparation. She established Intention Holistic Health to bring clinically-led HTMA care to Kentucky women — and now extends that same care to your patients through the Partner Practice program.
+            </p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-medium-gray); margin-top: var(--spacing-sm);">
+              Every patient in The Mineral Method™ establishes a direct NP-patient relationship with Alicia for the duration of the 60-day program.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FOR YOUR PATIENT (pricing transparency) -->
+    <section class="partners-section" data-track-section="partners-patient">
+      <div class="container">
+        <span class="partners-eyebrow">For Your Patient</span>
+        <h2>Transparent pricing. No hidden fees.</h2>
+        <p class="section-sub">Your patients pay IHH directly. Your practice never handles payment. HSA/FSA eligible.</p>
+
+        <div class="patient-card">
+          <div class="patient-price-row">
+            <div class="patient-price">
+              <div class="label">Standard</div>
+              <div class="amount">$695</div>
+              <div class="note">Full 60-day program</div>
+            </div>
+            <div class="patient-price featured">
+              <div class="label">Partner Practice Discount</div>
+              <div class="amount">$645</div>
+              <div class="note">When referred by you — you save them $50</div>
+            </div>
+          </div>
+
+          <h3 style="text-align:center; font-size: var(--font-size-lg); margin-top: var(--spacing-md);">What's included</h3>
+          <ul class="patient-includes">
+            <li>HTMA kit + lab processing</li>
+            <li>Customized supplement + lifestyle protocol</li>
+            <li>60-min results review with Alicia (live, telehealth)</li>
+            <li>45-min follow-up at 6–8 weeks (live, telehealth)</li>
+            <li>Written protocol the patient keeps</li>
+            <li>Written summary returned to your practice (with patient consent)</li>
+          </ul>
+
+          <p class="text-muted" style="font-size: var(--font-size-sm); margin-top: var(--spacing-md); text-align: center;">
+            Supplements (if recommended) are dispensed separately through Fullscript at the patient's discretion.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. BUILT RIGHT (legal reassurance) -->
+    <section class="partners-section partners-section--alt" data-track-section="partners-legal">
+      <div class="container">
+        <span class="partners-eyebrow">Built Right</span>
+        <h2>The structural and legal foundation.</h2>
+        <p class="section-sub">We built this program with healthcare attorneys to keep both practices clean under federal and Kentucky law.</p>
+
+        <div class="legal-grid">
+          <div class="legal-card">
+            <div class="icon">🔒</div>
+            <h4>HIPAA-Compliant</h4>
+            <p>BAA in place before any PHI flows. Encrypted intake. Practice Better as the clinical system of record.</p>
+          </div>
+          <div class="legal-card">
+            <div class="icon">📄</div>
+            <h4>Written Partnership Agreement</h4>
+            <p>12-month term, mutual non-solicit, clear SLAs. Attorney-reviewed on both sides.</p>
+          </div>
+          <div class="legal-card">
+            <div class="icon">⚕</div>
+            <h4>KY-Licensed NP</h4>
+            <p>Alicia maintains current KY APRN licensure and NP malpractice insurance. COI exchange annually.</p>
+          </div>
+          <div class="legal-card">
+            <div class="icon">✓</div>
+            <h4>AKS Safe-Harbor Structured</h4>
+            <p>Fixed FMV reimbursement for administrative work. Never tied to volume or value of referrals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FAQ -->
+    <section class="partners-section" data-track-section="partners-faq">
+      <div class="container">
+        <span class="partners-eyebrow">Questions Practice Owners Ask</span>
+        <h2>FAQ</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-faq="poaching">
+              <span>Will you poach my patients?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>No — and our agreement codifies it. The Mineral Method is a defined 60-day program. After it ends, the patient returns to you with a written summary. We won't actively market additional IHH services to your patient during the program or for 12 months after without notifying you first. Patients can always self-select into anything we offer, but we won't go after them.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-faq="liability">
+              <span>What's my liability exposure?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Standard for a referral to a licensed provider in good standing under Kentucky law. We exchange certificates of insurance annually. Alicia maintains current NP malpractice. The partnership agreement clearly delineates clinical responsibility (IHH for the program; partner for primary care).</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-faq="staff-time">
+              <span>How much staff time does this take?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>~30 minutes of staff time per patient at intake (form completion, sample shipping logistics, HIPAA authorization) — which is exactly what the $75 reimbursement covers at FMV. Plus a one-time 1-hour onboarding training for the practice. No clinical hours added.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-faq="data">
+              <span>How is patient data protected?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>BAA executed before any PHI flows. Intake forms use HIPAA-compliant infrastructure. All clinical records live in Practice Better (HIPAA-compliant by default). Summary back to your practice is sent via secure channel and only with the patient's explicit HIPAA authorization.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-faq="bad-experience">
+              <span>What if a patient has a bad experience?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>You hear it from us within 24 hours. We have an adverse-event reporting commitment baked into the agreement and a quarterly satisfaction survey shared with you. If anything in the program isn't a fit for a patient (e.g., out-of-scope clinical issue), we refer them back to you — not to a third party.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-faq="cost">
+              <span>What does this cost me?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Zero. You don't pay to be a partner. You're <em>paid</em> for the administrative work your staff performs at intake. The patient pays IHH; we pay you monthly for completed intakes.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-faq="legitimacy">
+              <span>Is HTMA legitimate?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>HTMA is a functional wellness assessment, not an FDA-cleared diagnostic — and we position it that way to patients. Used alongside conventional care, it provides insight into mineral patterns, stress responses, and nutrient status that informs targeted nutritional and lifestyle interventions. Alicia is HTMA-certified and applies it within her NP scope of practice as a clinically-led wellness program — not as standalone diagnosis or treatment.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-faq="explain">
+              <span>How do I explain this to my patients without sounding salesy?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>We give you a 3-line in-office script during onboarding plus a printed brochure to hand patients. Most practice owners tell us the explanation is easier than they expected — it's just "we partnered with a local NP who specializes in this, and I think it could help."</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-faq="ramp">
+              <span>How long until first referrals make sense?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Plan for a soft launch month: train your staff, display materials, identify 2–3 ideal patients. First intake usually happens by week 4. Steady state typically shows up by month 3 once your team has run a couple end-to-end.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-faq="out-of-state">
+              <span>What if my patient lives outside Kentucky?</span>
+              <span class="chev">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Alicia is currently licensed in Kentucky only. The program is available to Kentucky residents only. We're tracking interest from out-of-state practices for a future expansion — let us know if that describes you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. WHO THIS IS FOR (fit filter) -->
+    <section class="partners-section partners-section--alt" data-track-section="partners-fit">
+      <div class="container">
+        <span class="partners-eyebrow">Honest Fit Check</span>
+        <h2>Who this is for.</h2>
+
+        <div class="fit-block">
+          <p>
+            We're selective. The Mineral Method is the right partnership if your practice meets <strong>all</strong> of these:
+          </p>
+          <ul>
+            <li>You serve perinatal or women's wellness patients in Kentucky</li>
+            <li>You're an OB/GYN, midwifery practice, birth center, pelvic floor PT, or perinatal mental health practitioner</li>
+            <li>You currently have under ~10 providers in your practice</li>
+            <li>You don't currently offer HTMA in-house</li>
+            <li>You're committed to a 12-month minimum partnership term</li>
+          </ul>
+          <p style="margin-top: var(--spacing-md); color: var(--color-medium-gray); font-size: var(--font-size-sm);">
+            If that's you, we'd love to talk. If you're not sure whether you're a fit — apply anyway and we'll figure it out together on a 15-min call.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. CTA / INQUIRY FORM -->
+    <section class="partners-section inquiry-section" id="apply" data-track-section="partners-apply">
+      <div class="container">
+        <div class="inquiry-card">
+
+          <!-- Form (default state) -->
+          <div id="inquiry-form-wrap">
+            <span class="partners-eyebrow">Apply to Partner</span>
+            <h2>Tell us about your practice.</h2>
+            <p class="sub">15-minute discovery call to mutually assess fit. No commitment, no obligation.</p>
+
+            <form
+              name="partner-practice-inquiry"
+              method="POST"
+              action="/partners/?success=inquiry"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              class="inquiry-form">
+              <input type="hidden" name="form-name" value="partner-practice-inquiry">
+              <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="practice-name">Practice Name *</label>
+                  <input type="text" id="practice-name" name="practice-name" required placeholder="Your practice or clinic" autocomplete="organization">
+                </div>
+                <div class="form-group">
+                  <label for="contact-name">Your Name *</label>
+                  <input type="text" id="contact-name" name="contact-name" required placeholder="Full name" autocomplete="name">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="role">Your Role *</label>
+                  <input type="text" id="role" name="role" required placeholder="Owner, Director, NP, etc." autocomplete="organization-title">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required placeholder="you@practice.com" autocomplete="email">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="(502) 555-0100" autocomplete="tel">
+                </div>
+                <div class="form-group">
+                  <label for="city">Practice City (KY) *</label>
+                  <input type="text" id="city" name="city" required placeholder="Louisville, Lexington, etc." autocomplete="address-level2">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="practice-type">Practice Type *</label>
+                <select id="practice-type" name="practice-type" required>
+                  <option value="">Select one...</option>
+                  <option value="ob-gyn">OB/GYN</option>
+                  <option value="midwifery">Midwifery / Birth Center</option>
+                  <option value="pelvic-floor-pt">Pelvic Floor PT</option>
+                  <option value="perinatal-mental-health">Perinatal Mental Health</option>
+                  <option value="integrative-functional">Integrative / Functional Medicine</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="patient-volume">Approx. patients seen per week</label>
+                <select id="patient-volume" name="patient-volume">
+                  <option value="">Optional...</option>
+                  <option value="lt-25">Under 25</option>
+                  <option value="25-50">25–50</option>
+                  <option value="50-100">50–100</option>
+                  <option value="100-plus">100+</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="interest">What interests you about a partnership? <span style="font-weight: 400; color: var(--color-medium-gray);">(Optional)</span></label>
+                <textarea id="interest" name="interest" placeholder="e.g., my patients keep asking about HTMA, I want to add a service without adding clinical hours, etc."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" data-track-cta="b2b-inquiry-submit">Apply to Partner</button>
+
+              <div class="inquiry-note">
+                <strong>What happens next?</strong> Alicia will personally review your inquiry within 2 business days and reach out to schedule a 15-min discovery call.
+              </div>
+            </form>
+
+            <p class="inquiry-secondary">
+              Prefer email? Reach us at
+              <a href="mailto:hello@intentionholistichealth.com?subject=Partner%20Practice%20Inquiry&body=Hi%20Alicia%2C%0A%0AI%27m%20interested%20in%20learning%20more%20about%20the%20Mineral%20Method%20partnership%20for%20my%20practice.%0A%0AMy%20practice%3A%20%0AMy%20role%3A%20%0AMy%20city%3A%20%0A%0AThanks%21"
+                 data-track-cta="b2b-email">hello@intentionholistichealth.com</a>
+            </p>
+          </div>
+
+          <!-- Success state -->
+          <div id="inquiry-success" class="inquiry-success" style="display:none;">
+            <h3>Thank you — application received.</h3>
+            <p>Alicia will personally review your inquiry and reach out within <strong>2 business days</strong> to schedule a 15-minute discovery call.</p>
+            <p style="margin-top: var(--spacing-md); font-size: var(--font-size-sm); color: var(--color-medium-gray);">
+              In the meantime, feel free to <a href="/htma.html" style="color: var(--color-sage-dark);">learn more about HTMA</a> or <a href="/about.html" style="color: var(--color-sage-dark);">meet Alicia</a>.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (matches site pattern) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logos">
+            <a href="/" aria-label="Go to homepage"><img src="/images/logo-small.webp" alt="Intention Holistic Health" class="footer-logo" width="120" height="120" loading="lazy"></a>
+            <img src="/images/bhpcc-seal-small.webp" alt="Board Certified Health Professional" class="footer-seal" width="63" height="59" title="Board of Holistic Practitioners Certification Council - Certified Health & Wellness Practitioner" loading="lazy">
+          </div>
+          <p class="footer-tagline">
+            Helping Kentucky women prepare for pregnancy and rebuild after birth—foundations first.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/intentionholistichealth" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61552393014468" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/alicia-harrison-aprn-fnp-c-23b656224/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Quick Links</h3>
+          <a href="/about.html" class="footer-link">About</a>
+          <a href="/blog/" class="footer-link">Blog</a>
+          <a href="/services/lab-review.html" class="footer-link">Sessions</a>
+          <a href="/services/" class="footer-link">Packages and Programs</a>
+          <a href="/htma.html" class="footer-link">What is HTMA?</a>
+          <a href="/contact.html" class="footer-link">Contact</a>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Resources</h3>
+          <a href="/partners/" class="footer-link">For Practices</a>
+          <a href="https://us.fullscript.com/welcome/intentionholistichealth" class="footer-link" data-fullscript title="Opens Fullscript in a new tab">Supplements</a>
+          <a href="https://my.practicebetter.io/#/signin" class="footer-link" data-portal-signin title="Opens Patient Portal in a new tab">Patient Portal</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-disclaimer">
+          Telehealth services for Kentucky residents only. This website does not provide medical advice. All content is for informational purposes only.
+        </p>
+        <p class="footer-copyright">
+          &copy; <span class="current-year">2026</span> Intention Holistic Health, PLLC. All rights reserved.
+        </p>
+        <div class="footer-legal-links">
+          <a href="/legal/terms.html">Terms & Conditions</a>
+          <a href="/legal/privacy.html">Privacy Policy</a>
+          <a href="/legal/disclaimer.html">Medical Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+
+  <!-- Partners page: success-state + FAQ accordion -->
+  <script>
+    (function() {
+      // Success state after Netlify form submission redirect
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('success') === 'inquiry') {
+        var formWrap = document.getElementById('inquiry-form-wrap');
+        var success = document.getElementById('inquiry-success');
+        if (formWrap && success) {
+          formWrap.style.display = 'none';
+          success.style.display = 'block';
+        }
+        // GA4 conversion event
+        if (typeof gtag === 'function') {
+          gtag('event', 'b2b_inquiry_submit', {
+            event_category: 'partner_funnel',
+            event_label: 'partner-practice-inquiry'
+          });
+        }
+        // Scroll the success message into view
+        setTimeout(function() {
+          var anchor = document.getElementById('apply');
+          if (anchor) anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+
+      // FAQ accordion
+      var questions = document.querySelectorAll('.faq-question');
+      questions.forEach(function(q) {
+        q.addEventListener('click', function() {
+          var expanded = q.getAttribute('aria-expanded') === 'true';
+          q.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+
+          // Fire GA4 event on expand
+          if (!expanded && typeof gtag === 'function') {
+            gtag('event', 'faq_expand', {
+              event_category: 'partner_funnel',
+              event_label: q.getAttribute('data-faq') || 'unknown'
+            });
+          }
+        });
+      });
+    })();
+  </script>
+
+  <!-- Cookie Consent Banner (matches site pattern) -->
+  <div class="cookie-consent" id="cookie-consent" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-description">
+    <div class="cookie-consent-inner">
+      <div class="cookie-consent-text">
+        <h4 id="cookie-title">Your Privacy Matters</h4>
+        <p id="cookie-description">We use cookies to analyze site traffic and improve your experience. Your data is never sold. <a href="/legal/privacy.html">Privacy Policy</a></p>
+      </div>
+      <div class="cookie-consent-buttons">
+        <button class="cookie-btn cookie-btn-accept" id="cookie-accept">Accept</button>
+        <button class="cookie-btn cookie-btn-decline" id="cookie-decline">Decline</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var banner = document.getElementById('cookie-consent');
+      var acceptBtn = document.getElementById('cookie-accept');
+      var declineBtn = document.getElementById('cookie-decline');
+      var consent = localStorage.getItem('cookie_consent');
+      if (!consent) {
+        setTimeout(function() { banner.classList.add('show'); }, 1000);
+      }
+      acceptBtn.addEventListener('click', function() {
+        localStorage.setItem('cookie_consent', 'accepted');
+        gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        banner.classList.remove('show');
+      });
+      declineBtn.addEventListener('click', function() {
+        localStorage.setItem('cookie_consent', 'declined');
+        banner.classList.remove('show');
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -59,6 +59,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- B2B Partner Program -->
+  <url>
+    <loc>https://www.intentionholistichealth.com/partners/</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Landing Pages -->
   <url>
     <loc>https://www.intentionholistichealth.com/supplement-guide.html</loc>

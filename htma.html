@@ -90,8 +90,9 @@
   <link rel="preload" href="/fonts/Poppins-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/PlayfairDisplay-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/PlayfairDisplay-Italic-subset.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/images/htma-what-is-mobile.webp" as="image" media="(max-width: 767px)">
-  <link rel="preload" href="/images/htma-what-is.webp" as="image" media="(min-width: 768px)">
+  <!-- Preload the actual hero image (htma-results-laptop), not the below-fold "What is HTMA" image -->
+  <link rel="preload" href="/images/htma-results-laptop-mobile.webp" as="image" media="(max-width: 767px)">
+  <link rel="preload" href="/images/htma-results-laptop.webp" as="image" media="(min-width: 768px)">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/htma.css">
@@ -183,7 +184,8 @@
                          /images/htma-results-laptop.webp 603w"
                  sizes="(max-width: 767px) 100vw, 475px"
                  alt="HTMA Results Chart showing mineral analysis"
-                 width="603" height="304">
+                 width="603" height="304"
+                 fetchpriority="high">
           </div>
         </div>
       </div>
@@ -213,7 +215,7 @@
                  alt="HTMA Hair Tissue Mineral Analysis Testing"
                  class="htma-intro-image"
                  width="952" height="975"
-                 fetchpriority="high">
+                 loading="lazy">
           </div>
         </div>
       </div>

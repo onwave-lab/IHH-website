@@ -6,15 +6,9 @@ This file contains IDs, code snippets, hex values, detailed procedures, checklis
 
 ## Notion IDs
 
-### Database IDs
+Workspace identifiers (database IDs, user IDs, callout block ID) live in **`.claude-local-ids.md`** — a gitignored file at the repo root. This repo is public, so we keep identifiers out of committed docs. The IDs aren't exploitable without `NOTION_TOKEN` (also gitignored, in `.env`), but exposing them leaks workspace structure unnecessarily.
 
-| Database | ID |
-|----------|-----|
-| Session Notes | `2e277f92-bf69-80ed-a966-c331880b4dc2` |
-| Tasks & Projects | `2e277f92-bf69-80de-aab2-fdc2e1e8613c` |
-| Accounts Inventory | `2e277f92-bf69-802e-88c7-f0b2b097c011` |
-| Dashboard Page (AI Content System) | `2df77f92-bf69-808a-80d5-e5929cf6160b` |
-| Last Updated Callout Block | `2e277f92-bf69-81fd-b227-e17198f29b1d` |
+If `.claude-local-ids.md` is missing on a fresh clone, regenerate it via `notion-cli search ... --databases` and `curl https://api.notion.com/v1/users` — the file documents the lookup commands.
 
 ---
 
@@ -23,7 +17,9 @@ This file contains IDs, code snippets, hex values, detailed procedures, checklis
 ### Last Updated Callout - Update Command
 
 ```bash
-curl -X PATCH "https://api.notion.com/v1/blocks/2e277f92-bf69-81fd-b227-e17198f29b1d" \
+# CALLOUT_BLOCK_ID and NOTION_TOKEN must be set in environment
+# (CALLOUT_BLOCK_ID lives in .claude-local-ids.md)
+curl -X PATCH "https://api.notion.com/v1/blocks/${CALLOUT_BLOCK_ID}" \
   -H "Authorization: Bearer ${NOTION_TOKEN}" \
   -H "Content-Type: application/json" \
   -H "Notion-Version: 2022-06-28" \

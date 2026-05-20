@@ -3106,32 +3106,11 @@ function injectArticleSchema(post) {
   scriptElement.textContent = JSON.stringify(schema);
   document.head.appendChild(scriptElement);
 
-  // Inject FAQPage schema if post has FAQs
-  if (post.faqs && post.faqs.length > 0) {
-    const existingFaqSchema = document.getElementById('faq-schema');
-    if (existingFaqSchema) existingFaqSchema.remove();
-
-    const faqSchema = {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      'mainEntity': post.faqs.map(function(faq) {
-        return {
-          '@type': 'Question',
-          'name': faq.question,
-          'acceptedAnswer': {
-            '@type': 'Answer',
-            'text': faq.answer
-          }
-        };
-      })
-    };
-
-    const faqScriptElement = document.createElement('script');
-    faqScriptElement.type = 'application/ld+json';
-    faqScriptElement.id = 'faq-schema';
-    faqScriptElement.textContent = JSON.stringify(faqSchema);
-    document.head.appendChild(faqScriptElement);
-  }
+  // FAQPage schema removed 2026-05-19: Google retired FAQ rich results 2026-05-07.
+  // Visible FAQ Q&A still renders (see appendBlogFAQ below) — only the JSON-LD is suppressed.
+  // Remove any stale FAQ schema from previous renders.
+  const existingFaqSchema = document.getElementById('faq-schema');
+  if (existingFaqSchema) existingFaqSchema.remove();
 }
 
 // -----------------------------------------

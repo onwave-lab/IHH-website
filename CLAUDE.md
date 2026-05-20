@@ -221,7 +221,14 @@ The `.mcp.json` file configures the Notion integration. It uses environment vari
 
 ### Database IDs Reference
 
-See `CLAUDE-REFERENCE.md` for all Notion database IDs.
+Notion database IDs, user IDs, and the Last-Updated callout block ID live in **`.claude-local-ids.md`** at the repo root. This file is **gitignored** because the repo is public — IDs leak workspace structure even though they aren't directly exploitable without `NOTION_TOKEN`.
+
+On a fresh clone, this file will be missing. To regenerate it:
+1. Run `notion-cli search "Session Notes" --databases` and similar for "Tasks", "Accounts Inventory", "AI Content System" — copy the IDs into the file.
+2. Run `curl -s "https://api.notion.com/v1/users" -H "Authorization: Bearer $NOTION_TOKEN" -H "Notion-Version: 2022-06-28"` to get user IDs.
+3. The file itself documents the schema with copy-pasteable headings — use `.claude-local-ids.md` from any synced device or recreate from scratch.
+
+`CLAUDE-REFERENCE.md` (committed) still contains the property formats, status options, and curl snippets — only the IDs themselves were moved.
 
 ---
 

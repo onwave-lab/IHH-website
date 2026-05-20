@@ -1,15 +1,23 @@
-// Edge Function to inject dynamic Open Graph tags for blog posts
-// This ensures social media crawlers (Facebook, LinkedIn, Twitter) see correct metadata
+// Edge Function to inject dynamic Open Graph tags AND the LCP hero image for blog posts.
+// Two jobs:
+//   1. Inject correct OG/Twitter/canonical meta tags so social crawlers see per-post metadata.
+//   2. Inject a <link rel="preload" as="image"> for the post's hero image AND populate the
+//      previously-empty <img> in post.html so the browser can paint the LCP element before
+//      blog.js (281 KB) finishes parsing. This cuts LCP on /blog/post.html significantly.
 
 const SITE_URL = 'https://www.intentionholistichealth.com';
 
-// Blog post metadata - keep in sync with js/blog.js
-// Only includes fields needed for OG tags
+// Blog post metadata - keep in sync with js/blog.js (slug, title, excerpt, image fields).
 const BLOG_POSTS = {
+  '2026-04-08-nontoxic-swaps-hormone-health': {
+    title: 'The Complete Guide to Nontoxic Swaps for Hormone Health',
+    excerpt: 'A room-by-room guide to nontoxic swaps that may support hormone health. Practical, budget-friendly, and designed to help you start where it matters most.',
+    image: '/images/blog/nontoxic-swaps-hormone-health.webp'
+  },
   '2026-03-27-why-cravings-feel-so-intense': {
     title: 'Why Cravings Feel So Intense (And What Actually Happens When You Switch to Whole Foods)',
     excerpt: 'Wondering why cravings are so hard to resist? Learn what actually happens to your taste buds, brain, blood sugar, and gut when you switch to a whole foods diet — and why it gets easier.',
-    image: '/images/blog/placeholder-cravings.webp'
+    image: '/images/blog/why-cravings-feel-so-intense.webp'
   },
   '2026-03-11-are-you-eating-enough': {
     title: 'Are You Eating Enough? Signs of Under-Eating Women Often Miss',
@@ -110,12 +118,16 @@ export default async function handler(request, context) {
   const response = await context.next();
   const html = await response.text();
 
-  // Build the canonical URL
+  // Build the canonical URL and image URLs
   const canonicalUrl = `${SITE_URL}/blog/post.html?post=${postSlug}`;
   const imageUrl = `${SITE_URL}${post.image}`;
+  // Mobile variant matches the convention used in js/blog.js (post.image.replace('.webp', '-mobile.webp'))
+  const mobileImagePath = post.image.replace(/\.webp$/, '-mobile.webp');
 
-  // Create the OG meta tags to inject
-  const ogTags = `
+  // Create the OG meta tags + LCP hero preload to inject in <head>.
+  // The preload uses imagesrcset/imagesizes so the browser fetches the mobile variant on small
+  // viewports and the full-size on larger ones — matching what blog.js eventually renders.
+  const headInjection = `
     <!-- Dynamic OG Tags (injected by Edge Function) -->
     <meta property="og:title" content="${escapeHtml(post.title)}">
     <meta property="og:description" content="${escapeHtml(post.excerpt)}">
@@ -129,7 +141,9 @@ export default async function handler(request, context) {
     <meta name="twitter:image" content="${imageUrl}">
     <meta name="description" content="${escapeHtml(post.excerpt)}">
     <link rel="canonical" href="${canonicalUrl}">
-    <!-- End Dynamic OG Tags -->
+    <!-- LCP hero image preload (injected by Edge Function) -->
+    <link rel="preload" as="image" href="${mobileImagePath}" imagesrcset="${mobileImagePath} 500w, ${post.image} 1280w" imagesizes="100vw">
+    <!-- End Dynamic Tags -->
 `;
 
   // Remove any existing OG tags and meta description to avoid duplicates
@@ -139,8 +153,18 @@ export default async function handler(request, context) {
     .replace(/<meta name="description"[^>]*>/gi, '')
     .replace(/<link rel="canonical"[^>]*>/gi, '');
 
-  // Inject the new OG tags right after <head>
-  modifiedHtml = modifiedHtml.replace(/<head>/i, `<head>${ogTags}`);
+  // Inject the new OG tags + preload right after <head>
+  modifiedHtml = modifiedHtml.replace(/<head>/i, `<head>${headInjection}`);
+
+  // Populate the empty hero <img> in post.html so the LCP element is discoverable
+  // before blog.js executes. The img attributes mirror what js/blog.js renders at runtime
+  // (see js/blog.js around line 3436) — when blog.js later overwrites this via innerHTML,
+  // the browser hits cache and there's no second network fetch.
+  const heroImgHtml = `<img src="${post.image}" srcset="${mobileImagePath} 500w, ${post.image} 1280w" alt="${escapeHtml(post.title)}" width="1280" height="720" fetchpriority="high">`;
+  modifiedHtml = modifiedHtml.replace(
+    /<img src="" alt="" fetchpriority="high">/,
+    heroImgHtml
+  );
 
   // Also update the <title> tag
   modifiedHtml = modifiedHtml.replace(

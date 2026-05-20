@@ -61,39 +61,7 @@
   }
   </script>
 
-  <!-- JSON-LD Structured Data: FAQ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What does HTMA test for?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "HTMA tests for over 35 minerals including calcium, magnesium, sodium, potassium, zinc, copper, and toxic metals like lead, mercury, and aluminum."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is HTMA accurate?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "When performed by a CLIA-certified laboratory, HTMA is a reliable screening tool for assessing mineral status and metabolic patterns over time."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is the hair sample collected?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A small sample of hair (about 1 tablespoon) is cut from the nape of the neck, close to the scalp. The process is painless and discreet."
-        }
-      }
-    ]
-  }
-  </script>
+  <!-- FAQPage schema removed 2026-05-19: Google retired FAQ rich results 2026-05-07. Visible FAQ remains as plain Q&A markup below. -->
 
   <title>HTMA - Hair Tissue Mineral Analysis | Intention Holistic Health</title>
 
@@ -122,8 +90,9 @@
   <link rel="preload" href="/fonts/Poppins-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/PlayfairDisplay-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/PlayfairDisplay-Italic-subset.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/images/htma-what-is-mobile.webp" as="image" media="(max-width: 767px)">
-  <link rel="preload" href="/images/htma-what-is.webp" as="image" media="(min-width: 768px)">
+  <!-- Preload the actual hero image (htma-results-laptop), not the below-fold "What is HTMA" image -->
+  <link rel="preload" href="/images/htma-results-laptop-mobile.webp" as="image" media="(max-width: 767px)">
+  <link rel="preload" href="/images/htma-results-laptop.webp" as="image" media="(min-width: 768px)">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/htma.css">
@@ -215,7 +184,8 @@
                          /images/htma-results-laptop.webp 603w"
                  sizes="(max-width: 767px) 100vw, 475px"
                  alt="HTMA Results Chart showing mineral analysis"
-                 width="603" height="304">
+                 width="603" height="304"
+                 fetchpriority="high">
           </div>
         </div>
       </div>
@@ -245,7 +215,7 @@
                  alt="HTMA Hair Tissue Mineral Analysis Testing"
                  class="htma-intro-image"
                  width="952" height="975"
-                 fetchpriority="high">
+                 loading="lazy">
           </div>
         </div>
       </div>

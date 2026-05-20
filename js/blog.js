@@ -47,7 +47,7 @@ const BLOG_POSTS = [
     content: `
 # The Complete Guide to Nontoxic Swaps for Hormone Health
 
-<div class="blog-summary-note">A room-by-room guide to nontoxic swaps that may support hormone health. Practical, budget-friendly, and designed to help you start where it matters most.</div>
+<div class="blog-summary-note"><strong>Quick answer:</strong> The endocrine disruptors most worth swapping out first are phthalates (in synthetic fragrance), parabens (in cosmetics and lotions), BPA/BPS (in plastics and can linings), and PFAS (in nonstick cookware) — start in the bathroom and kitchen, swap one item at a time, and skip the pressure to throw everything out at once.</div>
 
 ## Why I Wrote This Guide
 
@@ -330,7 +330,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     content: `
 # Why Cravings Feel So Intense (And What Actually Happens When You Switch to Whole Foods)
 
-<div class="blog-summary-note">Wondering why cravings are so hard to resist when you\u2019re trying to eat better? This article explores the real science behind what happens to your taste buds, dopamine signaling, blood sugar, and gut microbiome when you switch to a whole foods diet, and why the struggle is temporary.</div>
+<div class="blog-summary-note"><strong>Quick answer:</strong> Cravings spike when you switch to whole foods because dopamine drops as the reward hits from ultra-processed foods fade, blood sugar destabilizes while your body re-learns balance, and gut bacteria that thrived on sugar fight to stay alive. The intensity is temporary \u2014 usually 2 to 4 weeks \u2014 and softens as your taste buds reset and mineral reserves rebuild.</div>
 
 You know you should probably eat better. You have heard it, read it, maybe even tried it. But when it is 6:00 PM and you are exhausted, the idea of washing, chopping, and cooking a pile of vegetables feels like a lot. The drive-through is right there. The frozen pizza takes twelve minutes.
 
@@ -520,7 +520,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     content: `
 # Are You Eating Enough?
 
-<div class="blog-summary-note">Many women aren\u2019t intentionally dieting, but their daily food intake may not be enough to support normal hormonal, metabolic, and cellular functions. This article explores how under-eating develops, what it looks like in the body, and what small changes may help.</div>
+<div class="blog-summary-note"><strong>Quick answer:</strong> Many women under-eat without realizing it because the calorie targets in food trackers rarely account for the added demand of stress, training, breastfeeding, or simply having a thyroid that's been worked hard. Common signs that food intake is too low: disrupted cycles, cold hands and feet, hair shedding, persistent exhaustion, and waking between 2 and 4 AM.</div>
 
 *"Are you eating enough?"*
 
@@ -720,7 +720,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     content: `
 # Are You Depleted? Signs to Address Before Pregnancy
 
-<div class="blog-summary-note">Many women enter pregnancy already running low on essential minerals and nutrients\u2014without knowing it. This article explores common signs of depletion that are easy to dismiss, why they matter for preconception health, and what steps you can take to understand your body\u2019s reserves before conception.</div>
+<div class="blog-summary-note"><strong>Quick answer:</strong> Most women enter pregnancy already low on key minerals because everyday demands \u2014 stress, caffeine, monthly cycles, processed foods \u2014 drain reserves faster than the average diet replaces them. The early signs are easy to dismiss: cold hands, hair shedding, low morning energy, frequent colds, brittle nails. A foundations check before conception is the simplest place to start.</div>
 
 You\u2019re doing everything you can to prepare. You\u2019re eating well, staying active, taking a prenatal. But something still feels off.
 
@@ -929,7 +929,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     content: `
 # Why Protein *AND* Fiber Matter More Than Most Women Realize
 
-<div class="blog-summary-note">Two of the common nutritional gaps in women\u2019s daily eating have a direct impact on blood sugar stability, hormone balance, gut health, and energy. This article breaks down why protein and fiber matter for fertility and postpartum recovery, how much research suggests women may benefit from, and simple ways to build them into meals without overcomplicating your kitchen.</div>
+<div class="blog-summary-note"><strong>Quick answer:</strong> Most women fall short on both protein (a useful target is roughly 0.7 to 1.0 grams per pound of bodyweight) and fiber (25 to 35 grams per day), and the gap shows up directly in blood sugar, hormone clearance, satiety, and gut health. Adding 20 to 30 grams of protein at breakfast and a fiber source at every meal moves more dials than most supplements do.</div>
 
 You\u2019re eating better. You\u2019re cooking more at home, reading labels, maybe even taking a handful of supplements you heard about online. You\u2019re doing the things you\u2019ve been told to do.
 
@@ -1151,7 +1151,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
 - [References](#references)
 - [Frequently Asked Questions](#faqs)
 
-<div class="blog-summary-note">HTMA (Hair Tissue Mineral Analysis) is a functional screening tool that measures mineral levels stored in your tissues over a 3\u20134 month window\u2014something standard blood work doesn\u2019t capture. For women planning pregnancy or recovering postpartum, HTMA can reveal mineral depletion patterns that routine labs may miss. This guide covers what HTMA measures, how it compares to blood work, key minerals for maternal health, and how to get started with testing.</div>
+<div class="blog-summary-note"><strong>Quick answer:</strong> Hair Tissue Mineral Analysis (HTMA) measures the minerals your body has actually stored and used over the last 3 to 4 months \u2014 something standard blood work does not show. For women planning pregnancy or recovering postpartum, this can reveal depletion patterns in magnesium, zinc, sodium, potassium, and copper that often explain symptoms your blood labs called "normal."</div>
 
 If you\u2019re planning for pregnancy or in early motherhood and wondering why you still don\u2019t feel like yourself despite \u201cnormal\u201d labs, this guide is for you.
 
@@ -1472,6 +1472,8 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     },
     content: `
 # Things I Do to Make Home Cooking More Sustainable
+
+<div class="blog-summary-note"><strong>Quick answer:</strong> Sustainable home cooking comes down to three habits: cook in batches once or twice a week, keep five or six rotating staples in stock, and use one base ingredient across multiple meals. The goal isn't perfection — it's removing the daily decision that makes cooking feel hard.</div>
 ## Physically, Mentally, & Financially—Without Spending a Whole Day Meal Prepping
 
 I've always enjoyed being in the kitchen. Cooking has never really felt like one more thing I had to do "right."
@@ -1639,6 +1641,8 @@ Saksena, M. J., Okrent, A. M., Anekwe, T. D., Cho, C., Dicken, C., Effland, A., 
     categories: ['wellness', 'foundations'],
     content: `
 # Is It Safe to Use ChatGPT Health? A Patient-Centered Look at Using AI for Your Health
+
+<div class="blog-summary-note"><strong>Quick answer:</strong> ChatGPT Health is useful for understanding health information, but it is not safe to use as a replacement for clinical care. It is not HIPAA-covered, it is not a licensed medical provider, and OpenAI explicitly states it should not be used for diagnosis or treatment. Use it as a learning tool, not a decision-making tool — and bring questions back to a clinician you trust.</div>
 
 With the launch of ChatGPT Health in early January 2026, millions of people now have access to a dedicated AI experience for health and wellness questions. Unlike the general ChatGPT many people were already familiar with, this version allows users to connect personal health data—including medical records and wellness app information—so that responses can be generated in the context of an individual's health information rather than generalized internet data ([OpenAI, 2026](https://help.openai.com/en/articles/20001036-what-is-chatgpt-health)).
 
@@ -1845,6 +1849,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     slug: '2025-01-15-minerals-from-food',
     title: '"Can\'t I Get Enough Minerals From Food?"',
     date: '2025-01-15',
+    dateModified: '2026-05-19',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Food should always be the foundation. But for many women today, food alone is not reliably sufficient to meet mineral needs—especially during seasons of stress, pregnancy, postpartum, or long-term depletion.',
     image: '/images/blog/minerals-from-food.webp',
@@ -1853,6 +1858,8 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     categories: ['wellness', 'foundations'],
     content: `
 # "Can't I Get Enough Minerals From Food?"
+
+<div class="blog-summary-note"><strong>Quick answer:</strong> In theory, yes — but in practice, no for most women. Soil depletion, food processing, and the everyday demands of stress, caffeine, and reproductive cycles mean diet alone often can't fully restore mineral reserves. Food remains the foundation, but targeted supplemental support is frequently needed during depletion, postpartum recovery, or pregnancy preparation.</div>
 
 This is one of the most reasonable—and important—questions a woman can ask when she starts learning about mineral health.
 
@@ -2113,6 +2120,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     slug: '2025-01-09-labs-normal-feel-off',
     title: 'Why Your Labs Came Back "Normal" (But You Still Feel Off)',
     date: '2025-01-09',
+    dateModified: '2026-05-19',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'You got your blood work done, waited for results, and everything looks "normal." But you don\'t feel normal. Your symptoms are real—here\'s why standard labs might not tell the whole story.',
     image: '/images/blog/labs-normal-feel-off.webp',
@@ -2121,6 +2129,8 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     categories: ['wellness', 'foundations'],
     content: `
 # Why Your Labs Came Back "Normal" (But You Still Feel Off)
+
+<div class="blog-summary-note"><strong>Quick answer:</strong> Standard lab reference ranges are designed to flag disease, not optimize health, so "normal" results can still mask functional imbalances — borderline thyroid, low-normal iron, subtle mineral depletion, suboptimal vitamin D. Feeling off when labs look fine usually means the body is compensating, not thriving. A functional review reads the same labs against optimal ranges, not just the disease cutoff.</div>
 
 It is a scenario I see constantly in my practice.
 
@@ -2208,6 +2218,7 @@ Alicia
     slug: '2024-12-15-holiday-wellness',
     title: 'Holiday Wellness for Women: Staying Grounded Without Extremes',
     date: '2024-12-15',
+    dateModified: '2026-05-19',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'The holidays tend to bring a lot to the surface. Not because anyone is doing something wrong — but because life gets fuller all at once.',
     image: '/images/blog/holiday-wellness.webp',
@@ -2216,6 +2227,8 @@ Alicia
     categories: ['wellness', 'foundations'],
     content: `
 # Holiday Wellness for Women: Staying Grounded Without Extremes
+
+<div class="blog-summary-note"><strong>Quick answer:</strong> Staying grounded through the holidays doesn't require strict rules or guilt — it requires anchoring a few non-negotiables: protein at most meals, daylight before screens in the morning, a magnesium-supportive evening routine, and enough sleep to recover from the rest. Everything else can flex around the season.</div>
 
 The holidays tend to bring a lot to the surface.
 
@@ -2324,6 +2337,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     slug: '2024-12-01-unmedicated-birth',
     title: 'How I Prepared for an Unmedicated Birth',
     date: '2024-12-01',
+    dateModified: '2026-05-19',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'My personal story, not medical advice. Preparing for an unmedicated birth wasn\'t about perfection—it was about intention.',
     image: '/images/blog/unmedicated-birth-new.webp',
@@ -2332,6 +2346,8 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     categories: ['preconception'],
     content: `
 # How I Prepared for an Unmedicated Birth
+
+<div class="blog-summary-note"><strong>Quick answer:</strong> Preparing for an unmedicated birth came down to four buckets for me — physical (mobility, pelvic prep, mineral status), mental (a birth team I trusted and a defined plan B), nutritional (protein, electrolytes, hydration, mineral support), and educational (knowing what to expect at each stage of labor). This is what I focused on personally, not a clinical prescription.</div>
 
 *My personal story, not medical advice*
 
@@ -2459,6 +2475,7 @@ Alicia
     slug: '2024-11-15-body-first-home',
     title: 'Your Body Is the First Home: Returning to the Foundations That Support Fertility and Pregnancy Health',
     date: '2024-11-15',
+    dateModified: '2026-05-19',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'You don\'t need perfection to prepare for pregnancy — you need foundations.',
     image: '/images/blog/body-first-home-new.webp',
@@ -2467,6 +2484,8 @@ Alicia
     categories: ['preconception', 'foundations'],
     content: `
 # Your Body Is the First Home: Returning to the Foundations That Support Fertility and Pregnancy Health
+
+<div class="blog-summary-note"><strong>Quick answer:</strong> Your body is the first environment your future or current child experiences, and the foundations that support fertility, pregnancy, and postpartum recovery are the same set: mineral sufficiency, a regulated nervous system, real food, and stable sleep. Build the home first — supplements and protocols layer on top of that foundation, not in place of it.</div>
 
 Many women feel overwhelmed when they begin thinking about pregnancy. Some wonder whether they're behind, while others don't realize that preparation even matters until the desire for a baby becomes real.
 
@@ -2573,6 +2592,7 @@ Alicia
     slug: '2024-05-15-mental-health-pcos',
     title: 'May is Mental Health Awareness Month',
     date: '2024-05-15',
+    dateModified: '2026-05-19',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Women with PCOS experience anxiety and depression 3x more often than women without the condition. Let\'s talk about practical ways to support your mental health.',
     image: '/images/blog/mental-health-pcos.webp',
@@ -2581,6 +2601,8 @@ Alicia
     categories: ['pcos', 'wellness'],
     content: `
 # May is Mental Health Awareness Month
+
+<div class="blog-summary-note"><strong>Quick answer:</strong> Mental health and hormone health are inseparable, and for women with PCOS the overlap is often missed. Anxiety, mood swings, and depression patterns frequently track insulin resistance, blood sugar instability, and inflammation — not just neurotransmitter imbalance. Addressing the metabolic foundations often addresses the mood symptoms.</div>
 
 May is Mental Health Month—a topic that is personally meaningful to me. The statistics are concerning: women with PCOS face an 8.5x higher risk of suicide attempt than those without the condition and experience anxiety and depression 3x more often than women without PCOS. Understanding the [gut-brain connection](/blog/post.html?post=2024-10-01-gut-health-pcos) is key to understanding why.
 
@@ -2653,6 +2675,7 @@ Want more tips? Download the complimentary **Holistic Habits Checklist** for add
     slug: '2024-10-15-probiotic-smoothie-bowl',
     title: 'Recipe: Probiotic-Rich Smoothie Bowl',
     date: '2024-10-15',
+    dateModified: '2026-05-19',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Looking for a delicious and nutritious way to start your day? This smoothie bowl is packed with fiber, protein, and gut-friendly ingredients.',
     image: '/images/blog/smoothie-bowl-square.webp',
@@ -2662,6 +2685,8 @@ Want more tips? Download the complimentary **Holistic Habits Checklist** for add
     categories: ['recipes', 'breakfast', 'pcos'],
     content: `
 # Recipe: Probiotic-Rich Smoothie Bowl
+
+<div class="blog-summary-note"><strong>Quick answer:</strong> A probiotic-rich smoothie bowl built around kefir or coconut yogurt, prebiotic-rich berries, and seeds — designed to support gut health, hormone clearance, and morning blood sugar stability. Takes under 10 minutes and travels well as a quick breakfast or post-workout meal.</div>
 
 Looking for a delicious and nutritious way to start your day? Try this refreshing Probiotic-Rich Smoothie Bowl packed with fiber, protein, and gut-friendly ingredients like coconut water, kefir, yogurt, flax seeds, and hemp hearts. This smoothie bowl is not only tasty but also supports digestive health and provides sustained energy throughout the morning. Smoothies are my favorite way to get in extra nutrients because you can "hide" so much in them! Frozen cauliflower in a smoothie?? Trust me, you can't even taste it, and if you don't like veggies, give it a try! Trying to incorporate adaptogens in your diet? Smoothies are a great way to hide powders, like ashwagandha, while still getting that adrenal support you're looking for. My favorite thing about smoothies is you get to tailor it to your preferences! Play around with it, incorporate new things, tailor the ratios as you need.
 
@@ -2723,6 +2748,7 @@ Intention Holistic Health
     slug: '2024-10-01-gut-health-pcos',
     title: 'Gut Health and PCOS: The Missing Piece of the Puzzle',
     date: '2024-10-01',
+    dateModified: '2026-05-19',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'The trillions of microorganisms in your gut play crucial roles in hormone regulation and inflammation control. Understanding this connection is key to managing PCOS.',
     image: '/images/blog/gut-health-pcos-new.webp',
@@ -2731,6 +2757,8 @@ Intention Holistic Health
     categories: ['pcos', 'foundations'],
     content: `
 # Gut Health and PCOS: The Missing Piece of the Puzzle
+
+<div class="blog-summary-note"><strong>Quick answer:</strong> PCOS is increasingly understood as a downstream signal of gut dysfunction, not just a hormonal disorder. Imbalanced gut bacteria drive insulin resistance, estrogen recycling, and inflammation — the same mechanisms that produce androgen excess, irregular cycles, and stubborn weight patterns. Healing the gut is often the missing first step.</div>
 
 You might wonder about the connection between your digestive system and PCOS, but this relationship proves crucial for reclaiming vitality when managing this condition.
 
@@ -2826,6 +2854,7 @@ Clinical services at Intention Holistic Health PLLC serve Kentucky residents onl
     slug: '2024-09-15-hormone-friendly-granola',
     title: 'Recipe: Hormone-Friendly Granola',
     date: '2024-09-15',
+    dateModified: '2026-05-19',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'An all-time-favorite snack: granola that is both delicious and packed with hormone-friendly ingredients to support health and wellbeing from the inside out.',
     image: '/images/blog/granola.webp',
@@ -2834,6 +2863,8 @@ Clinical services at Intention Holistic Health PLLC serve Kentucky residents onl
     categories: ['recipes', 'breakfast', 'pcos'],
     content: `
 # Recipe: Hormone-Friendly Granola
+
+<div class="blog-summary-note"><strong>Quick answer:</strong> A grain-free granola built around healthy fats, low-sugar sweeteners, and seeds that support hormone balance — designed to stabilize blood sugar through the morning without the insulin spike of traditional granola. Bakes in 25 minutes and keeps for two weeks.</div>
 
 An all-time-favorite snack: granola that is both delicious and packed with hormone-friendly ingredients to support health and wellbeing from the inside out.
 
@@ -3047,7 +3078,7 @@ function injectArticleSchema(post) {
     'description': (post.schema && post.schema.description) ? post.schema.description : post.excerpt,
     'image': 'https://www.intentionholistichealth.com' + post.image,
     'datePublished': post.date,
-    'dateModified': post.date,
+    'dateModified': post.dateModified || post.date,
     'author': {
       '@type': 'Person',
       'name': 'Alicia Harrison',
@@ -3075,32 +3106,11 @@ function injectArticleSchema(post) {
   scriptElement.textContent = JSON.stringify(schema);
   document.head.appendChild(scriptElement);
 
-  // Inject FAQPage schema if post has FAQs
-  if (post.faqs && post.faqs.length > 0) {
-    const existingFaqSchema = document.getElementById('faq-schema');
-    if (existingFaqSchema) existingFaqSchema.remove();
-
-    const faqSchema = {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      'mainEntity': post.faqs.map(function(faq) {
-        return {
-          '@type': 'Question',
-          'name': faq.question,
-          'acceptedAnswer': {
-            '@type': 'Answer',
-            'text': faq.answer
-          }
-        };
-      })
-    };
-
-    const faqScriptElement = document.createElement('script');
-    faqScriptElement.type = 'application/ld+json';
-    faqScriptElement.id = 'faq-schema';
-    faqScriptElement.textContent = JSON.stringify(faqSchema);
-    document.head.appendChild(faqScriptElement);
-  }
+  // FAQPage schema removed 2026-05-19: Google retired FAQ rich results 2026-05-07.
+  // Visible FAQ Q&A still renders (see appendBlogFAQ below) — only the JSON-LD is suppressed.
+  // Remove any stale FAQ schema from previous renders.
+  const existingFaqSchema = document.getElementById('faq-schema');
+  if (existingFaqSchema) existingFaqSchema.remove();
 }
 
 // -----------------------------------------

@@ -15,5 +15,24 @@ Disallow: /session-notes/
 Allow: /blog/post.html
 Allow: /blog/post-superior.html
 
+# AI search crawlers — explicit Allow so AI engines can index and cite our content
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 # Sitemap location
 Sitemap: https://www.intentionholistichealth.com/sitemap.xml

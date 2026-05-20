@@ -38,5 +38,8 @@ docs/accounts-inventory.md
 # Internal Notion architecture documentation
 docs/notion-system-architecture.md
 
+# Local workspace identifiers (Notion DB/user IDs) — public repo, don't commit
+.claude-local-ids.md
+
 # Local Netlify folder
 .netlify

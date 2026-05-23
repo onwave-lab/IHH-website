@@ -128,7 +128,7 @@ Lower-tox living is a direction, not a finish line. Start with what's free, add 
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'A room-by-room guide to nontoxic swaps that may support hormone health. Practical, budget-friendly, and designed to help you start where it matters most.',
     image: '/images/blog/nontoxic-swaps-hormone-health.webp',
-    cardAspectRatio: '74.47%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '74.47%',
     categories: ['wellness', 'foundations'],
     promo: {
@@ -424,7 +424,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Wondering why cravings are so hard to resist? Learn what actually happens to your taste buds, brain, blood sugar, and gut when you switch to a whole foods diet — and why it gets easier.',
     image: '/images/blog/why-cravings-feel-so-intense.webp',
-    cardAspectRatio: '74.47%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '74.47%',
     categories: ['wellness', 'nutrition', 'foundations'],
     content: `
@@ -614,7 +614,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Many women aren\u2019t intentionally dieting, but the amount of food they eat may not be enough to support everything their body is doing. Here\u2019s what under-eating looks like, why it matters, and where to start.',
     image: '/images/blog/are-you-eating-enough.webp',
-    cardAspectRatio: '83.83%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'nutrition', 'foundations', 'preconception', 'postpartum'],
     content: `
@@ -814,7 +814,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Many women enter pregnancy already running low on essential minerals. Learn the common signs of depletion that are easy to dismiss, why they matter for preconception health, and what steps you can take before conception.',
     image: '/images/blog/depleted-signs-before-pregnancy.webp',
-    cardAspectRatio: '83.83%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'foundations', 'preconception'],
     content: `
@@ -1023,7 +1023,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Protein and fiber are two of the most common nutritional gaps in women\u2019s daily eating, and they directly affect blood sugar stability, hormone balance, gut health, and energy. Here\u2019s what to know and where to start.',
     image: '/images/blog/protein-fiber-women.webp',
-    cardAspectRatio: '83.83%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'nutrition', 'foundations', 'preconception'],
     content: `
@@ -1208,7 +1208,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'What is HTMA testing and why does it matter for maternal health? Learn what functional mineral testing reveals for preconception and postpartum that standard blood work may miss.',
     image: '/images/blog/htma-complete-guide-maternal-health.webp',
-    cardAspectRatio: '66.67%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '66.67%',
     categories: ['wellness', 'foundations', 'htma', 'preconception'],
     personaToggle: {
@@ -1554,7 +1554,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Sustainable home cooking isn\'t about elaborate recipes or perfectly stocked fridges. It\'s about creating rhythms that support your body, protect your mental energy, and make financial sense in real life.',
     image: '/images/blog/sustainable-home-cooking.webp',
-    cardAspectRatio: '83.83%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'nutrition'],
     promo: {
@@ -1736,7 +1736,7 @@ Saksena, M. J., Okrent, A. M., Anekwe, T. D., Cho, C., Dicken, C., Effland, A., 
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'ChatGPT Health allows users to connect personal health data for personalized responses. From a healthcare provider standpoint, the question of safety is not a simple yes-or-no answer.',
     image: '/images/blog/chatgpt-health-safety.webp',
-    cardAspectRatio: '83.78%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.78%',
     categories: ['wellness', 'foundations'],
     content: `
@@ -1953,7 +1953,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Food should always be the foundation. But for many women today, food alone is not reliably sufficient to meet mineral needs—especially during seasons of stress, pregnancy, postpartum, or long-term depletion.',
     image: '/images/blog/minerals-from-food.webp',
-    cardAspectRatio: '83.83%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'foundations'],
     content: `
@@ -2224,7 +2224,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'You got your blood work done, waited for results, and everything looks "normal." But you don\'t feel normal. Your symptoms are real—here\'s why standard labs might not tell the whole story.',
     image: '/images/blog/labs-normal-feel-off.webp',
-    cardAspectRatio: '83.83%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'foundations'],
     content: `
@@ -2322,7 +2322,7 @@ Alicia
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'The holidays tend to bring a lot to the surface. Not because anyone is doing something wrong — but because life gets fuller all at once.',
     image: '/images/blog/holiday-wellness.webp',
-    cardAspectRatio: '56.22%',    // 900x506 image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.22%',
     categories: ['wellness', 'foundations'],
     content: `
@@ -2441,7 +2441,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'My personal story, not medical advice. Preparing for an unmedicated birth wasn\'t about perfection—it was about intention.',
     image: '/images/blog/unmedicated-birth-new.webp',
-    cardAspectRatio: '56.27%',    // 949x534 image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.27%',
     categories: ['preconception'],
     content: `
@@ -2579,7 +2579,7 @@ Alicia
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'You don\'t need perfection to prepare for pregnancy — you need foundations.',
     image: '/images/blog/body-first-home-new.webp',
-    cardAspectRatio: '56.22%',    // 900x506 image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.22%',
     categories: ['preconception', 'foundations'],
     content: `
@@ -2696,7 +2696,7 @@ Alicia
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Women with PCOS experience anxiety and depression 3x more often than women without the condition. Let\'s talk about practical ways to support your mental health.',
     image: '/images/blog/mental-health-pcos.webp',
-    cardAspectRatio: '56.27%',    // 949x534 image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.27%',
     categories: ['pcos', 'wellness'],
     content: `
@@ -2780,7 +2780,7 @@ Want more tips? Download the complimentary **Holistic Habits Checklist** for add
     excerpt: 'Looking for a delicious and nutritious way to start your day? This smoothie bowl is packed with fiber, protein, and gut-friendly ingredients.',
     image: '/images/blog/smoothie-bowl-square.webp',
     thumbnail: '/images/blog/smoothie-bowl-square-small.webp',
-    cardAspectRatio: '56.25%',    // 1280x720 (16:9) image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.25%',
     categories: ['recipes', 'breakfast', 'pcos'],
     content: `
@@ -2852,7 +2852,7 @@ Intention Holistic Health
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'The trillions of microorganisms in your gut play crucial roles in hormone regulation and inflammation control. Understanding this connection is key to managing PCOS.',
     image: '/images/blog/gut-health-pcos-new.webp',
-    cardAspectRatio: '56.27%',    // 949x534 image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.27%',
     categories: ['pcos', 'foundations'],
     content: `
@@ -2958,7 +2958,7 @@ Clinical services at Intention Holistic Health PLLC serve Kentucky residents onl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'An all-time-favorite snack: granola that is both delicious and packed with hormone-friendly ingredients to support health and wellbeing from the inside out.',
     image: '/images/blog/granola.webp',
-    cardAspectRatio: '56.22%',    // 900x506 image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.22%',
     categories: ['recipes', 'breakfast', 'pcos'],
     content: `
@@ -3229,7 +3229,7 @@ function renderBlogListing() {
   sortedPosts.forEach(function(post, index) {
     const cardImgStyle = post.cardImageStyle ? ` style="${post.cardImageStyle}"` : '';
     // Support custom aspect ratio per post (default 16:9 = 56.25%)
-    const aspectRatio = post.cardAspectRatio || '56.25%';
+    const aspectRatio = post.cardAspectRatio || '75.00%';
     const linkStyle = ` style="padding-bottom: ${aspectRatio};"`;
     // First image is LCP - use fetchpriority="high" instead of lazy loading
     const imgLoadAttr = index === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
@@ -3292,7 +3292,7 @@ function setupCategoryFiltering(posts) {
         filteredPosts.forEach(function(post, index) {
           const cardImgStyle = post.cardImageStyle ? ` style="${post.cardImageStyle}"` : '';
           // Support custom aspect ratio per post (default 16:9 = 56.25%)
-          const aspectRatio = post.cardAspectRatio || '56.25%';
+          const aspectRatio = post.cardAspectRatio || '75.00%';
           const linkStyle = ` style="padding-bottom: ${aspectRatio};"`;
           // First image gets priority loading
           const imgLoadAttr = index === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
@@ -3354,7 +3354,7 @@ function setupCategoryFiltering(posts) {
         let html = '';
         filteredPosts.forEach(function(post, index) {
           const cardImgStyle = post.cardImageStyle ? ` style="${post.cardImageStyle}"` : '';
-          const aspectRatio = post.cardAspectRatio || '56.25%';
+          const aspectRatio = post.cardAspectRatio || '75.00%';
           const linkStyle = ` style="padding-bottom: ${aspectRatio};"`;
           const imgLoadAttr = index === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
           const thumbImage = post.thumbnail || post.image.replace('.webp', '-small.webp');

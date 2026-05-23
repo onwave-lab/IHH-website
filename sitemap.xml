@@ -92,12 +92,26 @@
   <!-- Blog -->
   <url>
     <loc>https://www.intentionholistichealth.com/blog/</loc>
-    <lastmod>2026-05-19</lastmod>
+    <lastmod>2026-05-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Blog Posts -->
+  <url>
+    <loc>https://www.intentionholistichealth.com/blog/post.html?post=2026-05-23-low-tox-budget</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.intentionholistichealth.com/blog/post.html?post=2026-04-08-nontoxic-swaps-hormone-health</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://www.intentionholistichealth.com/blog/post.html?post=2026-03-27-why-cravings-feel-so-intense</loc>
     <lastmod>2026-05-19</lastmod>

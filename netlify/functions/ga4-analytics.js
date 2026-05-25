@@ -481,9 +481,16 @@ function formatReport(rawData, reportType) {
 }
 
 exports.handler = async (event, context) => {
-  // CORS headers
+  const allowedOrigins = [
+    'https://intentionholistichealth.com',
+    'https://www.intentionholistichealth.com',
+    'https://drafts-website-edits--intentionholistichealth.netlify.app'
+  ];
+  const requestOrigin = event.headers?.origin || event.headers?.Origin || '';
+  const origin = allowedOrigins.includes(requestOrigin) ? requestOrigin : allowedOrigins[0];
+
   const headers = {
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': origin,
     'Access-Control-Allow-Headers': 'Content-Type',
     'Content-Type': 'application/json'
   };

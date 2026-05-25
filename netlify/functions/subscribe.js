@@ -16,6 +16,17 @@ const GROUPS = {
   nontoxicSwapChecklist: '184513381512775176'  // Nontoxic Swap Checklist
 };
 
+const ALLOWED_ORIGINS = [
+  'https://intentionholistichealth.com',
+  'https://www.intentionholistichealth.com',
+  'https://drafts-website-edits--intentionholistichealth.netlify.app'
+];
+
+function getCorsOrigin(event) {
+  const requestOrigin = event.headers?.origin || event.headers?.Origin || '';
+  return ALLOWED_ORIGINS.includes(requestOrigin) ? requestOrigin : ALLOWED_ORIGINS[0];
+}
+
 exports.handler = async (event, context) => {
   // Only allow POST requests
   if (event.httpMethod !== 'POST') {
@@ -28,7 +39,7 @@ exports.handler = async (event, context) => {
 
   // CORS headers for browser requests
   const headers = {
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': getCorsOrigin(event),
     'Access-Control-Allow-Headers': 'Content-Type',
     'Content-Type': 'application/json'
   };

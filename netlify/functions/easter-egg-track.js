@@ -3,6 +3,17 @@
 
 const { getStore } = require("@netlify/blobs");
 
+const ALLOWED_ORIGINS = [
+  'https://intentionholistichealth.com',
+  'https://www.intentionholistichealth.com',
+  'https://drafts-website-edits--intentionholistichealth.netlify.app'
+];
+
+function getCorsOrigin(event) {
+  const requestOrigin = event.headers?.origin || event.headers?.Origin || '';
+  return ALLOWED_ORIGINS.includes(requestOrigin) ? requestOrigin : ALLOWED_ORIGINS[0];
+}
+
 exports.handler = async (event, context) => {
   // Only allow POST requests
   if (event.httpMethod !== "POST" && event.httpMethod !== "GET") {
@@ -27,7 +38,7 @@ exports.handler = async (event, context) => {
         statusCode: 200,
         headers: {
           "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*"
+          "Access-Control-Allow-Origin": getCorsOrigin(event)
         },
         body: JSON.stringify({
           totalTriggers: stats.totalTriggers,
@@ -78,7 +89,7 @@ exports.handler = async (event, context) => {
       statusCode: 200,
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": getCorsOrigin(event)
       },
       body: JSON.stringify({
         success: true,

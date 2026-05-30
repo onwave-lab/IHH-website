@@ -9,6 +9,11 @@ const SITE_URL = 'https://www.intentionholistichealth.com';
 
 // Blog post metadata - keep in sync with js/blog.js (slug, title, excerpt, image fields).
 const BLOG_POSTS = {
+  '2026-05-23-low-tox-budget': {
+    title: "Where to Start With a Lower-Tox Lifestyle (When You Can't Overhaul Everything)",
+    excerpt: "You don't need to overhaul your home to reduce plastic exposure. Five free (or nearly-free) places to start a lower-tox lifestyle today.",
+    image: '/images/blog/hands-chopping.webp'
+  },
   '2026-04-08-nontoxic-swaps-hormone-health': {
     title: 'The Complete Guide to Nontoxic Swaps for Hormone Health',
     excerpt: 'A room-by-room guide to nontoxic swaps that may support hormone health. Practical, budget-friendly, and designed to help you start where it matters most.',

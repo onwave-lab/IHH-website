@@ -73,7 +73,7 @@
   display: block;
   overflow: hidden;
   position: relative;
-  padding-bottom: 56.25%; /* Default 16:9, can be overridden inline */
+  padding-bottom: 75%; /* Default 4:3 landscape — matches card grid system-wide */
 }
 
 .blog-card-image {

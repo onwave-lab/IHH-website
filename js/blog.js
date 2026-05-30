@@ -22,13 +22,113 @@ const DEFAULT_PROMO = {
 // For simplicity, we define posts here that can be easily updated
 const BLOG_POSTS = [
   {
+    slug: '2026-05-23-low-tox-budget',
+    title: "Where to Start With a Lower-Tox Lifestyle (When You Can't Overhaul Everything)",
+    date: '2026-05-23',
+    author: 'Alicia Harrison, MSN, APRN, FNP-C',
+    excerpt: "You don't need to overhaul your home to reduce plastic exposure. Five free (or nearly-free) places to start a lower-tox lifestyle today.",
+    image: '/images/blog/hands-chopping.webp',
+    cardAspectRatio: '75.00%',
+    imageAspectRatio: '75.00%',
+    categories: ['wellness', 'foundations'],
+    promo: {
+      title: 'Nontoxic Swap Checklist',
+      modalTitle: 'Get Your Free Checklist',
+      description: 'A room-by-room checklist to help you reduce chemical exposure at your own pace. Print it, stick it on your fridge, and swap one product at a time.',
+      descriptionShort: 'A room-by-room checklist for reducing chemical exposure at your own pace.',
+      badge: 'Free Download',
+      ctaText: 'Get the Free Checklist',
+      formType: 'nontoxic-swap-checklist',
+      modalFormType: 'nontoxic-swap-checklist',
+      image: '/images/nontoxic-swap-checklist-preview-inline.webp',
+      imageSidebar: '/images/nontoxic-swap-checklist-preview-sidebar.webp',
+      imageThumb: '/images/nontoxic-swap-checklist-preview-thumb.webp'
+    },
+    content: `
+# Where to Start With a Lower-Tox Lifestyle (When You Can't Overhaul Everything)
+
+<div class="blog-summary-note"><strong>Quick answer:</strong> You don't need to redo your home to reduce plastic exposure. Start with five free or nearly-free swaps — stop microwaving in plastic, drink from glass or metal at home, swap disposable water bottles for a thrifted metal one, cool food before storing in plastic, and pick plastic-free packaging when you restock. When you're ready to invest, start with what you touch most: storage containers, water filter, cookware.</div>
+
+With the plastic detox documentary trending, I want to speak some practical tips into your world.
+
+If your finances are anything like mine, you probably can't afford to just overhaul your entire life to completely avoid plastic exposure. And honestly? You don't need to do it all at once.
+
+Is eventually replacing home items, skincare products, clothing, etc. part of the journey to a lower-tox lifestyle? Yes, absolutely. But you also want this to be sustainable and actionable.
+
+So let's start where the door is actually open.
+
+## Free (or incredibly cheap) ways to reduce plastic exposure
+
+1. **Don't microwave food or beverages in plastic containers.** Take the extra step, make another dish dirty, and heat your food on glass or ceramic instead.
+
+2. **Drink your beverages at home in a glass or metal cup.** Only have plastic? Run down to your local thrift store and I bet you can find some for less than $1.
+
+3. **Stop drinking out of disposable water bottles** (unless you don't have access to clean filtered water). There are a million+1 used metal water bottles and tumblers at the closest Goodwill for less than $5.
+
+4. **If you only have plastic storage containers, wait until your food is completely cooled** before transferring it. Hot food into plastic is where a lot of the leaching happens.
+
+5. **As you replace pantry and fridge items, look for plastic-free packaging.** You don't have to throw out what you already own — just shift what comes in next.
+
+## What's a "step toward," not a "do it today"
+
+Switching out cookware, clothing pieces, coffee makers, storage containers, toilet paper, etc. are steps to move toward — not feats to accomplish all in one day.
+
+Keep moving forward; don't let perfection paralyze you from making progress.
+
+When you are ready to financially invest in swapping larger ticket items, start with what you touch most often and what your food and drinks touch most — storage containers, water filter, underwear, cookware.
+
+## Common mistakes I see women making when they're open to a lower-tox lifestyle
+
+### 1. Stressing about it.
+
+You didn't collect these items overnight, you probably can't and won't replace them overnight, and that's okay. Stress is not serving you or your body. Set realistic goals for smaller and larger ticket items over the next 1–2 years. Yes, I said years.
+
+### 2. Focusing so much on swapping that they forget to simply forgo certain items.
+
+Candles — not a necessity. Perfume — optional. Air and car fresheners — better off without.
+
+### 3. Blaming their problems on toxin exposure instead of taking more responsibility for nutrition and lifestyle.
+
+Oof. I say that with love. Toxin burden is real, and it's also not the only lever you have.
+
+### 4. Prioritizing low-tox home items above movement, a nutrient-dense diet, sunlight, sleep and stress management.
+
+These are foundational. A glass storage container can't outwork a diet of ultra-processed food and four hours of sleep.
+
+## The takeaway
+
+Lower-tox living is a direction, not a finish line. Start with what's free, add what's cheap, save for the bigger swaps later. Don't lose the plot, the foundations — food, movement, sleep, stress, sunlight — are still where the biggest needle moves. You're allowed to do this slowly.
+`,
+    faqs: [
+      {
+        question: 'Do I really have to throw out all my plastic?',
+        answer: 'No. The most sustainable approach is to stop using plastic in high-risk ways first (microwaving, hot foods, disposable bottles) and replace items as they wear out or as your budget allows. You don\'t need to clear out your kitchen this weekend.'
+      },
+      {
+        question: 'What plastic items matter most to swap?',
+        answer: 'The ones that touch your food, your drinks, and your skin most often. Storage containers (especially the ones you reheat in), water bottles, and cookware tend to be the highest-impact swaps when you\'re ready to invest.'
+      },
+      {
+        question: 'Is plastic exposure really worth worrying about?',
+        answer: 'Reducing exposure is worthwhile, but it\'s one factor among many. Nutrition, sleep, stress, sunlight, and movement do more for your overall health than any single product swap. Foundations first, swaps second.'
+      },
+      {
+        question: 'How long should the transition take?',
+        answer: 'Years, realistically. Set goals over the next 1 to 2 years for both small swaps and larger ticket items. Stressing about doing it all at once works against your body more than the plastic does.'
+      }
+    ],
+    schema: {
+      description: "Where to start with a lower-tox lifestyle when you can't overhaul everything. Free and near-free plastic swaps, what to invest in, and what to skip."
+    }
+  },
+  {
     slug: '2026-04-08-nontoxic-swaps-hormone-health',
     title: 'The Complete Guide to Nontoxic Swaps for Hormone Health',
     date: '2026-04-08',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'A room-by-room guide to nontoxic swaps that may support hormone health. Practical, budget-friendly, and designed to help you start where it matters most.',
     image: '/images/blog/nontoxic-swaps-hormone-health.webp',
-    cardAspectRatio: '74.47%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '74.47%',
     categories: ['wellness', 'foundations'],
     promo: {
@@ -324,7 +424,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Wondering why cravings are so hard to resist? Learn what actually happens to your taste buds, brain, blood sugar, and gut when you switch to a whole foods diet — and why it gets easier.',
     image: '/images/blog/why-cravings-feel-so-intense.webp',
-    cardAspectRatio: '74.47%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '74.47%',
     categories: ['wellness', 'nutrition', 'foundations'],
     content: `
@@ -514,7 +614,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Many women aren\u2019t intentionally dieting, but the amount of food they eat may not be enough to support everything their body is doing. Here\u2019s what under-eating looks like, why it matters, and where to start.',
     image: '/images/blog/are-you-eating-enough.webp',
-    cardAspectRatio: '83.83%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'nutrition', 'foundations', 'preconception', 'postpartum'],
     content: `
@@ -714,7 +814,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Many women enter pregnancy already running low on essential minerals. Learn the common signs of depletion that are easy to dismiss, why they matter for preconception health, and what steps you can take before conception.',
     image: '/images/blog/depleted-signs-before-pregnancy.webp',
-    cardAspectRatio: '83.83%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'foundations', 'preconception'],
     content: `
@@ -923,7 +1023,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Protein and fiber are two of the most common nutritional gaps in women\u2019s daily eating, and they directly affect blood sugar stability, hormone balance, gut health, and energy. Here\u2019s what to know and where to start.',
     image: '/images/blog/protein-fiber-women.webp',
-    cardAspectRatio: '83.83%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'nutrition', 'foundations', 'preconception'],
     content: `
@@ -1108,7 +1208,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'What is HTMA testing and why does it matter for maternal health? Learn what functional mineral testing reveals for preconception and postpartum that standard blood work may miss.',
     image: '/images/blog/htma-complete-guide-maternal-health.webp',
-    cardAspectRatio: '66.67%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '66.67%',
     categories: ['wellness', 'foundations', 'htma', 'preconception'],
     personaToggle: {
@@ -1454,7 +1554,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Sustainable home cooking isn\'t about elaborate recipes or perfectly stocked fridges. It\'s about creating rhythms that support your body, protect your mental energy, and make financial sense in real life.',
     image: '/images/blog/sustainable-home-cooking.webp',
-    cardAspectRatio: '83.83%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'nutrition'],
     promo: {
@@ -1636,7 +1736,7 @@ Saksena, M. J., Okrent, A. M., Anekwe, T. D., Cho, C., Dicken, C., Effland, A., 
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'ChatGPT Health allows users to connect personal health data for personalized responses. From a healthcare provider standpoint, the question of safety is not a simple yes-or-no answer.',
     image: '/images/blog/chatgpt-health-safety.webp',
-    cardAspectRatio: '83.78%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.78%',
     categories: ['wellness', 'foundations'],
     content: `
@@ -1853,7 +1953,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Food should always be the foundation. But for many women today, food alone is not reliably sufficient to meet mineral needs—especially during seasons of stress, pregnancy, postpartum, or long-term depletion.',
     image: '/images/blog/minerals-from-food.webp',
-    cardAspectRatio: '83.83%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'foundations'],
     content: `
@@ -2124,7 +2224,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'You got your blood work done, waited for results, and everything looks "normal." But you don\'t feel normal. Your symptoms are real—here\'s why standard labs might not tell the whole story.',
     image: '/images/blog/labs-normal-feel-off.webp',
-    cardAspectRatio: '83.83%',
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'foundations'],
     content: `
@@ -2222,7 +2322,7 @@ Alicia
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'The holidays tend to bring a lot to the surface. Not because anyone is doing something wrong — but because life gets fuller all at once.',
     image: '/images/blog/holiday-wellness.webp',
-    cardAspectRatio: '56.22%',    // 900x506 image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.22%',
     categories: ['wellness', 'foundations'],
     content: `
@@ -2341,7 +2441,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'My personal story, not medical advice. Preparing for an unmedicated birth wasn\'t about perfection—it was about intention.',
     image: '/images/blog/unmedicated-birth-new.webp',
-    cardAspectRatio: '56.27%',    // 949x534 image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.27%',
     categories: ['preconception'],
     content: `
@@ -2479,7 +2579,7 @@ Alicia
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'You don\'t need perfection to prepare for pregnancy — you need foundations.',
     image: '/images/blog/body-first-home-new.webp',
-    cardAspectRatio: '56.22%',    // 900x506 image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.22%',
     categories: ['preconception', 'foundations'],
     content: `
@@ -2596,7 +2696,7 @@ Alicia
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'Women with PCOS experience anxiety and depression 3x more often than women without the condition. Let\'s talk about practical ways to support your mental health.',
     image: '/images/blog/mental-health-pcos.webp',
-    cardAspectRatio: '56.27%',    // 949x534 image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.27%',
     categories: ['pcos', 'wellness'],
     content: `
@@ -2680,7 +2780,7 @@ Want more tips? Download the complimentary **Holistic Habits Checklist** for add
     excerpt: 'Looking for a delicious and nutritious way to start your day? This smoothie bowl is packed with fiber, protein, and gut-friendly ingredients.',
     image: '/images/blog/smoothie-bowl-square.webp',
     thumbnail: '/images/blog/smoothie-bowl-square-small.webp',
-    cardAspectRatio: '56.25%',    // 1280x720 (16:9) image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.25%',
     categories: ['recipes', 'breakfast', 'pcos'],
     content: `
@@ -2752,7 +2852,7 @@ Intention Holistic Health
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'The trillions of microorganisms in your gut play crucial roles in hormone regulation and inflammation control. Understanding this connection is key to managing PCOS.',
     image: '/images/blog/gut-health-pcos-new.webp',
-    cardAspectRatio: '56.27%',    // 949x534 image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.27%',
     categories: ['pcos', 'foundations'],
     content: `
@@ -2858,7 +2958,7 @@ Clinical services at Intention Holistic Health PLLC serve Kentucky residents onl
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
     excerpt: 'An all-time-favorite snack: granola that is both delicious and packed with hormone-friendly ingredients to support health and wellbeing from the inside out.',
     image: '/images/blog/granola.webp',
-    cardAspectRatio: '56.22%',    // 900x506 image
+    cardAspectRatio: '75.00%',
     imageAspectRatio: '56.22%',
     categories: ['recipes', 'breakfast', 'pcos'],
     content: `
@@ -3129,7 +3229,7 @@ function renderBlogListing() {
   sortedPosts.forEach(function(post, index) {
     const cardImgStyle = post.cardImageStyle ? ` style="${post.cardImageStyle}"` : '';
     // Support custom aspect ratio per post (default 16:9 = 56.25%)
-    const aspectRatio = post.cardAspectRatio || '56.25%';
+    const aspectRatio = post.cardAspectRatio || '75.00%';
     const linkStyle = ` style="padding-bottom: ${aspectRatio};"`;
     // First image is LCP - use fetchpriority="high" instead of lazy loading
     const imgLoadAttr = index === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
@@ -3192,7 +3292,7 @@ function setupCategoryFiltering(posts) {
         filteredPosts.forEach(function(post, index) {
           const cardImgStyle = post.cardImageStyle ? ` style="${post.cardImageStyle}"` : '';
           // Support custom aspect ratio per post (default 16:9 = 56.25%)
-          const aspectRatio = post.cardAspectRatio || '56.25%';
+          const aspectRatio = post.cardAspectRatio || '75.00%';
           const linkStyle = ` style="padding-bottom: ${aspectRatio};"`;
           // First image gets priority loading
           const imgLoadAttr = index === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
@@ -3254,7 +3354,7 @@ function setupCategoryFiltering(posts) {
         let html = '';
         filteredPosts.forEach(function(post, index) {
           const cardImgStyle = post.cardImageStyle ? ` style="${post.cardImageStyle}"` : '';
-          const aspectRatio = post.cardAspectRatio || '56.25%';
+          const aspectRatio = post.cardAspectRatio || '75.00%';
           const linkStyle = ` style="padding-bottom: ${aspectRatio};"`;
           const imgLoadAttr = index === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
           const thumbImage = post.thumbnail || post.image.replace('.webp', '-small.webp');

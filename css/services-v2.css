@@ -1148,6 +1148,177 @@
   .v3-package-card-redesign:not(#pkg-foundations) .v3-package-cta { grid-row: 5; }
 }
 
+/* --- Model A: Discovery-led layout --- */
+.v3-packages-grid-single {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hide the "Most Popular" ribbon on the solo Discovery card */
+#pkg-discovery.featured::before,
+#pkg-discovery.featured::after {
+  display: none;
+}
+
+.v3-paths-note {
+  max-width: 760px;
+  margin: var(--spacing-lg) auto 0;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: #5f5f5f;
+  line-height: 1.6;
+}
+
+/* Flow connector between the Discovery door and the paths section */
+.v3-flow-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: var(--spacing-lg) 0 0;
+  text-align: center;
+}
+
+.v3-flow-connector .v3-flow-text {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  color: #5a6f60;
+  letter-spacing: 0.02em;
+}
+
+.v3-flow-connector .v3-flow-chevron {
+  color: #8fa896;
+  opacity: 0.85;
+}
+
+/* BD Script accent above section titles (subset-safe phrases only) */
+.v3-script-accent {
+  display: block;
+  font-family: 'Beautifully Delicious Script', cursive;
+  font-size: clamp(4.3rem, 9.75vw, 5.85rem);
+  color: #8fa896;
+  line-height: 1;
+  margin-bottom: 8px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  font-style: normal;
+}
+
+/* Italic section titles sized ~30% smaller than the default H2 */
+.v3-section-title.v3-section-title-italic {
+  font-size: clamp(1.45rem, 3.2vw, 1.75rem);
+}
+
+/* Tighter card internals for the Model A cards */
+.v3-package-card-redesign .v3-package-header {
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-xs);
+}
+
+.v3-package-card-redesign .v3-package-title {
+  min-height: 0;
+  margin-bottom: 4px;
+}
+
+.v3-package-card-redesign .v3-package-description {
+  padding: 0 var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  line-height: 1.55;
+}
+
+.v3-package-card-redesign .v3-package-features {
+  padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm);
+}
+
+.v3-package-card-redesign .v3-package-features ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.v3-package-card-redesign .v3-package-features li {
+  margin-bottom: 0;
+  line-height: 1.45;
+  font-size: var(--font-size-sm);
+}
+
+.v3-package-card-redesign .v3-package-price-bottom {
+  padding: var(--spacing-xs) var(--spacing-md);
+}
+
+.v3-package-card-redesign .v3-package-cta {
+  padding: var(--spacing-xs) var(--spacing-md) var(--spacing-md);
+}
+
+/* Reduce overall vertical heaviness of the Model A flow */
+.v3-packages,
+.v3-paths,
+.v3-process {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+/* Extra-tight spacing for the solo Discovery Session card */
+#pkg-discovery .v3-package-header {
+  padding: var(--spacing-sm) var(--spacing-md) 4px;
+}
+
+#pkg-discovery .v3-package-title {
+  margin-bottom: 2px;
+}
+
+#pkg-discovery .subtitle {
+  margin-bottom: 4px;
+}
+
+#pkg-discovery .v3-package-description {
+  margin-bottom: 6px;
+}
+
+#pkg-discovery .v3-package-features {
+  padding: 6px var(--spacing-md);
+}
+
+#pkg-discovery .v3-package-features ul {
+  gap: 6px;
+}
+
+#pkg-discovery .v3-package-price-bottom {
+  padding: 6px var(--spacing-md);
+}
+
+#pkg-discovery .v3-package-cta {
+  padding: 6px var(--spacing-md) var(--spacing-sm);
+}
+
+/* Path card header icon (Mineral Insight, The Intention Method) */
+.v3-path-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(111, 138, 118, 0.12);
+  color: #6f8a76;
+  margin: 0 auto var(--spacing-xs);
+}
+
+@media (min-width: 1024px) {
+  .v3-packages-grid-single {
+    grid-template-columns: 1fr;
+  }
+
+  .v3-packages-grid-two {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 880px;
+  }
+}
+
 .v3-package-card {
   background: var(--color-white);
   border-radius: var(--border-radius-lg);

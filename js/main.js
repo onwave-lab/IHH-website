@@ -143,6 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var PORTAL_URLS = {
       default: 'https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/bookings?s=664b9722ff1f3762a57079f5&step=date',
       labReview: 'https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/bookings?s=664b9722ff1f3762a57079f5&step=date', // Same intake form as services
+      discovery: 'https://l.bttr.to/h0MUI', // Discovery Session (1-hour) booking
       signin: 'https://my.practicebetter.io/#/signin', // Patient Portal signin page
       fullscript: 'https://us.fullscript.com/welcome/intentionholistichealth' // Supplements store
     };
@@ -234,6 +235,15 @@ document.addEventListener('DOMContentLoaded', function() {
       link.addEventListener('click', function(e) {
         e.preventDefault();
         showPortalOverlay(PORTAL_URLS.labReview);
+      });
+    });
+
+    // Discovery Session booking links
+    var discoveryLinks = document.querySelectorAll('[data-portal-discovery]');
+    discoveryLinks.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        showPortalOverlay(PORTAL_URLS.discovery);
       });
     });
 

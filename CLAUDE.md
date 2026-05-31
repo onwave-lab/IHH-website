@@ -476,7 +476,7 @@ See `CLAUDE-REFERENCE.md` for implemented SEO components, robots.txt rules, and 
 
 **Deployment:** Auto-deploys from `drafts-website-edits` branch
 **Forms:** Netlify Forms handles contact and application forms (`contact.html`, `apply.html`)
-**Functions:** `/netlify/functions/` — `subscribe.js` (MailerLite), `ga4-analytics.js` (analytics proxy), `easter-egg-track.js` (Netlify Blobs)
+**Functions:** `/netlify/functions/` — `subscribe.js` (MailerLite), `ga4-analytics.js` (analytics proxy — requires `Authorization: Bearer $ANALYTICS_ACCESS_TOKEN`; see CLAUDE-REFERENCE.md), `easter-egg-track.js` (Netlify Blobs)
 
 ### MailerLite Email Marketing
 

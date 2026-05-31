@@ -169,11 +169,17 @@ npx --yes glyphhanger --whitelist="STIPCA ervicshntolamp. " --subset=/fonts/BDSc
 
 ### Analytics API Endpoint
 
+This endpoint is **authenticated** — it requires a bearer token (the `ANALYTICS_ACCESS_TOKEN`
+secret, set in the Netlify dashboard). Export the token into your shell first (never paste the
+literal value into committed files), then send it in the `Authorization` header:
+
 ```
-curl https://drafts-website-edits--intentionholistichealth.netlify.app/.netlify/functions/ga4-analytics?report=TYPE&days=N
+curl -H "Authorization: Bearer $ANALYTICS_ACCESS_TOKEN" \
+  "https://drafts-website-edits--intentionholistichealth.netlify.app/.netlify/functions/ga4-analytics?report=TYPE&days=N"
 ```
 
-Report types: `overview`, `pages`, `sources`, `events`, `daily`
+Requests without a valid token get `401 Unauthorized` (and `503` if the token isn't configured
+on the server). Report types: `overview`, `pages`, `sources`, `events`, `daily`
 
 ---
 

@@ -472,9 +472,30 @@ See `CLAUDE-REFERENCE.md` for implemented SEO components, robots.txt rules, and 
 
 ### Netlify
 
-**Deployment:** Auto-deploys from `drafts-website-edits` branch
+**Deployment:** Production deploys from the `main` branch (bare domain `intentionholistichealth.com`); `drafts-website-edits` builds a branch preview at `drafts-website-edits--intentionholistichealth.netlify.app`.
 **Forms:** Netlify Forms handles contact and application forms (`contact.html`, `apply.html`)
-**Functions:** `/netlify/functions/` — `subscribe.js` (MailerLite), `ga4-analytics.js` (analytics proxy — bearer-token auth via `ANALYTICS_ACCESS_TOKEN` pending merge from `drafts-website-edits`), `easter-egg-track.js` (Netlify Blobs)
+**Functions:** `/netlify/functions/` — `subscribe.js` (MailerLite), `ga4-analytics.js` (analytics proxy — **requires bearer-token auth**, see below), `easter-egg-track.js` (Netlify Blobs)
+
+#### Analytics Endpoint Authentication
+
+`ga4-analytics.js` is gated by a bearer token. It compares the incoming `Authorization: Bearer <token>` header against the `ANALYTICS_ACCESS_TOKEN` environment variable (a Netlify secret) using a constant-time comparison:
+
+- Valid token → returns the requested report.
+- Missing/wrong token → `401 Unauthorized`.
+- Token not configured for the deploy context → `503` (fail-closed — returns nothing rather than leaking data).
+
+> The token must be scoped to **all deploy contexts** in Netlify (Production **and** Branch deploys) for both the live site and the `drafts-website-edits` preview to work. If a context returns `503`, the variable isn't in scope there.
+
+Pull a report (export the token into your shell first — never commit the literal value):
+
+```bash
+export ANALYTICS_ACCESS_TOKEN="paste-the-value-here"
+
+curl -sL -H "Authorization: Bearer $ANALYTICS_ACCESS_TOKEN" \
+  "https://intentionholistichealth.com/.netlify/functions/ga4-analytics?report=overview&days=30"
+```
+
+Report types: `overview`, `pages`, `sources`, `events`, `daily` (plus `ads-*` variants). See `CLAUDE-REFERENCE.md` for the full list.
 
 ### MailerLite Email Marketing
 

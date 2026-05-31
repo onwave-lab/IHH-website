@@ -497,6 +497,20 @@ curl -sL -H "Authorization: Bearer $ANALYTICS_ACCESS_TOKEN" \
 
 Report types: `overview`, `pages`, `sources`, `events`, `daily` (plus `ads-*` variants). See `CLAUDE-REFERENCE.md` for the full list.
 
+#### ⚠️ Function env vars: 4KB AWS Lambda limit (DEPLOY-BREAKER)
+
+Netlify injects **every** site environment variable into **every** Lambda function, and AWS Lambda caps the **total** env-var size (names + values) at **4KB per function**. There is **no per-function scoping** — if the combined set exceeds 4KB, **all** functions fail to deploy with `Failed to create function: ... environment variables exceed the 4KB limit`, the build returns exit code 2, and **nothing publishes** (production silently keeps serving the last successful deploy).
+
+This site sits close to the cap because of these function env vars: `GOOGLE_APPLICATION_CREDENTIALS_JSON` (the big one — a GCP service-account key), the five `GOOGLE_ADS_*` vars, `MAILERLITE_API_KEY`, and `ANALYTICS_ACCESS_TOKEN`. Adding `ANALYTICS_ACCESS_TOKEN` on 2026-05-30 is what first pushed it over.
+
+**Keep `GOOGLE_APPLICATION_CREDENTIALS_JSON` minimal.** `ga4-analytics.js` only reads `client_email` and `private_key` from it (it hand-builds the JWT; `aud`, `scope`, and the token endpoint are hardcoded). Store **only those two fields**, minified to one line — drop `project_id`, `private_key_id`, `client_id`, `auth_uri`, `token_uri`, both `*_cert_url`, `type`, and `universe_domain` (~400–500 bytes of dead weight):
+
+```bash
+jq -c '{client_email, private_key}' your-service-account.json
+```
+
+Before adding any new function env var, budget against the 4KB ceiling. If you hit it: trim the credentials JSON first, then consider whether unused vars (e.g. `GOOGLE_ADS_*` if ads reports aren't used) can be removed.
+
 ### MailerLite Email Marketing
 
 **API Integration:** Newsletter and lead magnet forms submit to MailerLite via Netlify Function (`/.netlify/functions/subscribe`)

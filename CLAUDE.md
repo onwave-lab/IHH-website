@@ -219,6 +219,8 @@ See `CLAUDE-REFERENCE.md` for notion-cli commands and property JSON formats.
 
 The `.mcp.json` file configures the Notion integration. It uses environment variable `${NOTION_TOKEN}` - each device must have `NOTION_TOKEN` set in their environment with a valid Notion API token.
 
+**Version pinning (2026-05-30):** The two npx-based MCP servers are pinned to exact versions instead of floating to `latest` — `@notionhq/notion-mcp-server@2.2.1` and `@cocal/google-calendar-mcp@2.6.1` (MailerLite is a hosted HTTP endpoint, nothing to pin). This keeps server behavior reproducible. **Trade-off:** pinned versions require **periodic manual bumps** to pick up upstream fixes — they will not update on their own. To bump: run `npm view @notionhq/notion-mcp-server version` / `npm view @cocal/google-calendar-mcp version`, update the `@x.y.z` suffix in all three `.mcp.json` files (parent, IHH, IHH-website), and confirm the servers still start. Note: this repo's `.mcp.json` is **gitignored**, so it must be edited locally on each device.
+
 ### Database IDs Reference
 
 Notion database IDs, user IDs, and the Last-Updated callout block ID live in **`.claude-local-ids.md`** at the repo root. This file is **gitignored** because the repo is public — IDs leak workspace structure even though they aren't directly exploitable without `NOTION_TOKEN`.

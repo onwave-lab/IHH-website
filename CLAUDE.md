@@ -399,10 +399,10 @@ Only use colors from the official brand palette (see `/brand/Branding Board.pdf`
 
 ## Git Configuration
 
-- **Use SSH for GitHub pushes** (not HTTPS). The remote should be `git@github.com:trymebroh/IHH-website.git`
+- **Use SSH for GitHub pushes** (not HTTPS). The remote should be `git@github.com:onwave-lab/IHH-website.git` (the repo moved from the old `trymebroh` org to `onwave-lab` on 2026-05-30; the old URL still redirects for now but won't forever).
 - If push fails with credential errors, check the remote with `git remote -v` and switch to SSH if needed:
   ```bash
-  git remote set-url origin git@github.com:trymebroh/IHH-website.git
+  git remote set-url origin git@github.com:onwave-lab/IHH-website.git
   ```
 
 ## Google Analytics 4 (GA4) Tracking

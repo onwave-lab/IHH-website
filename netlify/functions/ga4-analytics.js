@@ -509,6 +509,32 @@ exports.handler = async (event, context) => {
     };
   }
 
+  // Require a shared-secret bearer token. CORS is NOT access control — it does
+  // not stop direct curl/server-side requests. Without this gate, anyone could
+  // pull private GA4 traffic data and Google Ads spend/keywords. The token is
+  // set as the ANALYTICS_ACCESS_TOKEN env var in the Netlify dashboard.
+  const expectedToken = process.env.ANALYTICS_ACCESS_TOKEN;
+  if (!expectedToken) {
+    return {
+      statusCode: 503,
+      headers,
+      body: JSON.stringify({ error: 'Analytics endpoint not configured' })
+    };
+  }
+  const authHeader = event.headers?.authorization || event.headers?.Authorization || '';
+  const providedToken = authHeader.replace(/^Bearer\s+/i, '');
+  const expectedBuf = Buffer.from(expectedToken);
+  const providedBuf = Buffer.from(providedToken);
+  const tokenOk = providedBuf.length === expectedBuf.length &&
+    crypto.timingSafeEqual(providedBuf, expectedBuf);
+  if (!tokenOk) {
+    return {
+      statusCode: 401,
+      headers,
+      body: JSON.stringify({ error: 'Unauthorized' })
+    };
+  }
+
   try {
     // Get credentials from environment
     const credentialsJson = process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON;

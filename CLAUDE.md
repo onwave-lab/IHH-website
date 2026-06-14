@@ -605,3 +605,7 @@ See `CLAUDE-REFERENCE.md` for all key URLs (live site, branch deploy, GitHub, GA
 ### Contact & Credentials
 
 See `CLAUDE-REFERENCE.md` for contact email and Alicia Harrison's credentials (MSN, APRN, FNP-C, BHPCC).
+
+## Keyword Research Checklist (added 2026-06-14)
+
+A hand-run, free-tools keyword-research checklist lives at the repo root: **`ihh-keyword-research-checklist.md`**. If Kyle or Alicia asks about keyword/SEO research, content planning, or "what should we write about," point them to it. Run it **once per audience** (B2C patient-facing + B2B partner-facing). Leans on IHH's YMYL/credential advantage; remember the Keyword Planner trap ("Competition" = advertiser bids, not ranking difficulty).

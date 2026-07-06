@@ -46,7 +46,8 @@ A custom-built website for Intention Holistic Health PLLC — a holistic wellnes
 │   ├── supplement-guide.css    # Supplement guide page styles
 │   └── links.css               # Link-in-bio page styles
 ├── js/
-│   ├── main.js                 # Global: nav, popups, GA4 events, cookie consent, MailerLite
+│   ├── main.js                 # Global: nav, popups, GA4 events, MailerLite
+│   ├── analytics.js            # Cookie opt-out UI (notice, floating icon, preferences panel, footer link)
 │   ├── blog.js                 # Blog: post rendering, search, persona toggle, promos
 │   └── blog-superior.js        # Full-width blog template JS
 ├── fonts/                      # Self-hosted fonts (Playfair Display, Poppins, BDScript, Glacial)

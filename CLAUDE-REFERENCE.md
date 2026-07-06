@@ -92,15 +92,45 @@ curl -s -X POST "https://api.notion.com/v1/pages" \
 
 ### GA4 Tracking Code
 
+Consent Mode v2, **opt-out model** (analytics + advertising ON by default; explicit opt-out + GPC honored). Place this FIRST in `<head>` so consent is set before GA loads. Do **not** add a blocking Accept/Decline banner — the opt-out UI is injected by `/js/analytics.js`.
+
 ```html
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3GFCR5ZRMZ"></script>
+<!-- Google Analytics 4 + Consent Mode v2 (opt-out) -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3GFCR5ZRMZ');
+  // Default denied for the few ms before we resolve.
+  gtag('consent', 'default', {
+    'analytics_storage': 'denied', 'ad_storage': 'denied',
+    'ad_user_data': 'denied', 'ad_personalization': 'denied'
+  });
+  // Opt-out: analytics/ads ON by default; honor explicit opt-out + GPC.
+  (function(){
+    var choice = localStorage.getItem('cookie_consent'); // 'accepted' | 'declined'
+    var granted = choice === 'accepted' ? true
+                : choice === 'declined' ? false
+                : navigator.globalPrivacyControl === true ? false
+                : true;
+    gtag('consent', 'update', {
+      'analytics_storage': granted ? 'granted' : 'denied',
+      'ad_storage': granted ? 'granted' : 'denied',
+      'ad_user_data': granted ? 'granted' : 'denied',
+      'ad_personalization': granted ? 'granted' : 'denied'
+    });
+  })();
 </script>
+<script>
+  // GA loads only on the production apex domain (www 301s to apex).
+  if (location.hostname === 'intentionholistichealth.com') {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3GFCR5ZRMZ';
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', 'G-3GFCR5ZRMZ');
+  }
+</script>
+<!-- Opt-out UI chrome: first-visit notice, floating icon, preferences panel, footer link. -->
+<script src="/js/analytics.js" defer></script>
 ```
 
 ### GA4 Tracking Attributes Examples
@@ -527,7 +557,7 @@ When creating a new promotion:
 5. [ ] Update bar text copy
 6. [ ] Update modal title, subtitle, and description
 7. [ ] Update CTA links (primary → promo page, secondary → apply page)
-8. [ ] Add promo HTML/JS to desired pages (before cookie consent banner)
+8. [ ] Add promo HTML/JS to desired pages (before `</body>`)
 
 ### Files Modified for Promotions
 
@@ -763,8 +793,8 @@ When creating any new page, verify:
 ```
 [ ] Page added to navigation (if public)
 [ ] Page added to sitemap.xml
-[ ] GA4 tracking code in <head>
-[ ] Cookie consent banner included
+[ ] GA4 tracking code in <head> (Consent Mode v2 opt-out block — see "GA4 Tracking Code")
+[ ] `/js/analytics.js` included in <head> (opt-out UI; NO blocking Accept/Decline banner)
 [ ] data-track-section on key sections
 [ ] data-track-cta on CTA buttons
 [ ] Meta description (150-160 chars)

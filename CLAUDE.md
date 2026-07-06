@@ -496,11 +496,14 @@ See `CLAUDE-REFERENCE.md` for implemented SEO components, robots.txt rules, and 
 
 **Bot Protection (REQUIRED for all forms):** All MailerLite forms must include honeypot field + time-based check. See `CLAUDE-REFERENCE.md` for the MailerLite integration flow, bot protection implementation details, and newsletter form HTML template.
 
-### Cookie Consent
+### Cookie Consent (opt-out model)
 
-- **Consent Mode v2** implemented for GA4
+- **Consent Mode v2** for GA4 + Google Ads, **opt-out**: analytics and advertising are **granted by default**. Visitors opt out via the floating cookie icon or the footer "Cookie Preferences" link; an explicit choice and the browser Global Privacy Control (GPC) signal are honored. **Do NOT re-add a blocking Accept/Decline banner.**
+- **Consent is resolved + applied inline in each page `<head>`** (default-denied → resolve → `gtag('consent','update',…)`) *before* the GA4 loader, so the first pageview respects consent.
+- **Opt-out UI chrome** (first-visit notice, floating cookie icon, preferences panel, footer "Cookie Preferences" link) lives in **`/js/analytics.js`**. Every page must include `<script src="/js/analytics.js" defer></script>` in `<head>`. See `CLAUDE-REFERENCE.md` → **GA4 Tracking Code** for the canonical head block.
 - Cookies stored in `localStorage`:
-  - `cookie_consent` - 'accepted' or 'declined'
+  - `cookie_consent` - 'accepted' or 'declined' (absent = default granted, unless GPC opts out)
+  - `cookie_notice_seen` - 'true' once the first-visit notice is dismissed
   - `popup_dismissed` - exit-intent popup state
   - `newsletter_subscribed` - blog popup state
   - `device_id` - easter egg tracking ID

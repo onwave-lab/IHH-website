@@ -13,9 +13,20 @@
       'ad_user_data': 'denied',
       'ad_personalization': 'denied'
     });
-    if (localStorage.getItem('cookie_consent') === 'accepted') {
-      gtag('consent', 'update', { 'analytics_storage': 'granted' });
-    }
+    // Opt-out model (US): analytics ON by default; honor explicit opt-out + GPC.
+    (function(){
+      var choice = localStorage.getItem('cookie_consent'); // 'accepted' | 'declined'
+      var granted = choice === 'accepted' ? true
+                  : choice === 'declined' ? false
+                  : navigator.globalPrivacyControl === true ? false
+                  : true;
+      gtag('consent', 'update', {
+        'analytics_storage': granted ? 'granted' : 'denied',
+        'ad_storage': granted ? 'granted' : 'denied',
+        'ad_user_data': granted ? 'granted' : 'denied',
+        'ad_personalization': granted ? 'granted' : 'denied'
+      });
+    })();
   </script>
   <script>
     if (location.hostname === 'intentionholistichealth.com') {
@@ -102,6 +113,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png">
+  <script src="/js/analytics.js" defer></script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -413,38 +425,5 @@
 
   <script src="/js/main.js" defer></script>
 
-  <!-- Cookie Consent Banner -->
-  <div class="cookie-consent" id="cookie-consent" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-description">
-    <div class="cookie-consent-inner">
-      <div class="cookie-consent-text">
-        <h4 id="cookie-title">Your Privacy Matters</h4>
-        <p id="cookie-description">We use cookies to analyze site traffic and improve your experience. Your data is never sold. <a href="/legal/privacy.html">Privacy Policy</a></p>
-      </div>
-      <div class="cookie-consent-buttons">
-        <button class="cookie-btn cookie-btn-accept" id="cookie-accept">Accept</button>
-        <button class="cookie-btn cookie-btn-decline" id="cookie-decline">Decline</button>
-      </div>
-    </div>
-  </div>
-  <script>
-    (function() {
-      var banner = document.getElementById('cookie-consent');
-      var acceptBtn = document.getElementById('cookie-accept');
-      var declineBtn = document.getElementById('cookie-decline');
-      var consent = localStorage.getItem('cookie_consent');
-      if (!consent) {
-        setTimeout(function() { banner.classList.add('show'); }, 1000);
-      }
-      acceptBtn.addEventListener('click', function() {
-        localStorage.setItem('cookie_consent', 'accepted');
-        gtag('consent', 'update', { 'analytics_storage': 'granted' });
-        banner.classList.remove('show');
-      });
-      declineBtn.addEventListener('click', function() {
-        localStorage.setItem('cookie_consent', 'declined');
-        banner.classList.remove('show');
-      });
-    })();
-  </script>
 </body>
 </html>

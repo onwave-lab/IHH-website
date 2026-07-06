@@ -3470,35 +3470,70 @@ p {
   }
 }
 
-/* Overlap avoidance — lift the icon/panel/notice above other fixed elements
-   anchored to the bottom-right / bottom of the viewport so nothing stacks on
-   top of them. Uses :has() so it self-adjusts to whatever a page renders.
-   Every trigger sets the SAME offset: otherwise the rule whose :has() argument
-   has the higher specificity (e.g. .blog-checklist-bar.show, two classes) would
-   win over another (e.g. .floating-share, one class) regardless of source order,
-   leaving the icon too low. Each trigger is scoped to the width where its
-   element actually occupies the bottom-right corner. */
+/* Overlap avoidance — keep the cookie UI clear of other fixed elements so
+   everything stays visible without stacking. Uses :has() so it self-adjusts to
+   whatever a page renders.
 
-/* Site-wide promo bottom bar. */
+   Corner ownership:
+   - Non-blog pages: cookie UI stays bottom-RIGHT; only the promo bar can share
+     that edge, so we lift above it.
+   - Blog posts (<=991px): the blog renders a bottom-RIGHT cluster (Share +
+     "Text Alicia" buttons) plus a full-width checklist banner. The cookie icon
+     moves to the bottom-LEFT there, and both it and the cluster lift above the
+     banner when it is shown. */
+
+/* Site-wide promo bottom bar (non-blog). */
 body:has(.promo-bottom-bar:not(.dismissed)) {
   --cookie-fab-bottom: 88px;
   --cookie-stack-bottom: 148px;
 }
 
-/* Blog checklist bar — a full-width bottom bar at <=1199px. */
-@media (max-width: 1199px) {
+/* Checklist banner is a full-width bottom bar at <=1199px — lift the cookie UI
+   above it (mobile bar ~57px, tablet bar ~81px). */
+@media (max-width: 600px) {
   body:has(.blog-checklist-bar.show) {
-    --cookie-fab-bottom: 88px;
-    --cookie-stack-bottom: 148px;
+    --cookie-fab-bottom: 72px;
+    --cookie-stack-bottom: 132px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1199px) {
+  body:has(.blog-checklist-bar.show) {
+    --cookie-fab-bottom: 96px;
+    --cookie-stack-bottom: 156px;
   }
 }
 
-/* Blog floating share — becomes a bottom-right FAB at <=991px. Keyed on
-   .visible so the icon only lifts while the share button is actually shown. */
+/* At <=991px the Share/"Text Alicia" cluster sits bottom-right. Move the cookie
+   icon (and its panel/notice) to the bottom-left so they never cover it, and
+   lift the cluster above the checklist banner too. */
 @media (max-width: 991px) {
-  body:has(.floating-share.visible) {
-    --cookie-fab-bottom: 88px;
-    --cookie-stack-bottom: 148px;
+  body:has(.floating-share) .cookie-fab {
+    left: 20px;
+    right: auto;
+  }
+  body:has(.floating-share) .cookie-panel,
+  body:has(.floating-share) .cookie-notice {
+    left: 20px;
+    right: auto;
+  }
+}
+@media (min-width: 601px) and (max-width: 991px) {
+  body:has(.blog-checklist-bar.show) .floating-share {
+    bottom: 96px;
+  }
+}
+@media (max-width: 600px) {
+  body:has(.floating-share) .cookie-fab {
+    left: 12px;
+  }
+  /* Panel + notice stay full-width on phones. */
+  body:has(.floating-share) .cookie-panel,
+  body:has(.floating-share) .cookie-notice {
+    left: 12px;
+    right: 12px;
+  }
+  body:has(.blog-checklist-bar.show) .floating-share {
+    bottom: 72px;
   }
 }
 

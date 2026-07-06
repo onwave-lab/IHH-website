@@ -3183,10 +3183,18 @@ p {
    Analytics/advertising are ON by default; visitors opt out here.
    ----------------------------------------- */
 
+/* The icon, panel, and notice share these bottom offsets so they move
+   together when they must clear a bottom bar or the blog share button
+   (see the overlap-avoidance rules at the end of this section). */
+:root {
+  --cookie-fab-bottom: 20px;
+  --cookie-stack-bottom: 80px;
+}
+
 /* Floating cookie icon (always present) */
 .cookie-fab {
   position: fixed;
-  bottom: 20px;
+  bottom: var(--cookie-fab-bottom);
   right: 20px;
   z-index: 9998;
   width: 48px;
@@ -3216,7 +3224,7 @@ p {
 /* Preferences panel */
 .cookie-panel {
   position: fixed;
-  bottom: 80px;
+  bottom: var(--cookie-stack-bottom);
   right: 20px;
   z-index: 9999;
   width: 340px;
@@ -3389,7 +3397,7 @@ p {
 /* First-visit notice */
 .cookie-notice {
   position: fixed;
-  bottom: 80px;
+  bottom: var(--cookie-stack-bottom);
   right: 20px;
   z-index: 9997;
   width: 320px;
@@ -3444,18 +3452,42 @@ p {
 
 /* Mobile */
 @media (max-width: 600px) {
+  :root {
+    --cookie-fab-bottom: 12px;
+    --cookie-stack-bottom: 76px;
+  }
+
   .cookie-fab {
     right: 12px;
-    bottom: 12px;
   }
 
   .cookie-panel,
   .cookie-notice {
     left: 12px;
     right: 12px;
-    bottom: 76px;
     width: auto;
     max-width: none;
+  }
+}
+
+/* Overlap avoidance — lift the icon/panel/notice above other fixed elements
+   anchored to the bottom of the viewport so nothing stacks on top of them.
+   Uses :has() so it self-adjusts to whatever a given page renders. */
+
+/* Full-width bottom bars (site-wide promo bar; blog checklist bar on tablet/mobile). */
+body:has(.promo-bottom-bar:not(.dismissed)),
+body:has(.blog-checklist-bar.show) {
+  --cookie-fab-bottom: 76px;
+  --cookie-stack-bottom: 136px;
+}
+
+/* Blog posts: the floating share button becomes a bottom-right FAB at <=991px.
+   Stack the cookie icon above it (this wins over the bar rule above so it clears
+   a share button AND a checklist bar when both are present). */
+@media (max-width: 991px) {
+  body:has(.floating-share) {
+    --cookie-fab-bottom: 88px;
+    --cookie-stack-bottom: 148px;
   }
 }
 

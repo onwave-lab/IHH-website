@@ -3208,7 +3208,7 @@ p {
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22);
-  transition: transform var(--transition-fast), background var(--transition-fast);
+  transition: transform var(--transition-fast), background var(--transition-fast), bottom var(--transition-base);
 }
 
 .cookie-fab:hover {
@@ -3471,21 +3471,32 @@ p {
 }
 
 /* Overlap avoidance — lift the icon/panel/notice above other fixed elements
-   anchored to the bottom of the viewport so nothing stacks on top of them.
-   Uses :has() so it self-adjusts to whatever a given page renders. */
+   anchored to the bottom-right / bottom of the viewport so nothing stacks on
+   top of them. Uses :has() so it self-adjusts to whatever a page renders.
+   Every trigger sets the SAME offset: otherwise the rule whose :has() argument
+   has the higher specificity (e.g. .blog-checklist-bar.show, two classes) would
+   win over another (e.g. .floating-share, one class) regardless of source order,
+   leaving the icon too low. Each trigger is scoped to the width where its
+   element actually occupies the bottom-right corner. */
 
-/* Full-width bottom bars (site-wide promo bar; blog checklist bar on tablet/mobile). */
-body:has(.promo-bottom-bar:not(.dismissed)),
-body:has(.blog-checklist-bar.show) {
-  --cookie-fab-bottom: 76px;
-  --cookie-stack-bottom: 136px;
+/* Site-wide promo bottom bar. */
+body:has(.promo-bottom-bar:not(.dismissed)) {
+  --cookie-fab-bottom: 88px;
+  --cookie-stack-bottom: 148px;
 }
 
-/* Blog posts: the floating share button becomes a bottom-right FAB at <=991px.
-   Stack the cookie icon above it (this wins over the bar rule above so it clears
-   a share button AND a checklist bar when both are present). */
+/* Blog checklist bar — a full-width bottom bar at <=1199px. */
+@media (max-width: 1199px) {
+  body:has(.blog-checklist-bar.show) {
+    --cookie-fab-bottom: 88px;
+    --cookie-stack-bottom: 148px;
+  }
+}
+
+/* Blog floating share — becomes a bottom-right FAB at <=991px. Keyed on
+   .visible so the icon only lifts while the share button is actually shown. */
 @media (max-width: 991px) {
-  body:has(.floating-share) {
+  body:has(.floating-share.visible) {
     --cookie-fab-bottom: 88px;
     --cookie-stack-bottom: 148px;
   }

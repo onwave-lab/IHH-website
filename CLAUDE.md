@@ -219,6 +219,8 @@ See `CLAUDE-REFERENCE.md` for notion-cli commands and property JSON formats.
 
 The `.mcp.json` file configures the Notion integration. It uses environment variable `${NOTION_TOKEN}` - each device must have `NOTION_TOKEN` set in their environment with a valid Notion API token.
 
+**Version pinning (2026-05-30):** The two npx-based MCP servers are pinned to exact versions instead of floating to `latest` — `@notionhq/notion-mcp-server@2.2.1` and `@cocal/google-calendar-mcp@2.6.1` (MailerLite is a hosted HTTP endpoint, nothing to pin). This keeps server behavior reproducible. **Trade-off:** pinned versions require **periodic manual bumps** to pick up upstream fixes — they will not update on their own. To bump: run `npm view @notionhq/notion-mcp-server version` / `npm view @cocal/google-calendar-mcp version`, update the `@x.y.z` suffix in all three `.mcp.json` files (parent, IHH, IHH-website), and confirm the servers still start. Note: this repo's `.mcp.json` is **gitignored**, so it must be edited locally on each device.
+
 ### Database IDs Reference
 
 Notion database IDs, user IDs, and the Last-Updated callout block ID live in **`.claude-local-ids.md`** at the repo root. This file is **gitignored** because the repo is public — IDs leak workspace structure even though they aren't directly exploitable without `NOTION_TOKEN`.
@@ -397,10 +399,10 @@ Only use colors from the official brand palette (see `/brand/Branding Board.pdf`
 
 ## Git Configuration
 
-- **Use SSH for GitHub pushes** (not HTTPS). The remote should be `git@github.com:trymebroh/IHH-website.git`
+- **Use SSH for GitHub pushes** (not HTTPS). The remote should be `git@github.com:onwave-lab/IHH-website.git` (the repo moved from the old `trymebroh` org to `onwave-lab` on 2026-05-30; the old URL still redirects for now but won't forever).
 - If push fails with credential errors, check the remote with `git remote -v` and switch to SSH if needed:
   ```bash
-  git remote set-url origin git@github.com:trymebroh/IHH-website.git
+  git remote set-url origin git@github.com:onwave-lab/IHH-website.git
   ```
 
 ## Google Analytics 4 (GA4) Tracking
@@ -529,11 +531,14 @@ Before adding any new function env var, budget against the 4KB ceiling. If you h
 
 **Bot Protection (REQUIRED for all forms):** All MailerLite forms must include honeypot field + time-based check. See `CLAUDE-REFERENCE.md` for the MailerLite integration flow, bot protection implementation details, and newsletter form HTML template.
 
-### Cookie Consent
+### Cookie Consent (opt-out model)
 
-- **Consent Mode v2** implemented for GA4
+- **Consent Mode v2** for GA4 + Google Ads, **opt-out**: analytics and advertising are **granted by default**. Visitors opt out via the floating cookie icon or the footer "Cookie Preferences" link; an explicit choice and the browser Global Privacy Control (GPC) signal are honored. **Do NOT re-add a blocking Accept/Decline banner.**
+- **Consent is resolved + applied inline in each page `<head>`** (default-denied → resolve → `gtag('consent','update',…)`) *before* the GA4 loader, so the first pageview respects consent.
+- **Opt-out UI chrome** (first-visit notice, floating cookie icon, preferences panel, footer "Cookie Preferences" link) lives in **`/js/analytics.js`**. Every page must include `<script src="/js/analytics.js" defer></script>` in `<head>`. See `CLAUDE-REFERENCE.md` → **GA4 Tracking Code** for the canonical head block.
 - Cookies stored in `localStorage`:
-  - `cookie_consent` - 'accepted' or 'declined'
+  - `cookie_consent` - 'accepted' or 'declined' (absent = default granted, unless GPC opts out)
+  - `cookie_notice_seen` - 'true' once the first-visit notice is dismissed
   - `popup_dismissed` - exit-intent popup state
   - `newsletter_subscribed` - blog popup state
   - `device_id` - easter egg tracking ID
@@ -638,3 +643,7 @@ See `CLAUDE-REFERENCE.md` for all key URLs (live site, branch deploy, GitHub, GA
 ### Contact & Credentials
 
 See `CLAUDE-REFERENCE.md` for contact email and Alicia Harrison's credentials (MSN, APRN, FNP-C, BHPCC).
+
+## Keyword Research Checklist (added 2026-06-14)
+
+A hand-run, free-tools keyword-research checklist lives at the repo root: **`ihh-keyword-research-checklist.md`**. If Kyle or Alicia asks about keyword/SEO research, content planning, or "what should we write about," point them to it. Run it **once per audience** (B2C patient-facing + B2B partner-facing). Leans on IHH's YMYL/credential advantage; remember the Keyword Planner trap ("Competition" = advertiser bids, not ranking difficulty).

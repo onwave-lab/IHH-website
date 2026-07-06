@@ -13,9 +13,20 @@
       'ad_user_data': 'denied',
       'ad_personalization': 'denied'
     });
-    if (localStorage.getItem('cookie_consent') === 'accepted') {
-      gtag('consent', 'update', { 'analytics_storage': 'granted' });
-    }
+    // Opt-out model (US): analytics ON by default; honor explicit opt-out + GPC.
+    (function(){
+      var choice = localStorage.getItem('cookie_consent'); // 'accepted' | 'declined'
+      var granted = choice === 'accepted' ? true
+                  : choice === 'declined' ? false
+                  : navigator.globalPrivacyControl === true ? false
+                  : true;
+      gtag('consent', 'update', {
+        'analytics_storage': granted ? 'granted' : 'denied',
+        'ad_storage': granted ? 'granted' : 'denied',
+        'ad_user_data': granted ? 'granted' : 'denied',
+        'ad_personalization': granted ? 'granted' : 'denied'
+      });
+    })();
   </script>
   <script>
     if (location.hostname === 'intentionholistichealth.com') {
@@ -47,6 +58,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png">
+  <script src="/js/analytics.js" defer></script>
 </head>
 <body>
   <div class="links-page">

@@ -66,6 +66,109 @@
   status = 404
   force = true
 
+# ===========================================
+# Non-public repo content — NEVER serve these
+# ===========================================
+# `publish = "."` means every tracked file in the repo root is a live URL. These are working
+# documents, drafts, and tooling that happen to live beside the site; none of them are pages.
+# Verified 2026-07-31: no live .html/.css/.js references any of these paths, so blocking them
+# breaks nothing. (`archive/about-v2.html` links into drafts/, but archive/ is blocked too.)
+# `.netlifyignore` also excludes them from upload; these rules are the guaranteed block.
+#
+# ⚠️ This only closes the WEBSITE surface. This repo is also PUBLIC on GitHub, where the same
+# files are served by raw.githubusercontent.com — a redirect here does nothing about that.
+# Internal/business material belongs in the private trymebroh/IHH repo instead.
+
+[[redirects]]
+  from = "/docs/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/drafts/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/marketing/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/archive/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/brand/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/scripts/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/notion-cli/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.claude/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.github/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/CLAUDE.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/CLAUDE-REFERENCE.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/README.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/ihh-keyword-research-checklist.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/package.json"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/package-lock.json"
+  to = "/404.html"
+  status = 404
+  force = true
+
 [[redirects]]
   from = "/services/htma-consulting.html"
   to = "/services/"

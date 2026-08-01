@@ -15,3 +15,23 @@ fonts/*.ttf
 # Internal handoffs + tooling — kept in the repo for cross-device sync, never deployed.
 # netlify.toml also 404s /internal/* as the guaranteed block.
 internal/
+
+# Non-public repo content: working docs, drafts, tooling. `publish = "."` would otherwise
+# serve every one of these as a live URL. netlify.toml 404s each path as the guaranteed block;
+# these entries stop them being uploaded in the first place. Verified 2026-07-31 that no live
+# .html/.css/.js references any of them.
+docs/
+drafts/
+marketing/
+archive/
+brand/
+scripts/
+notion-cli/
+.claude/
+.github/
+CLAUDE.md
+CLAUDE-REFERENCE.md
+README.md
+ihh-keyword-research-checklist.md
+package.json
+package-lock.json

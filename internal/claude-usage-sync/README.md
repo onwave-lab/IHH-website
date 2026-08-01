@@ -2,10 +2,16 @@
 
 **Written 2026-07-31 by Kyle's Claude session. Intended reader: Claude Code on Alicia's machine.**
 
-**TL;DR —** `sync-claude-usage.py` will fail on its next run with a PostgREST `42P10` error until three
-small edits are applied. The same break already hit Kyle's machine and is fixed there. This doc lives
-in the IHH repo only because that's the repo Alicia pulls; **the script itself lives in the OnWave-Lab
-repo**, so pulling IHH does not update it — the edits below must be applied to her local copy.
+**TL;DR —** `sync-claude-usage.py` will fail on its next run with a PostgREST `42P10` error until it is
+updated. The same break already hit Kyle's machine and is fixed there.
+
+**This directory is self-contained.** The **fully fixed script is sitting right here** as
+`sync-claude-usage.py` — pull IHH `main` and copy it over the local copy. No other repo is needed. The
+edit-by-hand instructions further down are only a fallback, and a record of what actually changed.
+
+> ⚠️ `internal/` is excluded from the Netlify deploy (`netlify.toml` 404s `/internal/*`, and
+> `.netlifyignore` lists it). The IHH site publishes the whole repo root, so **do not move these files
+> up to the root** — they would be served on the live marketing site.
 
 ---
 
@@ -35,27 +41,40 @@ every run looked like a success. Do not trust the exit code on the old version.
 
 ---
 
-## Step 1 — Find the local copy of the script
+## Step 1 — Replace the local copy (the whole fix, in one command)
 
-It is **not** in this repo. Canonical path in the OnWave-Lab repo:
-
-```
-OnWave-Lab/tools/sync-claude-usage.py
-```
-
-If that repo is cloned locally, `git pull` on `main` will bring the fixed file down once Kyle's change
-is pushed — **check for it first, and if the fix is already present, skip to Step 3.** The fix is
-present if the file contains the string `TENANT_ORG_ID`.
-
-If the script was hand-copied to Alicia's Mac rather than cloned, apply the three edits below by hand.
+The corrected script is in this directory. Find wherever the Mac's copy lives — canonically
+`OnWave-Lab/tools/sync-claude-usage.py`, but it may have been hand-placed:
 
 ```bash
-grep -n "TENANT_ORG_ID" path/to/sync-claude-usage.py   # any output => already fixed, skip to Step 3
+# from the IHH repo root, after `git pull origin main`
+find ~ -name "sync-claude-usage.py" -not -path "*/Intention-Holistic-Health-website/*" 2>/dev/null
 ```
+
+Back up whatever is there, then copy this one over it:
+
+```bash
+cp path/to/sync-claude-usage.py path/to/sync-claude-usage.py.bak-$(date +%F)
+cp internal/claude-usage-sync/sync-claude-usage.py path/to/sync-claude-usage.py
+```
+
+Already fixed? This tells you without diffing — any output means the fix is present, so **skip to
+Step 3**:
+
+```bash
+grep -n "TENANT_ORG_ID" path/to/sync-claude-usage.py
+```
+
+Nothing about the Mac's setup needs to change: `SOURCE_DEVICE` still reads `CLAUDE_DEVICE_NAME` (so
+`alicia-macbook` keeps working, or pass `--device alicia-macbook`), and the new `TENANT_ORG_ID` has a
+correct built-in default, so **no new environment variable is required**.
+
+**Step 2 is only needed if copying the file isn't possible** — it documents the same change as three
+hand edits.
 
 ---
 
-## Step 2 — The three edits
+## Step 2 — The three edits (fallback only — skip if Step 1 worked)
 
 ### 2a. Add the constant, just below `OWNER`
 

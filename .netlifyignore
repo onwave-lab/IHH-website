@@ -11,3 +11,7 @@ images/originals/
 # All TTF font files - CSS now uses WOFF2 format instead
 # TTFs kept in repo as source files but not deployed
 fonts/*.ttf
+
+# Internal handoffs + tooling — kept in the repo for cross-device sync, never deployed.
+# netlify.toml also 404s /internal/* as the guaranteed block.
+internal/

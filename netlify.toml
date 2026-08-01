@@ -57,6 +57,15 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
+# Internal, non-public files kept in the repo for cross-device sync (handoffs, tooling).
+# `publish = "."` serves the whole repo root, so anything under internal/ would otherwise be
+# fetchable on the live site. .netlifyignore is also set, but this rule is the guaranteed one.
+[[redirects]]
+  from = "/internal/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
 [[redirects]]
   from = "/services/htma-consulting.html"
   to = "/services/"

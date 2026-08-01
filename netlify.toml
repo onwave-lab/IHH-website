@@ -57,9 +57,9 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# Internal, non-public files kept in the repo for cross-device sync (handoffs, tooling).
-# `publish = "."` serves the whole repo root, so anything under internal/ would otherwise be
-# fetchable on the live site. .netlifyignore is also set, but this rule is the guaranteed one.
+# Backstop only. `internal/` is now .gitignore'd, so it cannot reach a build at all — internal
+# tooling/handoffs live in the private trymebroh/IHH repo. This rule stays because `publish = "."`
+# means any stray file under internal/ would otherwise be fetchable on the live site.
 [[redirects]]
   from = "/internal/*"
   to = "/404.html"

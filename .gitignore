@@ -43,3 +43,10 @@ docs/notion-system-architecture.md
 
 # Local Netlify folder
 .netlify
+
+# Internal tooling/handoffs — THIS REPO IS PUBLIC ON GITHUB and Netlify publishes its whole
+# root (publish = "."), so anything committed here is world-readable twice over.
+# Business/ops docs and scripts belong in the private trymebroh/IHH repo instead.
+# (The Claude usage-sync handoff was committed here by mistake on 2026-07-31 — 12a5fc5 —
+#  and now lives at tools/claude-usage-sync/ in trymebroh/IHH.)
+internal/

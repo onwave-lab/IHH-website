@@ -3963,3 +3963,20 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
   font-size: clamp(2rem, 5vw, 2.75rem);
   text-transform: none;
 }
+
+/* ==========================================
+   Build credit (footer)
+   ========================================== */
+.footer-credit {
+  margin-top: 0.35rem;
+  opacity: 0.75;
+}
+.footer-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.footer-credit a:hover,
+.footer-credit a:focus-visible {
+  color: var(--color-sage-green);
+}

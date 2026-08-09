@@ -52,14 +52,25 @@
         document.head.appendChild(s);
       };
 
+      // First interaction wins — by then the critical window is over anyway.
       ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function(evt) {
         window.addEventListener(evt, loadGtag, { once: true, passive: true, capture: true });
       });
 
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(loadGtag, { timeout: 2500 });
+      // Otherwise wait for `load` BEFORE starting the idle countdown. requestIdleCallback
+      // on its own fires during the first idle gap, which on this page happens while
+      // critical resources are still in flight — that defeats the whole point.
+      var startIdleCountdown = function() {
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadGtag, { timeout: 2000 });
+        } else {
+          setTimeout(loadGtag, 1200);
+        }
+      };
+      if (document.readyState === 'complete') {
+        startIdleCountdown();
       } else {
-        setTimeout(loadGtag, 2500);
+        window.addEventListener('load', startIdleCountdown, { once: true });
       }
     }
   </script>

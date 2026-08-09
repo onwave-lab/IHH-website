@@ -603,6 +603,23 @@ When creating new pages, blog posts, or revising content, follow the relevant ch
 
 **IMPORTANT:** When adding a new blog post to `blog.js`, you MUST also add the post metadata to `/netlify/edge-functions/blog-og-tags.js`. Social crawlers can't render JS, so this Edge Function injects OG tags server-side. See `CLAUDE-REFERENCE.md` for the code template and testing URLs.
 
+### Blog Index (homepage carousel) — REGENERATE AFTER EVERY POST CHANGE
+
+`js/blog.js` is ~287KB, and ~62% of that is the full markdown body of every post. Pages that only render blog **cards** load `js/blog-index.js` instead — an auto-generated, metadata-only copy (~9.5KB, 97% smaller).
+
+**Currently loading `blog-index.js`:** `index.html` (homepage carousel), `links.html` (latest-post link).
+**Still loading the full `blog.js`:** `blog/index.html`, `blog/post.html`, `blog/post-superior.html`.
+
+**After adding or editing any post in `js/blog.js`, you MUST run:**
+
+```bash
+node scripts/build-blog-index.js
+```
+
+Skipping this leaves the homepage carousel showing stale posts — it will not error, it will just silently be out of date. Commit the regenerated `js/blog-index.js` alongside `js/blog.js`.
+
+If the card markup in `index.html` starts using a new post field, add that field to `CARD_FIELDS` in `scripts/build-blog-index.js` and regenerate.
+
 ### Blog Image Optimization
 
 Blog images must be optimized with **4 responsive WebP versions** (900px, 500px, 400px, 300px). See `CLAUDE-REFERENCE.md` for the full Blog Image Optimization Workflow including Python scripts, required image sizes, aspect ratio calculations, and how responsive images work in the codebase.

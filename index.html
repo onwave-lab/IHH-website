@@ -33,13 +33,34 @@
     })();
   </script>
   <script>
+    // gtag/js is ~190KB and was blocking the main thread for ~1.9s during the critical
+    // window. The dataLayer pushes below still happen IMMEDIATELY (so the pageview keeps
+    // its original timestamp and event ordering), but the script fetch is held until the
+    // browser is idle or the visitor first interacts — whichever comes first.
+    // Trade-off: a visitor who leaves within ~2.5s without interacting is not counted.
     if (location.hostname === 'intentionholistichealth.com') {
-      var s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3GFCR5ZRMZ';
-      document.head.appendChild(s);
       gtag('js', new Date());
       gtag('config', 'G-3GFCR5ZRMZ');
+
+      var gtagLoaded = false;
+      var loadGtag = function() {
+        if (gtagLoaded) return;
+        gtagLoaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3GFCR5ZRMZ';
+        document.head.appendChild(s);
+      };
+
+      ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function(evt) {
+        window.addEventListener(evt, loadGtag, { once: true, passive: true, capture: true });
+      });
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGtag, { timeout: 2500 });
+      } else {
+        setTimeout(loadGtag, 2500);
+      }
     }
   </script>
   <meta name="google-site-verification" content="YRQoD6oSGC4JRWT6QNBeWsN5AoJ3U5e-99NyYHgpavU" />
@@ -230,7 +251,7 @@
         </div>
       </div>
       <img src="/images/photos/D08A6867-optimized.webp"
-           alt="Alicia Harrison, Nurse Practitioner" class="hero-image" width="800" height="1200" fetchpriority="high">
+           alt="Alicia Harrison, Nurse Practitioner" class="hero-image" width="800" height="1200">
     </section>
 
     <!-- Who I Help Section -->
@@ -554,7 +575,10 @@
     <div class="popup">
       <button class="popup-close" aria-label="Close popup">&times;</button>
       <div class="popup-content">
-        <img src="/images/depletion-signals-guide-preview.jpg" alt="The Depletion Signals Guide" class="popup-image" width="1200" height="1800" loading="lazy">
+        <!-- src is hydrated from data-src by showPopup() in main.js. The overlay hides with
+             visibility/opacity (to keep the fade-in), which means loading="lazy" alone would
+             NOT defer this image — the browser still counts it as in-viewport. -->
+        <img data-src="/images/depletion-signals-guide-preview-popup.webp" alt="The Depletion Signals Guide" class="popup-image" width="420" height="595" loading="lazy">
         <div class="popup-body">
           <h3 class="popup-title" id="popup-title">Before You Go...</h3>
           <p class="popup-text">
@@ -579,7 +603,9 @@
     </div>
   </div>
 
-  <script src="/js/blog.js" defer></script>
+  <!-- Card metadata only (~9KB). The full blog engine + post bodies (js/blog.js, ~287KB)
+       are loaded by the blog pages, not here. Regenerate: node scripts/build-blog-index.js -->
+  <script src="/js/blog-index.js" defer></script>
   <script src="/js/main.js" defer></script>
   <script>
     // Render latest blog posts in carousel

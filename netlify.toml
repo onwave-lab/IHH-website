@@ -5,6 +5,54 @@
 # NOTE: www/non-www redirect is handled in Netlify dashboard Domain Settings
 # Do NOT add redirect rules here for domain canonicalization - causes redirect loops
 
+# --- Keep internal files off the public site -------------------------------
+# publish = "." serves the WHOLE repo. As of 2026-08-08 these all 404 on the
+# live site, so this is defence in depth rather than a fix — but the 404s are
+# a platform default we do not control, and the sibling sites (HRA on Netlify,
+# aliciaharrison.com on Pages) were both leaking CLAUDE.md the same day. If a
+# .env ever lands in this repo, this is what stops it being fetchable.
+[[redirects]]
+  from = "/CLAUDE.md"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/CLAUDE-REFERENCE.md"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/README.md"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/.env"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/.gitignore"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/docs/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/session-notes/*"
+  to = "/"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]

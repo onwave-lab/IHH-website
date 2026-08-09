@@ -343,6 +343,11 @@ document.addEventListener('DOMContentLoaded', function() {
   function showPopup() {
     if (popupOverlay && !wasPopupShownRecently() && !popupShown) {
       popupShown = true;
+      // Hydrate any deferred images before revealing (see note in index.html)
+      popupOverlay.querySelectorAll('img[data-src]').forEach(function(img) {
+        img.src = img.dataset.src;
+        img.removeAttribute('data-src');
+      });
       popupOverlay.classList.add('active');
       document.body.style.overflow = 'hidden';
       localStorage.setItem(POPUP_STORAGE_KEY, new Date().toISOString());
@@ -472,7 +477,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // LAZY LOADING IMAGES
   // -----------------------------------------
   if ('IntersectionObserver' in window) {
-    const lazyImages = document.querySelectorAll('img[data-src]');
+    // Images inside .popup-overlay are excluded: the overlay is a full-viewport
+    // position:fixed element hidden with visibility/opacity, so it always reads as
+    // "intersecting" and this observer would hydrate its images on page load —
+    // defeating the point. showPopup() hydrates those instead, when it opens.
+    const lazyImages = Array.prototype.filter.call(
+      document.querySelectorAll('img[data-src]'),
+      function(img) { return !img.closest('.popup-overlay'); }
+    );
 
     const imageObserver = new IntersectionObserver(function(entries, observer) {
       entries.forEach(function(entry) {

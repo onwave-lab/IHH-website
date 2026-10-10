@@ -143,8 +143,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png">
 
   <!-- Preload LCP image for better performance -->
-  <link rel="preload" as="image" href="/images/hero-mother-baby-small.webp" media="(max-width: 767px)">
-  <link rel="preload" as="image" href="/images/hero-mother-baby-optimized.webp" media="(min-width: 768px)">
+  <link rel="preload" as="image" href="/images/photos/alicia-D08A6123-mobile.webp" media="(max-width: 767px)">
+  <link rel="preload" as="image" href="/images/photos/alicia-D08A6123-tablet.webp" media="(min-width: 768px)">
   <script src="/js/analytics.js" defer></script>
 </head>
 <body>
@@ -210,46 +210,42 @@
   <!-- Main Content -->
   <main id="main">
 
-    <!-- Hero Banner -->
-    <section class="hero-banner-v2" data-track-section="hero-banner">
+    <!-- Hero -->
+    <section class="h4-hero" data-track-section="hero-banner">
       <div class="container">
         <div class="hero-pill-wrap"><span class="hero-pill">Functional Medicine</span></div>
-        <div class="hero-banner-content">
-        <div class="hero-banner-image-wrapper">
-          <img src="/images/hero-mother-baby-small.webp"
-               srcset="/images/hero-mother-baby-small.webp 300w,
-                       /images/hero-mother-baby-optimized.webp 690w"
-               sizes="(max-width: 767px) 250px, 345px"
-               alt="Mother holding baby wrapped in cozy knit blanket"
-               class="hero-banner-photo"
-               width="345" height="345"
-               fetchpriority="high">
-        </div>
-        <div class="hero-banner-text">
-          <h1 class="hero-banner-headline-combined"><span class="headline-line-nowrap">Mineral + Nutrition Focused Care</span><br class="headline-break">for Moms + Kids</h1>
-          <p class="hero-banner-body">
-            Support for clearer thinking,<br>
-            steadier moods, and better sleep,<br>
-            so your whole family can thrive.<br>
-            We start with the minerals and<br>
-            nutrition your brain and body run on.
-          </p>
-          <div class="hero-cta-group hero-banner-cta">
-            <a href="/services/mineral-insight.html" class="btn btn-primary" data-track-cta="hero-for-me">For Me</a>
-            <a href="/services/kids-mineral-insight.html" class="btn btn-outline" data-track-cta="hero-for-my-child">For My Child</a>
+        <div class="h4-hero-grid">
+          <div class="h4-hero-text">
+            <h1 class="h4-hero-title">Mineral + Nutrition Focused Care for <span class="h4-underline">Moms + Kids<svg class="h4-swoosh" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 0 100 6 Q150 12 200 4"/></svg></span></h1>
+            <p class="h4-hero-lead">Support for clearer thinking, steadier moods, and better sleep, so your whole family can thrive. We start with the minerals and nutrition your brain and body run on.</p>
+            <div class="h4-btn-row">
+              <a href="/services/mineral-insight.html" class="h4-btn h4-btn-primary" data-track-cta="hero-for-me">For Me <span aria-hidden="true">&rarr;</span></a>
+              <a href="/services/kids-mineral-insight.html" class="h4-btn h4-btn-outline" data-track-cta="hero-for-my-child">For My Child <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <p class="h4-signature">intentional. simple. sustainable.</p>
           </div>
-          <p class="hero-banner-script">intentional. simple. sustainable.</p>
+          <div class="h4-hero-media">
+            <div class="h4-arch h4-arch-hero">
+              <img src="/images/photos/alicia-D08A6123-tablet.webp"
+                   srcset="/images/photos/alicia-D08A6123-mobile.webp 640w,
+                           /images/photos/alicia-D08A6123-tablet.webp 1024w,
+                           /images/photos/alicia-D08A6123-desktop.webp 1600w"
+                   sizes="(max-width: 767px) 78vw, 440px"
+                   alt="Alicia Harrison in her kitchen with fresh vegetables"
+                   width="1024" height="1536" fetchpriority="high">
+            </div>
+          </div>
         </div>
-      </div>
       </div>
     </section>
 
-    <!-- Sound Familiar (who this is for) -->
-    <section class="section sound-familiar" data-track-section="who-i-help">
+    <!-- Who this is for -->
+    <section class="section h4-band-sand" data-track-section="who-i-help">
       <div class="container">
-        <div class="text-center reveal">
-          <p class="section-label">Who This Is For</p>
-          <h2>For Moms Who Know Something Isn't Quite Right</h2>
+        <div class="h4-head reveal">
+          <p class="h4-eyebrow">Who This Is For</p>
+          <h2 class="h4-title">For Moms Who Know Something Isn't Quite Right</h2>
+          <svg class="h4-swoosh" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 0 100 6 Q150 12 200 4"/></svg>
         </div>
 
         <div class="thoughts-grid">
@@ -283,30 +279,45 @@
         </div>
 
         <p class="sound-familiar-close reveal">Whether you're getting ready for <span id="easter-egg-trigger">pregnancy</span>, recovering after birth, or years into raising kids, your family deserves a plan made for <em>you</em>.</p>
-        <div class="hero-cta-group sound-familiar-cta reveal">
-          <a href="/services/mineral-insight.html" class="btn btn-primary" data-track-cta="familiar-for-me">For Me</a>
-          <a href="/services/kids-mineral-insight.html" class="btn btn-outline" data-track-cta="familiar-for-my-child">For My Child</a>
+        <div class="h4-btn-row h4-btn-row-center reveal">
+          <a href="/services/mineral-insight.html" class="h4-btn h4-btn-primary" data-track-cta="familiar-for-me">For Me <span aria-hidden="true">&rarr;</span></a>
+          <a href="/services/kids-mineral-insight.html" class="h4-btn h4-btn-outline" data-track-cta="familiar-for-my-child">For My Child <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
     </section>
 
-    <!-- Start With the Basics -->
-    <section class="section is-this-you bg-cream" data-track-section="start-with-basics">
+    <!-- Start with the basics (deep sage band) -->
+    <section class="section h4-band-deep" data-track-section="start-with-basics">
       <div class="container">
-        <div class="text-center reveal">
-          <p class="section-label">Why Start With the Basics?</p>
-          <h2>Start With What Your Body Runs On</h2>
-          <p class="basics-text">Every cell in your body needs minerals and nutrients to do its job. When those building blocks run low, it shows up in everyday life: your energy, mood, sleep, and focus, and how your kids eat, sleep, and grow. That's why we start at the root, with the foundations everything else is built on.</p>
+        <div class="h4-split">
+          <div class="h4-split-media reveal">
+            <div class="h4-arch">
+              <img src="/images/photos/alicia-D08A6376-mobile.webp"
+                   srcset="/images/photos/alicia-D08A6376-mobile.webp 640w,
+                           /images/photos/alicia-D08A6376-tablet.webp 1024w"
+                   sizes="(max-width: 767px) 78vw, 400px"
+                   alt="Alicia at her kitchen counter with lemons and a warm drink"
+                   width="640" height="960" loading="lazy">
+            </div>
+          </div>
+          <div class="h4-split-text reveal" style="--reveal-delay: 0.15s">
+            <p class="h4-eyebrow">Why Start With the Basics?</p>
+            <h2 class="h4-title">Start With What Your Body Runs On</h2>
+            <svg class="h4-swoosh" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 0 100 6 Q150 12 200 4"/></svg>
+            <p>Every cell in your body needs minerals and nutrients to do its job. When those building blocks run low, it shows up in everyday life: your energy, mood, sleep, and focus, and how your kids eat, sleep, and grow.</p>
+            <p>That's why we start at the root, with the foundations everything else is built on.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- How It Works -->
+    <!-- How it works -->
     <section class="section not-alone" data-track-section="how-it-works">
       <div class="container">
-        <div class="section-header-lifestyle section-header-lifestyle--smaller reveal">
-          <p class="script-title">the process</p>
-          <p class="subtitle">Three simple steps</p>
+        <div class="h4-head reveal">
+          <p class="h4-eyebrow">The Process</p>
+          <h2 class="h4-title">Three Simple Steps</h2>
+          <svg class="h4-swoosh" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 0 100 6 Q150 12 200 4"/></svg>
         </div>
 
         <div class="process-steps-interactive">
@@ -346,41 +357,56 @@
           </div>
         </div>
       </div>
+      </div>
+    </section>
+
+    <!-- Pull quote -->
+    <section class="h4-quote-band" data-track-section="pull-quote">
+      <div class="container">
+        <figure class="h4-quote reveal">
+          <blockquote>&ldquo;Moms shouldn't have to sacrifice their health to raise healthy families.&rdquo;</blockquote>
+          <figcaption>Alicia Harrison, MSN, APRN, FNP-C</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- Meet Alicia -->
-    <section class="hero" data-track-section="intro-alicia">
+    <section class="section" data-track-section="intro-alicia">
       <div class="container">
-        <div class="hero-content reveal">
-          <h2 class="hero-title">HI! I'M ALICIA</h2>
-          <p class="hero-subtitle">functional medicine nurse practitioner | HTMA expert | mom</p>
-          <p class="hero-credentials">Alicia Harrison, MSN, APRN, FNP-C &middot; Certified Brain Health Professional</p>
-          <img src="/images/photos/D08A6867-small.webp"
-               alt="Alicia Harrison, Nurse Practitioner" class="hero-image-mobile" width="300" height="450" loading="lazy">
-          <p class="hero-text">
-            I'm a family nurse practitioner and a mom, and I've had my own seasons of exhaustion, hormone, and sleep struggles.
-          </p>
-          <p class="hero-text">
-            I built Intention Holistic Health to give Kentucky families what I wanted for mine: real information about my body, and a simple plan I could actually follow.
-          </p>
-          <p class="hero-text">
-            No overwhelm. No 20-supplement routines. Just the next right steps for you and your family.
-          </p>
-          <div class="hero-cta-group">
-            <a href="/about.html" class="btn btn-outline" data-track-cta="get-to-know-me">Get to Know Me</a>
+        <div class="h4-split h4-split-reverse">
+          <div class="h4-split-media reveal">
+            <div class="h4-arch">
+              <img src="/images/photos/D08A6867-small.webp"
+                   srcset="/images/photos/D08A6867-small.webp 300w,
+                           /images/photos/D08A6867-optimized.webp 800w"
+                   sizes="(max-width: 767px) 78vw, 400px"
+                   alt="Alicia Harrison, family nurse practitioner"
+                   width="800" height="1200" loading="lazy">
+            </div>
+          </div>
+          <div class="h4-split-text reveal" style="--reveal-delay: 0.15s">
+            <p class="h4-eyebrow">Meet Your Practitioner</p>
+            <h2 class="h4-title">Hi! I'm Alicia</h2>
+            <svg class="h4-swoosh" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 0 100 6 Q150 12 200 4"/></svg>
+            <p class="hero-credentials">MSN, APRN, FNP-C &middot; HTMA Expert &middot; Certified Brain Health Professional</p>
+            <p>I'm a family nurse practitioner and a mom, and I've had my own seasons of exhaustion, hormone, and sleep struggles.</p>
+            <p>I built Intention Holistic Health to give Kentucky families what I wanted for mine: real information about my body, and a simple plan I could actually follow.</p>
+            <p>No overwhelm. No 20-supplement routines. Just the next right steps for you and your family.</p>
+            <div class="h4-btn-row">
+              <a href="/about.html" class="h4-btn h4-btn-outline" data-track-cta="get-to-know-me">Get to Know Me <span aria-hidden="true">&rarr;</span></a>
+            </div>
           </div>
         </div>
       </div>
-      <img src="/images/photos/D08A6867-optimized.webp"
-           alt="Alicia Harrison, Nurse Practitioner" class="hero-image" width="800" height="1200">
     </section>
 
-    <!-- Services Section -->
-    <section class="section bg-cream" data-track-section="services">
+    <!-- Services -->
+    <section class="section h4-band-sand" data-track-section="services">
       <div class="container">
-        <div class="section-header-lifestyle">
-          <p class="script-title">Services</p>
-          <p class="subtitle">Choose Your Starting Point</p>
+        <div class="h4-head reveal">
+          <p class="h4-eyebrow">Services</p>
+          <h2 class="h4-title">Choose Your Starting Point</h2>
+          <svg class="h4-swoosh" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 0 100 6 Q150 12 200 4"/></svg>
         </div>
 
         <div class="grid grid-2 offers-grid">
@@ -420,6 +446,22 @@
         </div>
 
         <p class="text-center mt-lg">Not sure where to start? <a href="/services/discovery-session.html" class="inline-link" data-track-cta="explore-sessions">Book a Discovery Session &rarr;</a></p>
+      </div>
+    </section>
+
+    <!-- Credentials (dark band) -->
+    <section class="h4-credentials" data-track-section="credentials">
+      <div class="container">
+        <p class="h4-eyebrow">Credentials &amp; Training</p>
+        <div class="h4-cred-main reveal">
+          <span class="h4-cred-big">MSN, APRN, FNP-C</span>
+          <span class="h4-cred-sub">Board-Certified Family Nurse Practitioner</span>
+        </div>
+        <div class="h4-cred-row">
+          <div class="h4-cred reveal"><span>HTMA</span><small>Expert Training</small></div>
+          <div class="h4-cred reveal" style="--reveal-delay: 0.1s"><span>Brain Health</span><small>Certified Professional</small></div>
+          <div class="h4-cred reveal" style="--reveal-delay: 0.2s"><span>Functional</span><small>Nutrition</small></div>
+        </div>
       </div>
     </section>
 

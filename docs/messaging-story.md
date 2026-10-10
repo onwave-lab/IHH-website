@@ -40,7 +40,7 @@
 
 ### Don't lose the mom-to-be (Alicia, Oct 10)
 Preconception is a core audience, not a footnote. Every main page should speak to all three seasons: **preparing for pregnancy, after birth, and the mom years**. Real-life moments for her: wanting to feel ready before trying, already tired and not even pregnant yet, cycles that are hard to predict, being told to "just take a prenatal."
-> **Pregnancy rule:** people can test during pregnancy, but Alicia does **not** create supplement protocols for pregnant women (liability). Don't promote pregnancy as a time to start; point pregnant women to reach out first and to their OB-GYN or midwife.
+> **Pregnancy rule:** people can test during pregnancy, but Alicia does **not** create supplement protocols for pregnant women (liability). Don't promote pregnancy as a time to start, and don't add a pregnancy FAQ (Alicia: "if they want to know, they'll ask"). Best time to start when planning a pregnancy: 3–18 months before trying.
 
 ### Alicia's story (the proof)
 Alicia was exhausted and pushing through too. **Specific testing made her own plan clear.** With balanced minerals, whole-food nutrition focused on what her body actually needed (no fads, no keto), and a few targeted supplements, she has **more energy now, postpartum with two kids, than she did in her first pregnancy.** Every body is different, which is why she starts with testing.

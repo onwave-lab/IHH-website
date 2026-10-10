@@ -2,7 +2,7 @@
 
 *Drafted October 10, 2026. Internal only (docs/ is never published).*
 
-**How to think about this (Alicia, Oct 10):** the only real launch is **Kids Mineral Insight**. Everything else (the new website look, preconception focus, $425 pricing, the bundle) is a natural shift. It shows up in normal posts and emails over time, with no "relaunch" announcement. The MailerLite welcome series doesn't need changes.
+**How to think about this (Alicia, Oct 10):** the only announcement is **Kids Mineral Insight**: *after more requests, Alicia is adding kids services to better serve the whole family.* Don't announce or describe any change for women; women's services simply continue (the new site look, pricing, and bundle just show up naturally). The MailerLite welcome series doesn't need changes.
 
 **Before the Kids launch goes out:**
 - [ ] New site merged to `main` (after attorney review of legal pages + pediatric consents)
@@ -28,16 +28,18 @@
 
 ### A1: Coming soon / join the list
 
-**Subject options:** Something I've been working on for your kids · For the mom doing all the research
+**Subject options:** You asked, so I'm adding kids services · Now serving the whole family
 **Preview text:** Kids Mineral Insight is coming. Here's how to be first in line.
 
 > Hi {$name|default('friend')},
 >
-> If you've been taking care of everyone else, there's a good chance you've also wondered: *"What about my kids?"*
+> Over the past months, more and more of you have asked me some version of the same question: *"Can you help my kids, too?"*
 >
-> A hard time focusing at school. Big emotions over small things. Bedtime that takes forever. The same five foods at every meal. You've saved the posts, asked the mom group, maybe even tried a kids' supplement, and you're still not sure where to start.
+> So, to better serve the whole family, I'm adding kids services.
 >
-> I'm a mom too, and when it's my own family, I want real information before I build a plan. So I built one for yours.
+> Maybe it's a hard time focusing at school. Big emotions over small things. Bedtime that takes forever. The same five foods at every meal. You've saved the posts, asked the mom group, maybe even tried a kids' supplement, and you're still not sure where to start.
+>
+> I'm a mom too, and when it's my own family, I want real information before I build a plan. Now I can offer that for your kids.
 >
 > **Kids Mineral Insight** is coming soon:
 > - An easy at-home mineral test for kids ages 4–17 (no needles, just a small hair sample)
@@ -103,7 +105,9 @@
 **Graphics:** `docs/social/kids-launch/` (numbers match below; `_preview.png` shows them all).
 
 **1a: Coming soon** *(1a-coming-soon.png)*
-> Something new for your kids is coming. 🌿
+> You asked, so I'm adding kids services. 🌿
+>
+> After more and more requests, I'm expanding to better serve the whole family.
 >
 > Kids Mineral Insight: an easy at-home mineral test for kids ages 4–17, a review with you, and a simple plan you can use at home.
 >
@@ -161,7 +165,7 @@
 
 **Post A: Coming soon** (button: *Sign up* → /services/kids-mineral-insight.html)
 > **Kids Mineral Insight: coming soon**
-> An easy at-home mineral test for kids ages 4–17 (no needles), a review with you, and a simple plan for food, sleep, and routines you can use at home. Works alongside your child's pediatrician. Join the enrollment list to hear first.
+> After more requests from families, Intention Holistic Health is adding kids services. An easy at-home mineral test for kids ages 4–17 (no needles), a review with you, and a simple plan for food, sleep, and routines you can use at home. Works alongside your child's pediatrician. Join the enrollment list to hear first.
 
 **Post B: Now open** (button: *Book* → /services/kids-mineral-insight.html)
 > **Kids Mineral Insight is open**

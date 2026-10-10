@@ -4079,13 +4079,23 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
 }
 
 .thought-list li {
-  font-family: var(--font-heading);
-  font-style: italic;
-  font-size: 1.2rem;
-  line-height: 1.4;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 1.5;
   color: var(--color-charcoal);
-  padding: 0.7rem 0;
+  padding: 0.7rem 0 0.7rem 1.25rem;
   border-bottom: 1px dashed rgba(141, 148, 136, 0.35);
+}
+
+.thought-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.25rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-sage-green);
 }
 
 .thought-list li:last-child {
@@ -4102,4 +4112,63 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
 
 .sound-familiar-cta {
   justify-content: center;
+}
+
+.thought-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.thought-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ---------------------------------------------
+   Gentle motion (2026-10-10)
+   - Hero text eases in on load, in sequence
+   - Elements with .reveal fade up as they scroll into view
+     (js/main.js adds .js-reveal to <html>, so content is never
+     hidden if JavaScript doesn't run)
+   - Everything is skipped for visitors who prefer reduced motion
+   --------------------------------------------- */
+@keyframes softRise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-banner-text > .hero-banner-headline-combined,
+.hero-banner-text > .hero-banner-body,
+.hero-banner-text > .hero-banner-cta,
+.hero-banner-text > .hero-banner-script {
+  animation: softRise 0.8s ease-out both;
+}
+
+.hero-banner-text > .hero-banner-body { animation-delay: 0.15s; }
+.hero-banner-text > .hero-banner-cta { animation-delay: 0.3s; }
+.hero-banner-text > .hero-banner-script { animation-delay: 0.45s; }
+
+.js-reveal .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition-delay: var(--reveal-delay, 0s);
+}
+
+.js-reveal .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Once revealed, cards use their normal quick hover transition */
+.js-reveal .thought-card.reveal.is-visible,
+.js-reveal .service-card.reveal.is-visible,
+.js-reveal .process-step-card.reveal.is-visible {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.8s ease-out;
+  transition-delay: 0s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-banner-text > * { animation: none !important; }
+  .js-reveal .reveal { opacity: 1; transform: none; transition: none; }
+  .thought-card:hover { transform: none; }
 }

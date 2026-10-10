@@ -50,7 +50,7 @@ Alicia was exhausted and pushing through too. **Specific testing made her own pl
 | **What she thinks** | "Why can't I keep up?" "Is this just my life now?" | "Am I missing something?" "Is it something I'm feeding him?" |
 | **What frustrates her** | Conflicting advice, supplements that don't seem to help, being told it's "just mom life" | Being told to wait it out, guessing at what might help |
 
-> **Phrases to retire from the site:** "running on empty," "labs came back normal," "too many tabs," "foundations-first approach," "HTMA-led path," "interpreted in context," and "What HTMA is / what it isn't" sections (or any "None of these mean…" style disclaimers in the body). Show the real moments instead; the required "screening tool, not a diagnosis" wording lives in one FAQ answer + the disclaimer box.
+> **Phrases to retire from the site:** "running on empty," "labs came back normal," "too many tabs," "foundations-first approach," "HTMA-led path," "interpreted in context," first-person "thought" quotes (Alicia didn't like them), and "What HTMA is / what it isn't" sections (or any "None of these mean…" style disclaimers in the body). Show the real moments instead; the required "screening tool, not a diagnosis" wording lives in one FAQ answer + the disclaimer box.
 
 ## 3. Why she's looking for help *now*
 She's tired of trial and error. She wants a **specific, simple plan for her family**, not another generic list, from someone she trusts.
@@ -64,6 +64,10 @@ She's tired of trial and error. She wants a **specific, simple plan for her fami
 Before adding more supplements or complicated protocols, get the basics right: the minerals, food, sleep, and daily rhythms the body runs on. When those are low, everything else is harder. When they're right, other changes work better. It's simpler, often cheaper, and a smarter place to start.
 
 > **Website rule:** say it like this ("start with the basics your body runs on"). Avoid jargon like "foundations-first approach," "HTMA-led path," or "interpreted in context."
+
+### "Root cause," Alicia's way (OK to use)
+To Alicia, "root" means the **foundations**: the minerals and nutrients every cell needs to function, which then build up into how you feel and live every day (energy, mood, sleep, focus, how kids grow). Say it that way: *"we start at the root, with the foundations everything else is built on."*
+> **Don't** claim the *test* "finds the root cause" or "proves" anything. The root is the philosophy (start with the foundations), not a promise about what HTMA shows.
 
 ## 6. Why HTMA is the front door (but not the whole house)
 - It's an **easy yes**: an at-home hair sample with no needles, a flat price, and real results about her (or her child's) minerals.

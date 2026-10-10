@@ -4034,3 +4034,72 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
 .hero-banner-cta .btn {
   white-space: nowrap;
 }
+
+/* "Sound familiar?" thought cards (2026-10-10) */
+.sound-familiar {
+  background: rgba(205, 207, 192, 0.35); /* light sage tint */
+}
+
+.thoughts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  max-width: 1100px;
+  margin: var(--spacing-lg) auto 0;
+}
+
+@media (min-width: 900px) {
+  .thoughts-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.thought-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-md);
+  border-top: 4px solid var(--color-sage-green);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+}
+
+.thought-card-label {
+  font-family: var(--font-body);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-sage-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+.thought-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.thought-list li {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: var(--color-charcoal);
+  padding: 0.7rem 0;
+  border-bottom: 1px dashed rgba(141, 148, 136, 0.35);
+}
+
+.thought-list li:last-child {
+  border-bottom: none;
+}
+
+.sound-familiar-close {
+  max-width: 640px;
+  margin: var(--spacing-lg) auto var(--spacing-md);
+  text-align: center;
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+}
+
+.sound-familiar-cta {
+  justify-content: center;
+}

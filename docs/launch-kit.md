@@ -10,7 +10,7 @@
 - [ ] Kids page buttons connected; fill the yellow placeholders on the Kids page (shipping, timelines, teen privacy)
 - [ ] Replace every `[LINK]` below with the live URL
 
-**Compliance reminders (all channels):** never "coach/coaching," "mentor," or "consult/consulting." Use "may," "designed to support," "individual results vary." HTMA is a screening tool, not a diagnosis. Kentucky residents only. Kids Mineral Insight works alongside the pediatrician. Don't promote pregnancy as a time to start a protocol.
+**Compliance reminders (all channels):** never "coach/coaching," "mentor," or "consult/consulting." Use "may," "designed to support," "individual results vary." Kentucky residents only. Keep "HTMA is a screening tool, not a diagnostic test" in the disclaimer line at the bottom of a post or email, not in the main message. Kids Mineral Insight works alongside the pediatrician. Don't promote pregnancy as a time to start a protocol.
 
 ---
 
@@ -117,14 +117,18 @@
 >
 > Your body works hard to keep blood levels steady, so a blood test shows one moment in time. Hair grows over time, so it shows mineral patterns from the past few months.
 >
-> Different tools, different jobs. HTMA is a screening tool, not a diagnosis, and I always read it alongside your health history.
+> Different tools, different jobs, and I always read your results alongside your health history.
+>
+> *HTMA is a screening tool, not a diagnostic test. Individual results vary.*
 
 **L3: Is HTMA safe for kids?** *(L3-safe-for-kids.png)*
 > Parents ask: is HTMA safe for kids? 🤍
 >
-> No needles, no blood draw: just a small hair sample, collected at home. It's a screening tool, not a diagnosis, and it works alongside your child's pediatrician.
+> No needles, no blood draw: just a small hair sample, collected at home. And it works alongside your child's pediatrician.
 >
 > More on this soon. 👀
+>
+> *HTMA is a screening tool, not a diagnostic test. Individual results vary.*
 
 **L4: Picky eaters** *(L4-picky-eater.png)*
 > Same five foods, every meal? 🍝
@@ -191,12 +195,14 @@
 > 02 We review your child's results together, in plain language.
 > 03 You get a few doable steps, plus a follow-up.
 >
-> HTMA is a screening tool, not a diagnosis. Link in bio.
+> Link in bio.
+>
+> *HTMA is a screening tool, not a diagnostic test. Individual results vary.*
 
 **5: Works alongside your pediatrician** *(5-pediatrician.png)*
 > Good to know: Kids Mineral Insight works *alongside* your child's pediatrician. 🩺
 >
-> It's a look at the basics (minerals, food, sleep, and daily routines). It isn't a diagnosis, and it doesn't replace your child's regular care. When something deserves a closer look, I'll point you back to your pediatrician.
+> It's a look at the basics (minerals, food, sleep, and daily routines). It doesn't replace your child's regular care. When something deserves a closer look, I'll point you back to your pediatrician.
 
 **6: Mom + Child Bundle** *(6-bundle.png; post on or after opening day)*
 > For you AND your kiddo. 💛
@@ -272,10 +278,14 @@
 > Planning for a baby? 🤍 Wanting to feel ready before you start trying. Already tired, and not even pregnant yet. Cycles that are hard to predict. Told to "just take a prenatal." Building your mineral stores before pregnancy may help you go into it more nourished. The best time to start Mineral Insight is about 3–18 months before you start trying. Link in bio.
 
 **E: How Mineral Insight works** *(carousel Ea–Ed)*
-> Three simple steps, all from home: test, review, plan. HTMA is a screening tool, not a diagnosis. I read your results alongside your health history, food, and sleep to decide where to start. Link in bio.
+> Three simple steps, all from home: test, review, plan. I read your results alongside your health history, food, and sleep to decide where to start. Link in bio.
+>
+> *HTMA is a screening tool, not a diagnostic test. Individual results vary.*
 
 **F: What does a hair test show?** *(F-what-is-htma.png)*
 > HTMA measures minerals like magnesium, sodium, potassium, and zinc in a small hair sample. A blood test shows a single moment; hair grows over time, so HTMA shows patterns from the past few months. On its own, it's a page of bars and numbers. In your review, I translate it into a plan. Link in bio.
+>
+> *HTMA is a screening tool, not a diagnostic test. Individual results vary.*
 
 ## Everyday newsletter emails (send as regular newsletters, not announcements)
 

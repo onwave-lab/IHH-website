@@ -69,7 +69,7 @@
 > It's here: **Kids Mineral Insight is officially open.**
 >
 > Here's how it works:
-> 1. **Snip.** Your kit ships to your door. Collect a small hair sample at home with simple steps.
+> 1. **Collect.** Your kit ships to your door. Collect a small hair sample at home with simple steps.
 > 2. **Review.** We go over your child's results together, in plain language. You get a recording to rewatch or share with a co-parent.
 > 3. **Plan.** You leave with a few doable steps for food, sleep, and routines, plus a follow-up 4–6 weeks later.
 >
@@ -122,7 +122,7 @@
 **L3: Is HTMA safe for kids?** *(L3-safe-for-kids.png)*
 > Parents ask: is HTMA safe for kids? 🤍
 >
-> No needles, no blood draw: just a small snip of hair, collected at home. It's a screening tool, not a diagnosis, and it works alongside your child's pediatrician.
+> No needles, no blood draw: just a small hair sample, collected at home. It's a screening tool, not a diagnosis, and it works alongside your child's pediatrician.
 >
 > More on this soon. 👀
 
@@ -164,7 +164,7 @@
 **1b: Now open** *(1b-now-open.png; post on opening day)*
 > It's here. 💛 Kids Mineral Insight is open.
 >
-> Snip a small hair sample at home, we review the results together, and you get a simple plan for food, sleep, and routines, plus a follow-up.
+> Collect a small hair sample at home, we review the results together, and you get a simple plan for food, sleep, and routines, plus a follow-up.
 >
 > For Kentucky kids ages 4–17. Enroll: link in bio.
 
@@ -185,9 +185,9 @@
 > Ages 4–17. Link in bio.
 
 **4: How it works** *(4-how-it-works.png)*
-> No needles. Just a snip. ✂️
+> No needles. Just a hair test. 🤍
 >
-> 01 Snip a small hair sample at home.
+> 01 Collect a small hair sample at home.
 > 02 We review your child's results together, in plain language.
 > 03 You get a few doable steps, plus a follow-up.
 >
@@ -215,7 +215,7 @@
 
 **Post B: Now open** (button: *Book* → /services/kids-mineral-insight.html)
 > **Kids Mineral Insight is open**
-> Snip a small hair sample at home, review your child's results with Alicia Harrison, MSN, APRN, FNP-C, and get a simple plan plus a follow-up. For Kentucky families, ages 4–17. The Mom + Child Bundle covers you and your child together.
+> Collect a small hair sample at home, review your child's results with Alicia Harrison, MSN, APRN, FNP-C, and get a simple plan plus a follow-up. For Kentucky families, ages 4–17. The Mom + Child Bundle covers you and your child together.
 
 ---
 

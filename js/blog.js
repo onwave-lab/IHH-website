@@ -354,7 +354,7 @@ No overwhelm. Just one swap at a time.
 If you want help sorting through your specific products, I do home product reviews as part of my wellness packages at IHH.
 
 [CTA-ROW-START]
-[CTA:Start With Your Minerals|Want help figuring out which changes to prioritize for your health goals? Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan, for one flat fee.|apply|Explore Mineral Insight]
+[CTA:Start With Your Minerals|Want help figuring out which changes to prioritize for your health goals? Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan.|apply|Explore Mineral Insight]
 [CTA:Download the Nontoxic Swap Checklist|A room-by-room checklist to help you reduce chemical exposure at your own pace. Print it, stick it on your fridge, and swap one product at a time.|nontoxic-swap-checklist|Get the Free Checklist]
 [CTA-ROW-END]
 
@@ -957,7 +957,7 @@ With love + intention,
 Alicia
 
 [CTA-ROW-START]
-[CTA:Ready for a Clearer Starting Point?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan built around your results, for one flat fee.|apply|Explore Mineral Insight]
+[CTA:Ready for a Clearer Starting Point?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan built around your results.|apply|Explore Mineral Insight]
 [CTA:Download the Free Guide|Not sure where to start? Get a free checklist of depletion signals to watch for before pregnancy.|lead-magnet|Get the Free Guide]
 [CTA-ROW-END]
 
@@ -1142,7 +1142,7 @@ With love + intention,
 Alicia
 
 [CTA-ROW-START]
-[CTA:Ready for a Clearer Starting Point?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan built around your results, for one flat fee.|apply|Explore Mineral Insight]
+[CTA:Ready for a Clearer Starting Point?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan built around your results.|apply|Explore Mineral Insight]
 [CTA:Running on Empty? Get the Free Guide|Not sure where to start? Download the free Running on Empty awareness guide to help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
 [CTA-ROW-END]
 
@@ -1494,7 +1494,7 @@ If you\u2019re preparing for pregnancy and want to know whether your body has th
 You don\u2019t have to keep guessing. And you don\u2019t have to accept \u201cthis is just how it is.\u201d
 
 [CTA-ROW-START]
-[CTA:Curious What Your Minerals Show?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan, for one flat fee. Not sure yet? You can book a Discovery Session instead.|apply|Explore Mineral Insight]
+[CTA:Curious What Your Minerals Show?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan. Not sure yet? You can book a Discovery Session instead.|apply|Explore Mineral Insight]
 [CTA:Download the Depletion Signals Checklist|Not sure where to start? This free checklist can help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
 [CTA-ROW-END]
 

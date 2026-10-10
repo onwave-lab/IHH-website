@@ -59,7 +59,9 @@
 
 ## 2. Instagram & Facebook launch set (8 posts)
 
-*Post over about two weeks. Instagram: "link in bio" (set the bio link to the homepage or a link page). Facebook: paste the full link. Graphics: see the Canva designs (matching numbers). Hashtags go in the first comment on Instagram.*
+*Post over about two weeks. Instagram: "link in bio" (set the bio link to the homepage or a link page). Facebook: paste the full link. Hashtags go in the first comment on Instagram.*
+
+**Graphics:** ready-to-post 1080×1350 images are in `docs/social-launch/` (file numbers match the posts below; `02a–02e` and `06a–06d` are the carousel slides, in order). `_preview-sheet.png` shows them all together.
 
 **Suggested bio (Instagram):**
 > Mineral + nutrition focused care for moms, moms-to-be + kids 🌿

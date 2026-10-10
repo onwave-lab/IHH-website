@@ -3786,3 +3786,12 @@
     max-width: 1100px;
   }
 }
+
+/* Results preview: keep the sample report visible on phones too */
+@media (max-width: 768px) {
+  #preview .v3-empathy-image-wrap {
+    display: block !important; /* overrides the generic mobile hide above */
+    max-width: 360px;
+    margin: var(--spacing-md) auto 0;
+  }
+}

@@ -4196,3 +4196,42 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
     letter-spacing: 0.03em;
   }
 }
+
+/* Homepage "Functional Medicine" pill (matches .v3-hero-badge on service pages) */
+.hero-pill-wrap {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+  animation: softRise 0.8s ease-out both;
+}
+
+.hero-pill {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--color-sage-green), var(--color-sage-dark));
+  color: var(--color-white);
+  padding: 6px 16px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+  .hero-pill-wrap {
+    width: 100%;
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-pill-wrap { animation: none; }
+}
+
+/* Homepage Meet Alicia: quiet credentials line */
+.hero-credentials {
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-sage-dark);
+  margin: -0.25rem 0 var(--spacing-md);
+}

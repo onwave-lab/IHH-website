@@ -1109,6 +1109,12 @@ p {
   display: block;
 }
 
+.footer-seal--wide { width: 70px; }
+
+/* Logo on its own row; credential badges in a row beneath it */
+.footer-logos { flex-wrap: wrap; row-gap: var(--spacing-sm); }
+.footer-logos > a { flex-basis: 100%; display: flex; justify-content: center; }
+
 .footer-tagline {
   color: var(--color-medium-gray);
   font-size: var(--font-size-sm);

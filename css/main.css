@@ -4745,3 +4745,20 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
 @media (min-width: 768px) {
   .thoughts-grid-4 { grid-template-columns: repeat(2, 1fr); max-width: 900px; }
 }
+
+/* Mom + Child bundle strip under the two offer cards */
+.h4-bundle {
+  max-width: 1000px;
+  margin: var(--spacing-md) auto 0;
+  padding: 1.5rem 1.75rem;
+  background: var(--color-white);
+  border: 1px dashed var(--color-taupe);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+}
+.h4-bundle .h4-eyebrow { margin-bottom: 0.3rem; }
+.h4-bundle-text { margin: 0; color: var(--color-charcoal); line-height: 1.6; }
+@media (max-width: 640px) { .h4-bundle { text-align: center; justify-content: center; } }

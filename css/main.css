@@ -4591,3 +4591,11 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
 
 /* Hero "Welcome" label (replaces the Functional Medicine pill) */
 .h4-welcome { font-size: 0.8rem; letter-spacing: 0.24em; margin-bottom: 1rem; }
+
+/* Phones: photo above the headline, smaller */
+@media (max-width: 640px) {
+  .h4-hero-grid { gap: var(--spacing-md); }
+  .h4-hero-media { order: -1; margin-bottom: 0.75rem; }
+  .h4-arch-hero,
+  .h4-hero-media::before { width: min(190px, 52vw); }
+}

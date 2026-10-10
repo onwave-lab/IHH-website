@@ -69,6 +69,10 @@ Before adding more supplements or complicated protocols, get the basics right: t
 To Alicia, "root" means the **foundations**: the minerals and nutrients every cell needs to function, which then build up into how you feel and live every day (energy, mood, sleep, focus, how kids grow). Say it that way: *"we start at the root, with the foundations everything else is built on."*
 > **Don't** claim the *test* "finds the root cause" or "proves" anything. The root is the philosophy (start with the foundations), not a promise about what HTMA shows.
 
+### Emphasis: mental & cognitive health (Alicia, Oct 10)
+Lead with how she **thinks and feels**: clearer thinking, focus, steadier moods, calmer reactions, better sleep, energy. For kids, the same: focus, big emotions, sleep. Physical issues (tummy aches, skin, picky eating) can appear, but they're secondary. Unlike practices that lead with specific conditions, IHH leads with the brain-and-body foundations.
+> IHH **is** mineral and nutrition care for moms and kids. The at-home hair test is how she gets started, not what IHH is. Mention it on the page (how it works, offers), not as the headline promise.
+
 ## 6. Why HTMA is the front door (but not the whole house)
 - It's an **easy yes**: an at-home hair sample with no needles, a flat price, and real results about her (or her child's) minerals.
 - It turns "what should I try?" into **a plan based on *her* results**.

@@ -351,12 +351,14 @@ Ready to start? I made a free Nontoxic Swap Checklist you can download, print, a
 
 No overwhelm. Just one swap at a time.
 
-If you want help sorting through your specific products, I do home product reviews as part of my wellness packages at IHH.
+If you want help sorting through your specific products, I do home product reviews as part of The Intention Method at IHH.
 
 [CTA-ROW-START]
 [CTA:Start With Your Minerals|Want help figuring out which changes to prioritize for your health goals? Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan.|apply|Explore Mineral Insight]
 [CTA:Download the Nontoxic Swap Checklist|A room-by-room checklist to help you reduce chemical exposure at your own pace. Print it, stick it on your fridge, and swap one product at a time.|nontoxic-swap-checklist|Get the Free Checklist]
 [CTA-ROW-END]
+
+[CTA:Wondering About Your Kids?|Kids Mineral Insight is an easy at-home mineral test for kids ages 4\u201317, with a simple plan you can use at home.|apply-kids|Explore Kids Mineral Insight]
 
 ## References
 
@@ -550,7 +552,7 @@ With love + intention,
 
 Alicia
 
-[CTA:Ready to understand what your body is telling you?|If you have been experiencing persistent cravings, fatigue, or feel like something is \u201Coff,\u201D a foundations-first approach can help identify what is driving those patterns.|apply|Explore Mineral Insight]
+[CTA:Ready to understand what your body is telling you?|If you have been experiencing persistent cravings, fatigue, or feel like something is \u201Coff,\u201D starting with the basics, like your minerals and nutrition, may help you find what is driving those patterns.|apply|Explore Mineral Insight]
 
 *Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
 
@@ -910,7 +912,7 @@ None of this is meant to scare you. The months before conception are actually a 
 
 Preconception care deserves more than a prenatal vitamin and a quick checkup. I wrote about that in more detail in [Your Body Is the First Home](/blog/post.html?post=2024-11-15-body-first-home).
 
-[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Running on Empty? Get the Free Guide|Not sure where to start? This free checklist can help you recognize what your body may already be telling you\u2014and what to do next.|lead-magnet|Get the Free Guide]
+[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Feeling Depleted? Get the Free Guide|Not sure where to start? This free checklist can help you recognize what your body may already be telling you\u2014and what to do next.|lead-magnet|Get the Free Guide]
 
 ## What Testing Can Reveal That Symptoms Alone Cannot
 
@@ -1099,7 +1101,7 @@ If you\u2019re taking a food-first approach and want to understand why [food alo
 
 [INSIGHT:When gut bacteria ferment dietary fiber, they produce short-chain fatty acids (SCFAs) like butyrate, propionate, and acetate. These compounds do more than support gut health; they influence systemic inflammation, insulin sensitivity, and immune cell function. A diverse fiber intake from multiple plant sources promotes a more diverse microbiome, which is associated with better metabolic outcomes.]
 
-[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Running on Empty? Get the Free Guide|Not sure where to start? This free checklist can help you recognize what your body may already be telling you, and what to do next.|lead-magnet|Get the Free Guide]
+[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Feeling Depleted? Get the Free Guide|Not sure where to start? This free checklist can help you recognize what your body may already be telling you, and what to do next.|lead-magnet|Get the Free Guide]
 
 ## Putting It Together: The \u201cDress Your Carbs\u201d Strategy
 
@@ -1133,7 +1135,7 @@ If you\u2019ve been doing all the \u201cright things\u201d and still feel like y
 
 Start with one change. More protein at breakfast. Chia seeds in your yogurt. Vegetables at every meal. Pair your carbs instead of eating them alone. These are small shifts, but they compound.
 
-And if you\u2019re preparing for pregnancy or rebuilding postpartum and want to understand where your body actually stands, not just your blood work but your mineral reserves, your metabolic patterns, your full functional picture, that\u2019s exactly what [testing like HTMA](/htma.html) and [comprehensive wellness support](/services/) are designed to help with.
+And if you\u2019re preparing for pregnancy or rebuilding postpartum and want to understand where your body actually stands, not just your blood work but your mineral reserves, your metabolic patterns, your full functional picture, that\u2019s exactly what [testing like HTMA](/htma.html) and [Mineral Insight](/services/mineral-insight.html) are designed to help with.
 
 You don\u2019t need to be perfect. You need a foundation your body can actually thrive on. [Your body is the first home](/blog/post.html?post=2024-11-15-body-first-home), and these are the building blocks.
 
@@ -1143,7 +1145,7 @@ Alicia
 
 [CTA-ROW-START]
 [CTA:Ready for a Clearer Starting Point?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan built around your results.|apply|Explore Mineral Insight]
-[CTA:Running on Empty? Get the Free Guide|Not sure where to start? Download the free Running on Empty awareness guide to help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
+[CTA:Feeling Depleted? Get the Free Guide|Not sure where to start? Download the free Running on Empty Awareness Guide to help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
 [CTA-ROW-END]
 
 *Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
@@ -1381,7 +1383,7 @@ These patterns don\u2019t indicate disease. They suggest areas where the body ma
 
 Ideally, 6 to 12 months before you plan to conceive. This allows time to identify patterns, make changes, and retest to see progress. Even 3 months of intentional preparation may make a meaningful difference.
 
-[CTA:Thinking About HTMA?|If you\u2019re planning pregnancy and want to understand your mineral status before conception, Mineral Insight is a simple, flat-fee place to start.|apply|Explore Mineral Insight]
+[CTA:Thinking About HTMA?|If you\u2019re planning pregnancy and want to understand your mineral status before conception, Mineral Insight is a simple place to start.|apply|Explore Mineral Insight]
 
 ## HTMA and Early Motherhood: Understanding Depletion After Birth
 
@@ -1439,7 +1441,7 @@ Follow a personalized plan that addresses nourishment, mineral reserves, and ner
 **Step 3: SUSTAIN**
 Build habits and rhythms that protect your reserves long-term. Sustainable wellness isn\u2019t about perfection. It\u2019s about building a foundation that holds.
 
-[See the full process details](/services/)
+[See how Mineral Insight works](/services/mineral-insight.html)
 
 ## How to Get Started with HTMA Testing
 
@@ -1540,7 +1542,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
       },
       {
         question: 'How much does HTMA testing cost?',
-        answer: 'Testing costs vary by lab and practitioner. At Intention Holistic Health, HTMA testing is included as part of both the Mineral Insight Package and the Signature Program.'
+        answer: 'Testing costs vary by lab and practitioner. At Intention Holistic Health, HTMA testing is included in Mineral Insight, Kids Mineral Insight, and The Intention Method.'
       }
     ],
     schema: {
@@ -2546,7 +2548,7 @@ This is simply my story, and the practices that helped me feel supported and ali
 
 Preparing for an unmedicated birth wasn't about perfection—it was about intention. I focused on practices that supported my body, strengthened my mind, and grounded me spiritually. And while birth unfolded in its own way, these preparations helped me enter the experience feeling peaceful, equipped, and deeply connected to my baby and my Creator.
 
-If you're exploring pregnancy or preparing for birth and want guidance on building a nourishing foundation, [Intention Holistic Health offers support](/services/) that meets you where you are in preconception, pregnancy, and postpartum. Learn more about [preparing your body for pregnancy](/blog/post.html?post=2024-11-15-body-first-home).
+If you're exploring pregnancy or preparing for birth and want guidance on building a nourishing foundation, [Intention Holistic Health offers support](/services/mineral-insight.html) that meets you where you are in preconception, pregnancy, and postpartum. Learn more about [preparing your body for pregnancy](/blog/post.html?post=2024-11-15-body-first-home).
 
 All my love,
 
@@ -2661,7 +2663,7 @@ Women who learn these foundations before pregnancy often feel more grounded, mor
 
 Preconception care does not need to be overwhelming. It's about reconnecting with the rhythms your physiology is already built upon and nourishing your body with intention.
 
-If you want personalized support during preconception, pregnancy, or postpartum, the [Intentional Mama Programs](/services/) and [Lab Review Services](/services/lab-review.html) at Intention Holistic Health provide individualized guidance to honor your body's physiology and your season of life. To learn specifically how mineral testing supports preconception and postpartum, see the [HTMA guide for maternal health](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
+If you want personalized support while preparing for pregnancy or after birth, [Mineral Insight](/services/mineral-insight.html) and [Lab Review Services](/services/lab-review.html) at Intention Holistic Health provide individualized guidance to honor your body's physiology and your season of life. To learn specifically how mineral testing supports preconception and postpartum, see the [HTMA guide for maternal health](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
 
 Your body is the first home your baby will ever know. Caring for it with intention is an act of love that extends far beyond pregnancy — shaping the health of generations to come.
 
@@ -3075,17 +3077,18 @@ function parseMarkdown(markdown) {
   html = html.replace(/\[CTA-ROW-END\]/gim, '</div>');
 
   // CTA boxes [CTA:title|description|formType|buttonText]
-  // formType "apply" links to the Mineral Insight page; others open lead magnet modal
+  // formType "apply" links to Mineral Insight, "apply-kids" to Kids Mineral Insight; others open lead magnet modal
   html = html.replace(/\[CTA:([^|]+)\|([^|]+)\|([^|]+)\|([^\]]+)\]/gim, function(match, title, description, formType, buttonText) {
     var escapedTitle = title.trim().replace(/'/g, "\\'");
     var escapedFormType = formType.trim().replace(/'/g, "\\'");
-    if (formType.trim() === 'apply') {
+    if (formType.trim() === 'apply' || formType.trim() === 'apply-kids') {
+      var ctaHref = formType.trim() === 'apply-kids' ? '/services/kids-mineral-insight.html' : '/services/mineral-insight.html';
       return `<div class="blog-cta-box">
       <div class="blog-cta-content">
         <h4 class="blog-cta-title">${title.trim()}</h4>
         <p class="blog-cta-description">${description.trim()}</p>
       </div>
-      <a href="/services/mineral-insight.html" class="blog-cta-button" data-track-cta="blog-inline-cta">${buttonText.trim()}</a>
+      <a href="${ctaHref}" class="blog-cta-button" data-track-cta="blog-inline-cta">${buttonText.trim()}</a>
     </div>`;
     }
     return `<div class="blog-cta-box">

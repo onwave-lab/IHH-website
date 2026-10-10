@@ -4023,3 +4023,14 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
     margin-right: auto;
   }
 }
+
+/* Tablet: let the first hero headline line wrap so it never overflows (2026-10-10) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .headline-line-nowrap {
+    white-space: normal;
+  }
+}
+
+.hero-banner-cta .btn {
+  white-space: nowrap;
+}

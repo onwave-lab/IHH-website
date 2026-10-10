@@ -19,6 +19,7 @@
 ## Suggested timeline
 | When | Email | Social | Google |
 |---|---|---|---|
+| **2–3 weeks before: education** (can start anytime) | E2 (optional) | Lead-up L1–L6, about 2–3 per week | — |
 | **Week 1: "Coming soon"** (once the site is live) | A1 | Kids 1a, 2, 4 | Post A |
 | **Week 2** | — | Kids 3, 5 | — |
 | **Enrollment opens** (once Practice Better is ready) | A2 | Kids 1b, 6 | Post B |
@@ -99,6 +100,51 @@
 >
 > With intention,
 > Alicia
+
+## Lead-up posts: minerals + HTMA education (before "coming soon")
+
+**Graphics:** the "lead-up" images (L1a–L1e is a 5-slide carousel). These build interest without announcing anything yet; L1's last slide teases "Something for kids is coming soon."
+
+**L1: The minerals your family runs on** *(carousel L1a–L1e)*
+> The minerals your family runs on. 🌿 Save this one.
+>
+> Magnesium is involved in relaxation, sleep, mood, and muscle function. Zinc is involved in taste, appetite, growth, and immune function. Sodium and potassium work as a team for hydration and steady energy.
+>
+> Food first, always. Every body is different, which is why I like to see your family's patterns instead of guessing. Something for kids is coming soon. 👀
+
+**L2: Why test hair instead of blood?** *(L2-why-hair.png)*
+> "Why a hair test?" I get this question a lot. 💬
+>
+> Your body works hard to keep blood levels steady, so a blood test shows one moment in time. Hair grows over time, so it shows mineral patterns from the past few months.
+>
+> Different tools, different jobs. HTMA is a screening tool, not a diagnosis, and I always read it alongside your health history.
+
+**L3: Is HTMA safe for kids?** *(L3-safe-for-kids.png)*
+> Parents ask: is HTMA safe for kids? 🤍
+>
+> No needles, no blood draw: just a small snip of hair, collected at home. It's a screening tool, not a diagnosis, and it works alongside your child's pediatrician.
+>
+> More on this soon. 👀
+
+**L4: Picky eaters** *(L4-picky-eater.png)*
+> Same five foods, every meal? 🍝
+>
+> Zinc is involved in taste and appetite. Before adding another kids' supplement, a look at the basics (minerals, food, and routines) may help you know where to start.
+>
+> Picky eating can have lots of causes, so check with your pediatrician if you're worried.
+
+**L5: Bedtime battles** *(L5-bedtime.png)*
+> Bedtime takes forever? 🌙
+>
+> Magnesium is involved in relaxation and sleep, and routines matter too. Starting with the basics may make evenings a little easier.
+>
+> Something to help with exactly this is coming soon.
+
+**L6: Myth vs. fact** *(L6-myth-fact.png)*
+> Myth: more supplements means better. ❌
+> Fact: food first, then only what's needed. ✅
+>
+> That's why I start with testing, for moms and kids alike.
 
 ## B. Social: Kids launch set (Instagram + Facebook)
 

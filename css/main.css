@@ -4730,3 +4730,13 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
 .h4-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; margin-top: 1.4rem; }
 .h4-tags span { padding: 0.5rem 1rem; border: 1px solid var(--color-sage-dark); color: var(--color-sage-dark); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
 .h4-band-deep .h4-split-text strong { color: var(--color-white); }
+
+/* Four credentials: 2x2 on phones, one row on desktop */
+.h4-cred-row-4 { grid-template-columns: repeat(2, 1fr); max-width: 760px; }
+@media (min-width: 768px) { .h4-cred-row-4 { grid-template-columns: repeat(4, 1fr); } }
+
+/* Photo caption under an arch */
+.h4-caption { text-align: center; font-size: 0.85rem; font-style: italic; color: var(--color-sage-dark); margin-top: 0.75rem; }
+
+/* Credentials line on inner-page heroes */
+.h4-hero-text .hero-credentials { margin: -0.4rem 0 1rem; }

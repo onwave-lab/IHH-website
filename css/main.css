@@ -4740,3 +4740,8 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
 
 /* Credentials line on inner-page heroes */
 .h4-hero-text .hero-credentials { margin: -0.4rem 0 1rem; }
+
+/* Four "who this is for" cards: 2 x 2 */
+@media (min-width: 768px) {
+  .thoughts-grid-4 { grid-template-columns: repeat(2, 1fr); max-width: 900px; }
+}

@@ -38,6 +38,10 @@
 
 **B. "I know something's off, but I'm stuck."** It's been this way so long it feels normal. Her checkups say she's fine enough that no one digs deeper. She's done the "right" things (eaten better, taken vitamins) and nothing sticks. And she has no time or energy left to figure it out for herself.
 
+### Don't lose the mom-to-be (Alicia, Oct 10)
+Preconception is a core audience, not a footnote. Every main page should speak to all three seasons: **preparing for pregnancy, after birth, and the mom years**. Real-life moments for her: wanting to feel ready before trying, already tired and not even pregnant yet, cycles that are hard to predict, being told to "just take a prenatal."
+> **Pregnancy rule:** people can test during pregnancy, but Alicia does **not** create supplement protocols for pregnant women (liability). Don't promote pregnancy as a time to start; point pregnant women to reach out first and to their OB-GYN or midwife.
+
 ### Alicia's story (the proof)
 Alicia was exhausted and pushing through too. **Specific testing made her own plan clear.** With balanced minerals, whole-food nutrition focused on what her body actually needed (no fads, no keto), and a few targeted supplements, she has **more energy now, postpartum with two kids, than she did in her first pregnancy.** Every body is different, which is why she starts with testing.
 > Always tell it as *her* experience. Never promise the same result to the reader.

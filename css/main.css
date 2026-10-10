@@ -3980,3 +3980,11 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
 .footer-credit a:focus-visible {
   color: var(--color-sage-green);
 }
+
+/* Inline text links in homepage body copy (who-this-is-for doors, services footnote) */
+.inline-link {
+  color: var(--color-sage-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}

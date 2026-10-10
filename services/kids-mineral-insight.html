@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Google Analytics 4 with Consent Mode v2 -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+    // Opt-out model (US): analytics ON by default; honor explicit opt-out + GPC.
+    (function(){
+      var choice = localStorage.getItem('cookie_consent'); // 'accepted' | 'declined'
+      var granted = choice === 'accepted' ? true
+                  : choice === 'declined' ? false
+                  : navigator.globalPrivacyControl === true ? false
+                  : true;
+      gtag('consent', 'update', {
+        'analytics_storage': granted ? 'granted' : 'denied',
+        'ad_storage': granted ? 'granted' : 'denied',
+        'ad_user_data': granted ? 'granted' : 'denied',
+        'ad_personalization': granted ? 'granted' : 'denied'
+      });
+    })();
+  </script>
+  <script>
+    if (location.hostname === 'intentionholistichealth.com') {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3GFCR5ZRMZ';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-3GFCR5ZRMZ');
+    }
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PRE-LAUNCH: remove this noindex once pricing/turnaround placeholders are filled in and the
+       privacy policy + pediatric consent documents have been reviewed by counsel.
+       See docs/kids-mineral-insight-repositioning.md → "Launch checklist". -->
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Kids Mineral Insight: a child-centered HTMA assessment for Kentucky kids ages 2–17, read alongside sleep, food, stress, and family life. Practical next steps from a family NP.">
+  <meta name="keywords" content="HTMA for kids, hair tissue mineral analysis children, pediatric HTMA Kentucky, kids mineral test, mineral balance children, picky eating, kids sleep, Kentucky nurse practitioner">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.intentionholistichealth.com/services/kids-mineral-insight.html">
+  <meta property="og:title" content="Kids Mineral Insight | HTMA for Kentucky Kids Ages 2–17 | IHH">
+  <meta property="og:description" content="A child-centered HTMA assessment interpreted alongside growth, nourishment, sleep, stress, and everyday family life. Practical, prioritized next steps.">
+  <meta property="og:image" content="https://www.intentionholistichealth.com/images/who-i-help-mother-medium.webp">
+
+  <link rel="canonical" href="https://www.intentionholistichealth.com/services/kids-mineral-insight.html">
+
+  <!-- JSON-LD: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Kids Mineral Insight",
+    "serviceType": "Pediatric hair tissue mineral analysis (HTMA) wellness assessment",
+    "description": "A focused, child-centered HTMA assessment for Kentucky children and adolescents ages 2 to 17, interpreted alongside growth, nourishment, sleep, stress, medications, supplements, environment, and daily family life. HTMA is a screening and pattern-recognition tool, not a diagnostic test. Does not replace a pediatrician or primary-care provider.",
+    "audience": {
+      "@type": "PeopleAudience",
+      "suggestedMinAge": 2,
+      "suggestedMaxAge": 17
+    },
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Intention Holistic Health",
+      "url": "https://www.intentionholistichealth.com"
+    },
+    "areaServed": {
+      "@type": "State",
+      "name": "Kentucky"
+    }
+  }
+  </script>
+
+  <!-- No FAQPage schema: Google retired FAQ rich results 2026-05-07 (matches the rest of the site). -->
+
+  <!-- JSON-LD: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.intentionholistichealth.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.intentionholistichealth.com/services/"},
+      {"@type": "ListItem", "position": 3, "name": "Kids Mineral Insight", "item": "https://www.intentionholistichealth.com/services/kids-mineral-insight.html"}
+    ]
+  }
+  </script>
+
+  <title>Kids Mineral Insight | HTMA for Kentucky Kids Ages 2–17 | IHH</title>
+
+  <link rel="preload" href="/fonts/Poppins-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/PlayfairDisplay-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/BDScript-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/services-v2.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png">
+  <script src="/js/analytics.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="Intention Holistic Health Home">
+        <img src="/images/logo2-small.webp"
+             srcset="/images/logo2-tiny.webp 192w,
+                     /images/logo2-small.webp 384w,
+                     /images/logo2.webp 640w"
+             sizes="192px"
+             alt="Intention Holistic Health" width="192" height="75">
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <div class="nav-dropdown">
+          <a href="/services/" class="nav-link">Services</a>
+          <div class="nav-dropdown-menu">
+            <a href="/services/discovery-session.html" class="nav-dropdown-link">Discovery Session</a>
+            <a href="/services/mineral-insight.html" class="nav-dropdown-link">Mineral Insight (Women)</a>
+            <a href="/services/kids-mineral-insight.html" class="nav-dropdown-link active">Kids Mineral Insight</a>
+            <a href="/services/" class="nav-dropdown-link">Packages and Programs</a>
+            <a href="/htma.html" class="nav-dropdown-link">What is HTMA?</a>
+          </div>
+        </div>
+        <a href="/contact.html" class="nav-link">Contact</a>
+        <a href="https://us.fullscript.com/welcome/intentionholistichealth" class="nav-link external" data-fullscript>Supplements</a>
+        <a href="https://my.practicebetter.io/#/signin" class="nav-link external" data-portal-signin>Patient Portal</a>
+      </nav>
+
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/about.html" class="mobile-nav-link">About</a>
+    <a href="/blog/" class="mobile-nav-link">Blog</a>
+    <a href="/services/discovery-session.html" class="mobile-nav-link">Discovery Session</a>
+    <a href="/services/mineral-insight.html" class="mobile-nav-link">Mineral Insight (Women)</a>
+    <a href="/services/kids-mineral-insight.html" class="mobile-nav-link active">Kids Mineral Insight</a>
+    <a href="/services/" class="mobile-nav-link">Packages and Programs</a>
+    <a href="/htma.html" class="mobile-nav-link">What is HTMA?</a>
+    <a href="/contact.html" class="mobile-nav-link">Contact</a>
+    <a href="https://us.fullscript.com/welcome/intentionholistichealth" class="mobile-nav-link external" data-fullscript>Supplements</a>
+    <a href="https://my.practicebetter.io/#/signin" class="mobile-nav-link external" data-portal-signin>Patient Portal</a>
+  </nav>
+
+  <main id="main">
+
+      <!-- Hero -->
+      <section class="v3-hero" data-track-section="hero" data-funnel-stage="awareness">
+        <div class="container">
+          <div class="v3-hero-content">
+            <div class="v3-hero-text">
+              <span class="v3-hero-badge">Kentucky Families</span>
+              <span class="v3-hero-badge">Ages 2&ndash;17</span>
+              <h1 class="v3-hero-title">Kids Mineral Insight: <span>A Clearer Look at Your Child's Foundations</span></h1>
+              <p class="v3-hero-subtitle">A focused, child-centered HTMA assessment, interpreted alongside your child's growth, nourishment, sleep, stress, and everyday family life. You'll leave with a few realistic, prioritized next steps, and a plan you can actually use at the kitchen table.</p>
+
+              <div class="v3-hero-cta">
+                <!-- PRE-LAUNCH: swap this for the Practice Better enrollment / eligibility link once it exists. -->
+                <a href="/contact.html?subject=Kids%20Mineral%20Insight%20enrollment%20list" class="v3-btn v3-btn-primary" data-track-cta="hero-primary">
+                  Join the Enrollment List
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#included" class="v3-btn v3-btn-secondary" data-track-cta="hero-secondary">What's Included</a>
+              </div>
+
+              <div class="v3-hero-trust">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>KY Licensed Family NP | HTMA Certified | Mom</span>
+              </div>
+            </div>
+
+            <div class="v3-hero-image">
+              <img src="/images/who-i-help-mother-small.webp"
+                   srcset="/images/who-i-help-mother-small.webp 300w,
+                           /images/who-i-help-mother-medium.webp 560w"
+                   sizes="(max-width: 768px) 100vw, 475px"
+                   alt="A mother walking hand in hand with her young child outdoors"
+                   width="300" height="450" fetchpriority="high">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Empathy: the mom doing the research -->
+      <section class="v3-empathy" id="why" data-track-section="why-kids-htma">
+        <div class="container">
+          <div class="v3-empathy-content">
+            <div class="v3-empathy-text">
+              <h2 class="v3-section-title v3-section-title-italic">FOR THE PARENT DOING ALL THE RESEARCH</h2>
+              <p>Maybe it's the sleep. Or the short list of "safe" foods. The tummy troubles, the skin that keeps flaring, or the afternoon meltdowns that seem bigger than the moment. You've read the posts and saved the reels, and you're still not sure where to start.</p>
+              <p>I'm a mom too, and I'm a family nurse practitioner. When it's my own family, I want real information in hand before I build a plan. That's what Kids Mineral Insight is for: a foundational look at your child's mineral patterns, read alongside how they eat, drink, sleep, play, and handle stress, so the next steps are specific and doable.</p>
+              <p>Here's what I want you to know up front: a child's symptoms rarely have just one cause. Sleep, development, relationships, school, stress, environment, and medical conditions can all play a role. In this program we focus on the <em>physical foundations</em> (nourishment, minerals, hydration, sleep, and daily routines) while respecting that they're one part of a bigger picture.</p>
+            </div>
+            <div class="v3-empathy-image-wrap">
+              <img src="/images/services/preparation-feels-doable-small.webp"
+                   srcset="/images/services/preparation-feels-doable-small.webp 500w,
+                           /images/services/preparation-feels-doable.webp 950w"
+                   sizes="(max-width: 768px) 100vw, 475px"
+                   alt="Practical, foundations-first planning for families" class="v3-empathy-image"
+                   width="500" height="625" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Who it's for -->
+      <section class="v3-problem" id="who" data-track-section="who-its-for">
+        <div class="container">
+          <div class="v3-problem-header">
+            <h2 class="v3-section-title">WHO KIDS MINERAL INSIGHT IS FOR</h2>
+          </div>
+
+          <div class="v3-problem-two-column">
+            <div class="v3-problem-column">
+              <h3 class="v3-problem-column-title">A PARENT MIGHT NOTICE</h3>
+              <ul class="v3-problem-checklist">
+                <li>Energy that's up and down, or fades early in the day</li>
+                <li>Trouble falling asleep, staying asleep, or waking rested</li>
+                <li>Selective eating, or a very short list of foods they'll accept</li>
+                <li>Sensitivity to stress, transitions, or busy days</li>
+                <li>Muscle tension, cramps, or frequent headaches</li>
+                <li>Constipation or other ongoing tummy complaints</li>
+                <li>Skin that seems to flare, or routines that are hard to keep nourishing</li>
+              </ul>
+            </div>
+            <div class="v3-problem-column">
+              <h3 class="v3-problem-column-title">THIS MAY BE A GOOD FIT IF</h3>
+              <ul class="v3-problem-checklist">
+                <li>Your child is 2&ndash;17 years old and lives in Kentucky</li>
+                <li>They have an established pediatrician or primary-care clinician</li>
+                <li>You'd like a food-first, foundations-first look at what may be contributing</li>
+                <li>You want an individualized plan without signing up for a long program</li>
+                <li>You're ready to try one to three realistic changes at home</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="v3-problem-closing">None of these mean something is wrong with your child, or that minerals are the explanation. They're simply reasons a parent may want a broader, foundational look.</p>
+        </div>
+      </section>
+
+      <!-- What HTMA is and is not -->
+      <section class="v3-problem" id="what-htma-is" data-track-section="htma-is-is-not" style="padding-top: 0;">
+        <div class="container">
+          <div class="v3-problem-header">
+            <h2 class="v3-section-title">WHAT HTMA IS, AND WHAT IT ISN'T</h2>
+          </div>
+
+          <div class="v3-problem-two-column">
+            <div class="v3-problem-column">
+              <h3 class="v3-problem-column-title">HTMA IS</h3>
+              <ul class="v3-problem-checklist">
+                <li>A non-invasive screening tool that uses a small hair sample (no needles)</li>
+                <li>A look at mineral patterns that build up over recent months</li>
+                <li>One piece of information, interpreted in context with your child's history, diary, and symptoms</li>
+                <li>A starting point for practical food, hydration, sleep, and routine changes</li>
+              </ul>
+            </div>
+            <div class="v3-problem-column">
+              <h3 class="v3-problem-column-title">HTMA IS NOT</h3>
+              <ul class="v3-problem-checklist v3-problem-checklist--dash">
+                <li>A diagnostic test</li>
+                <li>Proof of a mineral deficiency or of toxic-metal poisoning</li>
+                <li>A way to diagnose ADHD, autism, anxiety, thyroid or adrenal conditions, or anything else</li>
+                <li>A substitute for your pediatrician's exam or for bloodwork when it's needed</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="v3-problem-closing">Think of it as a map of areas to explore, not a verdict. <a href="/htma.html" class="inline-link">Learn more about HTMA</a>.</p>
+        </div>
+      </section>
+
+      <!-- What's included -->
+      <section class="v3-packages" id="included" data-track-section="included" data-funnel-stage="consideration">
+        <div class="container">
+          <div class="v3-packages-header">
+            <span class="v3-script-accent">the plan</span>
+            <h2 class="v3-section-title v3-section-title-italic">WHAT'S INCLUDED</h2>
+            <p>One all-inclusive price. Everything from screening through your follow-up visit.</p>
+          </div>
+
+          <div class="v3-packages-grid v3-packages-grid-single">
+            <div class="v3-package-card v3-package-card-redesign" id="pkg-kids">
+              <div class="v3-package-header">
+                <h3 class="v3-package-title">KIDS MINERAL INSIGHT</h3>
+                <p class="subtitle">For Kentucky kids ages 2&ndash;17</p>
+              </div>
+              <p class="v3-package-description">A focused HTMA assessment and individualized plan, with a follow-up to help it stick.</p>
+              <div class="v3-package-features">
+                <ul>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Brief eligibility screening before you enroll</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Parent or guardian consent, plus age-appropriate assent for older kids and teens</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Pediatric HTMA intake</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Three-day food, drink, sleep, medication, supplement &amp; symptom diary</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> HTMA collection kit with step-by-step hair-collection instructions</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Laboratory fee and shipping <span class="draft-placeholder">[confirm what shipping is included]</span></li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Practitioner interpretation of your child's results</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> A parent-friendly written Mineral Foundations Report</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> A 60-minute lab &amp; protocol review with Alicia</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> A private, screen-recorded walkthrough of your child's protocol</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Prioritized food, hydration, sleep, lifestyle, and home-environment recommendations</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Age-appropriate supplement recommendations when indicated, with a clear introduction order</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> One 20&ndash;30 minute follow-up about four to six weeks after your review</li>
+                  <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Recommendations for pediatric or specialist follow-up when appropriate</li>
+                </ul>
+              </div>
+              <div class="v3-package-price v3-package-price-bottom">
+                <span class="amount"><span class="draft-placeholder">[insert all-inclusive price]</span></span>
+                <span class="period">All-inclusive: testing, lab, review &amp; follow-up</span>
+              </div>
+              <div class="v3-package-cta">
+                <a href="/contact.html?subject=Kids%20Mineral%20Insight%20enrollment%20list" class="v3-btn v3-btn-primary" data-track-cta="pkg-kids">Join the Enrollment List</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="v3-process v3-process-boxes" id="process" data-track-section="process">
+        <div class="container">
+          <div class="v3-process-header">
+            <span class="v3-script-accent">the process</span>
+            <h2 class="v3-section-title v3-section-title-italic">HOW IT WORKS</h2>
+            <p>Six simple steps, all from home:</p>
+          </div>
+
+          <div class="v3-process-grid v3-process-grid-three">
+            <div class="v3-process-box">
+              <span class="v3-process-step-label">Step 1</span>
+              <h4>Screen &amp; Enroll</h4>
+              <p>A brief eligibility screening confirms Kids Mineral Insight is a good fit. Then you'll complete consent and authorization forms in the secure Practice Better portal.</p>
+            </div>
+            <div class="v3-process-box">
+              <span class="v3-process-step-label">Step 2</span>
+              <h4>Intake &amp; Diary</h4>
+              <p>You'll share your child's history and keep a simple three-day diary of food, drinks, sleep, medications, supplements, and symptoms.</p>
+            </div>
+            <div class="v3-process-box">
+              <span class="v3-process-step-label">Step 3</span>
+              <h4>Collect &amp; Send</h4>
+              <p>Your kit arrives with step-by-step hair-collection instructions. It's quick, painless, and doesn't involve a blood draw.</p>
+            </div>
+            <div class="v3-process-box">
+              <span class="v3-process-step-label">Step 4</span>
+              <h4>Interpret</h4>
+              <p>I review your child's results alongside the intake and diary, then prepare a parent-friendly Mineral Foundations Report.</p>
+            </div>
+            <div class="v3-process-box">
+              <span class="v3-process-step-label">Step 5</span>
+              <h4>Review &amp; Plan</h4>
+              <p>We meet for a 60-minute lab and protocol review. Afterward you'll receive a private recorded walkthrough of the plan to revisit at home.</p>
+            </div>
+            <div class="v3-process-box">
+              <span class="v3-process-step-label">Step 6</span>
+              <h4>Follow Up</h4>
+              <p>About four to six weeks later, a short follow-up to see what's working, troubleshoot what isn't, and help you keep going.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The 60-minute review + the recording -->
+      <section class="v3-empathy" id="review" data-track-section="review-explained">
+        <div class="container">
+          <div class="v3-empathy-content">
+            <div class="v3-empathy-text">
+              <h2 class="v3-section-title v3-section-title-italic">YOUR 60-MINUTE LAB &amp; PROTOCOL REVIEW</h2>
+              <p>This is where the results turn into a plan. Together we'll:</p>
+              <ul>
+                <li>Walk through your child's mineral patterns in plain language</li>
+                <li>Connect them with the diary: meals, drinks, sleep, stress, and routines</li>
+                <li>Talk about your child's strengths, not just the hard parts</li>
+                <li>Choose <strong>one meaningful goal</strong> with you (and your child, when they're old enough to weigh in)</li>
+                <li>Turn it into <strong>one to three realistic actions</strong> for the next few weeks</li>
+                <li>Plan around the likely barriers: busy mornings, picky plates, sports schedules, two households</li>
+                <li>If supplements are recommended, map out exactly what to start first, and when to add the next</li>
+              </ul>
+
+              <h2 class="v3-section-title v3-section-title-italic">A PRIVATE WALKTHROUGH YOU CAN REWATCH</h2>
+              <p>After our review, I'll record a private screen walkthrough of your child's written protocol. It's not a generic video lesson. It's me walking through <em>your</em> child's plan, step by step. It's there for the moment you're standing in the grocery store, or when a co-parent or grandparent needs to get on the same page.</p>
+              <p>The recording is shared securely through the Practice Better portal, only with your consent, and stays available for <span class="draft-placeholder">[confirm recording-access period]</span>.</p>
+            </div>
+            <div class="v3-empathy-image-wrap">
+              <img src="/images/services/lab-review-small.webp"
+                   srcset="/images/services/lab-review-small.webp 400w,
+                           /images/services/lab-review.webp 600w"
+                   sizes="(max-width: 768px) 100vw, 475px"
+                   alt="Reviewing lab results and a written plan" class="v3-empathy-image"
+                   width="600" height="800" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What the family receives -->
+      <section class="v3-process v3-process-boxes" id="you-receive" data-track-section="you-receive">
+        <div class="container">
+          <div class="v3-process-header">
+            <h2 class="v3-section-title v3-section-title-italic">WHAT YOUR FAMILY WALKS AWAY WITH</h2>
+          </div>
+
+          <div class="v3-process-grid">
+            <div class="v3-process-box">
+              <h4>Mineral Foundations Report</h4>
+              <p>A written summary of your child's patterns and what they may mean, in parent-friendly language.</p>
+            </div>
+            <div class="v3-process-box">
+              <h4>A Prioritized Plan</h4>
+              <p>Specific food, hydration, sleep, and routine steps, plus age-appropriate supplement guidance when indicated.</p>
+            </div>
+            <div class="v3-process-box">
+              <h4>Your Recorded Walkthrough</h4>
+              <p>A private recording of your child's protocol to revisit whenever you need a refresher.</p>
+            </div>
+            <div class="v3-process-box">
+              <h4>A Follow-Up Visit</h4>
+              <p>A short check-in at four to six weeks to adjust, troubleshoot, and keep momentum.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Not included + scope -->
+      <section class="v3-problem" id="not-included" data-track-section="not-included">
+        <div class="container">
+          <div class="v3-problem-header">
+            <h2 class="v3-section-title">WHAT KIDS MINERAL INSIGHT DOESN'T INCLUDE</h2>
+          </div>
+
+          <div class="v3-problem-two-column">
+            <div class="v3-problem-column">
+              <h3 class="v3-problem-column-title">MEDICAL CARE</h3>
+              <ul class="v3-problem-checklist v3-problem-checklist--dash">
+                <li>Acute, urgent, emergency, or after-hours care</li>
+                <li>Well-child exams, vaccinations, or school or sports physicals</li>
+                <li>Prescription-medication management</li>
+                <li>Comprehensive management of chronic pediatric conditions</li>
+                <li>Diagnosis or treatment of psychiatric, behavioral, developmental, infectious, gastrointestinal, or environmental illness based on HTMA</li>
+              </ul>
+            </div>
+            <div class="v3-problem-column">
+              <h3 class="v3-problem-column-title">ONGOING SUPPORT</h3>
+              <ul class="v3-problem-checklist v3-problem-checklist--dash">
+                <li>Unlimited messaging</li>
+                <li>Repeated protocol revisions</li>
+                <li>Additional lab interpretation or a repeat HTMA</li>
+                <li>Supplement products</li>
+                <li>Complex detox or chelation protocols</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="v3-scope-notice">
+            <p><strong>Working alongside your child's pediatrician.</strong> Kids Mineral Insight is a focused wellness service and does not replace your child's pediatrician or primary-care provider. It does not include well-child care, urgent or emergency care, vaccination management, prescription-medication management, or comprehensive diagnosis and treatment of medical, developmental, behavioral, or psychiatric conditions. Your child should continue routine care with an established pediatric healthcare professional.</p>
+            <p><strong>This service does not provide urgent or emergency care.</strong> Contact your child's pediatrician for new or worsening symptoms. For a medical emergency, call 911 or go to the nearest emergency department.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Eligibility + timeline -->
+      <section class="v3-problem" id="eligibility" data-track-section="eligibility">
+        <div class="container">
+          <div class="v3-problem-header">
+            <h2 class="v3-section-title">ELIGIBILITY &amp; TIMELINE</h2>
+          </div>
+
+          <div class="v3-problem-two-column">
+            <div class="v3-problem-column">
+              <h3 class="v3-problem-column-title">WHO CAN ENROLL</h3>
+              <ul class="v3-problem-checklist">
+                <li>Children and teens ages 2&ndash;17</li>
+                <li>Kentucky residents, physically in Kentucky for telehealth visits</li>
+                <li>An established pediatrician, family physician, or other primary-care clinician</li>
+                <li>A parent or legal guardian who can give consent and take part in visits</li>
+                <li>Completion of the eligibility screening, consent, and intake forms</li>
+              </ul>
+            </div>
+            <div class="v3-problem-column">
+              <h3 class="v3-problem-column-title">WHAT TO EXPECT</h3>
+              <ul class="v3-problem-checklist v3-problem-checklist--dash">
+                <li>Screening &amp; enrollment: <span class="draft-placeholder">[insert timeframe]</span></li>
+                <li>Kit arrives: <span class="draft-placeholder">[insert shipping timeline]</span></li>
+                <li>Lab results: <span class="draft-placeholder">[insert lab turnaround]</span> after the lab receives the sample</li>
+                <li>Lab &amp; protocol review: scheduled once results are in</li>
+                <li>Follow-up visit: about 4&ndash;6 weeks after your review</li>
+                <li>Start to finish: about <span class="draft-placeholder">[insert total weeks]</span> weeks</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="v3-problem-closing">Already 18? You're legally an adult, so <a href="/services/mineral-insight.html" class="inline-link">Mineral Insight</a> (with adult consent and privacy documents) is the right fit.</p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="v3-faq" data-track-section="faq">
+        <div class="container">
+          <div class="v3-faq-header">
+            <h2 class="v3-section-title">FREQUENTLY ASKED QUESTIONS</h2>
+          </div>
+
+          <div class="v3-faq-grid">
+            <div class="v3-faq-item">
+              <button class="v3-faq-question" onclick="toggleFaq(this)">
+                <h3>Is HTMA a diagnostic test for my child?</h3>
+                <span class="v3-faq-icon">+</span>
+              </button>
+              <div class="v3-faq-answer">
+                <p>No. HTMA is a screening and pattern-recognition tool. It does not diagnose a deficiency, toxic-metal poisoning, ADHD, autism, anxiety, or any other condition. We interpret it alongside your child's history, food and sleep diary, symptoms, and daily life.</p>
+              </div>
+            </div>
+
+            <div class="v3-faq-item">
+              <button class="v3-faq-question" onclick="toggleFaq(this)">
+                <h3>Will this tell me exactly what my child is missing?</h3>
+                <span class="v3-faq-icon">+</span>
+              </button>
+              <div class="v3-faq-answer">
+                <p>Not exactly, and I'd be wary of any test that promises that. HTMA shows mineral patterns that may be associated with how your child's body is handling stress, nourishment, and daily demands. Combined with the diary and your observations, it helps us choose sensible places to start.</p>
+              </div>
+            </div>
+
+            <div class="v3-faq-item">
+              <button class="v3-faq-question" onclick="toggleFaq(this)">
+                <h3>Does my child need a pediatrician to enroll?</h3>
+                <span class="v3-faq-icon">+</span>
+              </button>
+              <div class="v3-faq-answer">
+                <p>Yes. Your child should have an established pediatrician, family physician, or other primary-care clinician and continue routine care with them. Kids Mineral Insight is a focused wellness service, not pediatric primary care. When something deserves a closer look, I'll recommend follow-up with them.</p>
+              </div>
+            </div>
+
+            <div class="v3-faq-item">
+              <button class="v3-faq-question" onclick="toggleFaq(this)">
+                <h3>My child has a diagnosis. Is this still a fit?</h3>
+                <span class="v3-faq-icon">+</span>
+              </button>
+              <div class="v3-faq-answer">
+                <p>Kids Mineral Insight doesn't diagnose or treat any condition, and it isn't a substitute for your child's care team. Some families still find a foundational look at nourishment, sleep, and routines helpful alongside that care. We'll talk through fit during the eligibility screening.</p>
+              </div>
+            </div>
+
+            <div class="v3-faq-item">
+              <button class="v3-faq-question" onclick="toggleFaq(this)">
+                <h3>Will you recommend supplements for my child?</h3>
+                <span class="v3-faq-icon">+</span>
+              </button>
+              <div class="v3-faq-answer">
+                <p>Only when they're indicated. Food, hydration, sleep, and routine changes come first. If supplements make sense, recommendations are age-appropriate and come with a clear introduction order, so you're never starting five things at once. Supplement products aren't included in the price.</p>
+              </div>
+            </div>
+
+            <div class="v3-faq-item">
+              <button class="v3-faq-question" onclick="toggleFaq(this)">
+                <h3>How does privacy work for teens?</h3>
+                <span class="v3-faq-icon">+</span>
+              </button>
+              <div class="v3-faq-answer">
+                <p>Older kids and teens are invited to take part in their own care, and we'll ask for their age-appropriate assent. Before enrollment, I'll explain what information is shared with parents and guardians, and when. <span class="draft-placeholder">[Adolescent privacy language pending review by Kentucky healthcare counsel.]</span></p>
+              </div>
+            </div>
+
+            <div class="v3-faq-item">
+              <button class="v3-faq-question" onclick="toggleFaq(this)">
+                <h3>How do I share my child's health information?</h3>
+                <span class="v3-faq-icon">+</span>
+              </button>
+              <div class="v3-faq-answer">
+                <p>Only through the secure Practice Better portal. Please don't send health information through social media, regular email, website contact forms, or text messages.</p>
+              </div>
+            </div>
+
+            <div class="v3-faq-item">
+              <button class="v3-faq-question" onclick="toggleFaq(this)">
+                <h3>My child is 18. Can they enroll?</h3>
+                <span class="v3-faq-icon">+</span>
+              </button>
+              <div class="v3-faq-answer">
+                <p>An 18-year-old is legally an adult, so they would enroll in <a href="/services/mineral-insight.html">Mineral Insight</a> with adult consent and privacy documents.</p>
+              </div>
+            </div>
+
+            <div class="v3-faq-item">
+              <button class="v3-faq-question" onclick="toggleFaq(this)">
+                <h3>What about me? I'm running on empty too.</h3>
+                <span class="v3-faq-icon">+</span>
+              </button>
+              <div class="v3-faq-answer">
+                <p>You're not alone. Many of the moms I talk with are short on sleep, foggy, and more impatient than they want to be while they search for answers for their kids. <a href="/services/mineral-insight.html">Mineral Insight</a> is the same foundations-first HTMA approach, built for you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="v3-final-cta" data-track-section="final-cta" data-funnel-stage="intent">
+        <div class="container">
+          <div class="v3-final-cta-content">
+            <h2 class="v3-section-title">READY FOR A CLEARER STARTING POINT?</h2>
+            <p>Kids Mineral Insight enrollment is opening soon. Join the list and I'll send eligibility details as soon as spots open. Please don't include your child's health details in the form; we'll gather those securely later.</p>
+            <a href="/contact.html?subject=Kids%20Mineral%20Insight%20enrollment%20list" class="v3-btn" data-track-cta="final-cta">
+              Join the Enrollment List
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Disclaimer -->
+      <section class="v2-disclaimer v2-disclaimer-compliant">
+        <div class="container">
+          <h4 class="v2-disclaimer-title">Educational &amp; Imagery Disclaimer</h4>
+          <p>This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. Hair Tissue Mineral Analysis (HTMA) is a screening tool, not a diagnostic test. It does not replace individualized medical advice, diagnosis, or treatment from your child's pediatrician or another licensed healthcare provider. Individual results vary, and no specific outcome is guaranteed.</p>
+          <p>Any individuals depicted in images on this website are models or stock photography subjects and are not patients or clients of Intention Holistic Health. Images are used for illustrative purposes only and do not represent clinical relationships or medical outcomes.</p>
+          <p>Kids Mineral Insight is a focused wellness service provided by a Kentucky-licensed Family Nurse Practitioner. It is not pediatric primary care. We do not prescribe medications or manage chronic prescription drug therapies. This service does not provide urgent or emergency care; contact your child's pediatrician for new or worsening symptoms, and for a medical emergency call 911 or go to the nearest emergency department. <strong>Clinical services are available exclusively to Kentucky residents.</strong></p>
+        </div>
+      </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logos">
+            <a href="/" aria-label="Go to homepage"><img src="/images/logo-small.webp" alt="Intention Holistic Health" class="footer-logo" width="120" height="120" loading="lazy"></a>
+            <img src="/images/bhpcc-seal-small.webp" alt="Certified Brain Health Professional" class="footer-seal" width="63" height="59" title="Certified Brain Health Professional" loading="lazy">
+          </div>
+          <p class="footer-tagline">
+            Foundations-first HTMA support for Kentucky women and the kids they're raising.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/intentionholistichealth" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61552393014468" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://www.pinterest.com/intentionholistichealth" target="_blank" rel="noopener" aria-label="Pinterest">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/alicia-harrison-aprn-fnp-c-23b656224/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Quick Links</h3>
+          <a href="/about.html" class="footer-link">About</a>
+          <a href="/blog/" class="footer-link">Blog</a>
+          <a href="/services/discovery-session.html" class="footer-link">Discovery Session</a>
+          <a href="/services/mineral-insight.html" class="footer-link">Mineral Insight</a>
+          <a href="/services/kids-mineral-insight.html" class="footer-link">Kids Mineral Insight</a>
+          <a href="/services/" class="footer-link">Packages and Programs</a>
+          <a href="/htma.html" class="footer-link">What is HTMA?</a>
+          <a href="/contact.html" class="footer-link">Contact</a>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Resources</h3>
+          <a href="https://us.fullscript.com/welcome/intentionholistichealth" class="footer-link" data-fullscript title="Opens Fullscript in a new tab">Supplements</a>
+          <a href="https://my.practicebetter.io/#/signin" class="footer-link" data-portal-signin title="Opens Patient Portal in a new tab">Patient Portal</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-disclaimer">
+          Telehealth services for Kentucky residents only. This website does not provide medical advice. All content is for informational purposes only.
+        </p>
+        <p class="footer-copyright">
+          &copy; <span class="current-year">2025</span> Intention Holistic Health, PLLC. All rights reserved.
+        </p>
+        <p class="footer-copyright footer-credit">
+          Site by <a href="https://onwavelab.com/services/websites/" target="_blank" rel="noopener">OnWave Lab</a>
+        </p>
+        <div class="footer-legal-links">
+          <a href="/legal/terms.html">Terms & Conditions</a>
+          <a href="/legal/privacy.html">Privacy Policy</a>
+          <a href="/legal/disclaimer.html">Medical Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+  <script>
+    function toggleFaq(button) {
+      const item = button.closest('.v3-faq-item');
+      item.classList.toggle('open');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('[data-track-section]');
+      const observed = new Set();
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !observed.has(entry.target)) {
+            observed.add(entry.target);
+            const sectionName = entry.target.dataset.trackSection;
+            const funnelStage = entry.target.dataset.funnelStage;
+
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'section_view', {
+                'section': sectionName,
+                'funnel_stage': funnelStage || 'unknown'
+              });
+            }
+          }
+        });
+      }, { threshold: 0.3 });
+
+      sections.forEach(section => observer.observe(section));
+
+      document.querySelectorAll('[data-track-cta]').forEach(cta => {
+        cta.addEventListener('click', function() {
+          const ctaName = this.dataset.trackCta;
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'cta_click', {
+              'cta_name': ctaName,
+              'page': 'kids-mineral-insight'
+            });
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

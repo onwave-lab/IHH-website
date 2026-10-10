@@ -354,7 +354,7 @@ No overwhelm. Just one swap at a time.
 If you want help sorting through your specific products, I do home product reviews as part of my wellness packages at IHH.
 
 [CTA-ROW-START]
-[CTA:Book a Free Discovery Call|Want help figuring out which swaps to prioritize for your health goals? No pressure, just honest conversation about where you are and what makes sense for you.|apply|Book Your Free Call]
+[CTA:Start With Your Minerals|Want help figuring out which changes to prioritize for your health goals? Mineral Insight pairs an at-home HTMA test with three visits, for one flat fee.|apply|Explore Mineral Insight]
 [CTA:Download the Nontoxic Swap Checklist|A room-by-room checklist to help you reduce chemical exposure at your own pace. Print it, stick it on your fridge, and swap one product at a time.|nontoxic-swap-checklist|Get the Free Checklist]
 [CTA-ROW-END]
 
@@ -550,7 +550,7 @@ With love + intention,
 
 Alicia
 
-[CTA:Ready to understand what your body is telling you?|If you have been experiencing persistent cravings, fatigue, or feel like something is \u201Coff,\u201D a foundations-first approach can help identify what is driving those patterns.|apply|Book a Free Discovery Call]
+[CTA:Ready to understand what your body is telling you?|If you have been experiencing persistent cravings, fatigue, or feel like something is \u201Coff,\u201D a foundations-first approach can help identify what is driving those patterns.|apply|Explore Mineral Insight]
 
 *Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
 
@@ -736,7 +736,7 @@ With love + intention,
 
 Alicia
 
-[CTA:Book a Free Discovery Call|If you\u2019ve been experiencing persistent fatigue, hormone changes, or other symptoms and want to explore whether your nutrition may be part of the picture\u2014let\u2019s talk.|apply|Book Your Free Call]
+[CTA:Curious What Your Minerals Show?|If you\u2019ve been experiencing persistent fatigue, hormone changes, or other symptoms and want to explore whether your nutrition may be part of the picture, HTMA is a simple place to start.|apply|Explore Mineral Insight]
 
 *Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
 
@@ -957,7 +957,7 @@ With love + intention,
 Alicia
 
 [CTA-ROW-START]
-[CTA:Book a Free Discovery Call|Let\u2019s talk about where you are and whether functional assessment makes sense for your goals\u2014no pressure, just honest conversation.|apply|Book Your Free Call]
+[CTA:Ready for a Clearer Starting Point?|Mineral Insight pairs an at-home HTMA test with three visits to build a plan around your results, for one flat fee.|apply|Explore Mineral Insight]
 [CTA:Download the Free Guide|Not sure where to start? Get a free checklist of depletion signals to watch for before pregnancy.|lead-magnet|Get the Free Guide]
 [CTA-ROW-END]
 
@@ -1142,7 +1142,7 @@ With love + intention,
 Alicia
 
 [CTA-ROW-START]
-[CTA:Book a Free Discovery Call|Let\u2019s talk about where you are and whether functional assessment makes sense for your goals. No pressure, just honest conversation.|apply|Book Your Free Call]
+[CTA:Ready for a Clearer Starting Point?|Mineral Insight pairs an at-home HTMA test with three visits to build a plan around your results, for one flat fee.|apply|Explore Mineral Insight]
 [CTA:Running on Empty? Get the Free Guide|Not sure where to start? Download the free Running on Empty awareness guide to help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
 [CTA-ROW-END]
 
@@ -1381,7 +1381,7 @@ These patterns don\u2019t indicate disease. They suggest areas where the body ma
 
 Ideally, 6 to 12 months before you plan to conceive. This allows time to identify patterns, make changes, and retest to see progress. Even 3 months of intentional preparation may make a meaningful difference.
 
-[CTA:Thinking About HTMA?|If you\u2019re planning pregnancy and want to understand your mineral status before conception, a clarity call is a great place to start\u2014zero pressure, just honest conversation about your goals.|apply|Book a Clarity Call]
+[CTA:Thinking About HTMA?|If you\u2019re planning pregnancy and want to understand your mineral status before conception, Mineral Insight is a simple, flat-fee place to start.|apply|Explore Mineral Insight]
 
 ## HTMA and Early Motherhood: Understanding Depletion After Birth
 
@@ -1494,7 +1494,7 @@ If you\u2019re preparing for pregnancy and want to know whether your body has th
 You don\u2019t have to keep guessing. And you don\u2019t have to accept \u201cthis is just how it is.\u201d
 
 [CTA-ROW-START]
-[CTA:Book a Free Discovery Call|I\u2019d love to hear where you are and talk through whether HTMA testing makes sense for you.|apply|Book Your Free Call]
+[CTA:Curious What Your Minerals Show?|Mineral Insight pairs an at-home HTMA test with three visits, for one flat fee. Not sure yet? You can book a Discovery Session instead.|apply|Explore Mineral Insight]
 [CTA:Download the Depletion Signals Checklist|Not sure where to start? This free checklist can help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
 [CTA-ROW-END]
 
@@ -3075,7 +3075,7 @@ function parseMarkdown(markdown) {
   html = html.replace(/\[CTA-ROW-END\]/gim, '</div>');
 
   // CTA boxes [CTA:title|description|formType|buttonText]
-  // formType "apply" links to Practice Better; others open lead magnet modal
+  // formType "apply" links to the Mineral Insight page; others open lead magnet modal
   html = html.replace(/\[CTA:([^|]+)\|([^|]+)\|([^|]+)\|([^\]]+)\]/gim, function(match, title, description, formType, buttonText) {
     var escapedTitle = title.trim().replace(/'/g, "\\'");
     var escapedFormType = formType.trim().replace(/'/g, "\\'");
@@ -3085,7 +3085,7 @@ function parseMarkdown(markdown) {
         <h4 class="blog-cta-title">${title.trim()}</h4>
         <p class="blog-cta-description">${description.trim()}</p>
       </div>
-      <a href="https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/bookings?s=664b9722ff1f3762a57079f5&step=date" target="_blank" rel="noopener noreferrer" class="blog-cta-button" data-track-cta="blog-inline-cta">${buttonText.trim()}</a>
+      <a href="/services/mineral-insight.html" class="blog-cta-button" data-track-cta="blog-inline-cta">${buttonText.trim()}</a>
     </div>`;
     }
     return `<div class="blog-cta-box">

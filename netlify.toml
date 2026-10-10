@@ -286,8 +286,22 @@
 
 [[redirects]]
   from = "/Apply"
-  to = "/apply.html"
+  to = "/services/"
   status = 301
+
+# apply.html booked the retired complimentary discovery call (retired 2026-10-10).
+# force = true because the file still exists in the repo.
+[[redirects]]
+  from = "/apply.html"
+  to = "/services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/apply"
+  to = "/services/"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/Freebie"

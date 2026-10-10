@@ -94,13 +94,13 @@ Done: Services dropdown and mobile menu now list Discovery Session · **Mineral 
 - **New keyword cluster:** "HTMA for kids," "hair mineral test for kids," "kids mineral test Kentucky," "pediatric HTMA," plus symptom-intent searches moms run ("picky eater minerals," "magnesium for kids sleep," "toddler constipation magnesium"). Run `ihh-keyword-research-checklist.md` as a third audience ("Parents").
 - **Blog content cluster** (use the content-cluster skill), each linking to the kids page: *What HTMA can and can't tell you about your child* · *Picky eating and minerals: what to look at first* · *Sleep foundations for kids* · *HTMA vs. bloodwork for kids*. YMYL topics, so your NP credential and careful language are an advantage.
 - **Lead magnet idea:** "Kids Foundations Checklist" (food, hydration, sleep, routine) → MailerLite group "Parents."
-- **Schema:** Service schema with an age range (2–17) is on the kids page. FAQ schema intentionally omitted (retired site-wide).
+- **Schema:** Service schema with an age range (4–17) is on the kids page. FAQ schema intentionally omitted (retired site-wide).
 - **Homepage title** now leads with "HTMA for Kentucky Women & Kids," your highest-intent, most searchable term.
 - **Images:** the kids page reuses the mom-and-toddler photo. A photo of an older child or teen (or hair-sample/kit imagery) would help the 6–17 audience see themselves.
 
 ### 1I. Compliance questions to resolve before publishing (for Alicia)
 1. Has counsel updated the Privacy Policy, Terms, Disclaimer, and NPP for minors? (Part 5)
-2. Do your malpractice/liability policy and Kentucky BON scope cover pediatric wellness services for ages 2–17? Confirm with your carrier in writing.
+2. Do your malpractice/liability policy and Kentucky BON scope cover pediatric wellness services for ages 4–17? Confirm with your carrier in writing.
 3. Does TEI (the lab) have pediatric reference ranges and collection guidance for young children (sample size for short hair)?
 4. Who can consent: both parents, either parent, a legal guardian? How will you verify custody and decision-making authority?
 5. What is your adolescent confidentiality policy (what a 14-year-old tells you vs. what parents see in the portal)?
@@ -118,7 +118,7 @@ Home
 │   ├── Mineral Insight (HTMA-led, the women's entry offer)
 │   ├── Discovery Session (not-sure-yet option)
 │   └── The Intention Method (multi-month program, on /services/)
-├── For Kids → Kids Mineral Insight (ages 2–17)
+├── For Kids → Kids Mineral Insight (ages 4–17)
 ├── What is HTMA? (umbrella education → both pathways)
 ├── About
 ├── Blog
@@ -146,9 +146,9 @@ Your buyer for *both* offers is the same person: a Kentucky mom who's researchin
 
 **Implemented copy (in `index.html`):**
 - **Title:** HTMA for Kentucky Women & Kids | Intention Holistic Health
-- **Meta description:** Foundations-first HTMA support from a Kentucky family NP for women preparing for pregnancy, rebuilding after birth, or raising kids, plus Kids Mineral Insight for ages 2–17.
+- **Meta description:** Foundations-first HTMA support from a Kentucky family NP for women preparing for pregnancy, rebuilding after birth, or raising kids, plus Kids Mineral Insight for ages 4–17.
 - **Hero headline:** Strong Foundations / for Moms + Kids
-- **Hero support:** Foundations-first HTMA support for Kentucky women preparing for pregnancy, rebuilding after birth, or deep in the mom years—and for the kids they're raising, ages 2–17.
+- **Hero support:** Foundations-first HTMA support for Kentucky women preparing for pregnancy, rebuilding after birth, or deep in the mom years—and for the kids they're raising, ages 4–17.
 - **Primary/secondary CTA:** Explore Services / Get to Know Me (unchanged buttons); the service cards carry the pathway CTAs.
 - **Who this is for:** four doors (Preparing for Pregnancy · Rebuilding After Birth · Deep in the Mom Years · Looking for Answers for Your Child)
 - **Bridge:** "…the same foundations that carry you through pregnancy and postpartum (nourishment, minerals, sleep, steady routines) are the ones your kids are building right now. That's why I support both."
@@ -159,11 +159,11 @@ Your buyer for *both* offers is the same person: a Kentucky mom who's researchin
 ### Alternative: Conservative evolution (ready to paste if you prefer it)
 Keeps maternal health dominant and adds kids as a clearly signposted second path.
 - **Title:** Intention Holistic Health | HTMA for Pregnancy Prep, Postpartum & Kentucky Families
-- **Meta:** Foundations-first HTMA support for Kentucky women preparing for pregnancy or rebuilding after birth—now with Kids Mineral Insight for ages 2–17.
+- **Meta:** Foundations-first HTMA support for Kentucky women preparing for pregnancy or rebuilding after birth—now with Kids Mineral Insight for ages 4–17.
 - **Hero headline:** Prepare + Restore / Your Body for Motherhood *(unchanged)*
 - **Hero support:** Foundations-first HTMA support for Kentucky women preparing for pregnancy or rebuilding after birth—so motherhood doesn't have to feel like running on empty.
-- **Small line under hero (new):** *Also supporting the kids you're raising →* Kids Mineral Insight, ages 2–17
-- **Who this is for:** keep the two original doors; add one short paragraph: "Looking for answers for your child too? Kids Mineral Insight is a focused HTMA assessment for ages 2–17, alongside your pediatrician's care."
+- **Small line under hero (new):** *Also supporting the kids you're raising →* Kids Mineral Insight, ages 4–17
+- **Who this is for:** keep the two original doors; add one short paragraph: "Looking for answers for your child too? Kids Mineral Insight is a focused HTMA assessment for ages 4–17, alongside your pediatrician's care."
 - **Service cards:** Discovery Session · Mineral Insight · Kids Mineral Insight (replacing The Intention Method card)
 - **Bridge:** "When you're depleted, it ripples through your home. When you're ready, the same foundations can support your kids, too."
 - **Framework / final CTA:** unchanged.
@@ -220,7 +220,7 @@ Built at `services/kids-mineral-insight.html`. Everything in Hayes's checklist i
 **[DRAFT, guardian consent summary]**
 > I am the parent or legal guardian of the child named above and have the legal authority to consent to their care. I consent to a hair tissue mineral analysis (HTMA), review of the information I provide, telehealth visits, and individualized wellness recommendations. I understand HTMA is a screening tool and not a diagnostic test, that this service does not replace my child's pediatrician or primary-care provider, and that it does not include urgent, emergency, or after-hours care.
 
-**[DRAFT, adolescent assent and privacy (ages ~12–17)]**
+**[DRAFT, adolescent assent and privacy (ages ~14–17)]**
 > We'll explain your plan in a way that makes sense to you, and you're welcome to ask questions and share your own goals. Your parent or guardian will have access to your records and recommendations, except where Kentucky law allows certain information to stay private. If something you share makes us worried about your safety, we may need to tell a parent or another appropriate adult.
 
 **[DRAFT, telehealth for minors]**
@@ -255,4 +255,19 @@ Built at `services/kids-mineral-insight.html`. Everything in Hayes's checklist i
 2. Do you like **"Strong Foundations for Moms + Kids"**, or would you prefer the conservative headline?
 3. Should siblings get a **multi-child price**?
 4. Should moms who buy both get a **bundle** (mom + child HTMA)?
-5. **Ages 2–3:** is a hair sample practical for very young toddlers with fine/short hair (TEI minimums)? If not, start at 4.
+5. ~~Ages 2–3~~ Resolved: the program starts at age 4.
+
+---
+
+## Update: October 10, 2026 (round 2), decisions from Alicia
+
+- **Kids age range is now 4–17** everywhere (page, schema, cards, FAQs, llms.txt).
+- **No complimentary calls.** `apply.html` (which booked a free 20-min call) now 301-redirects to `/services/` (file kept in the repo; `force = true` in netlify.toml), and it's removed from the sitemap and llms.txt. Seven blog CTA boxes that said "Book a Free Discovery Call" now say "Explore Mineral Insight" and link to the Mineral Insight page (they previously opened the retired Intentional Reset booking). Contact-page FAQs updated. CLAUDE.md and the content-cluster skill updated so new posts don't reintroduce it.
+- **Mineral Insight (women) is a disclosed flat fee** with a direct "Get Started" button: no Discovery Session required. The price shows in the hero, on the package card, in the FAQ, and on the Services page card. The kids page hero shows its all-inclusive price too.
+- **Services page reordered for impulse buying:** Start With HTMA (Mineral Insight + Intention Method) → For Your Child → *Not sure where to start?* (optional $198 Discovery Session). The hero button is now "Start With HTMA," and the quiz sends preparing/rebuilding answers to the Mineral Insight card.
+
+### New placeholders / launch items
+- `[insert flat fee]` on Mineral Insight (hero, card, FAQ) and the Services page card
+- **Checkout link:** the three "Get Started" buttons on Mineral Insight temporarily go to the contact form (subject pre-filled). Create a Practice Better *package* with online payment for Mineral Insight and paste its link in place of `/contact.html?subject=Mineral%20Insight%20-%20ready%20to%20start` (search the file for `CHECKOUT LINK`). The "Get Started With Mineral Insight" button on the Services page goes to the Mineral Insight page, which is fine as-is.
+- Same for kids at launch: a Practice Better package checkout link replaces "Join the Enrollment List."
+- **Impulse-buy tips:** keep the checkout to one page (package purchase → intake forms after payment), show the price before the click (done), and consider Practice Better's payment-plan option ("or 2 payments of $X") if the fee is above ~$300.

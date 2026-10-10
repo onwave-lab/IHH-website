@@ -339,7 +339,7 @@ When adding new content to the site, **always ask about style preferences** befo
 | HTMA, mineral testing, hair analysis | `/htma.html` (What is HTMA?) |
 | Lab work, blood tests, "normal" results | `/services/lab-review.html` |
 | Wellness support, hormone support | `/services/` |
-| Getting started, booking | `/apply.html` or `/contact.html` |
+| Getting started, booking | `/services/mineral-insight.html` (women) or `/services/kids-mineral-insight.html` (kids). `/apply.html` was retired 2026-10-10 (redirects to `/services/`); no complimentary calls. |
 
 **When to suggest links:**
 - After writing or reviewing blog content
@@ -430,7 +430,7 @@ See `README.md` for the full page hierarchy, file organization, and navigation s
 ### User Flow
 
 ```
-Homepage → Learn (HTMA page, Blog) → Service Page → Apply Page → Patient Portal
+Homepage → Learn (HTMA page, Blog) → Mineral Insight / Kids Mineral Insight (flat fee) → Practice Better checkout → Patient Portal
                                          ↓
                                Lab Review (direct booking OK)
 ```

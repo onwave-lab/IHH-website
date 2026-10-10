@@ -36,7 +36,7 @@
 | **What she thinks** | "Why can't I keep up?" "Is this just my life now?" | "Am I missing something?" "Is it something I'm feeding him?" |
 | **What frustrates her** | Conflicting advice, supplements that don't seem to help, being told it's "just mom life" | Being told to wait it out, guessing at what might help |
 
-> **Phrases to retire from the site:** "running on empty," "labs came back normal," "too many tabs," "foundations-first approach," "HTMA-led path," "interpreted in context." Show the real moments instead.
+> **Phrases to retire from the site:** "running on empty," "labs came back normal," "too many tabs," "foundations-first approach," "HTMA-led path," "interpreted in context," and "What HTMA is / what it isn't" sections (or any "None of these mean…" style disclaimers in the body). Show the real moments instead; the required "screening tool, not a diagnosis" wording lives in one FAQ answer + the disclaimer box.
 
 ## 3. Why she's looking for help *now*
 She's tired of trial and error. She wants a **specific, simple plan for her family**, not another generic list, from someone she trusts.

@@ -28,6 +28,20 @@
 - **Door 1 (For You):** Megan herself: getting ready for pregnancy, recovering after birth, or in the busy mom years.
 - **Door 2 (For Your Child):** Megan's kid, ages 4–17. Megan is still the buyer.
 
+### Two versions of the same mom (write to both)
+**A. "I just thought this was motherhood."** She hasn't been to the doctor about it, and may not realize anything is off. So **don't name symptoms; describe how they show up in her life:**
+- Trouble concentrating → *rereads the same email three times and still loses her train of thought*
+- Fatigue → *counting down to bedtime by 2 p.m.*
+- Poor sleep → *exhausted, then can't fall asleep once she gets there*
+- Brain fog → *walks into a room and forgets why she's there*
+- Irritability → *little things set her off, and the guilt follows her all day*
+
+**B. "I know something's off, but I'm stuck."** It's been this way so long it feels normal. Her checkups say she's fine enough that no one digs deeper. She's done the "right" things (eaten better, taken vitamins) and nothing sticks. And she has no time or energy left to figure it out for herself.
+
+### Alicia's story (the proof)
+Alicia was exhausted and pushing through too. **Specific testing made her own plan clear.** With balanced minerals, whole-food nutrition focused on what her body actually needed (no fads, no keto), and a few targeted supplements, she has **more energy now, postpartum with two kids, than she did in her first pregnancy.** Every body is different, which is why she starts with testing.
+> Always tell it as *her* experience. Never promise the same result to the reader.
+
 ## 2. Her pain points
 
 | | For her | For her child |

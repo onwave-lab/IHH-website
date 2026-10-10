@@ -4172,3 +4172,27 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
   .js-reveal .reveal { opacity: 1; transform: none; transition: none; }
   .thought-card:hover { transform: none; }
 }
+
+/* Hero headline: tighter tracking so "Mineral + Nutrition Focused Care" fits on one line (2026-10-10) */
+.hero-banner-headline-combined {
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 1024px) {
+  .hero-banner-headline-combined {
+    font-size: min(2.4vw, 32px);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-banner-headline-combined .headline-line-nowrap {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-banner-headline-combined {
+    font-size: 4.3vw;
+    letter-spacing: 0.03em;
+  }
+}

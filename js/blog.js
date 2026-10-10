@@ -1733,6 +1733,7 @@ Saksena, M. J., Okrent, A. M., Anekwe, T. D., Cho, C., Dicken, C., Effland, A., 
   },
   {
     slug: '2026-01-21-chatgpt-health-safety',
+    hidden: true, // kept live for search; not shown in blog lists (Oct 2026 focus shift)
     title: 'Is It Safe to Use ChatGPT Health? A Patient-Centered Look at Using AI for Your Health',
     date: '2026-01-21',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
@@ -2318,6 +2319,7 @@ Alicia
   },
   {
     slug: '2024-12-15-holiday-wellness',
+    hidden: true, // kept live for search; not shown in blog lists (Oct 2026 focus shift)
     title: 'Holiday Wellness for Women: Staying Grounded Without Extremes',
     date: '2024-12-15',
     dateModified: '2026-05-19',
@@ -2692,6 +2694,7 @@ Alicia
   },
   {
     slug: '2024-05-15-mental-health-pcos',
+    hidden: true, // kept live for search; not shown in blog lists (Oct 2026 focus shift)
     title: 'May is Mental Health Awareness Month',
     date: '2024-05-15',
     dateModified: '2026-05-19',
@@ -2848,6 +2851,7 @@ Intention Holistic Health
   },
   {
     slug: '2024-10-01-gut-health-pcos',
+    hidden: true, // kept live for search; not shown in blog lists (Oct 2026 focus shift)
     title: 'Gut Health and PCOS: The Missing Piece of the Puzzle',
     date: '2024-10-01',
     dateModified: '2026-05-19',
@@ -2954,6 +2958,7 @@ Clinical services at Intention Holistic Health PLLC serve Kentucky residents onl
   },
   {
     slug: '2024-09-15-hormone-friendly-granola',
+    hidden: true, // kept live for search; not shown in blog lists (Oct 2026 focus shift)
     title: 'Recipe: Hormone-Friendly Granola',
     date: '2024-09-15',
     dateModified: '2026-05-19',
@@ -3034,6 +3039,9 @@ Intention Holistic Health
     }
   }
 ];
+
+// Posts shown in lists, search and related posts. Hidden posts stay reachable by direct link.
+const LISTED_POSTS = BLOG_POSTS.filter(function(post) { return !post.hidden; });
 
 // -----------------------------------------
 // STANDARD DISCLAIMER (FDA, FTC, Kentucky BON Compliant)
@@ -3225,7 +3233,7 @@ function renderBlogListing() {
   if (!blogPostsContainer) return;
 
   // Sort posts by date (newest first)
-  const sortedPosts = [...BLOG_POSTS].sort((a, b) => new Date(b.date) - new Date(a.date));
+  const sortedPosts = [...LISTED_POSTS].sort((a, b) => new Date(b.date) - new Date(a.date));
 
   // Render posts
   let html = '';
@@ -3403,7 +3411,7 @@ function setupMobileSearch() {
     const searchTerms = query.toLowerCase().trim().split(/\s+/);
     const results = [];
 
-    BLOG_POSTS.forEach(function(post) {
+    LISTED_POSTS.forEach(function(post) {
       const searchableText = (post.title + ' ' + post.excerpt + ' ' + post.content).toLowerCase();
       const allTermsFound = searchTerms.every(function(term) {
         return searchableText.includes(term);
@@ -3579,7 +3587,7 @@ function renderRelatedPosts(currentPost) {
   if (!relatedPostsGrid) return;
 
   // Score posts by number of matching categories (more matches = more relevant)
-  var scoredPosts = BLOG_POSTS
+  var scoredPosts = LISTED_POSTS
     .filter(function(post) { return post.slug !== currentPost.slug; })
     .map(function(post) {
       var matchCount = post.categories.filter(function(cat) {
@@ -3592,7 +3600,7 @@ function renderRelatedPosts(currentPost) {
 
   // If not enough related posts, add other posts
   if (scoredPosts.length < 3) {
-    var otherPosts = BLOG_POSTS.filter(function(post) {
+    var otherPosts = LISTED_POSTS.filter(function(post) {
       return post.slug !== currentPost.slug &&
         !scoredPosts.some(function(item) { return item.post.slug === post.slug; });
     });
@@ -3931,7 +3939,7 @@ function setupBlogSearch() {
     const searchTerms = query.toLowerCase().trim().split(/\s+/);
     const results = [];
 
-    BLOG_POSTS.forEach(function(post) {
+    LISTED_POSTS.forEach(function(post) {
       // Search in title, excerpt, and content
       const searchableText = (post.title + ' ' + post.excerpt + ' ' + post.content).toLowerCase();
 

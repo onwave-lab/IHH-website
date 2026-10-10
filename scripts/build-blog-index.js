@@ -70,7 +70,8 @@ if (!Array.isArray(posts) || posts.length === 0) {
   throw new Error('BLOG_POSTS parsed to an empty array — refusing to write blog-index.js');
 }
 
-const slim = posts.map((post) => {
+// Hidden posts stay live by direct link but are left out of card lists.
+const slim = posts.filter((post) => !post.hidden).map((post) => {
   const out = {};
   for (const field of CARD_FIELDS) {
     if (post[field] !== undefined) out[field] = post[field];

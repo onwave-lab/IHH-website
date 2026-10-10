@@ -4709,3 +4709,24 @@ body:has(.promo-bottom-bar:not(.dismissed)) {
 @media (min-width: 900px) {
   .h4-split-reverse { grid-template-columns: 1.2fr 0.8fr; }
 }
+
+/* Outline button for dark bands */
+.h4-btn-outline-light { background: transparent; color: var(--color-white); border-color: rgba(255, 255, 255, 0.8); }
+.h4-btn-outline-light:hover { background: var(--color-white); color: var(--color-sage-dark); transform: translateY(-2px); }
+
+/* Cards nested inside a split keep a lighter top rule */
+.h4-split-text .h4-card { border-top-width: 3px; padding: 1.5rem; }
+.h4-split-text .h4-card .h4-btn { width: auto; }
+@media (max-width: 899px) { .h4-split-text .h4-card { text-align: center; } }
+
+/* Side-by-side cards: line up prices and buttons at the bottom */
+.h4-cards-2 > .h4-card, .h4-cards-3 > .h4-card { display: flex; flex-direction: column; }
+.h4-cards-2 > .h4-card .h4-price, .h4-cards-3 > .h4-card .h4-price { margin-top: auto; }
+
+/* Centered lead line under a section heading */
+.h4-lead-center { max-width: 620px; margin: 0 auto; color: var(--color-charcoal); font-size: 1.05rem; line-height: 1.7; }
+
+/* Small outlined tags (lab certifications) */
+.h4-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; margin-top: 1.4rem; }
+.h4-tags span { padding: 0.5rem 1rem; border: 1px solid var(--color-sage-dark); color: var(--color-sage-dark); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+.h4-band-deep .h4-split-text strong { color: var(--color-white); }

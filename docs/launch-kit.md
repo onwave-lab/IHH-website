@@ -238,7 +238,7 @@
 | Mineral Insight | $398 | An at-home HTMA kit, a 60-minute results and plan review, a private recorded walkthrough, and a 20–30 minute follow-up 4–6 weeks later. For women preparing for pregnancy, after birth, and in the mom years. |
 | Kids Mineral Insight | $398 | *(add at the Kids launch)* An at-home HTMA test for kids ages 4–17, a review with you, a parent-friendly report, a recorded walkthrough, and a follow-up. Works alongside your child's pediatrician. |
 | Mom + Child Bundle | $748 | *(add at the Kids launch)* Mineral Insight for you and Kids Mineral Insight for your child, together. Save $48. |
-| Discovery Session | $198 | One focused 60-minute telehealth visit to talk through your story and leave with a clear next step. $100 is credited toward Mineral Insight or The Intention Method within 30 days. |
+| Discovery Session | $198 | One focused 60-minute telehealth visit to talk through your story and leave with a clear next step. If they decide on Mineral Insight or The Intention Method within 30 days, they get a code for $100 off. |
 | Lab Review | $219 | A 40-minute telehealth visit to walk through your bloodwork line by line, with functional ranges alongside standard ones. |
 | The Intention Method | Price varies | Signature program: everything in Mineral Insight, plus functional labs chosen for you, ongoing visits and messaging, and a low-tox home reset. |
 

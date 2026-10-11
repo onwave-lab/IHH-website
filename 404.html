@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Google Analytics 4 with Consent Mode v2 -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+    // Opt-out model (US): analytics ON by default; honor explicit opt-out + GPC.
+    (function(){
+      var choice = localStorage.getItem('cookie_consent'); // 'accepted' | 'declined'
+      var granted = choice === 'accepted' ? true
+                  : choice === 'declined' ? false
+                  : navigator.globalPrivacyControl === true ? false
+                  : true;
+      gtag('consent', 'update', {
+        'analytics_storage': granted ? 'granted' : 'denied',
+        'ad_storage': granted ? 'granted' : 'denied',
+        'ad_user_data': granted ? 'granted' : 'denied',
+        'ad_personalization': granted ? 'granted' : 'denied'
+      });
+    })();
+  </script>
+  <script>
+    if (location.hostname === 'intentionholistichealth.com') {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3GFCR5ZRMZ';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-3GFCR5ZRMZ');
+    }
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sorry, we couldn't find that page. Explore mineral and nutrition care for moms, moms-to-be, and kids at Intention Holistic Health.">
+  <meta name="robots" content="noindex, follow">
+
+  <title>Page Not Found | Intention Holistic Health</title>
+
+  <link rel="preload" href="/fonts/Poppins-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/PlayfairDisplay-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png">
+  <script src="/js/analytics.js" defer></script>
+  <style>.notfound-links a { text-decoration: underline; }</style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="Intention Holistic Health Home">
+        <img src="/images/logo2.webp" alt="Intention Holistic Health" width="192" height="75">
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <div class="nav-dropdown">
+          <a href="/services/" class="nav-link">Services</a>
+          <div class="nav-dropdown-menu">
+            <a href="/services/mineral-insight.html" class="nav-dropdown-link">Mineral Insight (Women)</a>
+            <a href="/services/kids-mineral-insight.html" class="nav-dropdown-link">Kids Mineral Insight</a>
+            <a href="/services/discovery-session.html" class="nav-dropdown-link">Discovery Session</a>
+            <a href="/services/" class="nav-dropdown-link">Packages and Programs</a>
+            <a href="/htma.html" class="nav-dropdown-link">What is HTMA?</a>
+          </div>
+        </div>
+        <a href="/contact.html" class="nav-link">Contact</a>
+        <a href="https://us.fullscript.com/welcome/intentionholistichealth" class="nav-link external" data-fullscript>Supplements</a>
+        <a href="https://my.practicebetter.io/#/signin" class="nav-link external" data-portal-signin>Patient Portal</a>
+      </nav>
+
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/about.html" class="mobile-nav-link">About</a>
+    <a href="/blog/" class="mobile-nav-link">Blog</a>
+    <a href="/services/mineral-insight.html" class="mobile-nav-link">Mineral Insight (Women)</a>
+    <a href="/services/kids-mineral-insight.html" class="mobile-nav-link">Kids Mineral Insight</a>
+    <a href="/services/discovery-session.html" class="mobile-nav-link">Discovery Session</a>
+    <a href="/services/" class="mobile-nav-link">Packages and Programs</a>
+    <a href="/htma.html" class="mobile-nav-link">What is HTMA?</a>
+    <a href="/contact.html" class="mobile-nav-link">Contact</a>
+    <a href="https://us.fullscript.com/welcome/intentionholistichealth" class="mobile-nav-link external" data-fullscript>Supplements</a>
+    <a href="https://my.practicebetter.io/#/signin" class="mobile-nav-link external" data-portal-signin>Patient Portal</a>
+  </nav>
+
+
+  <main id="main" class="legal-page">
+    <div class="container">
+      <div class="legal-content" style="text-align:center;">
+        <h1>Page Not Found</h1>
+        <p>Sorry, we couldn't find that page. It may have moved, or the link may have a typo.</p>
+        <p>Here are a few places to start:</p>
+        <div class="h4-btn-row h4-btn-row-center">
+          <a href="/" class="h4-btn h4-btn-primary" data-track-cta="404-home">Go to the homepage</a>
+          <a href="/services/" class="h4-btn h4-btn-outline" data-track-cta="404-services">See services</a>
+        </div>
+        <p style="margin-top:2rem;" class="notfound-links">Or visit <a href="/htma.html">What is HTMA?</a>, the <a href="/blog/">blog</a>, or <a href="/contact.html">contact us</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="footer-logos" style="margin-bottom: var(--spacing-md);">
+          <a href="/" aria-label="Go to homepage"><img src="/images/logo-small.webp" alt="Intention Holistic Health" class="footer-logo" width="120" height="120" loading="lazy"></a>
+          <img src="/images/bhpcc-seal-small.webp" alt="Certified Brain Health Professional" class="footer-seal" width="63" height="59" title="Certified Brain Health Professional" loading="lazy">
+          <img src="/images/fdn-pediatric-seal-small.webp" alt="Functional Diagnostic Nutrition Pediatric Supplementation certification" class="footer-seal" width="63" height="63" title="Functional Diagnostic Nutrition: Pediatric Supplementation" loading="lazy">
+          <img src="/images/htma-expert-logo-small.webp" alt="HTMA Expert" class="footer-seal footer-seal--wide" width="83" height="59" title="HTMA Expert" loading="lazy">
+        </div>
+        <p class="footer-disclaimer">
+          Telehealth services for Kentucky residents only. This website does not provide medical advice. All content is for informational purposes only.
+        </p>
+        <p class="footer-copyright">
+          &copy; <span class="current-year">2025</span> Intention Holistic Health, PLLC. All rights reserved.
+        </p>
+        <p class="footer-copyright footer-credit">
+          Site by <a href="https://onwavelab.com/services/websites/" target="_blank" rel="noopener noreferrer">OnWave Lab</a>
+        </p>
+        <div class="footer-legal-links">
+          <a href="/legal/terms.html">Terms & Conditions</a>
+          <a href="/legal/privacy.html">Privacy Policy</a>
+          <a href="/legal/disclaimer.html">Medical Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+
+</body>
+</html>

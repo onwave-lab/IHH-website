@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var PORTAL_URLS = {
       default: 'https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/bookings?s=664b9722ff1f3762a57079f5&step=date',
       labReview: 'https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/bookings?s=664b9722ff1f3762a57079f5&step=date', // Same intake form as services
-      discovery: 'https://l.bttr.to/h0MUI', // Discovery Session (1-hour) booking
+      discovery: 'https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/bookings?s=6894cebcc20ac9665db9dcfd', // Discovery Session (1-hour) booking
       signin: 'https://my.practicebetter.io/#/signin', // Patient Portal signin page
       fullscript: 'https://us.fullscript.com/welcome/intentionholistichealth' // Supplements store
     };

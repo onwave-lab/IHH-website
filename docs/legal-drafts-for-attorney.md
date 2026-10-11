@@ -67,6 +67,8 @@ Preview links (branch preview, not the live site):
 
 ## 3. Practice Better documents to draft (not on the website)
 
+> Full copy-and-paste versions of all client forms (adult + minor) are in `docs/practice-better-forms.md`.
+
 These live inside Practice Better and are signed by clients there. Draft text for each is below.
 
 ### 3A. Notice of Privacy Practices: addendum for minors

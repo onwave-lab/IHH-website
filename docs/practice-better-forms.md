@@ -10,8 +10,8 @@
 ## How to use this
 
 **In Practice Better:**
-- **Consent and agreement forms** (Documents 1–10): go to **Settings → Forms** (or **Library → Forms**), choose **New Form → Agreement/Consent**, paste the text in a text block, then add the fields listed under "Fields to add."
-- **Questionnaires** (Documents 11–14): create them as **Questionnaire** forms. Each line marked ☐ or `___` becomes a question field.
+- **Consent and agreement forms** (Documents 1–11): go to **Settings → Forms** (or **Library → Forms**), choose **New Form → Agreement/Consent**, paste the text in a text block, then add the fields listed under "Fields to add."
+- **Questionnaires** (Documents 12–15): create them as **Questionnaire** forms. Each line marked ☐ or `___` becomes a question field.
 - **Attach** the forms to each package/service so they're sent automatically at booking.
 
 **Which forms go with which service:**
@@ -23,15 +23,16 @@
 | 3. Parent/Guardian Consent for Care of a Minor | — | ✅ |
 | 4. Child/Teen Assent | — | ✅ |
 | 5. Telehealth Consent | ✅ | ✅ (parent signs; includes minor section) |
-| 6. HTMA and At-Home Collection Consent | ✅ (Mineral Insight) | ✅ |
-| 7. Financial Policy | ✅ | ✅ (parent signs) |
-| 8. Communication Consent | ✅ | ✅ (parent signs) |
-| 9. Recording Consent (optional) | ✅ | ✅ (parent signs) |
-| 10. Authorization to Release Information (optional) | as needed | as needed |
-| 11. Eligibility Screener | ✅ | ✅ |
-| 12. Adult Health History | ✅ | — |
-| 13. Pediatric Health History | — | ✅ |
-| 14. 3-Day Food and Symptom Diary | ✅ (Mineral Insight) | ✅ |
+| 6. Functional and Laboratory Testing Consent | ✅ | ✅ (parent signs) |
+| 7. Supplement and Nutritional Therapy Consent | ✅ | ✅ (parent signs) |
+| 8. Financial Policy | ✅ | ✅ (parent signs) |
+| 9. Communication Consent | ✅ | ✅ (parent signs) |
+| 10. Recording Consent (optional) | ✅ | ✅ (parent signs) |
+| 11. Authorization to Release Information (optional) | as needed | as needed |
+| 12. Eligibility Screener | ✅ | ✅ |
+| 13. Adult Health History | ✅ | — |
+| 14. Pediatric Health History | — | ✅ |
+| 15. 3-Day Food and Symptom Diary | ✅ (Mineral Insight) | ✅ |
 
 **Minors in Practice Better:** create the child as the client, and add the parent/guardian as the **account manager / contact** so every form, message and result goes to the parent.
 
@@ -112,33 +113,45 @@ I acknowledge that I received and had the opportunity to review the Notice of Pr
 
 ---
 
-**INFORMED CONSENT FOR CARE: ADULT**
+**INFORMED CONSENT FOR FUNCTIONAL AND INTEGRATIVE CARE: ADULT**
 
-I, the undersigned, voluntarily request and consent to wellness services from Alicia Harrison, MSN, APRN, FNP-C, of Intention Holistic Health PLLC ("the Practice").
+I voluntarily request and consent to care from Alicia Harrison, MSN, APRN, FNP-C, of Intention Holistic Health PLLC ("the Practice"), and authorize the Practice to provide the services, testing, and recommendations it considers appropriate for me.
 
-**Services.** Services may include a review of my health history, symptoms, diet, and lifestyle; hair tissue mineral analysis (HTMA) and other functional or conventional lab review; and individualized nutrition, lifestyle, and supplement recommendations. Services use a functional and integrative approach focused on root causes, nutrition, and minerals.
+**Approach to care.** The Practice uses a functional and integrative approach that looks for underlying patterns behind symptoms. My care plan may include:
+- Review of my health history, symptoms, diet, lifestyle, and prior lab work
+- Hair tissue mineral analysis (HTMA)
+- Other functional laboratory testing (for example, stool, urine, saliva, breath, or finger-prick tests)
+- Conventional laboratory testing, such as blood work
+- Nutrition and dietary changes
+- Dietary supplements, including vitamins, minerals, herbs and botanicals, amino acids, probiotics, and other nutritional products
+- Lifestyle recommendations for sleep, stress, movement, and environment
+- [IF OFFERED: Prescription medications, when appropriate and within the Practice's scope]
 
-**What these services are not.** I understand that these services:
-- Are wellness-focused and work alongside, but do not replace, my primary care provider, OB-GYN, midwife, or specialists
-- Do not include primary care, urgent or emergency care, after-hours care, or management of chronic disease
-- Do not include prescriptions unless the Practice specifically offers and agrees to provide them
-- Are not a substitute for recommended screenings, prenatal care, or other conventional medical care
+**Shared decisions.** I understand that my care plan is decided together with my practitioner. The purpose, expected benefits, risks, and alternatives of each recommendation will be explained to me. If anything is unclear, it is my responsibility to ask before I agree to it. I may decline any test or recommendation.
 
-**Testing.** HTMA and functional labs are screening and educational tools. They are not diagnostic tests and do not diagnose, treat, cure, or prevent any disease.
+**Functional and laboratory testing.** Functional testing is used to look at nutritional, biochemical, and physiological patterns, and may help show when a referral to another provider is needed. Functional tests are not intended to diagnose disease. Some functional tests and approaches may be considered unproven or experimental by other clinicians, medical organizations, or insurers. My other providers may not agree with the need for a test or with the Practice's interpretation of it. See the Functional and Laboratory Testing Consent for details.
 
-**Supplements.** Supplements may cause side effects or interact with medications, pregnancy, or breastfeeding. I agree to tell the Practice about all medications, supplements, allergies, and whether I am pregnant, trying to conceive, or breastfeeding, and to update the Practice if anything changes. I will stop a supplement and contact the Practice (or seek care) if I have a reaction.
+**Supplements.** Supplements can have side effects and can interact with medications and other supplements. See the Supplement and Nutritional Therapy Consent for details.
 
-**My responsibilities.** I agree to provide complete and accurate information, to maintain a relationship with a primary care provider, and to share results and recommendations with my other providers before making major changes.
+**Realistic expectations.** Functional and integrative care is not an exact science and is not a quick fix. Nutritional changes often take 2–3 months to show improvement, and longer for some concerns. Individual results vary, and no specific outcome is promised or guaranteed.
 
-**No guarantee.** Individual results vary. No specific outcome is guaranteed.
+**What these services are not.** These services work alongside, and do not replace, my primary care provider, OB-GYN, midwife, or specialists. They do not include primary care, urgent or emergency care, or after-hours care. If my symptoms continue or get worse, I will see my primary care provider or another appropriate clinician for diagnosis and treatment.
+
+**My responsibilities.** I agree to:
+- Give complete and accurate information, including all medications, supplements, allergies, and diagnoses
+- Tell the Practice if I am pregnant, trying to conceive, or breastfeeding, and update the Practice if anything changes
+- Keep a relationship with a primary care provider and share results and recommendations with my other providers
+- Not stop or change any prescription medication without talking to the clinician who prescribed it
+
+**Payment.** The Practice does not bill insurance. Some services, tests, and supplements may not be reimbursable by insurance or HSA/FSA plans.
 
 **Emergencies.** The Practice does not provide emergency care. In an emergency, I will call 911 or go to the nearest emergency room. For a mental health crisis, I will call or text 988.
 
 **Kentucky only.** I confirm I am a Kentucky resident and will be physically located in Kentucky during every visit.
 
-**Right to refuse or withdraw.** I may ask questions, decline any recommendation, or withdraw from care at any time.
+**Right to withdraw.** I may ask questions, decline any recommendation, or stop care at any time.
 
-I have read this consent, had the chance to ask questions, and agree to receive services.
+I have read and understand this consent, had the chance to ask questions, and, understanding that no outcome is guaranteed, choose to receive functional and integrative care.
 
 ---
 
@@ -149,31 +162,40 @@ I have read this consent, had the chance to ask questions, and agree to receive 
 
 ---
 
-**PARENT OR GUARDIAN CONSENT FOR CARE OF A MINOR: KIDS MINERAL INSIGHT**
+**PARENT OR GUARDIAN CONSENT FOR FUNCTIONAL AND INTEGRATIVE CARE OF A MINOR**
 
 **Legal authority.** I am the parent or legal guardian of the child named above and have the legal authority to consent to their health care. If a custody order or guardianship is in place, I confirm it allows me to make health decisions for this child, and I will provide a copy if asked. I will tell the Practice if my authority changes.
 
-**Services.** I consent to wellness services for my child from Alicia Harrison, MSN, APRN, FNP-C, of Intention Holistic Health PLLC, including:
-- Hair tissue mineral analysis (HTMA) using a small hair sample that I collect at home
-- Review of the health history, food diary, and other information I provide
-- Telehealth visits
-- Individualized nutrition, lifestyle, and supplement recommendations
+**Authorization.** I authorize Alicia Harrison, MSN, APRN, FNP-C, of Intention Holistic Health PLLC ("the Practice"), to provide the services, testing, and recommendations for my child that the Practice considers appropriate. My child's care plan may include:
+- Review of the health history, food diary, prior lab work, and other information I provide
+- Hair tissue mineral analysis (HTMA) using a small hair sample I collect at home
+- Other functional laboratory testing (for example, stool, urine, saliva, breath, or finger-prick tests)
+- Conventional laboratory testing, such as blood work
+- Nutrition and dietary changes
+- Dietary supplements, including vitamins, minerals, herbs and botanicals, amino acids, probiotics, and other nutritional products, in child-appropriate forms and doses
+- Lifestyle recommendations for sleep, stress, movement, and environment
+- [IF OFFERED: Prescription medications, when appropriate and within the Practice's scope]
 
-**I understand that:**
-- HTMA is a screening tool, not a diagnostic test. It does not diagnose any condition, including ADHD, autism, anxiety, or nutrient deficiencies.
-- These services work alongside, and do not replace, my child's pediatrician or primary care provider. They do not include well-child visits, vaccinations, school or sports physicals, sick visits, urgent, emergency, or after-hours care.
-- My child must have an established pediatrician or primary care provider, and I will share results with them before making major changes.
+**Shared decisions.** I understand that I decide, together with my child's practitioner, which care is best for my child. The purpose, expected benefits, risks, and alternatives of each recommendation will be explained to me. If anything is unclear, it is my responsibility to ask before I agree to it. I may decline any test or recommendation.
+
+**Functional and laboratory testing.** Functional testing is used to look at nutritional, biochemical, and physiological patterns, and may help show when a referral is needed. Functional tests, including HTMA, are not intended to diagnose disease and do not diagnose any condition, including ADHD, autism, anxiety, or nutrient deficiencies. Some functional tests and approaches may be considered unproven or experimental by other clinicians, medical organizations, or insurers. My child's pediatrician may not agree with the need for a test or with the Practice's interpretation of it.
+
+**Realistic expectations.** Functional and integrative care is not an exact science and is not a quick fix. Nutritional changes often take 2–3 months to show improvement, and longer for some concerns. Individual results vary, and no specific outcome is promised or guaranteed.
+
+**I also understand that:**
+- These services work alongside, and do not replace, my child's pediatrician or primary care provider. They do not include well-child visits, vaccinations, school or sports physicals, sick visits, or urgent, emergency, or after-hours care.
+- My child must have an established pediatrician or primary care provider. If my child's symptoms continue or get worse, I will contact the pediatrician for diagnosis, treatment, and referrals.
+- I will not stop or change any of my child's prescription medications without talking to the clinician who prescribed them.
 - A parent or guardian (me or another authorized adult) will take part in every visit, and my child will be physically located in Kentucky during each visit.
 - I will receive my child's full results, written report, and plan.
-- Supplement doses for children are individualized. I will give only the amounts recommended, keep supplements out of reach of children, and stop and seek care if my child has a reaction.
-- Individual results vary, and no specific outcome is guaranteed.
+- The Practice does not bill insurance, and some services, tests, and supplements may not be reimbursable.
 - In an emergency, I will call 911. For Poison Control, I will call 1-800-222-1222.
 
 **Safety.** If information shared during care raises a concern about a child's safety, the Practice will follow Kentucky law, which may include making a report to the appropriate authorities.
 
 **Right to withdraw.** I may ask questions, decline any recommendation, or withdraw my child from care at any time.
 
-I have read this consent, had the chance to ask questions, and consent to services for my child.
+I have read and understand this consent, had the chance to ask questions, and, understanding that no outcome is guaranteed, choose functional and integrative care for my child.
 
 ---
 
@@ -222,32 +244,76 @@ I have read this information and consent to telehealth services.
 
 ---
 
-## 6. HTMA and At-Home Sample Collection Consent
+## 6. Functional and Laboratory Testing Consent
 
 **Form type:** Agreement/Consent
-**Fields to add:** Client name · Checkbox "I agree" · Signature (client or parent/guardian) · Date
+**Fields to add:** Client name · Checkbox "Client is a minor" · Checkbox "I agree" · Signature (client or parent/guardian) · Relationship · Date
 
 ---
 
-**CONSENT FOR HAIR TISSUE MINERAL ANALYSIS (HTMA)**
+**CONSENT FOR FUNCTIONAL AND LABORATORY TESTING**
 
-**What HTMA is.** HTMA measures minerals and some toxic metals in a small sample of hair. It reflects patterns over roughly the past few months.
+This consent covers all testing the Practice may recommend, now or during follow-up care, including hair tissue mineral analysis (HTMA).
 
-**What HTMA is not.** HTMA is a screening and educational tool. It is not a diagnostic test, does not diagnose or treat any disease, and does not replace blood work or other testing my provider may recommend.
+**Types of testing.** Depending on my (or my child's) needs, the Practice may recommend:
+- **HTMA:** a small hair sample collected at home
+- **Other functional tests:** for example, stool (digestive and microbiome), urine (organic acids or hormones), saliva (cortisol or hormones), breath, food sensitivity, or finger-prick blood spot tests, often collected at home
+- **Conventional blood work:** drawn at a third-party lab or patient service center
 
-**Collection.** I will collect the sample at home following the kit instructions. I understand that hair treatments (dyes, bleach, perms), some shampoos, swimming pools, and not following instructions may affect results. I will tell the Practice about these.
+Each test's purpose, cost, and collection steps will be explained before it is ordered. I may decline any test.
 
-**Laboratory.** My sample and the information needed to process it will be sent to [LAB NAME], a third-party laboratory. The laboratory's results are interpreted by the Practice for wellness purposes.
+**What functional testing is for.** Functional testing looks at nutritional, biochemical, and physiological patterns to guide nutrition, supplement, and lifestyle recommendations. It may also show when a referral to another provider is needed. Functional tests are not intended to diagnose, treat, cure, or prevent disease, and they do not replace testing my primary care provider or my child's pediatrician may recommend. Some functional tests are considered unproven or experimental by other clinicians or insurers, and other providers may interpret results differently.
 
-**Timing.** Kits usually arrive within 5–7 days. Results are usually ready 2–3 weeks after the laboratory receives the sample. Lost, damaged, or insufficient samples may need to be recollected.
+**Conventional tests.** Conventional lab results are reviewed in the context of my care with the Practice. If a result needs medical follow-up, the Practice will tell me and recommend that I follow up with my primary care provider, my child's pediatrician, or another appropriate clinician.
 
-**Toxic metals.** If results show elevated toxic metals, the Practice may recommend follow-up testing or care with my primary care provider or my child's pediatrician.
+**Collecting samples.** I will follow each kit's instructions. Food, medications, supplements, hair treatments, swimming pools, timing, and not following instructions can affect results. Lost, damaged, or insufficient samples may need to be recollected, which may cost extra. For a child, a parent or guardian will collect or supervise collection. Blood draws carry small risks such as bruising, soreness, or lightheadedness.
 
-I understand and consent to HTMA testing.
+**Laboratories and costs.** Samples and the information needed to process them are sent to third-party laboratories, which are business associates bound to protect my information. HTMA is included in Mineral Insight packages. Other tests are priced separately. Some laboratories bill me directly, and those charges are my responsibility. The Practice does not bill insurance, and testing may not be reimbursable.
+
+**Timing.** HTMA kits usually arrive within 5–7 days, and HTMA results are usually ready 2–3 weeks after the laboratory receives the sample. Other tests vary, and I will be given an estimate when a test is ordered.
+
+**Unexpected or urgent results.** Testing can show something unexpected, such as elevated toxic metals or a result outside the normal range. If a result may need prompt medical attention, the Practice will contact me using the information on file and recommend next steps, which may include follow-up with my primary care provider, my child's pediatrician, or urgent care. I agree to keep my contact information current.
+
+I understand and consent to functional and laboratory testing as recommended and agreed to during my (or my child's) care.
 
 ---
 
-## 7. Financial Policy
+## 7. Supplement and Nutritional Therapy Consent
+
+**Form type:** Agreement/Consent
+**Fields to add:** Client name · Checkbox "Client is a minor" · Checkbox "I agree" · Signature (client or parent/guardian) · Relationship · Date
+
+---
+
+**CONSENT FOR SUPPLEMENTS AND NUTRITIONAL THERAPY**
+
+**What may be recommended.** My (or my child's) plan may include dietary supplements such as vitamins, minerals, electrolytes, herbs and botanicals, amino acids, probiotics, omega-3s, and other nutritional products. It may also include dietary changes. Each recommendation will include its purpose, the dose, and how long to take it.
+
+**How supplements are regulated.** Dietary supplements are not approved by the FDA to diagnose, treat, cure, or prevent any disease, and the FDA does not review them for safety or effectiveness before they are sold. Quality varies between brands. The Practice recommends professional-grade products that are tested by a third party.
+
+**Possible side effects.** Supplements and dietary changes can cause side effects. These may include upset stomach, nausea, changes in bowel habits, headaches, trouble sleeping, skin reactions, allergic reactions, or a temporary worsening of symptoms. If I (or my child) have a reaction, I will stop the supplement and contact the Practice. For a severe reaction, such as trouble breathing or swelling of the face or throat, I will call 911.
+
+**Interactions.** Supplements can interact with prescription and over-the-counter medications and with other supplements. Examples include blood thinners, thyroid, blood pressure, diabetes, seizure, and mood medications, and birth control. I agree to:
+- Tell the Practice about every medication and supplement I (or my child) take, and update the Practice when anything changes
+- Tell the Practice if I am pregnant, trying to conceive, or breastfeeding, because some supplements and herbs are not safe during these times
+- Tell my other providers which supplements I (or my child) take
+- Stop supplements before surgery or procedures as directed by my surgeon or provider
+
+**Prescription medications.** Some people find that nutrition and supplements improve how they feel. Even so, I will not stop, lower, or change any prescription medication (mine or my child's) without first talking to the clinician who prescribed it.
+
+**Children.** Children's doses are individualized. I will give only the recommended amounts, use child-appropriate forms, and keep all supplements locked and out of reach. Accidental overdose of iron-containing products is a leading cause of fatal poisoning in children under 6. If my child swallows too much of any supplement, I will call Poison Control at 1-800-222-1222 or 911.
+
+**Realistic expectations.** Supplements are not a quick fix. Improvement often takes 2–3 months, and longer for some concerns. Follow-up and retesting help adjust the plan. Good nutrition remains the foundation. No specific result is guaranteed.
+
+**Buying supplements.** Supplements may be ordered through the Practice's Fullscript dispensary. I am never required to buy supplements through the Practice and may buy equivalent products elsewhere. [IF APPLICABLE: The Practice may earn a margin on products ordered through its dispensary.] Supplements are not covered by insurance and may not be HSA/FSA eligible.
+
+[IF OFFERED: **Prescription and off-label medications.** If a prescription medication is considered necessary, including one used "off-label" (for a use not specifically approved by the FDA), its purpose, benefits, risks, and alternatives will be discussed with me first so I can give informed consent.]
+
+I have read and understand this consent and agree to follow supplement recommendations safely.
+
+---
+
+## 8. Financial Policy
 
 **Form type:** Agreement/Consent
 **Fields to add:** Client name · Responsible party name (parent for minors) · Checkbox "I agree" · Signature · Date
@@ -266,6 +332,7 @@ I understand and consent to HTMA testing.
 - Kids Mineral Insight (ages 4–17): $398 (same inclusions)
 - Mom + Child Bundle: $748
 - Lab Review: $219
+- Additional functional or conventional lab tests are priced separately. Some laboratories bill you directly.
 - Supplements are purchased separately through Fullscript.
 
 **Discovery Session credit.** $100 of the Discovery Session fee is credited toward Mineral Insight or The Intention Method if you enroll within 30 days of your Discovery Session. The credit has no cash value and cannot be transferred.
@@ -284,7 +351,7 @@ I have read and agree to this Financial Policy.
 
 ---
 
-## 8. Communication Consent
+## 9. Communication Consent
 
 **Form type:** Agreement/Consent
 **Fields to add:** Checkboxes for allowed contact methods (Portal messages / Email / Text / Phone) · Checkbox "OK to leave detailed voicemail" · Signature · Date
@@ -307,7 +374,7 @@ I consent to be contacted by the methods I selected above.
 
 ---
 
-## 9. Recording Consent (Optional)
+## 10. Recording Consent (Optional)
 
 **Form type:** Agreement/Consent
 **Fields to add:** Radio "Yes, I consent / No, I do not consent" · Signature (client or parent/guardian) · Date
@@ -325,7 +392,7 @@ With your consent, Alicia will create a private screen recording that walks thro
 
 ---
 
-## 10. Authorization to Release Health Information (Optional)
+## 11. Authorization to Release Health Information (Optional)
 
 **Form type:** Agreement/Consent (send only when needed)
 **Fields to add:** Client name · Date of birth · "Release TO / RECEIVE FROM" checkboxes · Provider/person name, phone, fax, and email · Purpose · Information to share (checkboxes) · Expiration date · Signature · Relationship · Date
@@ -356,7 +423,7 @@ Phone / fax / email: ________________________
 
 ---
 
-## 11. Eligibility Screener
+## 12. Eligibility Screener
 
 **Form type:** Questionnaire (send before booking or as the first form)
 
@@ -380,7 +447,7 @@ Phone / fax / email: ________________________
 
 ---
 
-## 12. Adult Health History
+## 13. Adult Health History
 
 **Form type:** Questionnaire
 
@@ -431,7 +498,7 @@ Phone / fax / email: ________________________
 
 ---
 
-## 13. Pediatric Health History
+## 14. Pediatric Health History
 
 **Form type:** Questionnaire (the parent/guardian completes it)
 
@@ -490,7 +557,7 @@ Phone / fax / email: ________________________
 
 ---
 
-## 14. 3-Day Food and Symptom Diary
+## 15. 3-Day Food and Symptom Diary
 
 **Form type:** Questionnaire (or a fillable PDF upload)
 
@@ -521,8 +588,8 @@ Please record **2 weekdays and 1 weekend day**. Eat as you normally would. There
 
 ## Before you go live: checklist
 
-- [ ] Attorney has reviewed and approved Documents 1–10
-- [ ] All `[BRACKETS]` filled in: address, phone, lab name, cancellation window/fee, refund details, message response time, recording availability, Fullscript disclosure
+- [ ] Attorney has reviewed and approved Documents 1–11
+- [ ] All `[BRACKETS]` filled in: address, phone, lab name, cancellation window/fee, refund details, message response time, recording availability, Fullscript disclosure, whether you offer prescriptions (remove the [IF OFFERED] paragraphs if not)
 - [ ] Malpractice insurer has confirmed coverage for pediatric clients
 - [ ] Forms attached to each Practice Better package (see table at top)
 - [ ] Test-book yourself as an adult and as a "parent" to see the full form flow

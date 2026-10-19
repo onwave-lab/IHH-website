@@ -276,7 +276,7 @@ All work is done on `drafts-website-edits`. Push to this branch only. User merge
 
 ## Model Selection
 
-**Default Model:** Claude Code's default (the latest Opus). Don't pin a model in settings, env vars or here, so it stays current automatically. Use `/model` only for a temporary switch (e.g. Haiku for quick lookups).
+**Default Model:** claude-sonnet-4-5-20250929 (Sonnet 4.5). Use Opus for planning/architecture/complex debugging. Use Haiku for simple edits/lookups. See `CLAUDE-REFERENCE.md` for the full model selection guide.
 
 ## Content Cluster Skill (Auto-Invoke)
 
@@ -339,7 +339,7 @@ When adding new content to the site, **always ask about style preferences** befo
 | HTMA, mineral testing, hair analysis | `/htma.html` (What is HTMA?) |
 | Lab work, blood tests, "normal" results | `/services/lab-review.html` |
 | Wellness support, hormone support | `/services/` |
-| Getting started, booking | `/services/mineral-insight.html` (women) or `/services/kids-mineral-insight.html` (kids). `/apply.html` was retired 2026-10-10 (redirects to `/services/`); no complimentary calls. |
+| Getting started, booking | `/apply.html` or `/contact.html` |
 
 **When to suggest links:**
 - After writing or reviewing blog content
@@ -430,7 +430,7 @@ See `README.md` for the full page hierarchy, file organization, and navigation s
 ### User Flow
 
 ```
-Homepage → Learn (HTMA page, Blog) → Mineral Insight / Kids Mineral Insight (flat fee) → Practice Better checkout → Patient Portal
+Homepage → Learn (HTMA page, Blog) → Service Page → Apply Page → Patient Portal
                                          ↓
                                Lab Review (direct booking OK)
 ```
@@ -664,43 +664,3 @@ See `CLAUDE-REFERENCE.md` for contact email and Alicia Harrison's credentials (M
 ## Keyword Research Checklist (added 2026-06-14)
 
 A hand-run, free-tools keyword-research checklist lives at the repo root: **`ihh-keyword-research-checklist.md`**. If Kyle or Alicia asks about keyword/SEO research, content planning, or "what should we write about," point them to it. Run it **once per audience** (B2C patient-facing + B2B partner-facing). Leans on IHH's YMYL/credential advantage; remember the Keyword Planner trap ("Competition" = advertiser bids, not ranking difficulty).
-
-## Housekeeping (before EVERY commit and push)
-
-Run the `/housekeeping` skill (`.claude/skills/housekeeping/SKILL.md`) before you commit and push, every time,
-and when Alicia says "housekeeping", "tidy up" or "wrap up". It triages iPad inbox notes, saves memory,
-updates `docs/pending.md`, logs the session, merges finished branches into **`drafts-website-edits`** (never the live `main`), commits,
-pushes, and syncs Claude's context to Hayes. On Alicia's Mac a hook blocks `git commit`/`git push` here until
-housekeeping has run in the last 30 minutes.
-
-## If you are running on the iPad / Claude Code on the web
-
-You can tell: you're in a fresh cloud checkout, `echo $CLAUDE_CODE_REMOTE` prints `true`, and anything
-you'd save to memory is lost when the session ends. Alicia's Mac Claude holds her full memory and
-rules; you don't. So:
-
-- **Before you finish any session where you learned something worth keeping** (a preference, a
-  decision, a correction, a new fact about the business, something that went wrong), write ONE note:
-  `claude-inbox/YYYY-MM-DD-HHMM-<short-topic>.md` and commit it on this session's branch.
-  If nothing durable happened, skip it.
-- Format:
-  ```
-  ---
-  date: YYYY-MM-DD HH:MM (CT)
-  repo: IHH-website
-  branch: <this branch>
-  session: <one line: what Alicia asked for>
-  ---
-  ## Learned
-  ## Decisions Alicia made
-  ## Suggested memory / rule changes (for the Mac Claude to reconcile)
-  ## Possible conflicts with existing rules
-  ## Open questions for Alicia (include anything left pending)
-  ```
-  Keep it short: bullets, not a transcript.
-- **Don't change `CLAUDE.md`, `.claude/skills/` or `docs/pending.md` yourself** for anything beyond this
-  task. Propose it in the note instead; the Mac Claude reconciles it with rules you can't see.
-- **Never put client health details or any password, key or token in a note.**
-- **Before every commit and push:** run the `housekeeping` skill. On the iPad, housekeeping is this note,
-  so write it and commit it with your work. Don't merge branches into `drafts-website-edits` or `main` from the iPad; the
-  Mac does that with Alicia.

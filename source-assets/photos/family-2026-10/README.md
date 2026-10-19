@@ -1,5 +1,7 @@
 # Family photos: batch 1 (uploaded Oct 19, 2026)
 
+> **Photos removed Oct 19, 2026 (Alicia's request).** This repo is public, so the family photos are no longer kept here. Alicia has the originals on her devices. The 5 used in social posts are also in her Canva uploads. The list below is kept only for reference.
+
 These are the original photos Alicia uploaded for the website and the launch social posts. They're kept in the repo but never published, because `source-assets/` is excluded from Netlify. Web-ready WebP versions get made when a photo is actually placed on a page.
 
 **Status:** Saved for later. Alicia is uploading more photos before any page or post changes.

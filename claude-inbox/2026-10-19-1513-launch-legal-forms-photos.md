@@ -54,3 +54,8 @@ session: Kids launch prep: PB links, legal drafts, pre-launch QA, Practice Bette
 - **Suggested CLAUDE.md edits** (for the Mac Claude to make):
   - Remove the Lab Review rows from the "User Flow" diagram, "Key Conversion Points" and the "Internal Linking Strategy" table. Point lab and blood work topics to `/services/discovery-session.html`.
   - Note the same-tab exception for `data-portal-*` / `data-fullscript` overlay links under "External Links."
+
+## Update (evening Oct 19): photos removed from the repo
+- **The repo is PUBLIC.** At Alicia's request, the 16 family photos (her kids) were removed from `source-assets/photos/family-2026-10/` on both drafts and `launch-2026-10`. They remain in git history.
+- **Suggested rule:** never commit Alicia's personal or family photos to this repo. Only optimized images actually used on the site go in `images/`. Consider making the repo private: Netlify deploys still work, and history would be hidden.
+- **Canva launch posts:** 5 photo swaps plus the minerals-carousel "just a few of the minerals that often show up out of balance on HTMA" line are drafted in Canva and await Alicia's "save."

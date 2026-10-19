@@ -26,3 +26,11 @@ These are the original photos Alicia uploaded for the website and the launch soc
 **Before using:**
 - Photos 06, 07, 09 and 11 show no faces and are the safest choices for posts about the kids.
 - Photo 01 is the color version of 16, so pick one per placement.
+
+## Batch 2 (Oct 19): professional shoot re-upload
+Alicia re-sent 15 photos from her professional shoot. 14 were already in the repo:
+- `source-assets/photos/D08A*.jpg`
+- `source-assets/blog-originals/hands-chopping-original.jpg` and `pouring-olive-oil-original.jpg`
+- `images/services/intentional-reset/solution-photo-new-original.webp`
+
+The only new file is a larger copy (1365×1937) of the white-blazer headshot, saved as `source-assets/about-originals/alicia-professional-blazer-1365w.jpg`. The site's version is 1200×1800.

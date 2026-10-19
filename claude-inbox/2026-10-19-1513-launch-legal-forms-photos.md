@@ -42,3 +42,15 @@ session: Kids launch prep: PB links, legal drafts, pre-launch QA, Practice Bette
   - finding the attorney
   - confirming malpractice covers pediatric clients
   - filling the [BRACKETS] in the forms
+
+## Update (later Oct 19): Alicia answered the open questions
+- **Recordings:** a separate screen walkthrough that Alicia records on her own time and uploads to a secure platform. The live visit is NOT recorded. The forms, Privacy and Terms drafts now say "a secure, HIPAA-compliant platform (such as the Practice Better client portal)."
+- **Prescriptions:** Alicia does not prescribe. The [IF OFFERED] paragraphs are removed, and the consents now say services don't include prescription medications.
+- **Lab Review is retired.** The offer is now Discovery Session + Mineral Insight + Kids Mineral Insight (+ Mom + Child Bundle).
+  - Added `force = true` to the existing `/services/lab-review` redirects (it pointed to Discovery but the file still existed, so it was being served).
+  - Repointed 9 blog links to the Discovery Session.
+  - Removed Lab Review from the PB forms.
+- **Portal/Fullscript/Discovery buttons stay in the SAME tab** (Alicia's choice). The misleading "Opens … in a new tab" titles were changed on 21 pages.
+- **Suggested CLAUDE.md edits** (for the Mac Claude to make):
+  - Remove the Lab Review rows from the "User Flow" diagram, "Key Conversion Points" and the "Internal Linking Strategy" table. Point lab and blood work topics to `/services/discovery-session.html`.
+  - Note the same-tab exception for `data-portal-*` / `data-fullscript` overlay links under "External Links."

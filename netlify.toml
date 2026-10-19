@@ -229,15 +229,18 @@
   status = 301
 
 # Retired offers - redirect to current replacements
+# Lab Review retired 2026-10-19; force = true because the file still exists in the repo.
 [[redirects]]
   from = "/services/lab-review.html"
   to = "/services/discovery-session.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/services/lab-review"
   to = "/services/discovery-session.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/services/intentional-reset.html"

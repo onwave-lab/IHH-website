@@ -16,7 +16,7 @@
 
 **Which forms go with which service:**
 
-| Form | Adult (Mineral Insight, Discovery, Lab Review) | Minor (Kids Mineral Insight) |
+| Form | Adult (Discovery Session, Mineral Insight) | Minor (Kids Mineral Insight; Mom + Child Bundle) |
 |---|---|---|
 | 1. Notice of Privacy Practices + Acknowledgment | ✅ | ✅ (parent signs) |
 | 2. Adult Informed Consent for Care | ✅ | — |
@@ -125,7 +125,6 @@ I voluntarily request and consent to care from Alicia Harrison, MSN, APRN, FNP-C
 - Nutrition and dietary changes
 - Dietary supplements, including vitamins, minerals, herbs and botanicals, amino acids, probiotics, and other nutritional products
 - Lifestyle recommendations for sleep, stress, movement, and environment
-- [IF OFFERED: Prescription medications, when appropriate and within the Practice's scope]
 
 **Shared decisions.** I understand that my care plan is decided together with my practitioner. The purpose, expected benefits, risks, and alternatives of each recommendation will be explained to me. If anything is unclear, it is my responsibility to ask before I agree to it. I may decline any test or recommendation.
 
@@ -135,7 +134,7 @@ I voluntarily request and consent to care from Alicia Harrison, MSN, APRN, FNP-C
 
 **Realistic expectations.** Functional and integrative care is not an exact science and is not a quick fix. Nutritional changes often take 2–3 months to show improvement, and longer for some concerns. Individual results vary, and no specific outcome is promised or guaranteed.
 
-**What these services are not.** These services work alongside, and do not replace, my primary care provider, OB-GYN, midwife, or specialists. They do not include primary care, urgent or emergency care, or after-hours care. If my symptoms continue or get worse, I will see my primary care provider or another appropriate clinician for diagnosis and treatment.
+**What these services are not.** These services work alongside, and do not replace, my primary care provider, OB-GYN, midwife, or specialists. They do not include primary care, prescription medications, or urgent, emergency, or after-hours care. If my symptoms continue or get worse, I will see my primary care provider or another appropriate clinician for diagnosis and treatment.
 
 **My responsibilities.** I agree to:
 - Give complete and accurate information, including all medications, supplements, allergies, and diagnoses
@@ -174,7 +173,6 @@ I have read and understand this consent, had the chance to ask questions, and, u
 - Nutrition and dietary changes
 - Dietary supplements, including vitamins, minerals, herbs and botanicals, amino acids, probiotics, and other nutritional products, in child-appropriate forms and doses
 - Lifestyle recommendations for sleep, stress, movement, and environment
-- [IF OFFERED: Prescription medications, when appropriate and within the Practice's scope]
 
 **Shared decisions.** I understand that I decide, together with my child's practitioner, which care is best for my child. The purpose, expected benefits, risks, and alternatives of each recommendation will be explained to me. If anything is unclear, it is my responsibility to ask before I agree to it. I may decline any test or recommendation.
 
@@ -183,7 +181,7 @@ I have read and understand this consent, had the chance to ask questions, and, u
 **Realistic expectations.** Functional and integrative care is not an exact science and is not a quick fix. Nutritional changes often take 2–3 months to show improvement, and longer for some concerns. Individual results vary, and no specific outcome is promised or guaranteed.
 
 **I also understand that:**
-- These services work alongside, and do not replace, my child's pediatrician or primary care provider. They do not include well-child visits, vaccinations, school or sports physicals, sick visits, or urgent, emergency, or after-hours care.
+- These services work alongside, and do not replace, my child's pediatrician or primary care provider. They do not include well-child visits, vaccinations, school or sports physicals, sick visits, prescription medications, or urgent, emergency, or after-hours care.
 - My child must have an established pediatrician or primary care provider. If my child's symptoms continue or get worse, I will contact the pediatrician for diagnosis, treatment, and referrals.
 - I will not stop or change any of my child's prescription medications without talking to the clinician who prescribed them.
 - A parent or guardian (me or another authorized adult) will take part in every visit, and my child will be physically located in Kentucky during each visit.
@@ -307,8 +305,6 @@ I understand and consent to functional and laboratory testing as recommended and
 
 **Buying supplements.** Supplements may be ordered through the Practice's Fullscript dispensary. I am never required to buy supplements through the Practice and may buy equivalent products elsewhere. [IF APPLICABLE: The Practice may earn a margin on products ordered through its dispensary.] Supplements are not covered by insurance and may not be HSA/FSA eligible.
 
-[IF OFFERED: **Prescription and off-label medications.** If a prescription medication is considered necessary, including one used "off-label" (for a use not specifically approved by the FDA), its purpose, benefits, risks, and alternatives will be discussed with me first so I can give informed consent.]
-
 I have read and understand this consent and agree to follow supplement recommendations safely.
 
 ---
@@ -331,7 +327,6 @@ I have read and understand this consent and agree to follow supplement recommend
 - Mineral Insight (Women): $398 (HTMA kit, lab analysis, 60-minute results and plan review, 20–30-minute follow-up)
 - Kids Mineral Insight (ages 4–17): $398 (same inclusions)
 - Mom + Child Bundle: $748
-- Lab Review: $219
 - Additional functional or conventional lab tests are priced separately. Some laboratories bill you directly.
 - Supplements are purchased separately through Fullscript.
 
@@ -385,7 +380,7 @@ I consent to be contacted by the methods I selected above.
 
 With your consent, Alicia will create a private screen recording that walks through your (or your child's) written plan. The recording shows the plan document, not you or your child.
 
-- The recording is shared only with you through the secure Practice Better portal.
+- The recording is shared only with you through a secure, HIPAA-compliant platform (such as the Practice Better client portal).
 - It will be available for [__ days/months] and then deleted.
 - It is for your personal use, or for sharing with a co-parent or guardian involved in your child's care. Please do not post or share it publicly.
 - You may decline or withdraw consent at any time, and it will not affect your care.
@@ -589,7 +584,7 @@ Please record **2 weekdays and 1 weekend day**. Eat as you normally would. There
 ## Before you go live: checklist
 
 - [ ] Attorney has reviewed and approved Documents 1–11
-- [ ] All `[BRACKETS]` filled in: address, phone, lab name, cancellation window/fee, refund details, message response time, recording availability, Fullscript disclosure, whether you offer prescriptions (remove the [IF OFFERED] paragraphs if not)
+- [ ] All `[BRACKETS]` filled in: address, phone, lab name, cancellation window/fee, refund details, message response time, recording availability, Fullscript disclosure
 - [ ] Malpractice insurer has confirmed coverage for pediatric clients
 - [ ] Forms attached to each Practice Better package (see table at top)
 - [ ] Test-book yourself as an adult and as a "parent" to see the full form flow

@@ -17,8 +17,9 @@ The practice is adding **Kids Mineral Insight**, an HTMA-based wellness service 
 - A parent or guardian takes part in **every** visit, at every age.
 - Parents and guardians receive the **full** results, written report, and plan for every child, at every age.
 - The service works alongside the child's pediatrician. It is not primary care, well-child care, vaccinations, or physicals.
+- **The practice does not prescribe medications.** Care is limited to testing review, nutrition, supplements, and lifestyle guidance.
 - All child health information is collected only through **Practice Better**, the HIPAA-compliant portal. It is never collected through website forms, email lists, or social media.
-- Results reviews may be recorded **with written consent**. The recording is a private screen walkthrough of the written plan, shared only through Practice Better.
+- Results reviews may be recorded **with written consent**. The recording is a private screen walkthrough of the written plan, shared only through a secure, HIPAA-compliant platform (such as the Practice Better client portal). It is recorded separately, not during the live visit.
 
 ---
 
@@ -98,7 +99,7 @@ These live inside Practice Better and are signed by clients there. Draft text fo
 > For a client under 18, the child must be physically located in Kentucky at the time of each telehealth visit, and a parent or legal guardian must take part in the entire visit. If the child is not in Kentucky, or no parent or guardian is present, the visit will be rescheduled. Telehealth has limits, including no physical exam, and may not be appropriate for every concern.
 
 ### 3E. Recording Consent
-> With your consent, Alicia will create a private screen recording that walks through your (or your child's) written plan. The recording shows the plan document, not you or your child. It is shared only with you through the secure Practice Better portal, will be available for **[__ days/months — counsel to set]**, and will then be deleted. It is for your personal use or for sharing with a co-parent or guardian involved in the child's care. Please do not post or share it publicly. You may decline or withdraw consent at any time without affecting care.
+> With your consent, Alicia will create a private screen recording that walks through your (or your child's) written plan. The recording shows the plan document, not you or your child. It is shared only with you through a secure, HIPAA-compliant platform (such as the Practice Better client portal), will be available for **[__ days/months — counsel to set]**, and will then be deleted. It is for your personal use or for sharing with a co-parent or guardian involved in the child's care. Please do not post or share it publicly. You may decline or withdraw consent at any time without affecting care.
 
 ### 3F. Portal Access for Minors
 > The parent or guardian manages the Practice Better account for a child under 18. Messages, forms, results, and recordings are sent to the parent or guardian. Teens do not have separate portal accounts at this time.

@@ -724,7 +724,7 @@ Carbohydrates remain an important fuel source for the brain and muscles. Pairing
 
 Fatigue, hormone changes, hair loss, and metabolic symptoms rarely have a single explanation.
 
-Sleep quality, stress, thyroid function, medications, and underlying medical conditions can all play a role. When symptoms persist, a [comprehensive evaluation](/services/lab-review.html) may be appropriate.
+Sleep quality, stress, thyroid function, medications, and underlying medical conditions can all play a role. When symptoms persist, a [comprehensive evaluation](/services/discovery-session.html) may be appropriate.
 
 Still, nutrition remains a *foundational* variable.
 
@@ -924,7 +924,7 @@ Standard blood work has real value, but most routine panels weren\u2019t designe
 
 Functional blood work, interpreted through optimal ranges rather than broad reference ranges, adds another layer. Together, these tools build a more complete picture. If you\u2019ve been told your labs are normal but you still don\u2019t feel right, [there may be a reason for that](/blog/post.html?post=2025-01-09-labs-normal-feel-off).
 
-Both HTMA and comprehensive blood work review are available as part of my [packages and programs](/services/). For women who want to start with their existing lab results, I also offer a standalone [Lab Review](/services/lab-review.html).
+Both HTMA and comprehensive blood work review are available as part of my [packages and programs](/services/). If you'd like to start by talking through your existing lab results, a [Discovery Session](/services/discovery-session.html) is a good first step.
 
 ## From Awareness to Action
 
@@ -1304,7 +1304,7 @@ When working with women, I look at things differently. I may order a much broade
 
 Research supports this approach. A study published in *Clinical Chemistry* found that less than 1% of total body magnesium is in the blood, meaning serum magnesium levels don\u2019t reliably reflect what\u2019s actually stored in your tissues.<sup>[1](#references)</sup> A follow-up review in *Nutrients* confirmed this remains a significant limitation of standard blood testing.<sup>[5](#references)</sup> Your blood work can look fine while your body\u2019s reserves are quietly running low.
 
-Neither approach replaces the other. They serve different purposes. I offer [blood work review](/services/lab-review.html) in addition to HTMA based on your symptoms, history, and individual needs as part of my [packages and programs](/services/). The goal is always to use the right combination of tools to build a complete picture.
+Neither approach replaces the other. They serve different purposes. I offer [blood work review](/services/discovery-session.html) in addition to HTMA based on your symptoms, history, and individual needs as part of my [packages and programs](/services/). The goal is always to use the right combination of tools to build a complete picture.
 
 ## Key Minerals and Why They Matter
 
@@ -1915,7 +1915,7 @@ AI may change how information is accessed, but it does not replace the foundatio
 
 ---
 
-If you're looking for personalized support in understanding your health data, a [Functional Lab Review](/services/lab-review.html) can provide context and clarity that AI alone cannot offer—with the benefit of professional interpretation tailored to your unique situation.
+If you're looking for personalized support in understanding your health data, a [Discovery Session](/services/discovery-session.html) can provide context and clarity that AI alone cannot offer—with the benefit of professional interpretation tailored to your unique situation.
 
 ## References
 
@@ -2174,7 +2174,7 @@ Food remains the foundation.
 
 Targeted, personalized supplementation, when appropriate, is a tool to help restore + replenish.
 
-If you're curious about your own mineral status, a [Functional Lab Review](/services/lab-review.html) or [HTMA testing](/htma.html) can provide personalized insight into what your body actually needs. For a deeper look at how HTMA compares to standard blood work and why mineral ratios matter, read the [complete HTMA guide for maternal health](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
+If you're curious about your own mineral status, a [Discovery Session](/services/discovery-session.html) or [HTMA testing](/htma.html) can provide personalized insight into what your body actually needs. For a deeper look at how HTMA compares to standard blood work and why mineral ratios matter, read the [complete HTMA guide for maternal health](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
 
 ## References
 
@@ -2292,7 +2292,7 @@ But for chronic wellness—for supporting fertility, postpartum recovery, and da
 
 If you have been told your labs are "normal" but you continue to experience symptoms, it is okay to ask more questions.
 
-If you are looking for a different perspective on your health data, I offer [Functional Lab Reviews](/services/lab-review.html). This service allows us to review your existing labs through a functional lens to identify areas where your body may need more support. Want to understand what standard blood work may be missing entirely? Learn how [HTMA testing reveals mineral patterns that blood tests can\u2019t capture](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
+If you are looking for a different perspective on your health data, a [Discovery Session](/services/discovery-session.html) is a good place to start. Together we can review your existing labs through a functional lens to identify areas where your body may need more support. Want to understand what standard blood work may be missing entirely? Learn how [HTMA testing reveals mineral patterns that blood tests can\u2019t capture](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
 
 With love + intention,
 
@@ -2310,7 +2310,7 @@ Alicia
       },
       {
         question: "What should I do if my labs are normal but I still have symptoms?",
-        answer: "It's okay to ask more questions. Consider seeking a functional perspective on your health data. A Functional Lab Review can help identify areas where your body may need more support, looking at whether you have optimal nutrient density, nervous system support, and effective gut absorption."
+        answer: "It's okay to ask more questions. Consider seeking a functional perspective on your health data. A Discovery Session can help identify areas where your body may need more support, looking at whether you have optimal nutrient density, nervous system support, and effective gut absorption."
       }
     ],
     schema: {
@@ -2665,7 +2665,7 @@ Women who learn these foundations before pregnancy often feel more grounded, mor
 
 Preconception care does not need to be overwhelming. It's about reconnecting with the rhythms your physiology is already built upon and nourishing your body with intention.
 
-If you want personalized support while preparing for pregnancy or after birth, [Mineral Insight](/services/mineral-insight.html) and [Lab Review Services](/services/lab-review.html) at Intention Holistic Health provide individualized guidance to honor your body's physiology and your season of life. To learn specifically how mineral testing supports preconception and postpartum, see the [HTMA guide for maternal health](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
+If you want personalized support while preparing for pregnancy or after birth, [Mineral Insight](/services/mineral-insight.html) and a [Discovery Session](/services/discovery-session.html) at Intention Holistic Health provide individualized guidance to honor your body's physiology and your season of life. To learn specifically how mineral testing supports preconception and postpartum, see the [HTMA guide for maternal health](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
 
 Your body is the first home your baby will ever know. Caring for it with intention is an act of love that extends far beyond pregnancy — shaping the health of generations to come.
 
@@ -2729,7 +2729,7 @@ Get 15+ minutes of direct eye exposure within 30 minutes of waking to boost ener
 
 ### 4. Blood Sugar Regulation
 
-Consume protein and healthy fats before carbs. Break fasts with protein-fat-fiber combinations and move ten minutes post-meals to support stable blood sugar and reduce mood swings. Getting a [lab review](/services/lab-review.html) can help you understand your blood sugar patterns.
+Consume protein and healthy fats before carbs. Break fasts with protein-fat-fiber combinations and move ten minutes post-meals to support stable blood sugar and reduce mood swings. A [Discovery Session](/services/discovery-session.html) can help you understand your blood sugar patterns.
 
 ### 5. Breathwork
 

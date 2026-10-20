@@ -59,3 +59,7 @@ session: Kids launch prep: PB links, legal drafts, pre-launch QA, Practice Bette
 - **The repo is PUBLIC.** At Alicia's request, the 16 family photos (her kids) were removed from `source-assets/photos/family-2026-10/` on both drafts and `launch-2026-10`. They remain in git history.
 - **Suggested rule:** never commit Alicia's personal or family photos to this repo. Only optimized images actually used on the site go in `images/`. Consider making the repo private: Netlify deploys still work, and history would be hidden.
 - **Canva launch posts:** 5 photo swaps plus the minerals-carousel "just a few of the minerals that often show up out of balance on HTMA" line are drafted in Canva and await Alicia's "save."
+
+## Update (Oct 20): photo credit rule
+- **Rule:** any social post using a branding-shoot photo (kitchen, porch, couch, white blazer) must tag `📷 @amberticephoto`. The handle is @amberticephoto, NOT @amberticephotography. It's added to the Notion captions for L1, Evergreen A, C, E and Kids 6, and noted at the top of `docs/launch-kit.md`.
+- L1 and L2 captions were rewritten and proofed in Notion. Alicia is hand-editing L1 too; keep her edits.

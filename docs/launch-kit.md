@@ -16,6 +16,8 @@
 
 # PART A: Kids Mineral Insight launch
 
+> **Photo credit rule:** any post using a photo from Alicia's branding shoot (kitchen, porch, couch, white blazer) must end with `📷 @amberticephoto`. Family snapshots don't need it.
+
 ## Suggested timeline
 | When | Email | Social | Google |
 |---|---|---|---|

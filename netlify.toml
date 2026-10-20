@@ -249,15 +249,31 @@
   status = 301
   force = true
 
+# Intentional Reset retired 2026-10-19; page deleted. The program now starts with a Discovery Session.
 [[redirects]]
   from = "/services/intentional-reset.html"
-  to = "/services/mineral-insight.html"
+  to = "/services/discovery-session.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/services/intentional-reset"
-  to = "/services/mineral-insight.html"
+  to = "/services/discovery-session.html"
   status = 301
+  force = true
+
+# Kitchen Staples freebie retired 2026-10-19; page deleted.
+[[redirects]]
+  from = "/kitchen-staples.html"
+  to = "/blog/post.html?post=2026-01-28-sustainable-home-cooking"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kitchen-staples"
+  to = "/blog/post.html?post=2026-01-28-sustainable-home-cooking"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/blog/posts/*"

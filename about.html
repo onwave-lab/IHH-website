@@ -95,6 +95,23 @@
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "certification",
         "name": "Family Nurse Practitioner - Board Certified (FNP-C)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "certification",
+        "name": "Brain Health Professional",
+        "recognizedBy": {"@type": "Organization", "name": "Amen University"}
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "certification",
+        "name": "HTMA Expert Training"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "certification",
+        "name": "Pediatric Supplementation",
+        "recognizedBy": {"@type": "Organization", "name": "Functional Diagnostic Nutrition"}
       }
     ],
     "knowsAbout": ["Hair Tissue Mineral Analysis", "Functional Medicine", "Hormone Health", "Women's Health", "PCOS"]
@@ -137,7 +154,9 @@
         <div class="nav-dropdown">
           <a href="/services/" class="nav-link">Services</a>
           <div class="nav-dropdown-menu">
-            <a href="/services/discovery-session.html" class="nav-dropdown-link">Sessions</a>
+            <a href="/services/mineral-insight.html" class="nav-dropdown-link">Mineral Insight (Women)</a>
+            <a href="/services/kids-mineral-insight.html" class="nav-dropdown-link">Kids Mineral Insight</a>
+            <a href="/services/discovery-session.html" class="nav-dropdown-link">Discovery Session</a>
             <a href="/services/" class="nav-dropdown-link">Packages and Programs</a>
             <a href="/htma.html" class="nav-dropdown-link">What is HTMA?</a>
           </div>
@@ -159,7 +178,9 @@
     <a href="/" class="mobile-nav-link">Home</a>
     <a href="/about.html" class="mobile-nav-link">About</a>
     <a href="/blog/" class="mobile-nav-link">Blog</a>
-    <a href="/services/discovery-session.html" class="mobile-nav-link">Sessions</a>
+    <a href="/services/mineral-insight.html" class="mobile-nav-link">Mineral Insight (Women)</a>
+    <a href="/services/kids-mineral-insight.html" class="mobile-nav-link">Kids Mineral Insight</a>
+    <a href="/services/discovery-session.html" class="mobile-nav-link">Discovery Session</a>
     <a href="/services/" class="mobile-nav-link">Packages and Programs</a>
     <a href="/htma.html" class="mobile-nav-link">What is HTMA?</a>
     <a href="/contact.html" class="mobile-nav-link">Contact</a>
@@ -168,104 +189,109 @@
   </nav>
 
   <main id="main">
-
-    <!-- About Hero -->
-    <section class="about-hero" data-track-section="hero">
+    <!-- Hero -->
+    <section class="h4-hero h4-hero-page" data-track-section="hero">
       <div class="container">
-        <div class="about-hero-content">
-          <div>
-            <img src="/images/about/alicia-professional-small.webp"
-                 srcset="/images/about/alicia-professional-small.webp 500w,
-                         /images/about/alicia-professional-medium.webp 850w,
-                         /images/about/alicia-professional.jpg 1200w"
-                 sizes="(max-width: 768px) 100vw, 850px"
-                 alt="Alicia Harrison, MSN, APRN, FNP-C"
-                 class="about-hero-image"
-                 width="850" height="1275"
-                 fetchpriority="high">
-          </div>
-          <div>
-            <img src="/images/about/alicia-professional-small.webp"
-                 alt="Alicia Harrison, MSN, APRN, FNP-C"
-                 class="about-hero-image-mobile"
-                 width="194" height="259"
-                 loading="lazy">
-            <p class="section-label">About Me</p>
-            <h1>Hi, I'm Alicia</h1>
-            <p class="hero-subtitle" style="font-size: 0.85rem;">Family Nurse Practitioner | Functional Medicine Provider</p>
-            <p>
-              You've done the conventional checkup. Your labs came back fine. But the cycle that won't regulate, the postpartum fog, or the afternoon energy crash tell you there's more to look at.
-            </p>
-            <p>
-              I trained inside conventional medicine as a family nurse practitioner. What pulled me toward functional medicine was a pattern I kept seeing: women who'd done everything their providers asked, and still had unanswered questions. I want to help you close that gap.
-            </p>
-            <p>
-              Becoming a mama myself made me even more passionate about this work. Now I help Kentucky women rebuild their reserves intentionally, so motherhood doesn't demand more than their body can sustain.
-            </p>
-            <p>
-              You don't have to figure this out alone.
-            </p>
-            <div class="credentials-list">
-              <span class="credential" title="Master of Science in Nursing, Advanced Practice Registered Nurse, Family Nurse Practitioner - Certified">MSN, APRN, FNP-C</span>
-              <span class="credential" title="Hair Tissue Mineral Analysis Practitioner">HTMA Practitioner</span>
-              <span class="credential">Functional Nutrition</span>
+        <div class="h4-hero-grid">
+          <div class="h4-hero-text">
+            <p class="h4-eyebrow h4-welcome">About Me</p>
+            <h1 class="h4-hero-title">Hi, I'm <span class="h4-underline">Alicia<svg class="h4-swoosh" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 0 100 6 Q150 12 200 4"/></svg></span></h1>
+            <p class="hero-credentials">MSN, APRN, FNP-C &middot; Functional Medicine Provider &middot; Mom</p>
+            <p class="h4-hero-lead">I help Kentucky moms, moms-to-be, and their kids get back to the basics their bodies run on, with real information and a simple plan made for them.</p>
+            <div class="h4-btn-row">
+              <a href="/services/" class="h4-btn h4-btn-primary" data-track-cta="about-hero-services">Explore Services <span aria-hidden="true">&rarr;</span></a>
+              <a href="/htma.html" class="h4-btn h4-btn-outline" data-track-cta="about-learn-htma">What is HTMA?</a>
             </div>
-            <div class="mt-md">
-              <a href="/services/" class="btn btn-primary" data-track-cta="about-hero-services">Explore Services</a>
+          </div>
+          <div class="h4-hero-media">
+            <div class="h4-arch h4-arch-hero">
+              <img src="/images/photos/alicia-D08A7182-tablet.webp"
+                   srcset="/images/photos/alicia-D08A7182-mobile.webp 400w,
+                           /images/photos/alicia-D08A7182-tablet.webp 600w,
+                           /images/photos/alicia-D08A7182-desktop.webp 800w"
+                   sizes="(max-width: 640px) 52vw, (max-width: 899px) 300px, 420px"
+                   alt="Alicia Harrison, MSN, APRN, FNP-C" width="600" height="900" fetchpriority="high">
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- My Story Section -->
-    <section class="section about-passion" data-track-section="my-story">
+    <!-- Credentials -->
+    <section class="h4-credentials" data-track-section="credentials">
       <div class="container">
-        <div class="about-passion-content">
-          <h2>Why I Do This Work</h2>
-          <img src="/images/about/pappy.webp"
-               alt="Pappy - Alicia's grandfather who inspired her holistic health journey"
-               class="about-passion-image-mobile"
-               width="233" height="311"
-               loading="lazy">
-          <p class="image-caption image-caption-mobile">My Pappy - where it all began</p>
-          <p>
-            I grew up watching my granddad take his health into his own hands — managing Parkinson's and type 2 diabetes through diet and lifestyle. Our whole family felt the ripple of what one educated, empowered patient could do for his own health.
-          </p>
-          <p>
-            In critical care, I kept seeing preventable conditions that could have been caught earlier—and my own struggles with fatigue, hormones, and sleep showed me how much our health rests on foundations like nutrition, stress, and daily rhythms. So I became a Family Nurse Practitioner and trained in HTMA and functional nutrition, building a functional medicine approach for women who feel depleted but don't know why.
-          </p>
-          <p>
-            That's the same passion I bring to my work today — educating and empowering women in their specific context to make practical, sustainable changes that help them and their families thrive. We don't have to overcomplicate it. Often, it's just going back to the basics and creating solid foundational wellness.
-          </p>
+        <p class="h4-eyebrow">Credentials &amp; Training</p>
+        <div class="h4-cred-main reveal">
+          <span class="h4-cred-big">MSN, APRN, FNP-C</span>
+          <span class="h4-cred-sub">Board-Certified Family Nurse Practitioner</span>
         </div>
-        <div class="about-passion-image">
-          <img src="/images/about/pappy.webp" alt="Pappy - Alicia's grandfather who inspired her holistic health journey" width="400" height="567" loading="lazy">
-          <p class="image-caption">My Pappy - where it all began</p>
+        <div class="h4-cred-row h4-cred-row-4">
+          <div class="h4-cred reveal"><span>HTMA</span><small>Expert Training</small></div>
+          <div class="h4-cred reveal" style="--reveal-delay: 0.1s"><span>Brain Health</span><small>Certified Professional, Amen University</small></div>
+          <div class="h4-cred reveal" style="--reveal-delay: 0.2s"><span>Pediatric</span><small>Supplementation, FDN</small></div>
+          <div class="h4-cred reveal" style="--reveal-delay: 0.3s"><span>Functional</span><small>Nutrition</small></div>
         </div>
       </div>
     </section>
 
-    <!-- Philosophy Section -->
-    <section class="section bg-light" data-track-section="philosophy">
+    <!-- My story -->
+    <section class="section" data-track-section="my-story">
       <div class="container">
-        <div class="about-section text-center">
-          <h2>Why Intention</h2>
-          <p>
-            I created Intention Holistic Health because I kept meeting women who deserved better—women who were told they were "fine" while running on empty. Women preparing for pregnancy without knowing their reserves were already depleted. Women postpartum who were dismissed with "that's just how it is."
-          </p>
-          <p>
-            This is a space where you're actually heard. Where we connect the dots between your symptoms and what your body may need. Where we focus on foundations—not quick fixes.
-          </p>
-          <p>
-            This is functional medicine for women, rooted in sustainable, foundation-repairing care—not endless detoxes, cleanses, or herbal protocols. My focus is preconception preparation and postpartum depletion recovery: rebuilding the reserves motherhood draws on.
-          </p>
-          <p>
-            My approach centers on understanding:
-          </p>
+        <div class="h4-split">
+          <div class="h4-split-media reveal">
+            <div class="h4-arch">
+              <img src="/images/about/pappy.webp" alt="Pappy, Alicia's grandfather, who inspired her holistic health journey" width="400" height="567" loading="lazy">
+            </div>
+            <p class="h4-caption">My Pappy, where it all began</p>
+          </div>
+          <div class="h4-split-text reveal" style="--reveal-delay: 0.15s">
+            <p class="h4-eyebrow">My Story</p>
+            <h2 class="h4-title">Why I Do This Work</h2>
+            <svg class="h4-swoosh" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 0 100 6 Q150 12 200 4"/></svg>
+            <p>I grew up watching my granddad take his health into his own hands, managing Parkinson's and type 2 diabetes through diet and lifestyle. Our whole family felt the ripple of what one educated, empowered patient could do.</p>
+            <p>That stuck with me. Later, working in critical care, I saw how often people reached a crisis before anyone looked at the basics: how they ate, slept, handled stress, and nourished their bodies. I wanted to help families much earlier than that.</p>
+            <p>So I became a family nurse practitioner and kept learning, with training in HTMA, brain health, and pediatric supplementation, to help moms and their kids build those foundations at home. It doesn't have to be complicated. Most of the time, it starts with the basics.</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="philosophy-image text-center">
+    <!-- My own experience -->
+    <section class="section h4-band-deep" data-track-section="my-experience">
+      <div class="container">
+        <div class="h4-split h4-split-reverse">
+          <div class="h4-split-media reveal">
+            <div class="h4-arch">
+              <img src="/images/photos/family-IMG1438-tablet.webp"
+                   srcset="/images/photos/family-IMG1438-mobile.webp 400w,
+                           /images/photos/family-IMG1438-tablet.webp 600w,
+                           /images/photos/family-IMG1438-desktop.webp 800w"
+                   sizes="(max-width: 640px) 52vw, (max-width: 899px) 300px, 420px"
+                   alt="Alicia lying on a blanket lifting her child into the air" width="600" height="900" loading="lazy">
+            </div>
+          </div>
+          <div class="h4-split-text reveal" style="--reveal-delay: 0.15s">
+            <p class="h4-eyebrow">My Own Experience</p>
+            <h2 class="h4-title">Why I Start With Testing</h2>
+            <svg class="h4-swoosh" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 0 100 6 Q150 12 200 4"/></svg>
+            <p>I've had my own seasons of exhaustion, hormone, and sleep struggles. Specific testing is what made my own plan clear: balanced minerals, whole-food nutrition focused on what my body actually needed (no fads), and a few targeted supplements.</p>
+            <p>Today, postpartum with two kids, I have more energy than I did before my first pregnancy. Every body is different, which is why I start with testing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Intention -->
+    <section class="section h4-band-sand" data-track-section="philosophy">
+      <div class="container">
+        <div class="h4-head reveal">
+          <p class="h4-eyebrow">My Approach</p>
+          <h2 class="h4-title">Why Intention</h2>
+          <svg class="h4-swoosh" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 0 100 6 Q150 12 200 4"/></svg>
+          <p class="h4-lead-center">I created Intention Holistic Health for women preparing for pregnancy, moms who've been told they're fine but don't feel fine, and for parents searching for answers for their kids.</p>
+          <p class="h4-lead-center" style="margin-top: 1rem;">This is functional medicine rooted in the basics, not endless detoxes, cleanses, or 20-supplement routines. I work alongside your primary care provider, OB-GYN, midwife, or pediatrician, not in place of them.</p>
+        </div>
+        <div class="philosophy-image text-center reveal">
           <img src="/images/the-process-small.webp"
                srcset="/images/the-process-small.webp 500w,
                        /images/the-process-medium.webp 720w,
@@ -275,21 +301,18 @@
                class="process-graphic"
                width="500" height="417"
                loading="lazy"
-               style="max-width: 600px; width: 100%; height: auto; margin: var(--spacing-lg) auto;">
+               style="max-width: 560px; width: 100%; height: auto; margin: 0 auto;">
         </div>
+      </div>
+    </section>
 
-        <div class="about-section text-center" style="margin-top: var(--spacing-xl);">
-          <p>
-            I work alongside your primary care provider, OB-GYN, or midwife, not in place of them. My role is to help you understand what may be draining your reserves, and build a wellness plan to support rebuilding them.
-          </p>
-          <p style="font-style: italic; color: var(--color-sage-dark); margin-top: var(--spacing-md);">
-            "Moms shouldn't have to sacrifice their health to raise healthy families."
-          </p>
-          <div class="mt-lg">
-            <a href="/htma.html" class="btn btn-outline" data-track-cta="about-learn-htma" style="margin-right: 1rem;">What is HTMA?</a>
-            <a href="https://l.bttr.to/h0MUI" class="btn btn-primary" data-track-cta="book-discovery" data-portal-discovery>Book a Discovery Session</a>
-          </div>
-        </div>
+    <!-- Pull quote -->
+    <section class="h4-quote-band" data-track-section="pull-quote">
+      <div class="container">
+        <figure class="h4-quote reveal">
+          <blockquote>&ldquo;Moms shouldn't have to sacrifice their health to raise healthy families.&rdquo;</blockquote>
+          <figcaption>Alicia Harrison, MSN, APRN, FNP-C</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -309,35 +332,35 @@
         <div class="facts-grid">
           <div class="fact-card">
             <div class="fact-icon">
-              <img src="/images/about/alicia-portrait-2.webp" alt="" class="fact-star-icon" aria-hidden="true" loading="lazy">
+              <img src="/images/about/alicia-portrait-2.webp" width="720" height="750" alt="" class="fact-star-icon" aria-hidden="true" loading="lazy">
             </div>
             <h3>Dog Mom</h3>
-            <p>Proud mama to two doodles—Beckett & Murray</p>
+            <p>Two doods: Beckett + Murray</p>
           </div>
           <div class="fact-card">
             <div class="fact-icon">
-              <img src="/images/about/alicia-portrait-2.webp" alt="" class="fact-star-icon" aria-hidden="true" loading="lazy">
+              <img src="/images/about/alicia-portrait-2.webp" width="720" height="750" alt="" class="fact-star-icon" aria-hidden="true" loading="lazy">
             </div>
             <h3>Favorite Place</h3>
             <p>Anywhere with a beach and warm weather</p>
           </div>
           <div class="fact-card">
             <div class="fact-icon">
-              <img src="/images/about/alicia-portrait-2.webp" alt="" class="fact-star-icon" aria-hidden="true" loading="lazy">
+              <img src="/images/about/alicia-portrait-2.webp" width="720" height="750" alt="" class="fact-star-icon" aria-hidden="true" loading="lazy">
             </div>
             <h3>Family</h3>
-            <p>Married to Kyle James, mama to Lucas James</p>
+            <p>Married to Kyle James, mama of two</p>
           </div>
           <div class="fact-card">
             <div class="fact-icon">
-              <img src="/images/about/alicia-portrait-2.webp" alt="" class="fact-star-icon" aria-hidden="true" loading="lazy">
+              <img src="/images/about/alicia-portrait-2.webp" width="720" height="750" alt="" class="fact-star-icon" aria-hidden="true" loading="lazy">
             </div>
             <h3>Kentucky Roots</h3>
             <p>Grew up in Kentucky, relocated to Texas in 2022</p>
           </div>
           <div class="fact-card">
             <div class="fact-icon">
-              <img src="/images/about/alicia-portrait-2.webp" alt="" class="fact-star-icon" aria-hidden="true" loading="lazy">
+              <img src="/images/about/alicia-portrait-2.webp" width="720" height="750" alt="" class="fact-star-icon" aria-hidden="true" loading="lazy">
             </div>
             <h3>Coffee</h3>
             <p>Black coffee only—no cream, no sugar</p>
@@ -346,16 +369,16 @@
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section about-cta" data-track-section="cta">
-      <div class="container text-center">
-        <h2>You Don't Have to Keep Running on Empty</h2>
-        <p class="about-cta-subtitle">LET'S WORK TOGETHER</p>
-        <p>When you finally understand what's been draining you, everything can change. Imagine having the energy to be present with your kids, the clarity to make decisions without brain fog, and the confidence that comes from truly knowing your body.</p>
-        <p style="margin-top: var(--spacing-sm);">That's what's possible when we work together.</p>
-        <div class="about-cta-buttons">
-          <a href="/services/" class="btn btn-outline" data-track-cta="view-services">Explore Services</a>
-          <a href="https://l.bttr.to/h0MUI" class="btn btn-primary" data-track-cta="book-discovery" data-portal-discovery>Book a Discovery Session</a>
+    <!-- Final CTA -->
+    <section class="h4-band-deep h4-cta-band" data-track-section="cta">
+      <div class="container reveal">
+        <p class="h4-eyebrow">Let's Work Together</p>
+        <h2 class="h4-title">Ready for a Simple Plan?</h2>
+        <svg class="h4-swoosh" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 8 Q50 0 100 6 Q150 12 200 4"/></svg>
+        <p>Most moms start with Mineral Insight: an at-home test, a review in plain language, and simple next steps.</p>
+        <div class="h4-btn-row h4-btn-row-center">
+          <a href="/services/mineral-insight.html" class="h4-btn h4-btn-light" data-track-cta="final-for-me">For Me <span aria-hidden="true">&rarr;</span></a>
+          <a href="/services/kids-mineral-insight.html" class="h4-btn h4-btn-outline-light" data-track-cta="final-for-my-child">For My Child <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
     </section>
@@ -370,21 +393,23 @@
           <div class="footer-logos">
             <a href="/" aria-label="Go to homepage"><img src="/images/logo-small.webp" alt="Intention Holistic Health" class="footer-logo" width="120" height="120" loading="lazy"></a>
             <img src="/images/bhpcc-seal-small.webp" alt="Certified Brain Health Professional" class="footer-seal" width="63" height="59" title="Certified Brain Health Professional" loading="lazy">
+            <img src="/images/fdn-pediatric-seal-small.webp" alt="Functional Diagnostic Nutrition Pediatric Supplementation certification" class="footer-seal" width="63" height="63" title="Functional Diagnostic Nutrition: Pediatric Supplementation" loading="lazy">
+            <img src="/images/htma-expert-logo-small.webp" alt="HTMA Expert" class="footer-seal footer-seal--wide" width="83" height="59" title="HTMA Expert" loading="lazy">
           </div>
           <p class="footer-tagline">
-            Helping Kentucky women prepare for pregnancy and rebuild after birth—foundations first.
+            Foundations-first HTMA support for Kentucky women and the kids they're raising.
           </p>
           <div class="footer-social">
-            <a href="https://www.instagram.com/intentionholistichealth" target="_blank" rel="noopener" aria-label="Instagram">
+            <a href="https://www.instagram.com/intentionholistichealth" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61552393014468" target="_blank" rel="noopener" aria-label="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61552393014468" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
             </a>
-            <a href="https://www.pinterest.com/intentionholistichealth" target="_blank" rel="noopener" aria-label="Pinterest">
+            <a href="https://www.pinterest.com/intentionholistichealth" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
             </a>
-            <a href="https://www.linkedin.com/in/alicia-harrison-aprn-fnp-c-23b656224/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/alicia-harrison-aprn-fnp-c-23b656224/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             </a>
           </div>
@@ -394,7 +419,9 @@
           <h3 class="footer-heading">Quick Links</h3>
           <a href="/about.html" class="footer-link">About</a>
           <a href="/blog/" class="footer-link">Blog</a>
-          <a href="/services/discovery-session.html" class="footer-link">Sessions</a>
+          <a href="/services/discovery-session.html" class="footer-link">Discovery Session</a>
+          <a href="/services/mineral-insight.html" class="footer-link">Mineral Insight</a>
+          <a href="/services/kids-mineral-insight.html" class="footer-link">Kids Mineral Insight</a>
           <a href="/services/" class="footer-link">Packages and Programs</a>
           <a href="/htma.html" class="footer-link">What is HTMA?</a>
           <a href="/contact.html" class="footer-link">Contact</a>
@@ -402,8 +429,8 @@
 
         <div>
           <h3 class="footer-heading">Resources</h3>
-          <a href="https://us.fullscript.com/welcome/intentionholistichealth" class="footer-link" data-fullscript title="Opens Fullscript in a new tab">Supplements</a>
-          <a href="https://my.practicebetter.io/#/signin" class="footer-link" data-portal-signin title="Opens Patient Portal in a new tab">Patient Portal</a>
+          <a href="https://us.fullscript.com/welcome/intentionholistichealth" class="footer-link" data-fullscript title="Opens Fullscript">Supplements</a>
+          <a href="https://my.practicebetter.io/#/signin" class="footer-link" data-portal-signin title="Opens the Patient Portal">Patient Portal</a>
         </div>
       </div>
 
@@ -415,7 +442,7 @@
           &copy; <span class="current-year">2025</span> Intention Holistic Health, PLLC. All rights reserved.
         </p>
         <p class="footer-copyright footer-credit">
-          Site by <a href="https://onwavelab.com/services/websites/" target="_blank" rel="noopener">OnWave Lab</a>
+          Site by <a href="https://onwavelab.com/services/websites/" target="_blank" rel="noopener noreferrer">OnWave Lab</a>
         </p>
         <div class="footer-legal-links">
           <a href="/legal/terms.html">Terms & Conditions</a>

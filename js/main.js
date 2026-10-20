@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var PORTAL_URLS = {
       default: 'https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/bookings?s=664b9722ff1f3762a57079f5&step=date',
       labReview: 'https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/bookings?s=664b9722ff1f3762a57079f5&step=date', // Same intake form as services
-      discovery: 'https://l.bttr.to/h0MUI', // Discovery Session (1-hour) booking
+      discovery: 'https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/bookings?s=6894cebcc20ac9665db9dcfd', // Discovery Session (1-hour) booking
       signin: 'https://my.practicebetter.io/#/signin', // Patient Portal signin page
       fullscript: 'https://us.fullscript.com/welcome/intentionholistichealth' // Supplements store
     };
@@ -604,6 +604,24 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+  // Gentle scroll reveal: elements with .reveal fade up once as they enter the viewport.
+  // Skipped entirely for reduced-motion users and browsers without IntersectionObserver.
+  (function() {
+    var revealEls = document.querySelectorAll('.reveal');
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!revealEls.length || reduceMotion || !('IntersectionObserver' in window)) return;
+    document.documentElement.classList.add('js-reveal');
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function(el) { revealObserver.observe(el); });
+  })();
 
   // Track section visibility (scroll tracking)
   if ('IntersectionObserver' in window) {

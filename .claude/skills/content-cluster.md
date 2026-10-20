@@ -203,7 +203,7 @@ Every piece of content must sound like Alicia wrote it. Here is her voice profil
 - Opens with personal warmth ("Something I've been thinking about lately...")
 - 1-2 key insights from the blog post (not a full summary)
 - Links to the full blog post
-- Soft CTA: free resource or discovery call
+- Soft CTA: free resource, or Mineral Insight / Kids Mineral Insight (flat-fee HTMA). No complimentary calls are offered (retired 2026-10-10).
 - Sign-off: "With love + intention, Alicia"
 - **Note:** This will be created as a DRAFT in MailerLite, not auto-sent
 

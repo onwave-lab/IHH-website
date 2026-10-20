@@ -35,3 +35,6 @@ README.md
 ihh-keyword-research-checklist.md
 package.json
 package-lock.json
+
+# Cloud/iPad handoff notes for the Mac Claude (netlify.toml also 404s /claude-inbox/*)
+claude-inbox/

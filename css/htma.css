@@ -1049,3 +1049,22 @@
   max-width: 900px;
   margin: 0 auto;
 }
+
+/* Two pathways: women / kids (2026-10-10) */
+.htma-pathways-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .htma-pathways-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.htma-pathways-grid .htma-journey-card .btn {
+  margin-top: 1rem;
+}

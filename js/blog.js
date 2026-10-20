@@ -3,20 +3,8 @@
    Handles markdown parsing and blog functionality
    ============================================ */
 
-// Default promo config — used when a post doesn't specify its own
-const DEFAULT_PROMO = {
-  title: 'Depletion Signals Checklist',
-  modalTitle: 'Get Your Free Guide',
-  description: 'Not sure where to start? This free checklist can help you recognize what your body may already be telling you.',
-  descriptionShort: 'Not sure where to start? Recognize what your body may be telling you.',
-  badge: 'Free Download',
-  ctaText: 'Get the Free Guide',
-  formType: 'lead-magnet',
-  modalFormType: 'lead-magnet',
-  image: '/images/depletion-signals-guide-preview-inline.webp',
-  imageSidebar: '/images/depletion-signals-guide-preview-sidebar.webp',
-  imageThumb: '/images/depletion-signals-guide-preview-thumb.webp'
-};
+// Posts without their own promo get no freebie (the Depletion Signals guide was retired 2026-10-20)
+const DEFAULT_PROMO = null;
 
 // Blog post data - this would typically come from a build process
 // For simplicity, we define posts here that can be easily updated
@@ -351,12 +339,14 @@ Ready to start? I made a free Nontoxic Swap Checklist you can download, print, a
 
 No overwhelm. Just one swap at a time.
 
-If you want help sorting through your specific products, I do home product reviews as part of my wellness packages at IHH.
+If you want help sorting through your specific products, I do home product reviews as part of The Intention Method at IHH.
 
 [CTA-ROW-START]
-[CTA:Book a Free Discovery Call|Want help figuring out which swaps to prioritize for your health goals? No pressure, just honest conversation about where you are and what makes sense for you.|apply|Book Your Free Call]
+[CTA:Start With Your Minerals|Want help figuring out which changes to prioritize for your health goals? Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan.|apply|Explore Mineral Insight]
 [CTA:Download the Nontoxic Swap Checklist|A room-by-room checklist to help you reduce chemical exposure at your own pace. Print it, stick it on your fridge, and swap one product at a time.|nontoxic-swap-checklist|Get the Free Checklist]
 [CTA-ROW-END]
+
+[CTA:Wondering About Your Kids?|Kids Mineral Insight is an easy at-home mineral test for kids ages 4\u201317, with a simple plan you can use at home.|apply-kids|Explore Kids Mineral Insight]
 
 ## References
 
@@ -550,7 +540,7 @@ With love + intention,
 
 Alicia
 
-[CTA:Ready to understand what your body is telling you?|If you have been experiencing persistent cravings, fatigue, or feel like something is \u201Coff,\u201D a foundations-first approach can help identify what is driving those patterns.|apply|Book a Free Discovery Call]
+[CTA:Ready to understand what your body is telling you?|If you have been experiencing persistent cravings, fatigue, or feel like something is \u201Coff,\u201D starting with the basics, like your minerals and nutrition, may help you find what is driving those patterns.|apply|Explore Mineral Insight]
 
 *Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
 
@@ -722,7 +712,7 @@ Carbohydrates remain an important fuel source for the brain and muscles. Pairing
 
 Fatigue, hormone changes, hair loss, and metabolic symptoms rarely have a single explanation.
 
-Sleep quality, stress, thyroid function, medications, and underlying medical conditions can all play a role. When symptoms persist, a [comprehensive evaluation](/services/lab-review.html) may be appropriate.
+Sleep quality, stress, thyroid function, medications, and underlying medical conditions can all play a role. When symptoms persist, a [comprehensive evaluation](/services/discovery-session.html) may be appropriate.
 
 Still, nutrition remains a *foundational* variable.
 
@@ -736,7 +726,7 @@ With love + intention,
 
 Alicia
 
-[CTA:Book a Free Discovery Call|If you\u2019ve been experiencing persistent fatigue, hormone changes, or other symptoms and want to explore whether your nutrition may be part of the picture\u2014let\u2019s talk.|apply|Book Your Free Call]
+[CTA:Curious What Your Minerals Show?|If you\u2019ve been experiencing persistent fatigue, hormone changes, or other symptoms and want to explore whether your nutrition may be part of the picture, HTMA is a simple place to start.|apply|Explore Mineral Insight]
 
 *Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
 
@@ -910,8 +900,6 @@ None of this is meant to scare you. The months before conception are actually a 
 
 Preconception care deserves more than a prenatal vitamin and a quick checkup. I wrote about that in more detail in [Your Body Is the First Home](/blog/post.html?post=2024-11-15-body-first-home).
 
-[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Running on Empty? Get the Free Guide|Not sure where to start? This free checklist can help you recognize what your body may already be telling you\u2014and what to do next.|lead-magnet|Get the Free Guide]
-
 ## What Testing Can Reveal That Symptoms Alone Cannot
 
 Symptoms tell you something is off, but not always why. Fatigue and anxiety can look the same on the surface while having very different causes underneath. Without data, it\u2019s hard to know where to start.
@@ -922,7 +910,7 @@ Standard blood work has real value, but most routine panels weren\u2019t designe
 
 Functional blood work, interpreted through optimal ranges rather than broad reference ranges, adds another layer. Together, these tools build a more complete picture. If you\u2019ve been told your labs are normal but you still don\u2019t feel right, [there may be a reason for that](/blog/post.html?post=2025-01-09-labs-normal-feel-off).
 
-Both HTMA and comprehensive blood work review are available as part of my [packages and programs](/services/). For women who want to start with their existing lab results, I also offer a standalone [Lab Review](/services/lab-review.html).
+Both HTMA and comprehensive blood work review are available as part of my [packages and programs](/services/). If you'd like to start by talking through your existing lab results, a [Discovery Session](/services/discovery-session.html) is a good first step.
 
 ## From Awareness to Action
 
@@ -956,10 +944,7 @@ With love + intention,
 
 Alicia
 
-[CTA-ROW-START]
-[CTA:Book a Free Discovery Call|Let\u2019s talk about where you are and whether functional assessment makes sense for your goals\u2014no pressure, just honest conversation.|apply|Book Your Free Call]
-[CTA:Download the Free Guide|Not sure where to start? Get a free checklist of depletion signals to watch for before pregnancy.|lead-magnet|Get the Free Guide]
-[CTA-ROW-END]
+[CTA:Ready for a Clearer Starting Point?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan built around your results.|apply|Explore Mineral Insight]
 
 *Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
 
@@ -1099,8 +1084,6 @@ If you\u2019re taking a food-first approach and want to understand why [food alo
 
 [INSIGHT:When gut bacteria ferment dietary fiber, they produce short-chain fatty acids (SCFAs) like butyrate, propionate, and acetate. These compounds do more than support gut health; they influence systemic inflammation, insulin sensitivity, and immune cell function. A diverse fiber intake from multiple plant sources promotes a more diverse microbiome, which is associated with better metabolic outcomes.]
 
-[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Running on Empty? Get the Free Guide|Not sure where to start? This free checklist can help you recognize what your body may already be telling you, and what to do next.|lead-magnet|Get the Free Guide]
-
 ## Putting It Together: The \u201cDress Your Carbs\u201d Strategy
 
 One of the simplest shifts I share with women is the idea of \u201cdressing your carbs.\u201d Instead of eating carbohydrates by themselves (a piece of toast, a bowl of rice, crackers from the pantry), pair them with protein, fiber, or healthy fat every time.
@@ -1133,7 +1116,7 @@ If you\u2019ve been doing all the \u201cright things\u201d and still feel like y
 
 Start with one change. More protein at breakfast. Chia seeds in your yogurt. Vegetables at every meal. Pair your carbs instead of eating them alone. These are small shifts, but they compound.
 
-And if you\u2019re preparing for pregnancy or rebuilding postpartum and want to understand where your body actually stands, not just your blood work but your mineral reserves, your metabolic patterns, your full functional picture, that\u2019s exactly what [testing like HTMA](/htma.html) and [comprehensive wellness support](/services/) are designed to help with.
+And if you\u2019re preparing for pregnancy or rebuilding postpartum and want to understand where your body actually stands, not just your blood work but your mineral reserves, your metabolic patterns, your full functional picture, that\u2019s exactly what [testing like HTMA](/htma.html) and [Mineral Insight](/services/mineral-insight.html) are designed to help with.
 
 You don\u2019t need to be perfect. You need a foundation your body can actually thrive on. [Your body is the first home](/blog/post.html?post=2024-11-15-body-first-home), and these are the building blocks.
 
@@ -1141,10 +1124,7 @@ With love + intention,
 
 Alicia
 
-[CTA-ROW-START]
-[CTA:Book a Free Discovery Call|Let\u2019s talk about where you are and whether functional assessment makes sense for your goals. No pressure, just honest conversation.|apply|Book Your Free Call]
-[CTA:Running on Empty? Get the Free Guide|Not sure where to start? Download the free Running on Empty awareness guide to help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
-[CTA-ROW-END]
+[CTA:Ready for a Clearer Starting Point?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan built around your results.|apply|Explore Mineral Insight]
 
 *Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
 
@@ -1302,7 +1282,7 @@ When working with women, I look at things differently. I may order a much broade
 
 Research supports this approach. A study published in *Clinical Chemistry* found that less than 1% of total body magnesium is in the blood, meaning serum magnesium levels don\u2019t reliably reflect what\u2019s actually stored in your tissues.<sup>[1](#references)</sup> A follow-up review in *Nutrients* confirmed this remains a significant limitation of standard blood testing.<sup>[5](#references)</sup> Your blood work can look fine while your body\u2019s reserves are quietly running low.
 
-Neither approach replaces the other. They serve different purposes. I offer [blood work review](/services/lab-review.html) in addition to HTMA based on your symptoms, history, and individual needs as part of my [packages and programs](/services/). The goal is always to use the right combination of tools to build a complete picture.
+Neither approach replaces the other. They serve different purposes. I offer [blood work review](/services/discovery-session.html) in addition to HTMA based on your symptoms, history, and individual needs as part of my [packages and programs](/services/). The goal is always to use the right combination of tools to build a complete picture.
 
 ## Key Minerals and Why They Matter
 
@@ -1333,8 +1313,6 @@ These two get overlooked, but on HTMA, they\u2019re some of the most telling mar
 ### Iron
 
 Iron deficiency is the most common nutritional deficiency worldwide, and women of reproductive age are hit hardest. Iron isn\u2019t tested directly on most HTMA panels, but HTMA can reveal patterns in copper and zinc that may influence how your body absorbs and uses iron. Iron status is best assessed through blood work (**ferritin**, **serum iron**, **TIBC**), and I include these tests when appropriate as part of my programs.
-
-[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Depletion Signals Checklist|Not sure where to start? This free checklist can help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
 
 ## Why Mineral Ratios Matter More Than Individual Levels
 
@@ -1381,7 +1359,7 @@ These patterns don\u2019t indicate disease. They suggest areas where the body ma
 
 Ideally, 6 to 12 months before you plan to conceive. This allows time to identify patterns, make changes, and retest to see progress. Even 3 months of intentional preparation may make a meaningful difference.
 
-[CTA:Thinking About HTMA?|If you\u2019re planning pregnancy and want to understand your mineral status before conception, a clarity call is a great place to start\u2014zero pressure, just honest conversation about your goals.|apply|Book a Clarity Call]
+[CTA:Thinking About HTMA?|If you\u2019re planning pregnancy and want to understand your mineral status before conception, Mineral Insight is a simple place to start.|apply|Explore Mineral Insight]
 
 ## HTMA and Early Motherhood: Understanding Depletion After Birth
 
@@ -1439,7 +1417,7 @@ Follow a personalized plan that addresses nourishment, mineral reserves, and ner
 **Step 3: SUSTAIN**
 Build habits and rhythms that protect your reserves long-term. Sustainable wellness isn\u2019t about perfection. It\u2019s about building a foundation that holds.
 
-[See the full process details](/services/)
+[See how Mineral Insight works](/services/mineral-insight.html)
 
 ## How to Get Started with HTMA Testing
 
@@ -1493,10 +1471,7 @@ If you\u2019re preparing for pregnancy and want to know whether your body has th
 
 You don\u2019t have to keep guessing. And you don\u2019t have to accept \u201cthis is just how it is.\u201d
 
-[CTA-ROW-START]
-[CTA:Book a Free Discovery Call|I\u2019d love to hear where you are and talk through whether HTMA testing makes sense for you.|apply|Book Your Free Call]
-[CTA:Download the Depletion Signals Checklist|Not sure where to start? This free checklist can help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
-[CTA-ROW-END]
+[CTA:Curious What Your Minerals Show?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan. Not sure yet? You can book a Discovery Session instead.|apply|Explore Mineral Insight]
 
 *Individual results vary. This guide is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
     `,
@@ -1540,7 +1515,7 @@ Intention Holistic Health provides educational wellness guidance and, where appl
       },
       {
         question: 'How much does HTMA testing cost?',
-        answer: 'Testing costs vary by lab and practitioner. At Intention Holistic Health, HTMA testing is included as part of both the Mineral Insight Package and the Signature Program.'
+        answer: 'Testing costs vary by lab and practitioner. At Intention Holistic Health, HTMA testing is included in Mineral Insight, Kids Mineral Insight, and The Intention Method.'
       }
     ],
     schema: {
@@ -1557,19 +1532,6 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'nutrition'],
-    promo: {
-      title: 'Healthy Kitchen Staples Checklist',
-      modalTitle: 'Get Your Free Kitchen Staples Checklist',
-      description: 'A printable list of nourishing, low-tox staples I keep on hand for whole foods living.',
-      descriptionShort: 'Nourishing, low-tox staples for whole foods living.',
-      badge: 'Free Download',
-      ctaText: 'Get the Free Checklist',
-      formType: 'kitchen-staples',
-      modalFormType: 'kitchen-staples',
-      image: '/images/kitchen-staples-preview-inline.webp',
-      imageSidebar: '/images/kitchen-staples-preview-sidebar.webp',
-      imageThumb: '/images/kitchen-staples-preview-thumb.webp'
-    },
     content: `
 # Things I Do to Make Home Cooking More Sustainable
 
@@ -1632,7 +1594,6 @@ Some of my go-to staples:
 
 With these on hand, dinner is rarely more than 30 minutes away. When dinner feels achievable, consistency becomes much easier.
 
-[CTA:Free Checklist: Healthy Kitchen Staples|Want a complete list of what I keep in my kitchen? I put together a printable checklist of nourishing, low-tox staples for whole foods living.|kitchen-staples|Get the Free Checklist]
 
 ## 3. I Learned to Freeze Just About Everything
 
@@ -1718,7 +1679,6 @@ Sustainable home cooking works because it supports the body, mind, and budget at
 
 You don't need to adopt every habit at once. Choosing one system—batch-chopping vegetables, freezing leftovers, keeping snacks on hand, or trying a whole chicken—creates ease. And ease is what makes cooking at home sustainable long-term.
 
-[CTA:Get the Full Kitchen Staples Checklist|Ready to stock your kitchen with nourishing, low-tox staples? Download my free printable checklist with everything I keep on hand for whole foods living.|kitchen-staples|Download the Free Checklist]
 
 ## References
 
@@ -1731,6 +1691,7 @@ Saksena, M. J., Okrent, A. M., Anekwe, T. D., Cho, C., Dicken, C., Effland, A., 
   },
   {
     slug: '2026-01-21-chatgpt-health-safety',
+    hidden: true, // kept live for search; not shown in blog lists (Oct 2026 focus shift)
     title: 'Is It Safe to Use ChatGPT Health? A Patient-Centered Look at Using AI for Your Health',
     date: '2026-01-21',
     author: 'Alicia Harrison, MSN, APRN, FNP-C',
@@ -1912,7 +1873,7 @@ AI may change how information is accessed, but it does not replace the foundatio
 
 ---
 
-If you're looking for personalized support in understanding your health data, a [Functional Lab Review](/services/lab-review.html) can provide context and clarity that AI alone cannot offer—with the benefit of professional interpretation tailored to your unique situation.
+If you're looking for personalized support in understanding your health data, a [Discovery Session](/services/discovery-session.html) can provide context and clarity that AI alone cannot offer—with the benefit of professional interpretation tailored to your unique situation.
 
 ## References
 
@@ -2171,7 +2132,7 @@ Food remains the foundation.
 
 Targeted, personalized supplementation, when appropriate, is a tool to help restore + replenish.
 
-If you're curious about your own mineral status, a [Functional Lab Review](/services/lab-review.html) or [HTMA testing](/htma.html) can provide personalized insight into what your body actually needs. For a deeper look at how HTMA compares to standard blood work and why mineral ratios matter, read the [complete HTMA guide for maternal health](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
+If you're curious about your own mineral status, a [Discovery Session](/services/discovery-session.html) or [HTMA testing](/htma.html) can provide personalized insight into what your body actually needs. For a deeper look at how HTMA compares to standard blood work and why mineral ratios matter, read the [complete HTMA guide for maternal health](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
 
 ## References
 
@@ -2289,7 +2250,7 @@ But for chronic wellness—for supporting fertility, postpartum recovery, and da
 
 If you have been told your labs are "normal" but you continue to experience symptoms, it is okay to ask more questions.
 
-If you are looking for a different perspective on your health data, I offer [Functional Lab Reviews](/services/lab-review.html). This service allows us to review your existing labs through a functional lens to identify areas where your body may need more support. Want to understand what standard blood work may be missing entirely? Learn how [HTMA testing reveals mineral patterns that blood tests can\u2019t capture](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
+If you are looking for a different perspective on your health data, a [Discovery Session](/services/discovery-session.html) is a good place to start. Together we can review your existing labs through a functional lens to identify areas where your body may need more support. Want to understand what standard blood work may be missing entirely? Learn how [HTMA testing reveals mineral patterns that blood tests can\u2019t capture](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
 
 With love + intention,
 
@@ -2307,7 +2268,7 @@ Alicia
       },
       {
         question: "What should I do if my labs are normal but I still have symptoms?",
-        answer: "It's okay to ask more questions. Consider seeking a functional perspective on your health data. A Functional Lab Review can help identify areas where your body may need more support, looking at whether you have optimal nutrient density, nervous system support, and effective gut absorption."
+        answer: "It's okay to ask more questions. Consider seeking a functional perspective on your health data. A Discovery Session can help identify areas where your body may need more support, looking at whether you have optimal nutrient density, nervous system support, and effective gut absorption."
       }
     ],
     schema: {
@@ -2316,6 +2277,7 @@ Alicia
   },
   {
     slug: '2024-12-15-holiday-wellness',
+    hidden: true, // kept live for search; not shown in blog lists (Oct 2026 focus shift)
     title: 'Holiday Wellness for Women: Staying Grounded Without Extremes',
     date: '2024-12-15',
     dateModified: '2026-05-19',
@@ -2546,7 +2508,7 @@ This is simply my story, and the practices that helped me feel supported and ali
 
 Preparing for an unmedicated birth wasn't about perfection—it was about intention. I focused on practices that supported my body, strengthened my mind, and grounded me spiritually. And while birth unfolded in its own way, these preparations helped me enter the experience feeling peaceful, equipped, and deeply connected to my baby and my Creator.
 
-If you're exploring pregnancy or preparing for birth and want guidance on building a nourishing foundation, [Intention Holistic Health offers support](/services/) that meets you where you are in preconception, pregnancy, and postpartum. Learn more about [preparing your body for pregnancy](/blog/post.html?post=2024-11-15-body-first-home).
+If you're exploring pregnancy or preparing for birth and want guidance on building a nourishing foundation, [Intention Holistic Health offers support](/services/mineral-insight.html) that meets you where you are in preconception, pregnancy, and postpartum. Learn more about [preparing your body for pregnancy](/blog/post.html?post=2024-11-15-body-first-home).
 
 All my love,
 
@@ -2661,7 +2623,7 @@ Women who learn these foundations before pregnancy often feel more grounded, mor
 
 Preconception care does not need to be overwhelming. It's about reconnecting with the rhythms your physiology is already built upon and nourishing your body with intention.
 
-If you want personalized support during preconception, pregnancy, or postpartum, the [Intentional Mama Programs](/services/) and [Lab Review Services](/services/lab-review.html) at Intention Holistic Health provide individualized guidance to honor your body's physiology and your season of life. To learn specifically how mineral testing supports preconception and postpartum, see the [HTMA guide for maternal health](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
+If you want personalized support while preparing for pregnancy or after birth, [Mineral Insight](/services/mineral-insight.html) and a [Discovery Session](/services/discovery-session.html) at Intention Holistic Health provide individualized guidance to honor your body's physiology and your season of life. To learn specifically how mineral testing supports preconception and postpartum, see the [HTMA guide for maternal health](/blog/post.html?post=2026-02-17-htma-complete-guide-maternal-health).
 
 Your body is the first home your baby will ever know. Caring for it with intention is an act of love that extends far beyond pregnancy — shaping the health of generations to come.
 
@@ -2690,6 +2652,7 @@ Alicia
   },
   {
     slug: '2024-05-15-mental-health-pcos',
+    hidden: true, // kept live for search; not shown in blog lists (Oct 2026 focus shift)
     title: 'May is Mental Health Awareness Month',
     date: '2024-05-15',
     dateModified: '2026-05-19',
@@ -2724,7 +2687,7 @@ Get 15+ minutes of direct eye exposure within 30 minutes of waking to boost ener
 
 ### 4. Blood Sugar Regulation
 
-Consume protein and healthy fats before carbs. Break fasts with protein-fat-fiber combinations and move ten minutes post-meals to support stable blood sugar and reduce mood swings. Getting a [lab review](/services/lab-review.html) can help you understand your blood sugar patterns.
+Consume protein and healthy fats before carbs. Break fasts with protein-fat-fiber combinations and move ten minutes post-meals to support stable blood sugar and reduce mood swings. A [Discovery Session](/services/discovery-session.html) can help you understand your blood sugar patterns.
 
 ### 5. Breathwork
 
@@ -2846,6 +2809,7 @@ Intention Holistic Health
   },
   {
     slug: '2024-10-01-gut-health-pcos',
+    hidden: true, // kept live for search; not shown in blog lists (Oct 2026 focus shift)
     title: 'Gut Health and PCOS: The Missing Piece of the Puzzle',
     date: '2024-10-01',
     dateModified: '2026-05-19',
@@ -2952,6 +2916,7 @@ Clinical services at Intention Holistic Health PLLC serve Kentucky residents onl
   },
   {
     slug: '2024-09-15-hormone-friendly-granola',
+    hidden: true, // kept live for search; not shown in blog lists (Oct 2026 focus shift)
     title: 'Recipe: Hormone-Friendly Granola',
     date: '2024-09-15',
     dateModified: '2026-05-19',
@@ -3033,6 +2998,9 @@ Intention Holistic Health
   }
 ];
 
+// Posts shown in lists, search and related posts. Hidden posts stay reachable by direct link.
+const LISTED_POSTS = BLOG_POSTS.filter(function(post) { return !post.hidden; });
+
 // -----------------------------------------
 // STANDARD DISCLAIMER (FDA, FTC, Kentucky BON Compliant)
 // -----------------------------------------
@@ -3075,17 +3043,18 @@ function parseMarkdown(markdown) {
   html = html.replace(/\[CTA-ROW-END\]/gim, '</div>');
 
   // CTA boxes [CTA:title|description|formType|buttonText]
-  // formType "apply" links to Practice Better; others open lead magnet modal
+  // formType "apply" links to Mineral Insight, "apply-kids" to Kids Mineral Insight; others open lead magnet modal
   html = html.replace(/\[CTA:([^|]+)\|([^|]+)\|([^|]+)\|([^\]]+)\]/gim, function(match, title, description, formType, buttonText) {
     var escapedTitle = title.trim().replace(/'/g, "\\'");
     var escapedFormType = formType.trim().replace(/'/g, "\\'");
-    if (formType.trim() === 'apply') {
+    if (formType.trim() === 'apply' || formType.trim() === 'apply-kids') {
+      var ctaHref = formType.trim() === 'apply-kids' ? '/services/kids-mineral-insight.html' : '/services/mineral-insight.html';
       return `<div class="blog-cta-box">
       <div class="blog-cta-content">
         <h4 class="blog-cta-title">${title.trim()}</h4>
         <p class="blog-cta-description">${description.trim()}</p>
       </div>
-      <a href="https://my.practicebetter.io/#/65f9b5add14abe8b539487a6/bookings?s=664b9722ff1f3762a57079f5&step=date" target="_blank" rel="noopener noreferrer" class="blog-cta-button" data-track-cta="blog-inline-cta">${buttonText.trim()}</a>
+      <a href="${ctaHref}" class="blog-cta-button" data-track-cta="blog-inline-cta">${buttonText.trim()}</a>
     </div>`;
     }
     return `<div class="blog-cta-box">
@@ -3222,7 +3191,7 @@ function renderBlogListing() {
   if (!blogPostsContainer) return;
 
   // Sort posts by date (newest first)
-  const sortedPosts = [...BLOG_POSTS].sort((a, b) => new Date(b.date) - new Date(a.date));
+  const sortedPosts = [...LISTED_POSTS].sort((a, b) => new Date(b.date) - new Date(a.date));
 
   // Render posts
   let html = '';
@@ -3400,7 +3369,7 @@ function setupMobileSearch() {
     const searchTerms = query.toLowerCase().trim().split(/\s+/);
     const results = [];
 
-    BLOG_POSTS.forEach(function(post) {
+    LISTED_POSTS.forEach(function(post) {
       const searchableText = (post.title + ' ' + post.excerpt + ' ' + post.content).toLowerCase();
       const allTermsFound = searchTerms.every(function(term) {
         return searchableText.includes(term);
@@ -3576,7 +3545,7 @@ function renderRelatedPosts(currentPost) {
   if (!relatedPostsGrid) return;
 
   // Score posts by number of matching categories (more matches = more relevant)
-  var scoredPosts = BLOG_POSTS
+  var scoredPosts = LISTED_POSTS
     .filter(function(post) { return post.slug !== currentPost.slug; })
     .map(function(post) {
       var matchCount = post.categories.filter(function(cat) {
@@ -3589,7 +3558,7 @@ function renderRelatedPosts(currentPost) {
 
   // If not enough related posts, add other posts
   if (scoredPosts.length < 3) {
-    var otherPosts = BLOG_POSTS.filter(function(post) {
+    var otherPosts = LISTED_POSTS.filter(function(post) {
       return post.slug !== currentPost.slug &&
         !scoredPosts.some(function(item) { return item.post.slug === post.slug; });
     });
@@ -3928,7 +3897,7 @@ function setupBlogSearch() {
     const searchTerms = query.toLowerCase().trim().split(/\s+/);
     const results = [];
 
-    BLOG_POSTS.forEach(function(post) {
+    LISTED_POSTS.forEach(function(post) {
       // Search in title, excerpt, and content
       const searchableText = (post.title + ' ' + post.excerpt + ' ' + post.content).toLowerCase();
 
@@ -4065,6 +4034,16 @@ function setupBlogSearch() {
 
 function initPromo(post) {
   var promo = post.promo || DEFAULT_PROMO;
+
+  // No promo: remove the floating ad and bottom bar instead of showing empty boxes
+  if (!promo) {
+    ['floating-download-ad', 'blog-checklist-bar'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.remove();
+    });
+    window._blogPromo = null;
+    return;
+  }
 
   // Populate floating desktop ad
   var ad = document.getElementById('floating-download-ad');

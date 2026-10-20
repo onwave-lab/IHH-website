@@ -109,18 +109,6 @@ const BLOG_POSTS = [
     ]
   },
   {
-    "slug": "2026-01-21-chatgpt-health-safety",
-    "title": "Is It Safe to Use ChatGPT Health? A Patient-Centered Look at Using AI for Your Health",
-    "date": "2026-01-21",
-    "excerpt": "ChatGPT Health allows users to connect personal health data for personalized responses. From a healthcare provider standpoint, the question of safety is not a simple yes-or-no answer.",
-    "image": "/images/blog/chatgpt-health-safety.webp",
-    "cardAspectRatio": "75.00%",
-    "categories": [
-      "wellness",
-      "foundations"
-    ]
-  },
-  {
     "slug": "2025-01-15-minerals-from-food",
     "title": "\"Can't I Get Enough Minerals From Food?\"",
     "date": "2025-01-15",
@@ -138,18 +126,6 @@ const BLOG_POSTS = [
     "date": "2025-01-09",
     "excerpt": "You got your blood work done, waited for results, and everything looks \"normal.\" But you don't feel normal. Your symptoms are real—here's why standard labs might not tell the whole story.",
     "image": "/images/blog/labs-normal-feel-off.webp",
-    "cardAspectRatio": "75.00%",
-    "categories": [
-      "wellness",
-      "foundations"
-    ]
-  },
-  {
-    "slug": "2024-12-15-holiday-wellness",
-    "title": "Holiday Wellness for Women: Staying Grounded Without Extremes",
-    "date": "2024-12-15",
-    "excerpt": "The holidays tend to bring a lot to the surface. Not because anyone is doing something wrong — but because life gets fuller all at once.",
-    "image": "/images/blog/holiday-wellness.webp",
     "cardAspectRatio": "75.00%",
     "categories": [
       "wellness",
@@ -180,48 +156,11 @@ const BLOG_POSTS = [
     ]
   },
   {
-    "slug": "2024-05-15-mental-health-pcos",
-    "title": "May is Mental Health Awareness Month",
-    "date": "2024-05-15",
-    "excerpt": "Women with PCOS experience anxiety and depression 3x more often than women without the condition. Let's talk about practical ways to support your mental health.",
-    "image": "/images/blog/mental-health-pcos.webp",
-    "cardAspectRatio": "75.00%",
-    "categories": [
-      "pcos",
-      "wellness"
-    ]
-  },
-  {
     "slug": "2024-10-15-probiotic-smoothie-bowl",
     "title": "Recipe: Probiotic-Rich Smoothie Bowl",
     "date": "2024-10-15",
     "excerpt": "Looking for a delicious and nutritious way to start your day? This smoothie bowl is packed with fiber, protein, and gut-friendly ingredients.",
     "image": "/images/blog/smoothie-bowl-square.webp",
-    "cardAspectRatio": "75.00%",
-    "categories": [
-      "recipes",
-      "breakfast",
-      "pcos"
-    ]
-  },
-  {
-    "slug": "2024-10-01-gut-health-pcos",
-    "title": "Gut Health and PCOS: The Missing Piece of the Puzzle",
-    "date": "2024-10-01",
-    "excerpt": "The trillions of microorganisms in your gut play crucial roles in hormone regulation and inflammation control. Understanding this connection is key to managing PCOS.",
-    "image": "/images/blog/gut-health-pcos-new.webp",
-    "cardAspectRatio": "75.00%",
-    "categories": [
-      "pcos",
-      "foundations"
-    ]
-  },
-  {
-    "slug": "2024-09-15-hormone-friendly-granola",
-    "title": "Recipe: Hormone-Friendly Granola",
-    "date": "2024-09-15",
-    "excerpt": "An all-time-favorite snack: granola that is both delicious and packed with hormone-friendly ingredients to support health and wellbeing from the inside out.",
-    "image": "/images/blog/granola.webp",
     "cardAspectRatio": "75.00%",
     "categories": [
       "recipes",

@@ -3002,15 +3002,10 @@ Intention Holistic Health
 const LISTED_POSTS = BLOG_POSTS.filter(function(post) { return !post.hidden; });
 
 // -----------------------------------------
-// STANDARD DISCLAIMER (FDA, FTC, Kentucky BON Compliant)
+// STANDARD DISCLAIMER (short line; the site footer carries the full disclaimer)
 // -----------------------------------------
 
-const STANDARD_DISCLAIMER = `<div class="blog-disclaimer">
-  <h3 class="blog-disclaimer-title">Educational & Imagery Disclaimer</h3>
-  <p>This content is for educational and informational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. It does not replace individualized medical advice, diagnosis, or treatment from a licensed healthcare provider. Individual results may vary. Readers should consult their licensed healthcare provider regarding personal health concerns before making changes to diet, supplements, or lifestyle.</p>
-  <p>Any individuals depicted in images on this website or associated content are models or stock photography subjects and are not patients, clients, or recipients of services from Intention Holistic Health. Images are used for illustrative purposes only and do not represent clinical relationships, medical outcomes, or specific health conditions.</p>
-  <p>Intention Holistic Health, PLLC provides educational wellness guidance and, where applicable, nurse practitioner services within scope and licensure. <strong>Clinical services are available exclusively to Kentucky residents</strong> through formal provider-patient relationships.</p>
-</div>`;
+const STANDARD_DISCLAIMER = `<p class="blog-disclaimer">Educational content only, not medical advice. Images are stock photos used for illustration.</p>`;
 
 // -----------------------------------------
 // UTILITY FUNCTIONS

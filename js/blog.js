@@ -3,20 +3,8 @@
    Handles markdown parsing and blog functionality
    ============================================ */
 
-// Default promo config — used when a post doesn't specify its own
-const DEFAULT_PROMO = {
-  title: 'Depletion Signals Checklist',
-  modalTitle: 'Get Your Free Guide',
-  description: 'Not sure where to start? This free checklist can help you recognize what your body may already be telling you.',
-  descriptionShort: 'Not sure where to start? Recognize what your body may be telling you.',
-  badge: 'Free Download',
-  ctaText: 'Get the Free Guide',
-  formType: 'lead-magnet',
-  modalFormType: 'lead-magnet',
-  image: '/images/depletion-signals-guide-preview-inline.webp',
-  imageSidebar: '/images/depletion-signals-guide-preview-sidebar.webp',
-  imageThumb: '/images/depletion-signals-guide-preview-thumb.webp'
-};
+// Posts without their own promo get no freebie (the Depletion Signals guide was retired 2026-10-20)
+const DEFAULT_PROMO = null;
 
 // Blog post data - this would typically come from a build process
 // For simplicity, we define posts here that can be easily updated
@@ -912,8 +900,6 @@ None of this is meant to scare you. The months before conception are actually a 
 
 Preconception care deserves more than a prenatal vitamin and a quick checkup. I wrote about that in more detail in [Your Body Is the First Home](/blog/post.html?post=2024-11-15-body-first-home).
 
-[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Feeling Depleted? Get the Free Guide|Not sure where to start? This free checklist can help you recognize what your body may already be telling you\u2014and what to do next.|lead-magnet|Get the Free Guide]
-
 ## What Testing Can Reveal That Symptoms Alone Cannot
 
 Symptoms tell you something is off, but not always why. Fatigue and anxiety can look the same on the surface while having very different causes underneath. Without data, it\u2019s hard to know where to start.
@@ -958,10 +944,7 @@ With love + intention,
 
 Alicia
 
-[CTA-ROW-START]
 [CTA:Ready for a Clearer Starting Point?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan built around your results.|apply|Explore Mineral Insight]
-[CTA:Download the Free Guide|Not sure where to start? Get a free checklist of depletion signals to watch for before pregnancy.|lead-magnet|Get the Free Guide]
-[CTA-ROW-END]
 
 *Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
 
@@ -1101,8 +1084,6 @@ If you\u2019re taking a food-first approach and want to understand why [food alo
 
 [INSIGHT:When gut bacteria ferment dietary fiber, they produce short-chain fatty acids (SCFAs) like butyrate, propionate, and acetate. These compounds do more than support gut health; they influence systemic inflammation, insulin sensitivity, and immune cell function. A diverse fiber intake from multiple plant sources promotes a more diverse microbiome, which is associated with better metabolic outcomes.]
 
-[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Feeling Depleted? Get the Free Guide|Not sure where to start? This free checklist can help you recognize what your body may already be telling you, and what to do next.|lead-magnet|Get the Free Guide]
-
 ## Putting It Together: The \u201cDress Your Carbs\u201d Strategy
 
 One of the simplest shifts I share with women is the idea of \u201cdressing your carbs.\u201d Instead of eating carbohydrates by themselves (a piece of toast, a bowl of rice, crackers from the pantry), pair them with protein, fiber, or healthy fat every time.
@@ -1143,10 +1124,7 @@ With love + intention,
 
 Alicia
 
-[CTA-ROW-START]
 [CTA:Ready for a Clearer Starting Point?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan built around your results.|apply|Explore Mineral Insight]
-[CTA:Feeling Depleted? Get the Free Guide|Not sure where to start? Download the free Running on Empty Awareness Guide to help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
-[CTA-ROW-END]
 
 *Individual results vary. This content is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
 
@@ -1336,8 +1314,6 @@ These two get overlooked, but on HTMA, they\u2019re some of the most telling mar
 
 Iron deficiency is the most common nutritional deficiency worldwide, and women of reproductive age are hit hardest. Iron isn\u2019t tested directly on most HTMA panels, but HTMA can reveal patterns in copper and zinc that may influence how your body absorbs and uses iron. Iron status is best assessed through blood work (**ferritin**, **serum iron**, **TIBC**), and I include these tests when appropriate as part of my programs.
 
-[DOWNLOAD-CTA:/images/depletion-signals-guide-preview-inline.webp|Depletion Signals Checklist|Not sure where to start? This free checklist can help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
-
 ## Why Mineral Ratios Matter More Than Individual Levels
 
 One of the most valuable things about HTMA is that it shows mineral ratios, the relationships between minerals, not just their individual levels.
@@ -1495,10 +1471,7 @@ If you\u2019re preparing for pregnancy and want to know whether your body has th
 
 You don\u2019t have to keep guessing. And you don\u2019t have to accept \u201cthis is just how it is.\u201d
 
-[CTA-ROW-START]
 [CTA:Curious What Your Minerals Show?|Mineral Insight pairs an at-home HTMA test with a one-on-one results review and a simple plan. Not sure yet? You can book a Discovery Session instead.|apply|Explore Mineral Insight]
-[CTA:Download the Depletion Signals Checklist|Not sure where to start? This free checklist can help you recognize what your body may already be telling you.|lead-magnet|Get the Free Guide]
-[CTA-ROW-END]
 
 *Individual results vary. This guide is for educational purposes only and does not constitute medical advice, diagnosis, or treatment. Always consult with your healthcare provider regarding your specific health needs.*
     `,
@@ -4077,14 +4050,14 @@ function setupBlogSearch() {
 function initPromo(post) {
   var promo = post.promo || DEFAULT_PROMO;
 
-  // The Depletion Signals freebie (DEFAULT_PROMO) is retired as a pop-up: posts without
-  // their own promo get no floating ad or bottom bar. DEFAULT_PROMO still fills the modal
-  // for any in-post CTA that opens it.
-  if (!post.promo) {
+  // No promo: remove the floating ad and bottom bar instead of showing empty boxes
+  if (!promo) {
     ['floating-download-ad', 'blog-checklist-bar'].forEach(function(id) {
       var el = document.getElementById(id);
       if (el) el.remove();
     });
+    window._blogPromo = null;
+    return;
   }
 
   // Populate floating desktop ad

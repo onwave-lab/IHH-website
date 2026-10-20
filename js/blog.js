@@ -4077,6 +4077,16 @@ function setupBlogSearch() {
 function initPromo(post) {
   var promo = post.promo || DEFAULT_PROMO;
 
+  // The Depletion Signals freebie (DEFAULT_PROMO) is retired as a pop-up: posts without
+  // their own promo get no floating ad or bottom bar. DEFAULT_PROMO still fills the modal
+  // for any in-post CTA that opens it.
+  if (!post.promo) {
+    ['floating-download-ad', 'blog-checklist-bar'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.remove();
+    });
+  }
+
   // Populate floating desktop ad
   var ad = document.getElementById('floating-download-ad');
   if (ad) {

@@ -38,6 +38,8 @@ The `/source-assets/` directory contains raw/original image files that are **kep
 
 **When adding new raw/source images:** Place them in the appropriate `source-assets/` subdirectory, not in `images/`. Only optimized, web-ready images should go in `images/`.
 
+**Never commit Alicia's personal or family photos (e.g. her kids) to this repo.** It is public. Only images actually used on the site belong here; keep personal originals on her Mac or iCloud.
+
 ### Image Optimization Pipeline
 
 A script at `scripts/optimize-images.js` generates responsive WebP variants from source images:
@@ -337,7 +339,7 @@ When adding new content to the site, **always ask about style preferences** befo
 | Topic in Blog Post | Link To |
 |--------------------|---------|
 | HTMA, mineral testing, hair analysis | `/htma.html` (What is HTMA?) |
-| Lab work, blood tests, "normal" results | `/services/lab-review.html` |
+| Lab work, blood tests, "normal" results | `/services/discovery-session.html` (Lab Review was retired 2026-10-19 and redirects here) |
 | Wellness support, hormone support | `/services/` |
 | Getting started, booking | `/services/mineral-insight.html` (women) or `/services/kids-mineral-insight.html` (kids). `/apply.html` was retired 2026-10-10 (redirects to `/services/`); no complimentary calls. |
 
@@ -430,15 +432,17 @@ See `README.md` for the full page hierarchy, file organization, and navigation s
 ### User Flow
 
 ```
-Homepage → Learn (HTMA page, Blog) → Mineral Insight / Kids Mineral Insight (flat fee) → Practice Better checkout → Patient Portal
-                                         ↓
-                               Lab Review (direct booking OK)
+Homepage → Learn (HTMA page, Blog) → Mineral Insight (Practice Better checkout) → Patient Portal
+                                   ↘ Kids Mineral Insight → Practice Better waitlist form
+                                   ↘ Discovery Session (Practice Better booking) → Mineral Insight or The Intention Method
 ```
 
 **Key Conversion Points:**
-1. **HTMA/Wellness Services:** Redirect to Practice Better for booking
-2. **Lab Review:** Redirect to Practice Better for direct booking
-3. **Intentional Reset:** Landing page only (direct link, not in nav) → Practice Better
+1. **Mineral Insight:** Practice Better checkout
+2. **Kids Mineral Insight / Mom + Child Bundle:** Practice Better waitlist form (Alicia follows up by secure message)
+3. **Discovery Session:** Practice Better booking. The Intention Method starts here.
+
+Retired offers (pages deleted, 301s in `netlify.toml`): Lab Review and Intentional Reset → Discovery Session; Kitchen Staples → home-cooking blog post; Depletion Signals → `/htma.html`.
 
 ---
 
@@ -587,6 +591,8 @@ When adding any link that goes to an external website:
 3. This applies to blog posts, service pages, footer links, and all content
 
 **In blog.js markdown:** External links are automatically detected and rendered with proper attributes. Any link starting with `http://` or `https://` will get `target="_blank" rel="noopener noreferrer"` added automatically.
+
+**Exception (Alicia's choice, 2026-10-19):** Patient Portal, Fullscript and Discovery buttons that use the redirect overlay (`data-portal-*`, `data-fullscript`) open in the SAME tab. Don't label them "opens in a new tab."
 
 ---
 

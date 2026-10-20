@@ -63,3 +63,8 @@ session: Kids launch prep: PB links, legal drafts, pre-launch QA, Practice Bette
 ## Update (Oct 20): photo credit rule
 - **Rule:** any social post using a branding-shoot photo (kitchen, porch, couch, white blazer) must tag `📷 @amberticephoto`. The handle is @amberticephoto, NOT @amberticephotography. It's added to the Notion captions for L1, Evergreen A, C, E and Kids 6, and noted at the top of `docs/launch-kit.md`.
 - L1 and L2 captions were rewritten and proofed in Notion. Alicia is hand-editing L1 too; keep her edits.
+
+## Update (Oct 20): HTMA messaging rule + L2/L3 carousels
+- **Rule (Alicia):** never frame HTMA as "instead of" blood work. Say it's often a *first step* (especially for kids) and that it doesn't replace blood work. "Different tools, different jobs."
+- L2 is now "Why I often start with hair" (2-slide carousel: pattern vs. snapshot, then what HTMA looks at + "No needles. No poop to scoop."). L3 is a 2-slide carousel, and its slide 2 answers "Why test my child?" Both Notion captions match.
+- Open: Alicia can trash the two leftover Canva draft copies (same names, without "(carousel)"). L3 slide 2 reuses the slide 1 beach photo; she may want a different one.

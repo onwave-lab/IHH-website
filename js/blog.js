@@ -1532,19 +1532,6 @@ Intention Holistic Health provides educational wellness guidance and, where appl
     cardAspectRatio: '75.00%',
     imageAspectRatio: '83.83%',
     categories: ['wellness', 'nutrition'],
-    promo: {
-      title: 'Healthy Kitchen Staples Checklist',
-      modalTitle: 'Get Your Free Kitchen Staples Checklist',
-      description: 'A printable list of nourishing, low-tox staples I keep on hand for whole foods living.',
-      descriptionShort: 'Nourishing, low-tox staples for whole foods living.',
-      badge: 'Free Download',
-      ctaText: 'Get the Free Checklist',
-      formType: 'kitchen-staples',
-      modalFormType: 'kitchen-staples',
-      image: '/images/kitchen-staples-preview-inline.webp',
-      imageSidebar: '/images/kitchen-staples-preview-sidebar.webp',
-      imageThumb: '/images/kitchen-staples-preview-thumb.webp'
-    },
     content: `
 # Things I Do to Make Home Cooking More Sustainable
 
@@ -1607,7 +1594,6 @@ Some of my go-to staples:
 
 With these on hand, dinner is rarely more than 30 minutes away. When dinner feels achievable, consistency becomes much easier.
 
-[CTA:Free Checklist: Healthy Kitchen Staples|Want a complete list of what I keep in my kitchen? I put together a printable checklist of nourishing, low-tox staples for whole foods living.|kitchen-staples|Get the Free Checklist]
 
 ## 3. I Learned to Freeze Just About Everything
 
@@ -1693,7 +1679,6 @@ Sustainable home cooking works because it supports the body, mind, and budget at
 
 You don't need to adopt every habit at once. Choosing one system—batch-chopping vegetables, freezing leftovers, keeping snacks on hand, or trying a whole chicken—creates ease. And ease is what makes cooking at home sustainable long-term.
 
-[CTA:Get the Full Kitchen Staples Checklist|Ready to stock your kitchen with nourishing, low-tox staples? Download my free printable checklist with everything I keep on hand for whole foods living.|kitchen-staples|Download the Free Checklist]
 
 ## References
 

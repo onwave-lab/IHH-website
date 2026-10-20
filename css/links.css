@@ -37,23 +37,46 @@
   margin-bottom: 32px;
 }
 
-.links-profile-photo {
+/* Arch photo with offset sage block (matches the service-page heroes) */
+.links-arch {
+  position: relative;
+  width: 140px;
+  margin: 0 auto 28px;
+}
+
+.links-arch::before {
+  content: "";
+  position: absolute;
+  inset: 12px -12px -12px 12px;
+  border-radius: 999px 999px 0 0;
+  background: var(--color-sage-light);
+}
+
+.links-arch img {
+  position: relative;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  height: auto;
   object-fit: cover;
-  border: 3px solid var(--color-sage-green);
-  margin-bottom: 16px;
+  border-radius: 999px 999px 0 0;
+}
+
+.links-eyebrow {
+  font-family: var(--font-primary);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-taupe);
+  margin: 0 0 8px 0;
 }
 
 .links-profile-name {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--color-charcoal);
-  margin: 0 0 4px 0;
+  margin: 0 0 12px 0;
   font-weight: 400;
 }
 
@@ -80,12 +103,12 @@
 }
 
 .links-section-title {
-  font-family: var(--font-heading);
-  font-style: italic;
+  font-family: var(--font-primary);
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.9rem;
-  color: var(--color-sage-dark);
+  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+  color: var(--color-taupe);
   margin: 0 0 12px 0;
   text-align: center;
 }
@@ -102,16 +125,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   width: 100%;
   padding: 16px 24px;
-  background-color: var(--color-sage-green);
-  color: var(--color-cream);
+  background-color: transparent;
+  color: var(--color-sage-dark);
+  border: 1.5px solid var(--color-sage-dark);
+  border-radius: 2px;
   text-decoration: none;
   font-family: var(--font-primary);
-  font-size: 0.95rem;
-  font-weight: 500;
-  border-radius: 50px;
-  transition: all 0.25s ease;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
   text-align: center;
   position: relative;
 }
@@ -119,35 +146,33 @@
 .link-button:hover,
 .link-button:focus {
   background-color: var(--color-sage-dark);
+  color: var(--color-white);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(141, 148, 136, 0.3);
 }
 
 .link-button:active {
   transform: translateY(0);
 }
 
-/* Featured button variant - same as default */
+/* Featured = filled (the two services) */
 .link-button--featured {
-  background-color: var(--color-sage-green);
+  background-color: var(--color-sage-dark);
+  color: var(--color-white);
 }
 
 .link-button--featured:hover,
 .link-button--featured:focus {
-  background-color: var(--color-sage-dark);
+  background-color: var(--color-charcoal);
+  border-color: var(--color-charcoal);
 }
 
-/* Secondary/outline button variant - same as default */
+/* Blog link: quieter, no caps (post titles are long) */
 .link-button--outline {
-  background-color: var(--color-sage-green);
-  color: var(--color-cream);
-  border: none;
-}
-
-.link-button--outline:hover,
-.link-button--outline:focus {
-  background-color: var(--color-sage-dark);
-  color: var(--color-cream);
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 /* Social Icons Section */
@@ -218,17 +243,15 @@
     height: 70px;
   }
 
-  .links-profile-photo {
-    width: 120px;
-    height: 120px;
+  .links-arch {
+    width: 160px;
   }
 
   .links-profile-name {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
 
   .link-button {
-    font-size: 1rem;
     padding: 18px 28px;
   }
 }

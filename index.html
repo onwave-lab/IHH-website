@@ -581,39 +581,6 @@
     </div>
   </footer>
 
-  <!-- Exit Intent Popup -->
-  <div class="popup-overlay" role="dialog" aria-modal="true" aria-labelledby="popup-title">
-    <div class="popup">
-      <button class="popup-close" aria-label="Close popup">&times;</button>
-      <div class="popup-content">
-        <!-- src is hydrated from data-src by showPopup() in main.js. The overlay hides with
-             visibility/opacity (to keep the fade-in), which means loading="lazy" alone would
-             NOT defer this image — the browser still counts it as in-viewport. -->
-        <img data-src="/images/depletion-signals-guide-preview-popup.webp" alt="The Depletion Signals Guide" class="popup-image" width="420" height="595" loading="lazy">
-        <div class="popup-body">
-          <h3 class="popup-title" id="popup-title">Before You Go...</h3>
-          <p class="popup-text">
-            Wondering if your body is running on empty? Download the Depletion Signals Guide—a simple guide to help you recognize the signs and understand what your body may be asking for.
-          </p>
-          <form class="popup-form" name="popup-newsletter" data-mailerlite data-form-type="lead-magnet" data-form-source="homepage_popup">
-            <!-- Honeypot field - hidden from humans, bots fill it -->
-            <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
-            <input type="text" name="first-name" class="form-input" placeholder="First name" required aria-label="First name" autocomplete="given-name">
-            <input type="email" name="email" class="form-input" placeholder="Email address" required aria-label="Email address" autocomplete="email">
-            <div class="state-dropdown-wrapper">
-              <input type="text" name="state-search" class="form-input state-search-input" placeholder="Select your state" autocomplete="off" aria-label="State" aria-haspopup="listbox" aria-expanded="false">
-              <input type="hidden" name="state" value="">
-              <svg class="state-dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              <ul class="state-dropdown-list" role="listbox" aria-label="Select state"></ul>
-            </div>
-            <button type="submit" class="btn btn-secondary" style="width: 100%;">Get the Free Guide</button>
-            <p class="form-message" style="display:none; margin-top: 0.5rem; text-align: center;"></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Card metadata only (~9KB). The full blog engine + post bodies (js/blog.js, ~287KB)
        are loaded by the blog pages, not here. Regenerate: node scripts/build-blog-index.js -->
   <script src="/js/blog-index.js" defer></script>
